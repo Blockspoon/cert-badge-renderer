@@ -30,7 +30,23 @@ function renderCertificate(data) {
             return `<div style="position: relative; width: 100%; height: 100%;"></div>`;
         }
         const sortedElements = elements.sort((a, b) => (a.order || 0) - (b.order || 0));
-        let html = `<div style="position: absolute; top: 0; left: 0; z-index: 10; width: 100%; height: 100%; line-height: 1.3; overflow: hidden;">`;
+        let html = `
+    <div style="
+      position: relative;
+      width: 600px;
+      padding-top: 600px;
+      overflow: hidden;
+    ">
+      <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        line-height: 1.3;
+      ">
+  `;
         for (const element of sortedElements) {
             if (element.bindingKey === "requirements")
                 continue;
@@ -80,24 +96,17 @@ function renderCertificate(data) {
                 // SVG 컴포넌트 렌더링
                 const templates = element.designType === "badge" ? svgTemplate_1.badgeTemplates : svgTemplate_1.ribbonTemplates;
                 const template = templates.find((t) => t.id === element.componentName);
-                html += `<div style="
-      width: 600px;
-      height: 600px;
-      position: relative;
-      transform: scale(${element.width / 600});
-      transform-origin: top left;
-    ">
-      ${template}
-    </div>`;
-                // if (template) {
-                //   const svgString = template.Component({
-                //     mainColor: element.mainColor || template.colors.mainColor,
-                //     subColor: element.subColor || template.colors.subColor
-                //   });
-                //   html += svgString;
-                // } else {
-                //   console.error(`❌ SVG 컴포넌트를 찾을 수 없음: ${element.componentName}`);
-                // }
+                if (template) {
+                    const svgString = template.Component({
+                        mainColor: element.mainColor || template.colors.mainColor,
+                        subColor: element.subColor || template.colors.subColor
+                    });
+                    // console.log(svgString);
+                    html += svgString;
+                }
+                else {
+                    console.error(`❌ SVG 컴포넌트를 찾을 수 없음: ${element.componentName}`);
+                }
             }
             else if (element.controlType === "image") {
                 if (element.bindingKey === "badge" && data.type !== "badge") {
@@ -175,7 +184,10 @@ function renderCertificate(data) {
             }
             html += `</div>`;
         }
-        html += `</div>`;
+        html += `
+      </div>
+    </div>
+  `;
         return html;
     });
 }

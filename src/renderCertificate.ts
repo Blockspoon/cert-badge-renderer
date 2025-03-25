@@ -35,7 +35,23 @@ export async function renderCertificate(data: {
     (a, b) => (a.order || 0) - (b.order || 0)
   );
 
-  let html = `<div style="position: absolute; top: 0; left: 0; z-index: 10; width: 100%; height: 100%; line-height: 1.3; overflow: hidden;">`;
+  let html = `
+    <div style="
+      position: relative;
+      width: 600px;
+      padding-top: 600px;
+      overflow: hidden;
+    ">
+      <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        line-height: 1.3;
+      ">
+  `;
 
   for (const element of sortedElements) {
     if (element.bindingKey === "requirements") continue;
@@ -99,26 +115,34 @@ export async function renderCertificate(data: {
         element.designType === "badge" ? badgeTemplates : ribbonTemplates;
       const template = templates.find((t) => t.id === element.componentName);
 
-      html += `<div style="
-      width: 600px;
-      height: 600px;
-      position: relative;
-      transform: scale(${element.width / 600});
-      transform-origin: top left;
-    ">
-      ${
-        template
+      if (template) {
+        html += `
+          <div style="
+            width: 100%;
+            height: 100%;
+            isolation: isolate;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            will-change: transform, contents;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+          ">
+        `;
+        const svgString = template.Component({
+          mainColor: element.mainColor || template.colors.mainColor,
+          subColor: element.subColor || template.colors.subColor,
+          width: element.width,
+          height: element.height,
+          x: element.x,
+          y: element.y,
+          zIndex: element.zIndex
+        });
+        html += svgString;
+        html += `</div>`;
+      } else {
+        console.error(`❌ SVG 컴포넌트를 찾을 수 없음: ${element.componentName}`);
       }
-    </div>`;
-      // if (template) {
-      //   const svgString = template.Component({
-      //     mainColor: element.mainColor || template.colors.mainColor,
-      //     subColor: element.subColor || template.colors.subColor
-      //   });
-      //   html += svgString;
-      // } else {
-      //   console.error(`❌ SVG 컴포넌트를 찾을 수 없음: ${element.componentName}`);
-      // }
     } else if (element.controlType === "image") {
       if (element.bindingKey === "badge" && data.type !== "badge") {
         // 뱃지 (certificate 타입일 때만 뱃지를 중첩해서 렌더링)
@@ -197,6 +221,9 @@ export async function renderCertificate(data: {
     html += `</div>`;
   }
 
-  html += `</div>`;
+  html += `
+      </div>
+    </div>
+  `;
   return html;
 }
