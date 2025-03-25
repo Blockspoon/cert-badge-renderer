@@ -4,7 +4,7 @@ import Icons from "./icons";
 
 export interface templateType {
   id: string;
-  Component: (props: any) => HTMLElement;
+  Component: (props: any) => string | HTMLElement;
   colors: {
     mainColor: string;
     subColor?: string;

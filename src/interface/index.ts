@@ -21,7 +21,6 @@ export enum KOLLEGE_JOIN_STATUS {
   AUTO_APPROVAL = "auto_approval",
   MANUAL_APPROVAL = "manual_approval",
 }
-
 export interface IKollegeItem {
   id: number;
   name: string;
@@ -43,6 +42,41 @@ export interface IKollegeItem {
     club_symbol: IImageType[];
     path?: string;
   };
+}
+
+export interface INavigationItem {
+  id: number;
+  name: string;
+  url: string;
+  order: number;
+  is_visible: boolean;
+  external?: boolean;
+  target?: "_self" | "_blank";
+  children?: INavigationItem[];
+}
+
+export interface ITagItem {
+  tagKey: string;
+  tagName: string;
+  order: number;
+  is_visible: boolean;
+  is_removable: boolean;
+  pinnedTagKey: string | null | undefined;
+}
+
+export enum ROLE_TYPE {
+  ADMIN = "admin",
+  CLIENT = "client",
+  MEMBER = "member",
+}
+
+export interface ICreateUser {
+  email: string;
+  password: string;
+  // nickname: string;
+  name: string;
+  referrerId?: number;
+  rewardNotification?: boolean;
 }
 
 export interface IUserItem {
@@ -67,21 +101,31 @@ export interface IUserItem {
   marketingConsent?: boolean;
 }
 
-export interface IOrganizationItem {
-  type: "운영기관" | "민간기관" | "공공기관" | "커뮤니티";
-  name: string;
+export interface INotificateItem {
+  title: string;
+  createdAt: string;
   id: number;
-  images: any; // 현재 구조가 두 가지로 나뉘어져 있어서 일단 any로 처리 (추후 수정 필요)
-  // images: IImageType[][];
-  contact_person_name: string;
-  contact_email: string;
-  phone_number: string;
-  website_url: string;
+  domain: string;
+  isRead: boolean;
+  message: string;
+  images: any;
+  relatedId?: number;
+  type: NOTIFICATION_TYPE;
+}
+
+export enum NOTIFICATION_TYPE {
+  JOIN_REQUEST = "JOIN_REQUEST", // 가입 요청
+  JOIN_REQUEST_REJECTED = "JOIN_REQUEST_REJECTED", // 가입 요청 거절
+  USER_INVITED = "USER_INVITED", // 초대
+  CHALLENGE_JOINED = "CHALLENGE_JOINED", // 챌린지 참가
+  ACHIEVEMENT_ISSUED = "ACHIEVEMENT_ISSUED", // 인증서 발급
 }
 
 export interface IAchievementFormItem {
   achievementCertificateDesign?: IAchievementDesignItem;
   achievementBadgeDesign?: IAchievementDesignItem;
+  avatar_type?: AvatarType;
+  challenge: IClassItem;
   club: {
     name: string;
     domain: string;
@@ -122,6 +166,9 @@ export interface IAchievementItem {
   expiration_date?: string;
   id?: number;
   is_received?: boolean; // 추가된 속성
+  issuance_route:
+    | { submissions: ISubmissionItem[]; route: "automatic" }
+    | "manual";
   level?: number;
   nft_token?: any; // 추가된 속성
   status?: string;
@@ -132,11 +179,335 @@ export interface IAchievementItem {
   }[];
 }
 
+export interface IMemberItem {
+  id: number;
+  role: string;
+  status: string;
+  created_at: string;
+  updated_at: string;
+  user: IUserItem;
+}
+
+export interface IMemberInvite {
+  name: string;
+  email: string;
+}
+export interface ISimpleMemberItem {
+  id: number;
+  name: string;
+  // nickname: string;
+  created_at: string;
+  avatar: string[];
+}
+
+export interface ICertificateCreate {
+  name: string;
+  type: string;
+  description: string;
+  tags: string[];
+  institutionIds: number[];
+  avatar_image: File[] | null;
+  badge_image: File[] | null;
+  certificate_image: File[] | null;
+  course_begin_at?: string;
+  course_end_at?: string;
+  program_type?: string;
+  program_name?: string;
+  program_url?: string;
+  requirements?: any[];
+}
+export interface ICertificateCreate2 {
+  name: string;
+  type: string;
+  description: string;
+  tags: string[];
+  representativeInstitutionId?: number;
+  institutionIds: number[];
+  avatar_image?: File[];
+  badge_image?: File[];
+  certificate_image?: File[];
+  course_begin_at?: string;
+  course_end_at?: string;
+  program_type?: string;
+  program_name?: string;
+  program_url?: string;
+  requirements?: any[];
+  prefix?: string;
+}
+
+export interface IOrganizationCreate {
+  type: "운영기관" | "민간기관" | "공공기관" | "커뮤니티";
+  name: string;
+  contact_person_name: string;
+  contact_email: string;
+  phone_number: string;
+  website_url: string;
+  club_symbol: File[] | undefined;
+  sign_image: File[] | undefined;
+  club_logo: File[] | undefined;
+}
+
+export interface IOrganizationItem {
+  type: "운영기관" | "민간기관" | "공공기관" | "커뮤니티";
+  name: string;
+  id: number;
+  images: any; // 현재 구조가 두 가지로 나뉘어져 있어서 일단 any로 처리 (추후 수정 필요)
+  // images: IImageType[][];
+  contact_person_name: string;
+  contact_email: string;
+  phone_number: string;
+  website_url: string;
+}
+
 export enum ACHIEVEMENT_IMAGES {
   ACHIEVEMENT_FORM = "achievement_form",
   BADGE_IMAGE = "badge_image",
   // AVATAR_IMAGE = "avatar_image",
 }
+export interface ICertificateCreate {
+  name: string;
+  type: string;
+  description: string;
+  tags: string[];
+  club_name: string;
+  achievement_form_symbol: File[] | null;
+  sign_image: File[] | null;
+  avatar_image: File[] | null;
+  badge_image: File[] | null;
+  certificate_image: File[] | null;
+}
+
+export interface IClassCreate {
+  id?: number;
+  is_public: boolean;
+  title: string;
+  description: string;
+  tags: string[];
+  course_begin_at: string; // 수강기간
+  course_end_at: string;
+  recruit_begin_at: string; // 모집기간
+  recruit_end_at: string;
+  created_at?: string;
+  images?: any;
+  // images?: {
+  //   challenge_cover: IImageType[];
+  // };
+  survey_form_url?: string;
+}
+export interface IClassItem {
+  id?: number;
+  is_public: boolean;
+  title: string;
+  description: string;
+  tags: string[];
+  course_begin_at: string; // 수강기간
+  course_end_at: string;
+  recruit_begin_at: string; // 모집기간
+  recruit_end_at: string;
+  created_at?: string;
+  images?: any;
+  // images?: {
+  //   challenge_cover: IImageType[];
+  // };
+  price: string;
+  price_type: PRICE_TYPE;
+  survey_form_url?: string;
+}
+
+export interface ISubmissionItem {
+  id?: number;
+  name: string;
+  type: string;
+  isEssential: boolean;
+  isCompleted?: boolean;
+  isSubmitted?: boolean;
+  order: number;
+  description?: string;
+  flatform?: string;
+  linkUrl?: string;
+  duration?: string;
+  begin_at?: string;
+  end_at?: string;
+  address?: string;
+  challengeId?: number;
+  submittedAt?: string;
+}
+
+export interface IFeedItem {
+  id: number;
+  title: string;
+  description: string;
+  images?: {
+    feed_image: IExtendedImageType[];
+  };
+  tags: ITagItem[];
+  commentCount: number;
+  user: IUserItem;
+  created_at: string;
+  pinned_at: string;
+  recipientId?: number;
+  submissionName?: string;
+  userId?: number;
+  pinnedTagKey: string | null | undefined;
+}
+
+export enum PRICE_TYPE {
+  FREE = "free",
+  PAID = "paid",
+}
+
+export enum SectionType {
+  PROMOTIONAL_VIDEO = "promotional_video",
+  REPRESENTATIVE_CLASS = "representative_class",
+  NOTICE = "notice",
+  BANNER = "banner",
+  ACTION = "action",
+}
+
+export enum DesignType {
+  // 배너
+  MAIN_BANNER_1 = "main_banner_1",
+  MAIN_BANNER_2 = "main_banner_2",
+  DETAIL_INFO_1 = "detail_info_1",
+  DETAIL_INFO_2 = "detail_info_2",
+  SUB_BANNER_1 = "sub_banner_1",
+  PC_BANNER_1 = "pc_banner_1",
+  MOBILE_BANNER_1 = "mobile_banner_1",
+
+  // 클래스
+  CLASSES_1 = "classes_1",
+  CLASSES_2 = "classes_2",
+
+  // 버튼
+  BUTTON_1 = "button_1",
+  BUTTON_2 = "button_2",
+  BUTTON_3 = "button_3",
+}
+
+export enum AvatarType {
+  BACKGROUND = "배경",
+  CLOTHES = "의상",
+  FACE = "얼굴",
+  EYES = "눈",
+  HAIR = "헤어",
+  MOUTH = "입",
+  ACCESSORY = "액세서리",
+}
+
+export enum AvatarTypeEng {
+  FACE = "face",
+  HAIR = "hair",
+  EYES = "eyes",
+  MOUTH = "mouth",
+  CLOTHES = "clothes",
+  ACCESSORY = "accessory",
+  BACKGROUND = "background",
+}
+
+export interface ICustomSectionItem {
+  id?: number;
+  section_type: SectionType;
+  design_type: DesignType;
+  is_visible: boolean;
+  title?: string;
+  description?: string;
+  image_url?: string;
+  video_url?: string;
+  order: number;
+  created_at?: string;
+  updated_at?: string;
+  feeds?: IFeedItem[];
+  feedIds?: number[];
+  challenges?: IClassItem[];
+  challengeIds?: number[];
+  images?: {
+    banner: IImageType[];
+  };
+  banner?: File[] | null;
+  links?: any;
+}
+
+export interface IUpdateCustomSectionItem {
+  id?: number;
+  section_type: SectionType;
+  design_type: DesignType;
+  is_visible: boolean;
+  title?: string;
+  description?: string;
+  image_url?: string;
+  video_url?: string;
+  order: number;
+  feeds?: IFeedItem[];
+  feedIds?: number[];
+  challenges?: IClassItem[];
+  challengeIds?: number[];
+  images?: {
+    banner: IImageType[];
+  };
+  banner?: File[] | null;
+  links?: any;
+}
+
+export interface IWelcomePopupInfo {
+  id: number;
+  title: string;
+  description: string;
+  image_url?: string;
+  link_url?: string;
+  priority: number;
+  begin_at: string;
+  end_at: string;
+  button_text: string;
+}
+
+// 결제
+
+export enum PayMethod {
+  CARD = "CARD", // 신용카드
+  BANK = "BANK", // 계좌이체
+  VBANK = "VBANK", // 가상계좌
+  CELLPHONE = "CELLPHONE", // 휴대폰결제
+  NAVER = "NAVER", // 네이버페이
+  KAKAO = "KAKAO", // 카카오페이
+  PAYCO = "PAYCO", // 페이코페이
+  LPAY = "LPAY", // 엘페이
+  PINPAY = "PINPAY", // 핀페이
+  SAMSUNGPAY = "SAMSUNGPAY", // 삼성페이
+  TOSS = "TOSS", // 토스
+  LINEPAY = "LINEPAY", // 라인페이
+  TMONEYPAY = "TMONEYPAY", // 티머니페이
+}
+
+// 게시판
+export interface IBoardCreate {
+  is_public?: boolean;
+  title?: string;
+  subtitle?: string;
+  description?: string;
+  typeName?: string;
+  created_at?: string;
+  images?: any;
+}
+
+export interface IBoardItem {
+  is_public: boolean;
+  id: number;
+  title: string;
+  subtitle: string | null;
+  description: string;
+  created_at: string;
+  images?: any;
+}
+
+export interface IBoardType {
+  id: number;
+  type_name: string;
+  url: string;
+  is_connected?: boolean;
+  image?: any;
+}
+
+// 증명서 디자인
 
 export enum CERTIFICATE_DESIGN_TYPE {
   TEMPLATE = "template",
@@ -145,11 +516,13 @@ export enum CERTIFICATE_DESIGN_TYPE {
   TEXT = "text",
   IMAGE = "image",
   PROPS = "props",
+  RIBBON = "ribbon",
+  BADGE = "badge",
 }
 
 export interface ElementStyle {
   id: string;
-  controlType: "text" | "image";
+  controlType: "text" | "image" | "svg";
   designType: CERTIFICATE_DESIGN_TYPE;
   order?: number; // 추가
   text?: string;
@@ -159,6 +532,7 @@ export interface ElementStyle {
   fontSize?: number;
   fontWeight?: string;
   textAlign?: "left" | "center" | "right";
+  verticalAlign?: "top" | "middle" | "bottom"; // 추가
   fontFamily?: string;
   fontStyle?: string;
   textDecoration?: string;
@@ -168,6 +542,10 @@ export interface ElementStyle {
   height: number;
   x: number;
   y: number;
+  //svg
+  componentName?: string;
+  mainColor?: string;
+  subColor?: string;
 }
 
 export interface IAchievementDesignItem {
@@ -180,4 +558,12 @@ export interface IAchievementDesignItem {
   image: IImageType;
   extra_color_1: string;
   extra_color_2: string;
+}
+
+export interface ISvgProps {
+  mainColor?: string;
+  subColor?: string;
+  extraColor?: string;
+  extraColor1?: string;
+  extraColor2?: string;
 }

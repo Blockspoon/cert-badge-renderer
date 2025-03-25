@@ -1,10 +1,16 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createRibbonType7 = createRibbonType7;
-function createRibbonType7({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
-    const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
-    const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
-    return `
+export interface ISvgProps {
+  mainColor?: string;
+  subColor?: string;
+}
+
+export function createRibbonType7({
+  mainColor = "#96A6B4",
+  subColor = "#96A6B4",
+}: ISvgProps): string {
+  const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
+
+  return `
     <div style="
       width: 100%;
       height: 100%;

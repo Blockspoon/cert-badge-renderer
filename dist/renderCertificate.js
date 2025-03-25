@@ -44,7 +44,8 @@ function renderCertificate(data) {
                     element.src = bindingValue;
                 }
             }
-            if (bindingValue === null && element.designType === interface_1.CERTIFICATE_DESIGN_TYPE.PROPS)
+            if (bindingValue === null &&
+                element.designType === interface_1.CERTIFICATE_DESIGN_TYPE.PROPS)
                 continue;
             const commonStyles = `
       position: absolute;
@@ -78,17 +79,25 @@ function renderCertificate(data) {
             if (element.controlType === "svg") {
                 // SVG 컴포넌트 렌더링
                 const templates = element.designType === "badge" ? svgTemplate_1.badgeTemplates : svgTemplate_1.ribbonTemplates;
-                const template = templates.find(t => t.id === element.componentName);
-                if (template) {
-                    const svgComponent = template.Component({
-                        mainColor: element.mainColor || template.colors.mainColor,
-                        subColor: element.subColor || template.colors.subColor
-                    });
-                    html += svgComponent.innerHTML;
-                }
-                else {
-                    console.error(`❌ SVG 컴포넌트를 찾을 수 없음: ${element.componentName}`);
-                }
+                const template = templates.find((t) => t.id === element.componentName);
+                html += `<div style="
+      width: 600px;
+      height: 600px;
+      position: relative;
+      transform: scale(${element.width / 600});
+      transform-origin: top left;
+    ">
+      ${template}
+    </div>`;
+                // if (template) {
+                //   const svgString = template.Component({
+                //     mainColor: element.mainColor || template.colors.mainColor,
+                //     subColor: element.subColor || template.colors.subColor
+                //   });
+                //   html += svgString;
+                // } else {
+                //   console.error(`❌ SVG 컴포넌트를 찾을 수 없음: ${element.componentName}`);
+                // }
             }
             else if (element.controlType === "image") {
                 if (element.bindingKey === "badge" && data.type !== "badge") {
@@ -101,12 +110,14 @@ function renderCertificate(data) {
           transform: scale(${element.width / 600});
           transform-origin: top left;
         ">
-          ${badgeElements ? yield renderCertificate({
-                        user: data.user,
-                        kollegeInfo: data.kollegeInfo,
-                        achievementInfo: data.achievementInfo,
-                        type: "badge"
-                    }) : ''}
+          ${badgeElements
+                        ? yield renderCertificate({
+                            user: data.user,
+                            kollegeInfo: data.kollegeInfo,
+                            achievementInfo: data.achievementInfo,
+                            type: "badge",
+                        })
+                        : ""}
         </div>`;
                 }
                 else if (element.bindingKey === "qr_code" && element.src) {
@@ -156,11 +167,11 @@ function renderCertificate(data) {
           display: flex;
           justify-content: center;
           align-items: center;
-        ">${element.text || ''}</div>`;
+        ">${element.text || ""}</div>`;
                 }
             }
             else {
-                html += `<div style="width: 100%; height: 100%;">${element.text || ''}</div>`;
+                html += `<div style="width: 100%; height: 100%;">${element.text || ""}</div>`;
             }
             html += `</div>`;
         }

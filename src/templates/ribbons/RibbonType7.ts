@@ -6,24 +6,11 @@ export interface ISvgProps {
 export function createRibbonType7({
   mainColor = "#96A6B4",
   subColor = "#96A6B4",
-}: ISvgProps): HTMLDivElement {
-  const container = document.createElement("div");
-  container.style.cssText = `
-    width: 100%;
-    height: 100%;
-    isolation: isolate;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    will-change: transform, contents;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-  `;
-
+}: ISvgProps): string {
   const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
 
-  const svgContent = `
+  return `
     <svg
       width="100%"
       height="100%"
@@ -63,7 +50,6 @@ export function createRibbonType7({
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M14.8398 6C7.10786 6 0.839844 12.268 0.839844 20V162C0.839844 162.03 0.839939 162.06 0.840128 162.09V182.635C1.93276 181.298 6.78412 176.901 17.4946 176H484.494C495.204 176.901 500.056 181.298 501.148 182.635V162.592C501.157 162.396 501.161 162.198 501.161 162V20C501.161 12.268 494.893 6 487.161 6H14.8398Z"
-        // fill="url(#paint0_linear_2364_595)"
         fill="url(#${paintId0})"
       />
       <path
@@ -73,8 +59,7 @@ export function createRibbonType7({
       />
       <mask
         id="mask0_2364_595"
-        // style="mask-type:alpha"
-        style={{ maskType: "alpha" }}
+        style="mask-type: alpha"
         maskUnits="userSpaceOnUse"
         x="0"
         y="6"
@@ -83,7 +68,6 @@ export function createRibbonType7({
       >
         <path
           d="M0.839844 20C0.839844 12.268 7.10786 6 14.8398 6H487.161C494.893 6 501.161 12.268 501.161 20V176H0.839844V20Z"
-          // fill="url(#paint1_linear_2364_595)"
           fill="url(#${paintId1})"
         />
       </mask>
@@ -110,8 +94,8 @@ export function createRibbonType7({
           y2="151.122"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color={mainColor} />
-          <stop offset="1" stop-color={subColor} />
+          <stop stop-color="${mainColor}" />
+          <stop offset="1" stop-color="${subColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId1}"
@@ -127,7 +111,4 @@ export function createRibbonType7({
       </defs>
     </svg>
   `;
-
-  container.innerHTML = svgContent;
-  return container;
 }

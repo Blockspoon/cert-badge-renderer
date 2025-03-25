@@ -9,7 +9,8 @@ import { getBindingValue } from "./utils/getBindingValue";
 import QRCode from "qrcode";
 import { badgeTemplates, ribbonTemplates } from "./templates/svgTemplate";
 
-const DEFAULT_IMAGE_URL = "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
+const DEFAULT_IMAGE_URL =
+  "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
 
 export async function renderCertificate(data: {
   user: IUserItem;
@@ -18,9 +19,12 @@ export async function renderCertificate(data: {
   type?: "badge" | "certificate";
 }): Promise<string> {
   // type에 따라 적절한 layout_json 선택
-  const elements = data.type === "badge"
-    ? data.achievementInfo?.achievementForm?.achievementBadgeDesign?.layout_json as ElementStyle[]
-    : data.achievementInfo?.achievementForm?.achievementCertificateDesign?.layout_json as ElementStyle[];
+  const elements =
+    data.type === "badge"
+      ? (data.achievementInfo?.achievementForm?.achievementBadgeDesign
+          ?.layout_json as ElementStyle[])
+      : (data.achievementInfo?.achievementForm?.achievementCertificateDesign
+          ?.layout_json as ElementStyle[]);
 
   if (!elements || !Array.isArray(elements) || elements.length === 0) {
     console.error("❌ [renderCertificate] elements가 비어 있음:", elements);
@@ -48,14 +52,20 @@ export async function renderCertificate(data: {
       }
     }
 
-    if (bindingValue === null && element.designType === CERTIFICATE_DESIGN_TYPE.PROPS) continue;
+    if (
+      bindingValue === null &&
+      element.designType === CERTIFICATE_DESIGN_TYPE.PROPS
+    )
+      continue;
 
     const commonStyles = `
       position: absolute;
       top: ${element.y}px;
       left: ${element.x}px;
       width: ${element.bindingKey === "badge" ? "600px" : element.width + "px"};
-      height: ${element.bindingKey === "badge" ? "600px" : element.height + "px"};
+      height: ${
+        element.bindingKey === "badge" ? "600px" : element.height + "px"
+      };
       background: ${element.background || ""};
       font-size: ${element.fontSize}px;
       font-weight: ${element.fontWeight || "normal"};
@@ -85,22 +95,35 @@ export async function renderCertificate(data: {
 
     if (element.controlType === "svg") {
       // SVG 컴포넌트 렌더링
-      const templates = element.designType === "badge" ? badgeTemplates : ribbonTemplates;
-      const template = templates.find(t => t.id === element.componentName);
-      
-      if (template) {
-        const svgComponent = template.Component({
-          mainColor: element.mainColor || template.colors.mainColor,
-          subColor: element.subColor || template.colors.subColor
-        });
-        html += svgComponent.innerHTML;
-      } else {
-        console.error(`❌ SVG 컴포넌트를 찾을 수 없음: ${element.componentName}`);
+      const templates =
+        element.designType === "badge" ? badgeTemplates : ribbonTemplates;
+      const template = templates.find((t) => t.id === element.componentName);
+
+      html += `<div style="
+      width: 600px;
+      height: 600px;
+      position: relative;
+      transform: scale(${element.width / 600});
+      transform-origin: top left;
+    ">
+      ${
+        template
       }
+    </div>`;
+      // if (template) {
+      //   const svgString = template.Component({
+      //     mainColor: element.mainColor || template.colors.mainColor,
+      //     subColor: element.subColor || template.colors.subColor
+      //   });
+      //   html += svgString;
+      // } else {
+      //   console.error(`❌ SVG 컴포넌트를 찾을 수 없음: ${element.componentName}`);
+      // }
     } else if (element.controlType === "image") {
       if (element.bindingKey === "badge" && data.type !== "badge") {
         // 뱃지 (certificate 타입일 때만 뱃지를 중첩해서 렌더링)
-        const badgeElements = data.achievementInfo?.achievementForm?.achievementBadgeDesign?.layout_json as ElementStyle[];
+        const badgeElements = data.achievementInfo?.achievementForm
+          ?.achievementBadgeDesign?.layout_json as ElementStyle[];
         html += `<div style="
           width: 600px;
           height: 600px;
@@ -108,12 +131,16 @@ export async function renderCertificate(data: {
           transform: scale(${element.width / 600});
           transform-origin: top left;
         ">
-          ${badgeElements ? await renderCertificate({
-            user: data.user,
-            kollegeInfo: data.kollegeInfo,
-            achievementInfo: data.achievementInfo,
-            type: "badge"
-          }) : ''}
+          ${
+            badgeElements
+              ? await renderCertificate({
+                  user: data.user,
+                  kollegeInfo: data.kollegeInfo,
+                  achievementInfo: data.achievementInfo,
+                  type: "badge",
+                })
+              : ""
+          }
         </div>`;
       } else if (element.bindingKey === "qr_code" && element.src) {
         // QR 코드
@@ -159,10 +186,12 @@ export async function renderCertificate(data: {
           display: flex;
           justify-content: center;
           align-items: center;
-        ">${element.text || ''}</div>`;
+        ">${element.text || ""}</div>`;
       }
     } else {
-      html += `<div style="width: 100%; height: 100%;">${element.text || ''}</div>`;
+      html += `<div style="width: 100%; height: 100%;">${
+        element.text || ""
+      }</div>`;
     }
 
     html += `</div>`;
