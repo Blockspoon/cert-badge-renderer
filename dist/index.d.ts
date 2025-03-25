@@ -1,0 +1,1 @@
+export { renderCertificate } from "./renderCertificate";
