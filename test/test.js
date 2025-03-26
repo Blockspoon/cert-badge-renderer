@@ -641,9 +641,12 @@ const testCertificateData = {
     },
     achievementFormId: 496,
   },
+};
+const testOptions = {
   type: "badge",
   size: 300,
-};
+  returnType: "base64"
+}
 
 async function runTests() {
   try {
@@ -653,12 +656,38 @@ async function runTests() {
     console.log("✅ HTML 변환 완료: test/certificate.html");
 
     // PNG 변환 테스트
-    const pngResult = await generateCertificateFile(testCertificateData);
-    await fsPromises.writeFile(
-      path.join(__dirname, "certificate.png"),
-      pngResult.buffer
+    const pngResult = await generateCertificateFile(
+      {
+        user: testCertificateData.user,
+        kollegeInfo: testCertificateData.kollegeInfo,
+        achievementInfo: testCertificateData.achievementInfo
+      },
+      {
+        type: testOptions.type,
+        size: testOptions.size,
+        returnType: testOptions.returnType
+      }
     );
-    console.log("✅ PNG 변환 완료: test/certificate.png");
+
+    if (testOptions.returnType === "base64") {
+      console.log("✅ Base64 변환 완료");
+      // base64 문자열에서 data:image/png;base64, 부분 제거
+      const base64Data = pngResult.base64.replace(/^data:image\/png;base64,/, "");
+      // base64를 버퍼로 변환
+      const buffer = Buffer.from(base64Data, 'base64');
+      // 이미지 파일로 저장
+      await fsPromises.writeFile(
+        path.join(__dirname, "certificate_base64.png"),
+        buffer
+      );
+      console.log("✅ Base64 이미지 저장 완료: test/certificate_base64.png");
+    } else {
+      await fsPromises.writeFile(
+        path.join(__dirname, "certificate.png"),
+        pngResult.buffer
+      );
+      console.log("✅ PNG 변환 완료: test/certificate.png");
+    }
   } catch (error) {
     console.error("❌ 테스트 실행 중 오류 발생:", error);
   }

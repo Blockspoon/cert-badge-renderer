@@ -18,13 +18,12 @@ const getBindingValue_1 = require("./utils/getBindingValue");
 const qrcode_1 = __importDefault(require("qrcode"));
 const svgTemplate_1 = require("./templates/svgTemplate");
 const DEFAULT_IMAGE_URL = "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
-function renderCertificate(data) {
-    return __awaiter(this, void 0, void 0, function* () {
+function renderCertificate(data_1) {
+    return __awaiter(this, arguments, void 0, function* (data, options = {}) {
         var _a, _b, _c, _d, _e, _f, _g, _h, _j;
-        const size = data.size || 600;
-        const noSpace = data.noSpace || false;
+        const { type = "certificate", size = 600, noSpace = false } = options;
         // type에 따라 적절한 layout_json 선택
-        const elements = data.type === "badge"
+        const elements = type === "badge"
             ? (_c = (_b = (_a = data.achievementInfo) === null || _a === void 0 ? void 0 : _a.achievementForm) === null || _b === void 0 ? void 0 : _b.achievementBadgeDesign) === null || _c === void 0 ? void 0 : _c.layout_json
             : (_f = (_e = (_d = data.achievementInfo) === null || _d === void 0 ? void 0 : _d.achievementForm) === null || _e === void 0 ? void 0 : _e.achievementCertificateDesign) === null || _f === void 0 ? void 0 : _f.layout_json;
         if (!elements || !Array.isArray(elements) || elements.length === 0) {
@@ -32,8 +31,8 @@ function renderCertificate(data) {
             return `<div style="position: relative; width: 100%; height: 100%;"></div>`;
         }
         const sortedElements = elements.sort((a, b) => (a.order || 0) - (b.order || 0));
-        const height = data.type == "badge" ? 600 : 810;
-        const width = data.type == "badge" ? 600 : 1152;
+        const height = type == "badge" ? 600 : 810;
+        const width = type == "badge" ? 600 : 1152;
         let html = `
     <!DOCTYPE html>
     <html lang="ko">
@@ -164,7 +163,7 @@ function renderCertificate(data) {
             }
             else if (element.controlType === "image") {
                 html += `<div style="${commonStyles}">`;
-                if (element.bindingKey === "badge" && data.type !== "badge") {
+                if (element.bindingKey === "badge" && type !== "badge") {
                     // 뱃지 (certificate 타입일 때만 뱃지를 중첩해서 렌더링)
                     const badgeElements = (_j = (_h = (_g = data.achievementInfo) === null || _g === void 0 ? void 0 : _g.achievementForm) === null || _h === void 0 ? void 0 : _h.achievementBadgeDesign) === null || _j === void 0 ? void 0 : _j.layout_json;
                     html += `<div style="
@@ -175,13 +174,7 @@ function renderCertificate(data) {
           transform-origin: top left;
         ">
           ${badgeElements
-                        ? yield renderCertificate({
-                            user: data.user,
-                            kollegeInfo: data.kollegeInfo,
-                            achievementInfo: data.achievementInfo,
-                            type: "badge",
-                            noSpace: true
-                        })
+                        ? yield renderCertificate(data, { type: "badge", noSpace: true })
                         : ""}
         </div>`;
                 }

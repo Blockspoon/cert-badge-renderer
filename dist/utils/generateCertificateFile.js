@@ -15,8 +15,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateCertificateFile = generateCertificateFile;
 const puppeteer_1 = __importDefault(require("puppeteer"));
 const renderCertificate_1 = require("../renderCertificate");
-function generateCertificateFile(data) {
-    return __awaiter(this, void 0, void 0, function* () {
+function generateCertificateFile(data_1) {
+    return __awaiter(this, arguments, void 0, function* (data, options = {}) {
+        const { returnType = "file", type = "certificate", size = 600 } = options;
         const browser = yield puppeteer_1.default.launch({
             headless: true,
             args: [
@@ -28,7 +29,6 @@ function generateCertificateFile(data) {
             ],
         });
         const page = yield browser.newPage();
-        const size = data.size || 600;
         yield page.setRequestInterception(true);
         page.on("request", (request) => {
             if (request.resourceType() === "image") {
@@ -38,17 +38,16 @@ function generateCertificateFile(data) {
                 request.continue();
             }
         });
-        const htmlContent = yield (0, renderCertificate_1.renderCertificate)(data);
+        const htmlContent = yield (0, renderCertificate_1.renderCertificate)(data, { type, size });
         yield page.setContent(htmlContent, {
             waitUntil: "domcontentloaded",
         });
         yield new Promise((resolve) => setTimeout(resolve, 500));
-        let buffer;
         yield page.setViewport({
             width: size,
             height: size,
         });
-        buffer = yield page.screenshot({
+        const buffer = yield page.screenshot({
             type: "png",
             clip: {
                 x: 0,
@@ -60,6 +59,13 @@ function generateCertificateFile(data) {
             encoding: "binary",
         });
         yield browser.close();
+        if (returnType === "base64") {
+            const base64 = Buffer.from(buffer).toString("base64");
+            return {
+                base64: `data:image/png;base64,${base64}`,
+                contentType: "image/png",
+            };
+        }
         return {
             buffer,
             contentType: "image/png",

@@ -1,11 +1,12 @@
-export declare function generateCertificateFile(data: {
-    user: any;
-    kollegeInfo: any;
-    achievementInfo: any;
-    type?: "badge" | "certificate";
-    size?: number;
-}): Promise<{
-    buffer: any;
+import { CertificateData, CertificateOptions } from "../interface";
+export declare function generateCertificateFile(data: CertificateData, options?: CertificateOptions): Promise<{
+    base64: string;
+    contentType: string;
+    buffer?: undefined;
+    fileName?: undefined;
+} | {
+    buffer: Uint8Array<ArrayBufferLike>;
     contentType: string;
     fileName: string;
+    base64?: undefined;
 }>;

@@ -567,3 +567,16 @@ export interface ISvgProps {
   extraColor1?: string;
   extraColor2?: string;
 }
+
+export interface CertificateData {
+  user: IUserItem;
+  kollegeInfo: IKollegeItem;
+  achievementInfo: IAchievementItem;
+}
+
+export interface CertificateOptions {
+  type?: "badge" | "certificate";
+  size?: number;
+  noSpace?: boolean;
+  returnType?: "file" | "base64";
+}

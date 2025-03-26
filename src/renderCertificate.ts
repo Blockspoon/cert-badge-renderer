@@ -4,6 +4,8 @@ import {
   IUserItem,
   ElementStyle,
   CERTIFICATE_DESIGN_TYPE,
+  CertificateData,
+  CertificateOptions,
 } from "./interface";
 import { getBindingValue } from "./utils/getBindingValue";
 import QRCode from "qrcode";
@@ -12,19 +14,15 @@ import { badgeTemplates, ribbonTemplates } from "./templates/svgTemplate";
 const DEFAULT_IMAGE_URL =
   "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
 
-export async function renderCertificate(data: {
-  user: IUserItem;
-  kollegeInfo: IKollegeItem;
-  achievementInfo: IAchievementItem;
-  type?: "badge" | "certificate";
-  size?: number;
-  noSpace?: boolean;
-}): Promise<string> {
-  const size = data.size || 600;
-  const noSpace = data.noSpace || false;
+export async function renderCertificate(
+  data: CertificateData,
+  options: CertificateOptions = {}
+): Promise<string> {
+  const { type = "certificate", size = 600, noSpace = false } = options;
+  
   // type에 따라 적절한 layout_json 선택
   const elements =
-    data.type === "badge"
+    type === "badge"
       ? (data.achievementInfo?.achievementForm?.achievementBadgeDesign
           ?.layout_json as ElementStyle[])
       : (data.achievementInfo?.achievementForm?.achievementCertificateDesign
@@ -39,8 +37,8 @@ export async function renderCertificate(data: {
     (a, b) => (a.order || 0) - (b.order || 0)
   );
 
-  const height = data.type == "badge" ? 600 : 810;
-  const width = data.type == "badge" ? 600 : 1152;
+  const height = type == "badge" ? 600 : 810;
+  const width = type == "badge" ? 600 : 1152;
 
   let html = `
     <!DOCTYPE html>
@@ -189,7 +187,7 @@ export async function renderCertificate(data: {
     } else if (element.controlType === "image") {
       html += `<div style="${commonStyles}">`;
 
-      if (element.bindingKey === "badge" && data.type !== "badge") {
+      if (element.bindingKey === "badge" && type !== "badge") {
         // 뱃지 (certificate 타입일 때만 뱃지를 중첩해서 렌더링)
         const badgeElements = data.achievementInfo?.achievementForm
           ?.achievementBadgeDesign?.layout_json as ElementStyle[];
@@ -202,13 +200,7 @@ export async function renderCertificate(data: {
         ">
           ${
             badgeElements
-              ? await renderCertificate({
-                  user: data.user,
-                  kollegeInfo: data.kollegeInfo,
-                  achievementInfo: data.achievementInfo,
-                  type: "badge",
-                  noSpace: true
-                })
+              ? await renderCertificate(data, { type: "badge", noSpace: true })
               : ""
           }
         </div>`;

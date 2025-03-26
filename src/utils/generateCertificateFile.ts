@@ -1,16 +1,12 @@
 import puppeteer from "puppeteer";
 import { renderCertificate } from "../renderCertificate";
+import { CertificateData, CertificateOptions } from "../interface";
 
 export async function generateCertificateFile(
-  data: {
-    user: any;
-    kollegeInfo: any;
-    achievementInfo: any;
-    type?: "badge" | "certificate";
-    size?: number;
-  },
-  returnType: "file" | "base64" = "file"
+  data: CertificateData,
+  options: CertificateOptions = {}
 ) {
+  const { returnType = "file", type = "certificate", size = 600 } = options;
   const browser = await puppeteer.launch({
     headless: true,
     args: [
@@ -23,7 +19,6 @@ export async function generateCertificateFile(
   });
 
   const page = await browser.newPage();
-  const size = data.size || 600;
 
   await page.setRequestInterception(true);
   page.on("request", (request) => {
@@ -34,7 +29,7 @@ export async function generateCertificateFile(
     }
   });
 
-  const htmlContent = await renderCertificate(data);
+  const htmlContent = await renderCertificate(data, { type, size });
 
   await page.setContent(htmlContent, {
     waitUntil: "domcontentloaded",
@@ -62,7 +57,7 @@ export async function generateCertificateFile(
   await browser.close();
 
   if (returnType === "base64") {
-    const base64 = buffer.toString("base64");
+    const base64 = Buffer.from(buffer).toString("base64");
     return {
       base64: `data:image/png;base64,${base64}`,
       contentType: "image/png",
