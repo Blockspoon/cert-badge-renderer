@@ -1,6 +1,8 @@
 const fs = require("fs");
 const { renderCertificate } = require("../dist/renderCertificate");
-const { generateCertificateFile } = require("../dist/utils/generateCertificateFile");
+const {
+  generateCertificateFile,
+} = require("../dist/utils/generateCertificateFile");
 const fsPromises = require("fs").promises;
 const path = require("path");
 
@@ -474,52 +476,38 @@ const testCertificateData = {
         extra_color_2: null,
         layout_json: [
           {
-            id: "badge-1742881999662",
-            controlType: "svg",
-            designType: "badge",
-            componentName: "BadgeType7",
-            background: "transparent",
-            width: 500,
-            height: 530,
-            x: 48,
-            y: 44,
+            id: "0",
             order: 1,
-            text: "BadgeType7",
-            mainColor: "#FF1B64",
-            subColor: "#FF91B2",
+            controlType: "text",
+            designType: "text",
+            text: "· CERTIFICATE of COMPLETION ·",
+            fontSize: 15,
+            fontWeight: "500",
+            textAlign: "center",
+            fontFamily: "Pretendard, sans-serif",
+            color: "black",
+            width: 515,
+            height: 32,
+            x: 42,
+            y: 385,
           },
           {
-            id: "ribbon-1742881765599",
-            controlType: "svg",
-            designType: "ribbon",
-            componentName: "RibbonType7",
-            background: "transparent",
-            width: 510,
-            height: 210,
-            x: 45,
-            y: 195,
+            id: "1",
             order: 2,
-            text: "RibbonType7",
-            mainColor: "#FF1B64",
-            subColor: "#FF91B2",
-          },
-          {
-            id: "2",
-            order: 3,
             controlType: "text",
             designType: "props",
-            type: "club",
+            type: "achievement",
             bindingKey: "name",
-            text: "미세먼지 그만",
-            fontSize: 28,
+            text: "[인증서.제목]",
+            fontSize: 32,
             fontWeight: "700",
             textAlign: "center",
             fontFamily: "Pretendard, sans-serif",
             color: "black",
-            width: 335,
-            height: 50,
-            x: 135,
-            y: 405,
+            width: 340,
+            height: 100,
+            x: 130,
+            y: 270,
           },
           {
             id: "club-symbol",
@@ -528,49 +516,16 @@ const testCertificateData = {
             designType: "props",
             type: "club",
             bindingKey: "club_symbol",
-            src: "uploads/club/symbol/8a4656a6-eda5-4356-8240-155e70982e0e",
+            src: "",
             text: "[발급기관[1].심볼]",
             fontSize: 16,
             fontWeight: "400",
             textAlign: "center",
             fontFamily: "Pretendard, sans-serif",
-            width: 90,
-            height: 90,
-            x: 423,
-            y: 86,
-          },
-          {
-            id: "0",
-            order: 4,
-            controlType: "text",
-            designType: "text",
-            text: "· CERTIFICATE of COMPLETION ·",
-            fontSize: 16,
-            fontWeight: "600",
-            textAlign: "center",
-            fontFamily: "Pretendard, sans-serif",
-            color: "black",
-            width: 279,
-            height: 38,
-            x: 162,
+            width: 77,
+            height: 77,
+            x: 266,
             y: 172,
-          },
-          {
-            id: "1",
-            order: 5,
-            controlType: "text",
-            designType: "props",
-            type: "achievement",
-            bindingKey: "name",
-            text: "테스트 인증서1",
-            fontSize: 48,
-            fontWeight: "700",
-            textAlign: "center",
-            fontFamily: "Pretendard, sans-serif",
-            width: 360,
-            height: 120,
-            x: 125,
-            y: 240,
           },
         ],
         template_type: "NewBadgeType48",
@@ -645,8 +600,8 @@ const testCertificateData = {
 const testOptions = {
   type: "badge",
   size: 300,
-  returnType: "base64"
-}
+  returnType: "base64",
+};
 
 async function runTests() {
   try {
@@ -660,21 +615,24 @@ async function runTests() {
       {
         user: testCertificateData.user,
         kollegeInfo: testCertificateData.kollegeInfo,
-        achievementInfo: testCertificateData.achievementInfo
+        achievementInfo: testCertificateData.achievementInfo,
       },
       {
         type: testOptions.type,
         size: testOptions.size,
-        returnType: testOptions.returnType
+        returnType: testOptions.returnType,
       }
     );
 
     if (testOptions.returnType === "base64") {
       console.log("✅ Base64 변환 완료");
       // base64 문자열에서 data:image/png;base64, 부분 제거
-      const base64Data = pngResult.base64.replace(/^data:image\/png;base64,/, "");
+      const base64Data = pngResult.base64.replace(
+        /^data:image\/png;base64,/,
+        ""
+      );
       // base64를 버퍼로 변환
-      const buffer = Buffer.from(base64Data, 'base64');
+      const buffer = Buffer.from(base64Data, "base64");
       // 이미지 파일로 저장
       await fsPromises.writeFile(
         path.join(__dirname, "certificate_base64.png"),
