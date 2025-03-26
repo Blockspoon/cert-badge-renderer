@@ -17,7 +17,11 @@ export async function renderCertificate(data: {
   kollegeInfo: IKollegeItem;
   achievementInfo: IAchievementItem;
   type?: "badge" | "certificate";
+  size?: number;
+  noSpace?: boolean;
 }): Promise<string> {
+  const size = data.size || 600;
+  const noSpace = data.noSpace || false;
   // type에 따라 적절한 layout_json 선택
   const elements =
     data.type === "badge"
@@ -35,22 +39,52 @@ export async function renderCertificate(data: {
     (a, b) => (a.order || 0) - (b.order || 0)
   );
 
+  const height = data.type == "badge" ? 600 : 810;
+  const width = data.type == "badge" ? 600 : 1152;
+
   let html = `
-    <div style="
-      position: relative;
-      width: 600px;
-      padding-top: 600px;
-      overflow: hidden;
-    ">
-      <div style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 10;
-        line-height: 1.3;
-      ">
+    <!DOCTYPE html>
+    <html lang="ko">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Certificate</title>
+        <style>
+          @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+        </style>
+      </head>
+      <body style="
+          width: ${size}px;
+          height: ${size}px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+        ">
+        <div
+          style="
+            height: ${(size / height) * 600}px;
+            width: ${size}px;
+            ${noSpace ? "position: absolute; top: 0; left: 0;" : ""}
+          "
+        >
+        <div style="
+          position: relative;
+          width: ${width}px;
+          height: ${height}px;
+          overflow: hidden;
+          transform: scale(${size / width});
+          transform-origin: top left;
+        ">
   `;
 
   for (const element of sortedElements) {
@@ -82,7 +116,7 @@ export async function renderCertificate(data: {
       height: ${
         element.bindingKey === "badge" ? "600px" : element.height + "px"
       };
-      background: ${element.background || ""};
+      background: transparent;
       font-size: ${element.fontSize}px;
       font-weight: ${element.fontWeight || "normal"};
       font-style: ${element.fontStyle || "normal"};
@@ -107,43 +141,54 @@ export async function renderCertificate(data: {
       white-space: pre-wrap;
     `;
 
-    html += `<div style="${commonStyles}">`;
-
     if (element.controlType === "svg") {
-      // SVG 컴포넌트 렌더링
       const templates =
         element.designType === "badge" ? badgeTemplates : ribbonTemplates;
       const template = templates.find((t) => t.id === element.componentName);
 
       if (template) {
-        html += `
-          <div style="
-            width: 100%;
-            height: 100%;
-            isolation: isolate;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            will-change: transform, contents;
-            transform: translateZ(0);
-            backface-visibility: hidden;
-          ">
+        const optimizedStyles = `
+          position: absolute;
+          top: ${element.y}px;
+          left: ${element.x}px;
+          width: ${element.width}px;
+          height: ${element.height}px;
+          isolation: isolate;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          will-change: transform, contents;
+          transform: translateZ(0);
+          backface-visibility: hidden;
         `;
+
+        html += `<div style="${optimizedStyles}">`;
         const svgString = template.Component({
           mainColor: element.mainColor || template.colors.mainColor,
           subColor: element.subColor || template.colors.subColor,
-          width: element.width,
-          height: element.height,
-          x: element.x,
-          y: element.y,
-          zIndex: element.zIndex
         });
-        html += svgString;
+
+        if (typeof svgString === "string") {
+          // live-server 스크립트 제거
+          const cleanSvg = svgString.replace(
+            /<!-- Code injected by live-server -->[\s\S]*?<\/script>/,
+            ""
+          );
+          html += cleanSvg;
+        } else if (svgString instanceof Element) {
+          html += svgString.outerHTML;
+        }
         html += `</div>`;
       } else {
-        console.error(`❌ SVG 컴포넌트를 찾을 수 없음: ${element.componentName}`);
+        console.error(
+          `❌ SVG 컴포넌트를 찾을 수 없음: ${element.componentName}`
+        );
       }
+    } else if (element.controlType === "text") {
+      html += `<div style="${commonStyles}">${element.text || ""}</div>`;
     } else if (element.controlType === "image") {
+      html += `<div style="${commonStyles}">`;
+
       if (element.bindingKey === "badge" && data.type !== "badge") {
         // 뱃지 (certificate 타입일 때만 뱃지를 중첩해서 렌더링)
         const badgeElements = data.achievementInfo?.achievementForm
@@ -162,6 +207,7 @@ export async function renderCertificate(data: {
                   kollegeInfo: data.kollegeInfo,
                   achievementInfo: data.achievementInfo,
                   type: "badge",
+                  noSpace: true
                 })
               : ""
           }
@@ -201,29 +247,17 @@ export async function renderCertificate(data: {
             align-self: center;
           "
         />`;
-      } else {
-        // 텍스트
-        html += `<div style="
-          background-color: #f5f5f5;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        ">${element.text || ""}</div>`;
       }
-    } else {
-      html += `<div style="width: 100%; height: 100%;">${
-        element.text || ""
-      }</div>`;
+      html += `</div>`;
     }
-
-    html += `</div>`;
   }
 
   html += `
-      </div>
-    </div>
+        </div>
+        </div>
+      </body>
+    </html>
   `;
+
   return html;
 }

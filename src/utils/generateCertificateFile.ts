@@ -1,82 +1,77 @@
-import puppeteer, { PaperFormat } from "puppeteer";
-import chromium from "@sparticuz/chromium"; // AWS Lambda 지원
-import { generateCertificateHTML } from "./generateCertificateHTML";
-import { portraitComponents } from "../constants/componentsDirection";
-
-function isHorizontal(name?: string) {
-  if (!name) return false;
-  return !portraitComponents.includes(name);
-}
+import puppeteer from "puppeteer";
+import { renderCertificate } from "../renderCertificate";
 
 export async function generateCertificateFile(
-  jsonData: any[], 
-  templateComponentName: string, 
-  format: "pdf" | "png" = "pdf"
+  data: {
+    user: any;
+    kollegeInfo: any;
+    achievementInfo: any;
+    type?: "badge" | "certificate";
+    size?: number;
+  },
+  returnType: "file" | "base64" = "file"
 ) {
-  const isLambda = !!process.env.AWS_EXECUTION_ENV;
-  
-  const executablePath = isLambda
-    ? await chromium.executablePath()
-    : process.platform === "darwin"
-    ? "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-    : process.platform === "win32"
-    ? "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-    : "/usr/bin/google-chrome-stable";
-
   const browser = await puppeteer.launch({
-    args: isLambda ? chromium.args : [],
-    executablePath: executablePath,
-    headless: isLambda ? chromium.headless : true,
-    ignoreDefaultArgs: ["--disable-extensions"],
+    headless: true,
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-gpu",
+      "--disable-software-rasterizer",
+    ],
   });
 
   const page = await browser.newPage();
+  const size = data.size || 600;
 
-  let width, height, paperFormat, landscape, fileName, contentType, scale;
+  await page.setRequestInterception(true);
+  page.on("request", (request) => {
+    if (request.resourceType() === "image") {
+      request.continue();
+    } else {
+      request.continue();
+    }
+  });
 
-  if (templateComponentName.includes("NewBadgeType")) {
-    width = 600;
-    height = 600;
-    fileName = "badge.png";
-    contentType = "image/png";
-    scale = 1;
-  } else {
-    width = isHorizontal(templateComponentName) ? 1152 : 810;
-    height = isHorizontal(templateComponentName) ? 810 : 1152;
-    paperFormat = "A4";
-    landscape = isHorizontal(templateComponentName);
-    fileName = isHorizontal(templateComponentName) ? "certificate_landscape.pdf" : "certificate_portrait.pdf";
-    contentType = "application/pdf";
-    scale = 1.2;
-  }
+  const htmlContent = await renderCertificate(data);
 
-  const { htmlContent } = generateCertificateHTML(jsonData, templateComponentName);
+  await page.setContent(htmlContent, {
+    waitUntil: "domcontentloaded",
+  });
 
-  await page.setContent(htmlContent, { waitUntil: "networkidle0" });
+  await new Promise((resolve) => setTimeout(resolve, 500));
 
-  // ✅ 대체 코드: 폰트 로딩 시간을 확보하기 위해 1초 대기
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  await page.setViewport({
+    width: size,
+    height: size,
+  });
 
-  let responseBuffer;
-
-  if (format === "pdf") {
-    responseBuffer = await page.pdf({
-      format: paperFormat as PaperFormat,
-      landscape: landscape,
-      printBackground: true,
-      pageRanges: "1",
-    });
-  } else if (format === "png") {
-    responseBuffer = await page.screenshot({
-      type: "png",
-      clip: { x: 0, y: 0, width: width, height: height },
-      omitBackground: true,
-    });
-  } else {
-    throw new Error("지원되지 않는 파일 형식");
-  }
+  const buffer = await page.screenshot({
+    type: "png",
+    clip: {
+      x: 0,
+      y: 0,
+      width: size,
+      height: size,
+    },
+    omitBackground: true,
+    encoding: "binary",
+  });
 
   await browser.close();
 
-  return { responseBuffer, contentType, fileName };
+  if (returnType === "base64") {
+    const base64 = buffer.toString("base64");
+    return {
+      base64: `data:image/png;base64,${base64}`,
+      contentType: "image/png",
+    };
+  }
+
+  return {
+    buffer,
+    contentType: "image/png",
+    fileName: "certificate.png",
+  };
 }

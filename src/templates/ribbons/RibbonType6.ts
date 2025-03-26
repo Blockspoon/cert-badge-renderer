@@ -33,7 +33,6 @@ export function createRibbonType6({
       style="
         max-width: 100%;
         max-height: 100%;
-        z-index: 1;
         mix-blend-mode: normal;
         pointer-events: none;
         display: block;

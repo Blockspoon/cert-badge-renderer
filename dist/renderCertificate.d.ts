@@ -4,4 +4,6 @@ export declare function renderCertificate(data: {
     kollegeInfo: IKollegeItem;
     achievementInfo: IAchievementItem;
     type?: "badge" | "certificate";
+    size?: number;
+    noSpace?: boolean;
 }): Promise<string>;

@@ -1,9 +1,8 @@
 const fs = require("fs");
 const { renderCertificate } = require("../dist/renderCertificate");
-const {
-  generateCertificateFile,
-} = require("../dist/utils/generateCertificateFile");
-const { CERTIFICATE_DESIGN_TYPE } = require("../dist/interface");
+const { generateCertificateFile } = require("../dist/utils/generateCertificateFile");
+const fsPromises = require("fs").promises;
+const path = require("path");
 
 const testCertificateData = {
   user: {
@@ -643,37 +642,26 @@ const testCertificateData = {
     achievementFormId: 496,
   },
   type: "badge",
+  size: 300,
 };
 
-// **✅ 모든 테스트를 하나의 비동기 함수로 통합**
 async function runTests() {
   try {
-    // **✅ 1. HTML 변환 테스트**
+    // HTML 변환 테스트
     const htmlOutput = await renderCertificate(testCertificateData);
     fs.writeFileSync("test/certificate.html", htmlOutput, "utf8");
     console.log("✅ HTML 변환 완료: test/certificate.html");
 
-    // // **✅ 2. PDF 변환 테스트**
-    // const { responseBuffer: pdfBuffer } = await generateCertificateFile(
-    //   [testCertificateData],
-    //   "portrait",
-    //   "pdf"
-    // );
-    // fs.writeFileSync("test/certificate.pdf", pdfBuffer);
-    // console.log("✅ PDF 변환 완료: test/certificate.pdf");
-
-    // // **✅ 3. PNG 변환 테스트**
-    // const { responseBuffer: pngBuffer } = await generateCertificateFile(
-    //   [testCertificateData],
-    //   "portrait",
-    //   "png"
-    // );
-    // fs.writeFileSync("test/certificate.png", pngBuffer);
-    // console.log("✅ PNG 변환 완료: test/certificate.png");
+    // PNG 변환 테스트
+    const pngResult = await generateCertificateFile(testCertificateData);
+    await fsPromises.writeFile(
+      path.join(__dirname, "certificate.png"),
+      pngResult.buffer
+    );
+    console.log("✅ PNG 변환 완료: test/certificate.png");
   } catch (error) {
     console.error("❌ 테스트 실행 중 오류 발생:", error);
   }
 }
 
-// 테스트 실행
 runTests();

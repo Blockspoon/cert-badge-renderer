@@ -26,7 +26,6 @@ function createRibbonType2({ mainColor = "#96A6B4", subColor = "#96A6B4" }) {
       style="
         max-width: 100%;
         max-height: 100%;
-        z-index: 1;
         mix-blend-mode: normal;
         pointer-events: none;
         display: block;
