@@ -3,24 +3,15 @@ export interface ISvgProps {
   subColor?: string;
 }
 
-export function createRibbonType2({ mainColor = "#96A6B4", subColor = "#96A6B4" }: ISvgProps): HTMLDivElement {
-  const container = document.createElement('div');
-  container.style.cssText = `
-    width: 100%;
-    height: 100%;
-    isolation: isolate;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    will-change: transform, contents;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-  `;
-
+export function createRibbonType2({
+  mainColor = "#96A6B4",
+  subColor = "#96A6B4",
+}: ISvgProps): string {
   const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
-  
-  const svgContent = `
-    <svg
+  const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
+
+  return `
+   <svg
       width="100%"
       height="100%"
       viewBox="0 0 552 174"
@@ -58,7 +49,5 @@ export function createRibbonType2({ mainColor = "#96A6B4", subColor = "#96A6B4" 
       </defs>
     </svg>
   `;
+}
 
-  container.innerHTML = svgContent;
-  return container;
-} 

@@ -476,8 +476,38 @@ const testCertificateData = {
         extra_color_2: null,
         layout_json: [
           {
-            id: "0",
+            id: "badge-1742881999662",
+            controlType: "svg",
+            designType: "badge",
+            componentName: "BadgeType7",
+            background: "transparent",
+            width: 500,
+            height: 530,
+            x: 48,
+            y: 44,
             order: 1,
+            text: "BadgeType7",
+            mainColor: "#FF1B64",
+            subColor: "#FF91B2",
+          },
+          {
+            id: "ribbon-1742881765599",
+            controlType: "svg",
+            designType: "ribbon",
+            componentName: "RibbonType2",
+            background: "transparent",
+            width: 510,
+            height: 210,
+            x: 45,
+            y: 195,
+            order: 2,
+            text: "RibbonType2",
+            mainColor: "#FF1B64",
+            subColor: "#FF91B2",
+          },
+          {
+            id: "0",
+            order: 3,
             controlType: "text",
             designType: "text",
             text: "· CERTIFICATE of COMPLETION ·",
@@ -493,7 +523,7 @@ const testCertificateData = {
           },
           {
             id: "1",
-            order: 2,
+            order: 4,
             controlType: "text",
             designType: "props",
             type: "achievement",
@@ -511,7 +541,7 @@ const testCertificateData = {
           },
           {
             id: "club-symbol",
-            order: 3,
+            order: 5,
             controlType: "image",
             designType: "props",
             type: "club",
@@ -606,9 +636,9 @@ const testOptions = {
 async function runTests() {
   try {
     // HTML 변환 테스트
-    const htmlOutput = await renderCertificate(testCertificateData);
-    fs.writeFileSync("test/certificate.html", htmlOutput, "utf8");
-    console.log("✅ HTML 변환 완료: test/certificate.html");
+    // const htmlOutput = await renderCertificate(testCertificateData);
+    // fs.writeFileSync("test/certificate.html", htmlOutput, "utf8");
+    // console.log("✅ HTML 변환 완료: test/certificate.html");
 
     // PNG 변환 테스트
     const pngResult = await generateCertificateFile(

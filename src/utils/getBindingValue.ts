@@ -13,7 +13,7 @@ const getAchievementValue = (
 
   switch (bindingKey) {
     case "period":
-      return achievementInfo.course_begin_at
+      return achievementInfo.course_begin_at && achievementInfo.course_end_at
         ? `${format(
             new Date(achievementInfo.course_begin_at),
             "yyyy.MM.dd"
@@ -41,7 +41,7 @@ const getAchievementValue = (
       return achievementInfo.expiration_date || "";
 
     default:
-      return achievementInfo.achievementForm?.[bindingKey] || null;
+      return (achievementInfo.achievementForm as any)?.[bindingKey] || null;
   }
 };
 
@@ -110,7 +110,7 @@ const getClubValue = (
 const getCustomValue = (bindingKey: string, achievementInfo: any) => {
   if (!achievementInfo?.customAttributes) return null;
   return (
-    achievementInfo.customAttributes.find((attr) =>
+    achievementInfo.customAttributes.find((attr: { attribute_tag: string }) =>
       [`custom_${attr.attribute_tag}`, `custom-${attr.attribute_tag}`].includes(
         bindingKey
       )

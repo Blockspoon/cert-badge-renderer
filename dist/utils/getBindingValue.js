@@ -11,7 +11,7 @@ const getAchievementValue = (bindingKey, achievementInfo) => {
     const { tags } = achievementInfo.achievementForm || {};
     switch (bindingKey) {
         case "period":
-            return achievementInfo.course_begin_at
+            return achievementInfo.course_begin_at && achievementInfo.course_end_at
                 ? `${(0, date_fns_1.format)(new Date(achievementInfo.course_begin_at), "yyyy.MM.dd")} ~ ${(0, date_fns_1.format)(new Date(achievementInfo.course_end_at), "yyyy.MM.dd")}`
                 : "-";
         case "created_at":
