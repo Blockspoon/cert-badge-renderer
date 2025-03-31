@@ -3,7 +3,7 @@ export interface ISvgProps {
   subColor?: string;
 }
 
-export function createRibbonType7({
+export function createBadgeType7({
   mainColor = "#96A6B4",
   subColor = "#96A6B4",
 }: ISvgProps): string {

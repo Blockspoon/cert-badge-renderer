@@ -8,6 +8,46 @@ const badges_1 = __importDefault(require("./badges"));
 const ribbons_1 = __importDefault(require("./ribbons"));
 exports.badgeTemplates = [
     {
+        id: "BadgeType1",
+        Component: badges_1.default.BadgeType1,
+        colors: {
+            mainColor: "#364FC7",
+            subColor: "#101113",
+        },
+    },
+    {
+        id: "BadgeType2",
+        Component: badges_1.default.BadgeType2,
+        colors: {
+            mainColor: "#1C2A54",
+            subColor: "#09B3EA",
+        },
+    },
+    {
+        id: "BadgeType3",
+        Component: badges_1.default.BadgeType3,
+        colors: {
+            mainColor: "#FF1B64",
+            subColor: "#FFC8D9",
+        },
+    },
+    {
+        id: "BadgeType4",
+        Component: badges_1.default.BadgeType4,
+        colors: {
+            mainColor: "#7657FA",
+            subColor: "#AA96FF",
+        },
+    },
+    {
+        id: "BadgeType5",
+        Component: badges_1.default.BadgeType5,
+        colors: {
+            mainColor: "#364FC7",
+            subColor: "#8FA3FF",
+        },
+    },
+    {
         id: "BadgeType7",
         Component: badges_1.default.BadgeType7,
         colors: {
@@ -25,38 +65,38 @@ exports.ribbonTemplates = [
             subColor: "#8FA2FF",
         },
     },
-    {
-        id: "RibbonType2",
-        Component: ribbons_1.default.RibbonType2,
-        colors: {
-            mainColor: "#1C2A54",
-            subColor: "#09B3EA",
-        },
-    },
-    {
-        id: "RibbonType4",
-        Component: ribbons_1.default.RibbonType4,
-        colors: {
-            mainColor: "#8266FB",
-            subColor: "#AA96FF",
-        },
-    },
-    {
-        id: "RibbonType5",
-        Component: ribbons_1.default.RibbonType5,
-        colors: {
-            mainColor: "#8FA3FF",
-            subColor: "#364FC7",
-        },
-    },
-    {
-        id: "RibbonType6",
-        Component: ribbons_1.default.RibbonType6,
-        colors: {
-            mainColor: "#2091F8",
-            subColor: "#46DEFF",
-        },
-    },
+    // {
+    //   id: "RibbonType2",
+    //   Component: Ribbons.RibbonType2,
+    //   colors: {
+    //     mainColor: "#1C2A54",
+    //     subColor: "#09B3EA",
+    //   },
+    // },
+    // {
+    //   id: "RibbonType4",
+    //   Component: Ribbons.RibbonType4,
+    //   colors: {
+    //     mainColor: "#8266FB",
+    //     subColor: "#AA96FF",
+    //   },
+    // },
+    // {
+    //   id: "RibbonType5",
+    //   Component: Ribbons.RibbonType5,
+    //   colors: {
+    //     mainColor: "#8FA3FF",
+    //     subColor: "#364FC7",
+    //   },
+    // },
+    // {
+    //   id: "RibbonType6",
+    //   Component: Ribbons.RibbonType6,
+    //   colors: {
+    //     mainColor: "#2091F8",
+    //     subColor: "#46DEFF",
+    //   },
+    // },
     {
         id: "RibbonType7",
         Component: ribbons_1.default.RibbonType7,

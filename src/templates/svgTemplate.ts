@@ -15,6 +15,46 @@ export interface templateType {
 
 export const badgeTemplates: templateType[] = [
   {
+    id: "BadgeType1",
+    Component: Badges.BadgeType1,
+    colors: {
+      mainColor: "#364FC7",
+      subColor: "#101113",
+    },
+  },
+  {
+    id: "BadgeType2",
+    Component: Badges.BadgeType2,
+    colors: {
+      mainColor: "#1C2A54",
+      subColor: "#09B3EA",
+    },
+  },
+  {
+    id: "BadgeType3",
+    Component: Badges.BadgeType3,
+    colors: {
+      mainColor: "#FF1B64",
+      subColor: "#FFC8D9",
+    },
+  },
+  {
+    id: "BadgeType4",
+    Component: Badges.BadgeType4,
+    colors: {
+      mainColor: "#7657FA",
+      subColor: "#AA96FF",
+    },
+  },
+  {
+    id: "BadgeType5",
+    Component: Badges.BadgeType5,
+    colors: {
+      mainColor: "#364FC7",
+      subColor: "#8FA3FF",
+    },
+  },
+  {
     id: "BadgeType7",
     Component: Badges.BadgeType7,
     colors: {
@@ -33,38 +73,38 @@ export const ribbonTemplates: templateType[] = [
       subColor: "#8FA2FF",
     },
   },
-  {
-    id: "RibbonType2",
-    Component: Ribbons.RibbonType2,
-    colors: {
-      mainColor: "#1C2A54",
-      subColor: "#09B3EA",
-    },
-  },
-  {
-    id: "RibbonType4",
-    Component: Ribbons.RibbonType4,
-    colors: {
-      mainColor: "#8266FB",
-      subColor: "#AA96FF",
-    },
-  },
-  {
-    id: "RibbonType5",
-    Component: Ribbons.RibbonType5,
-    colors: {
-      mainColor: "#8FA3FF",
-      subColor: "#364FC7",
-    },
-  },
-  {
-    id: "RibbonType6",
-    Component: Ribbons.RibbonType6,
-    colors: {
-      mainColor: "#2091F8",
-      subColor: "#46DEFF",
-    },
-  },
+  // {
+  //   id: "RibbonType2",
+  //   Component: Ribbons.RibbonType2,
+  //   colors: {
+  //     mainColor: "#1C2A54",
+  //     subColor: "#09B3EA",
+  //   },
+  // },
+  // {
+  //   id: "RibbonType4",
+  //   Component: Ribbons.RibbonType4,
+  //   colors: {
+  //     mainColor: "#8266FB",
+  //     subColor: "#AA96FF",
+  //   },
+  // },
+  // {
+  //   id: "RibbonType5",
+  //   Component: Ribbons.RibbonType5,
+  //   colors: {
+  //     mainColor: "#8FA3FF",
+  //     subColor: "#364FC7",
+  //   },
+  // },
+  // {
+  //   id: "RibbonType6",
+  //   Component: Ribbons.RibbonType6,
+  //   colors: {
+  //     mainColor: "#2091F8",
+  //     subColor: "#46DEFF",
+  //   },
+  // },
   {
     id: "RibbonType7",
     Component: Ribbons.RibbonType7,
