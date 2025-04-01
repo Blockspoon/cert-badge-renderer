@@ -479,7 +479,7 @@ const testCertificateData = {
             id: "badge-1742881999662",
             controlType: "svg",
             designType: "badge",
-            componentName: "BadgeType3",
+            componentName: "BadgeType5",
             background: "transparent",
             width: 500,
             height: 530,

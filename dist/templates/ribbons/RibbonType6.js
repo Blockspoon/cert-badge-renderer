@@ -2,20 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createRibbonType6 = createRibbonType6;
 function createRibbonType6({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
-    const container = document.createElement("div");
-    container.style.cssText = `
-    width: 100%;
-    height: 100%;
-    isolation: isolate;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    will-change: transform, contents;
-    transform: translateZ(0);
-    backface-visibility: hidden;
-  `;
     const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
-    const svgContent = `
+    return `
     <svg
       width="100%"
       height="100%"
@@ -24,8 +12,11 @@ function createRibbonType6({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"
       style="
+        width: 100%;
+        height: 100%;
         max-width: 100%;
         max-height: 100%;
+        z-index: 1;
         mix-blend-mode: normal;
         pointer-events: none;
         display: block;
@@ -78,6 +69,4 @@ function createRibbonType6({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
       </defs>
     </svg>
   `;
-    container.innerHTML = svgContent;
-    return container;
 }

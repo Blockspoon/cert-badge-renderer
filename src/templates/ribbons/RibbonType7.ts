@@ -14,36 +14,21 @@ export function createRibbonType7({
     <svg
       width="100%"
       height="100%"
-      viewBox="0 0 502 182"
+      viewBox="0 0 502 199"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"
       style="
+        width: 100%;
+        height: 100%;
         max-width: 100%;
         max-height: 100%;
+        z-index: 1;
         mix-blend-mode: normal;
         pointer-events: none;
         display: block;
       "
     >
-      <path
-        d="M43.9913 198.201C26.8239 200.315 -0.157858 192.542 0.855885 182.61C5.60201 171.859 15.253 171.591 36.3727 174.299L43.9913 198.201Z"
-        fill="${mainColor}"
-      />
-      <path
-        d="M43.9913 198.201C26.8239 200.315 -0.157858 192.542 0.855885 182.61C5.60201 171.859 15.253 171.591 36.3727 174.299L43.9913 198.201Z"
-        fill="black"
-        fill-opacity="0.4"
-      />
-      <path
-        d="M457.997 198.201C475.164 200.315 502.146 192.542 501.132 182.61C496.386 171.859 486.735 171.591 465.616 174.299L457.997 198.201Z"
-        fill="${mainColor}"
-      />
-      <path
-        d="M457.997 198.201C475.164 200.315 502.146 192.542 501.132 182.61C496.386 171.859 486.735 171.591 465.616 174.299L457.997 198.201Z"
-        fill="black"
-        fill-opacity="0.4"
-      />
       <path d="M26.1447 0H495V170L11 35.5L26.1447 0Z" fill="white" />
       <path
         fill-rule="evenodd"
@@ -57,7 +42,7 @@ export function createRibbonType7({
         fill-opacity="0.3"
       />
       <mask
-        id="mask0_2364_595"
+        id="mask0_2481_282"
         style="mask-type: alpha"
         maskUnits="userSpaceOnUse"
         x="0"
@@ -67,10 +52,10 @@ export function createRibbonType7({
       >
         <path
           d="M0.839844 20C0.839844 12.268 7.10786 6 14.8398 6H487.161C494.893 6 501.161 12.268 501.161 20V176H0.839844V20Z"
-          fill="url(#${paintId1})"
+          fill="url(#${paintId0})"
         />
       </mask>
-      <g mask="url(#mask0_2364_595)">
+      <g mask="url(#mask0_2481_282)">
         <path
           d="M-0.107422 24.8841C4.22475 19.5386 7.41907 18.1694 14.1601 18.0085L483.561 18.0085C492.634 17.8688 496.914 19.3999 502.109 27"
           stroke="white"
@@ -84,6 +69,24 @@ export function createRibbonType7({
           stroke-linecap="round"
         />
       </g>
+      <path
+        d="M29.8435 198.084C15.0673 196.321 0.0959688 190.089 0.855885 182.644C4.09354 175.31 11.1137 175.994 21 176.034L25.5 188.034L29.8435 198.084Z"
+        fill="${mainColor}"
+      />
+      <path
+        d="M29.8435 198.084C15.0673 196.321 0.0959688 190.089 0.855885 182.644C4.09354 175.31 11.1137 175.994 21 176.034L25.5 188.034L29.8435 198.084Z"
+        fill="black"
+        fill-opacity="0.4"
+      />
+      <path
+        d="M472 198.084C486.776 196.321 501.748 190.089 500.988 182.644C497.75 175.31 490.73 175.994 480.844 176.034L476.344 188.034L472 198.084Z"
+        fill="${mainColor}"
+      />
+      <path
+        d="M472 198.084C486.776 196.321 501.748 190.089 500.988 182.644C497.75 175.31 490.73 175.994 480.844 176.034L476.344 188.034L472 198.084Z"
+        fill="black"
+        fill-opacity="0.4"
+      />
       <defs>
         <linearGradient
           id="${paintId0}"

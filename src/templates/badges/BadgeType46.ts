@@ -4,7 +4,7 @@ export interface ISvgProps {
   extraColor1?: string;
 }
 
-export function createBadgeType45({
+export function createBadgeType46({
   mainColor = "#96A6B4",
   subColor = "#96A6B4",
   extraColor1 = "#96A6B4",

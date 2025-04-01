@@ -7,26 +7,19 @@ export function createRibbonType34({
   mainColor = "#96A6B4",
   subColor = "#96A6B4",
 }: ISvgProps): string {
-  const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId4 = `paint4_linear_${Math.random().toString(36).substr(2, 9)}`;
 
   return `
     <svg
       width="100%"
       height="100%"
-      viewBox="0 0 564 173"
+      viewBox="0 0 546 197"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"
       style="
         width: 100%;
         height: 100%;
-        object-fit: contain;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
         max-width: 100%;
         max-height: 100%;
         z-index: 1;
@@ -35,99 +28,139 @@ export function createRibbonType34({
         display: block;
       "
     >
-      <path d="M67.3261 0H496.657L504 22L60 21.5L67.3261 0Z" fill="white" />
       <path
-        opacity="0.5"
-        d="M60 127H504L493.5 154H69.5L60 127Z"
-        fill="url(#${paintId0})"
-      />
-      <path
-        d="M44.7492 40.1859L4.0042 51.2967C0.615478 52.2159 -1.02268 56.0862 0.679707 59.1664L26.6974 106.626C27.131 107.432 27.3719 108.335 27.3719 109.254V167.551C27.3719 171.566 31.5476 174.195 35.1451 172.453L104.927 138.814C107.866 137.395 108.894 133.718 107.143 130.976L50.7397 42.508C49.4709 40.5084 47.0458 39.5731 44.7492 40.1859Z"
+        d="M485 4.20313C485 1.99399 486.791 0.203125 489 0.203125H540.59C543.279 0.203125 545.202 2.80438 544.414 5.37582L529.647 53.5304C529.413 54.2947 529.413 55.1116 529.647 55.8758L544.414 104.03C545.202 106.602 543.279 109.203 540.59 109.203H489C486.791 109.203 485 107.412 485 105.203V4.20313Z"
         fill="${mainColor}"
       />
       <path
-        d="M44.7492 40.1859L4.0042 51.2967C0.615478 52.2159 -1.02268 56.0862 0.679707 59.1664L26.6974 106.626C27.131 107.432 27.3719 108.335 27.3719 109.254V167.551C27.3719 171.566 31.5476 174.195 35.1451 172.453L104.927 138.814C107.866 137.395 108.894 133.718 107.143 130.976L50.7397 42.508C49.4709 40.5084 47.0458 39.5731 44.7492 40.1859Z"
+        d="M485 4.20313C485 1.99399 486.791 0.203125 489 0.203125H540.59C543.279 0.203125 545.202 2.80438 544.414 5.37582L529.647 53.5304C529.413 54.2947 529.413 55.1116 529.647 55.8758L544.414 104.03C545.202 106.602 543.279 109.203 540.59 109.203H489C486.791 109.203 485 107.412 485 105.203V4.20313Z"
         fill="black"
         fill-opacity="0.2"
-      />
-      <path
-        opacity="0.3"
-        d="M32.0089 43.1746L43.5092 40L78.5098 153.5H43.0095C33.8095 153.5 31.8428 146.5 32.0095 143L32.0089 43.1746Z"
-        fill="url(#${paintId1})"
-      />
-      <path
-        d="M519.251 40.1859L559.996 51.2967C563.385 52.2159 565.023 56.0862 563.32 59.1664L537.303 106.626C536.869 107.432 536.628 108.335 536.628 109.254V167.551C536.628 171.566 532.452 174.195 528.855 172.453L459.073 138.814C456.134 137.395 455.106 133.718 456.857 130.976L513.26 42.508C514.529 40.5084 516.954 39.5731 519.251 40.1859Z"
-        fill="${mainColor}"
-      />
-      <path
-        d="M519.251 40.1859L559.996 51.2967C563.385 52.2159 565.023 56.0862 563.32 59.1664L537.303 106.626C536.869 107.432 536.628 108.335 536.628 109.254V167.551C536.628 171.566 532.452 174.195 528.855 172.453L459.073 138.814C456.134 137.395 455.106 133.718 456.857 130.976L513.26 42.508C514.529 40.5084 516.954 39.5731 519.251 40.1859Z"
-        fill="black"
-        fill-opacity="0.2"
-      />
-      <path
-        opacity="0.3"
-        d="M532.001 43.6746L520.501 40.5L485.5 154H521C530.2 154 532.167 147 532 143.5L532.001 43.6746Z"
-        fill="url(#${paintId2})"
-      />
-      <path
-        d="M509.206 5H53.7936C47.2802 5 42 10.3325 42 16.9105V129.089C42 135.667 47.2802 141 53.7936 141H509.206C515.72 141 521 135.667 521 129.089V16.9105C521 10.3325 515.72 5 509.206 5Z"
-        fill="${mainColor}"
       />
       <rect
-        x="42"
-        y="18.5039"
-        width="479"
-        height="108.992"
+        x="485"
+        width="46"
+        height="109"
+        fill="url(#paint0_linear_2407_190)"
+      />
+      <path
+        d="M62 4.20313C62 1.99399 60.2091 0.203125 58 0.203125H5.43648C2.73918 0.203125 0.815063 2.81823 1.61767 5.39335L16.6153 53.5129C16.8569 54.288 16.8569 55.1183 16.6153 55.8934L1.61767 104.013C0.815063 106.588 2.73918 109.203 5.43648 109.203H58C60.2091 109.203 62 107.412 62 105.203V4.20313Z"
+        fill="${mainColor}"
+      />
+      <path
+        d="M62 4.20313C62 1.99399 60.2091 0.203125 58 0.203125H5.43648C2.73918 0.203125 0.815063 2.81823 1.61767 5.39335L16.6153 53.5129C16.8569 54.288 16.8569 55.1183 16.6153 55.8934L1.61767 104.013C0.815063 106.588 2.73918 109.203 5.43648 109.203H58C60.2091 109.203 62 107.412 62 105.203V4.20313Z"
+        fill="black"
+        fill-opacity="0.2"
+      />
+      <rect
+        width="48"
+        height="109"
+        transform="matrix(-1 0 0 1 62 0)"
+        fill="url(#paint1_linear_2407_190)"
+      />
+      <path
+        d="M63.3829 173H482.255C478.396 183.094 474.898 188.471 466.279 197H79.9829C71.6664 189.461 68.3305 184.142 63.3829 173Z"
+        fill="url(#paint2_linear_2407_190)"
+        fill-opacity="0.4"
+      />
+      <rect
+        x="485"
+        y="24.2031"
+        width="423"
+        height="24"
+        transform="rotate(180 485 24.2031)"
+        fill="url(#paint3_linear_2407_190)"
+        fill-opacity="0.3"
+      />
+      <rect
+        x="33"
+        y="24.2031"
+        width="480"
+        height="148.797"
+        rx="4"
+        fill="url(#${paintId4})"
+      />
+      <rect
+        x="33"
+        y="34"
+        width="480"
+        height="129"
         fill="white"
         fill-opacity="0.3"
       />
+      <path d="M485 24.2031V0.203125L508 24.2031H485Z" fill="${mainColor}" />
       <path
-        d="M42 17L521 17"
-        stroke="white"
-        stroke-opacity="0.6"
-        stroke-width="3"
+        d="M485 24.2031V0.203125L508 24.2031H485Z"
+        fill="black"
+        fill-opacity="0.6"
       />
+      <path d="M62 24.2031V0.203125L35 24.2031H62Z" fill="${mainColor}" />
       <path
-        d="M42 129L521 129"
-        stroke="white"
-        stroke-opacity="0.6"
-        stroke-width="3"
+        d="M62 24.2031V0.203125L35 24.2031H62Z"
+        fill="black"
+        fill-opacity="0.6"
       />
+      <path d="M33 34.2031L513 34.2031" stroke="white" stroke-width="3" />
+      <path d="M33 163L513 163" stroke="white" stroke-width="3" />
       <defs>
         <linearGradient
-          id="${paintId0}"
-          x1="282"
-          y1="138"
-          x2="282"
-          y2="154"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="${paintId1}"
-          x1="76.5098"
-          y1="81"
-          x2="23.5098"
-          y2="107.5"
+          id="paint0_linear_2407_190"
+          x1="442.108"
+          y1="48"
+          x2="519.078"
+          y2="30.5323"
           gradientUnits="userSpaceOnUse"
         >
           <stop />
           <stop offset="1" stop-opacity="0" />
         </linearGradient>
         <linearGradient
-          id="${paintId2}"
-          x1="487.5"
-          y1="81.5"
-          x2="540.5"
-          y2="108"
+          id="paint1_linear_2407_190"
+          x1="-44.7568"
+          y1="48"
+          x2="35.2118"
+          y2="29.0628"
           gradientUnits="userSpaceOnUse"
         >
           <stop />
           <stop offset="1" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear_2407_190"
+          x1="279.88"
+          y1="179"
+          x2="279.88"
+          y2="197"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop />
+          <stop offset="1" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient
+          id="paint3_linear_2407_190"
+          x1="702.308"
+          y1="30.2031"
+          x2="702.308"
+          y2="48.2031"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop />
+          <stop offset="1" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient
+          id="${paintId4}"
+          x1="33"
+          y1="98.6016"
+          x2="513"
+          y2="98.6016"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.215" stop-color="${subColor}" />
+          <stop offset="0.75" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
       </defs>
     </svg>
   `;
-} 
+}

@@ -7,26 +7,19 @@ export function createRibbonType26({
   mainColor = "#96A6B4",
   subColor = "#96A6B4",
 }: ISvgProps): string {
-  const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId4 = `paint4_linear_${Math.random().toString(36).substr(2, 9)}`;
 
   return `
     <svg
       width="100%"
       height="100%"
-      viewBox="0 0 564 173"
+      viewBox="0 0 546 166"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"
       style="
         width: 100%;
         height: 100%;
-        object-fit: contain;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
         max-width: 100%;
         max-height: 100%;
         z-index: 1;
@@ -35,93 +28,86 @@ export function createRibbonType26({
         display: block;
       "
     >
-      <path d="M67.3261 0H496.657L504 22L60 21.5L67.3261 0Z" fill="white" />
       <path
-        opacity="0.5"
-        d="M60 127H504L493.5 154H69.5L60 127Z"
-        fill="url(#${paintId0})"
+        d="M485 4C485 1.79086 486.791 0 489 0H540.59C543.279 0 545.202 2.60126 544.414 5.1727L529.647 53.3273C529.413 54.0915 529.413 54.9085 529.647 55.6727L544.414 103.827C545.202 106.399 543.279 109 540.59 109H489C486.791 109 485 107.209 485 105V4Z"
+        fill="${subColor}"
       />
+      <path d="M490.848 8L544.01 8.00001" stroke="white" stroke-width="3" />
       <path
-        d="M44.7492 40.1859L4.0042 51.2967C0.615478 52.2159 -1.02268 56.0862 0.679707 59.1664L26.6974 106.626C27.131 107.432 27.3719 108.335 27.3719 109.254V167.551C27.3719 171.566 31.5476 174.195 35.1451 172.453L104.927 138.814C107.866 137.395 108.894 133.718 107.143 130.976L50.7397 42.508C49.4709 40.5084 47.0458 39.5731 44.7492 40.1859Z"
-        fill="${mainColor}"
-      />
-      <path
-        d="M44.7492 40.1859L4.0042 51.2967C0.615478 52.2159 -1.02268 56.0862 0.679707 59.1664L26.6974 106.626C27.131 107.432 27.3719 108.335 27.3719 109.254V167.551C27.3719 171.566 31.5476 174.195 35.1451 172.453L104.927 138.814C107.866 137.395 108.894 133.718 107.143 130.976L50.7397 42.508C49.4709 40.5084 47.0458 39.5731 44.7492 40.1859Z"
-        fill="black"
-        fill-opacity="0.2"
-      />
-      <path
-        opacity="0.3"
-        d="M32.0089 43.1746L43.5092 40L78.5098 153.5H43.0095C33.8095 153.5 31.8428 146.5 32.0095 143L32.0089 43.1746Z"
-        fill="url(#${paintId1})"
-      />
-      <path
-        d="M519.251 40.1859L559.996 51.2967C563.385 52.2159 565.023 56.0862 563.32 59.1664L537.303 106.626C536.869 107.432 536.628 108.335 536.628 109.254V167.551C536.628 171.566 532.452 174.195 528.855 172.453L459.073 138.814C456.134 137.395 455.106 133.718 456.857 130.976L513.26 42.508C514.529 40.5084 516.954 39.5731 519.251 40.1859Z"
-        fill="${mainColor}"
-      />
-      <path
-        d="M519.251 40.1859L559.996 51.2967C563.385 52.2159 565.023 56.0862 563.32 59.1664L537.303 106.626C536.869 107.432 536.628 108.335 536.628 109.254V167.551C536.628 171.566 532.452 174.195 528.855 172.453L459.073 138.814C456.134 137.395 455.106 133.718 456.857 130.976L513.26 42.508C514.529 40.5084 516.954 39.5731 519.251 40.1859Z"
-        fill="black"
-        fill-opacity="0.2"
-      />
-      <path
-        opacity="0.3"
-        d="M532.001 43.6746L520.501 40.5L485.5 154H521C530.2 154 532.167 147 532 143.5L532.001 43.6746Z"
-        fill="url(#${paintId2})"
-      />
-      <path
-        d="M509.206 5H53.7936C47.2802 5 42 10.3325 42 16.9105V129.089C42 135.667 47.2802 141 53.7936 141H509.206C515.72 141 521 135.667 521 129.089V16.9105C521 10.3325 515.72 5 509.206 5Z"
-        fill="${mainColor}"
+        d="M490.848 100.5L544.01 100.5"
+        stroke="white"
+        stroke-width="3"
       />
       <rect
-        x="42"
-        y="18.5039"
-        width="479"
-        height="108.992"
+        x="485"
+        width="45"
+        height="109"
+        fill="url(#paint0_linear_2399_1191)"
+      />
+      <path
+              d="M62 4C62 1.79086 60.2091 0 58 0H6.41035C3.72086 0 1.79807 2.60126 2.58621 5.1727L17.3527 53.3273C17.5871 54.0915 17.5871 54.9085 17.3527 55.6727L2.58621 103.827C1.79807 106.399 3.72086 109 6.41035 109H58C60.2091 109 62 107.209 62 105V4Z"
+        fill="${subColor}"
+      />
+      <path d="M2.99023 8L56.1523 8.00001" stroke="white" stroke-width="3" />
+      <path
+        d="M2.99023 100.5L56.1523 100.5"
+        stroke="white"
+        stroke-width="3"
+      />
+      <rect
+        width="45"
+        height="109"
+        transform="matrix(-1 0 0 1 62 0)"
+        fill="url(#paint1_linear_2399_1191)"
+      />
+      <rect x="62" y="4" width="423" height="105" rx="4" fill="${mainColor}" />
+      <rect
+        x="62"
+        y="14"
+        width="423"
+        height="85"
         fill="white"
         fill-opacity="0.3"
       />
-      <path
-        d="M42 17L521 17"
-        stroke="white"
-        stroke-opacity="0.6"
-        stroke-width="3"
-      />
-      <path
-        d="M42 129L521 129"
-        stroke="white"
-        stroke-opacity="0.6"
-        stroke-width="3"
+      <path d="M62 14L485 14" stroke="white" stroke-width="3" />
+      <path d="M62 99L485 99" stroke="white" stroke-width="3" />
+      <rect
+        x="62"
+        y="109"
+        width="423"
+        height="57"
+        fill="url(#${paintId4})"
+        fill-opacity="0.4"
       />
       <defs>
         <linearGradient
-          id="${paintId0}"
-          x1="282"
-          y1="138"
-          x2="282"
-          y2="154"
+          id="paint0_linear_2399_1191"
+          x1="530"
+          y1="0"
+          x2="485"
+          y2="0"
           gradientUnits="userSpaceOnUse"
         >
-          <stop />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
-        </linearGradient>
-        <linearGradient
-          id="${paintId1}"
-          x1="76.5098"
-          y1="81"
-          x2="23.5098"
-          y2="107.5"
-          gradientUnits="userSpaceOnUse"
-        >
-          <stop />
+          <stop stop-opacity="0.4" />
           <stop offset="1" stop-opacity="0" />
         </linearGradient>
         <linearGradient
-          id="${paintId2}"
-          x1="487.5"
-          y1="81.5"
-          x2="540.5"
-          y2="108"
+          id="paint1_linear_2399_1191"
+          x1="45"
+          y1="0"
+          x2="0"
+          y2="0"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-opacity="0.4" />
+          <stop offset="1" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient
+          id="${paintId4}"
+          x1="273.5"
+          y1="109"
+          x2="273.5"
+          y2="166"
           gradientUnits="userSpaceOnUse"
         >
           <stop />
@@ -130,4 +116,4 @@ export function createRibbonType26({
       </defs>
     </svg>
   `;
-} 
+}
