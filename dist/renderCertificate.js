@@ -122,7 +122,11 @@ function renderCertificate(data_1) {
       white-space: pre-wrap;
     `;
             if (element.controlType === "svg") {
-                const templates = element.designType === "badge" ? svgTemplate_1.badgeTemplates : svgTemplate_1.ribbonTemplates;
+                const templates = element.designType === "background"
+                    ? svgTemplate_1.backgroundTemplates
+                    : element.designType === "badge"
+                        ? svgTemplate_1.badgeTemplates
+                        : svgTemplate_1.ribbonTemplates;
                 const template = templates.find((t) => t.id === element.componentName);
                 if (template) {
                     const optimizedStyles = `

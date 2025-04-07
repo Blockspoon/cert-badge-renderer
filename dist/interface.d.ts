@@ -34,9 +34,9 @@ export interface IKollegeItem {
     custom_domain?: string;
     survey_form_url?: string;
     images: {
-        club_cover: IImageType[];
-        club_logo: IImageType[];
-        club_symbol: IImageType[];
+        club_cover?: IImageType[];
+        club_logo?: IImageType[];
+        club_symbol?: IImageType[];
         path?: string;
     };
 }

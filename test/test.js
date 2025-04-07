@@ -95,6 +95,21 @@ const testCertificateData = {
         extra_color_2: null,
         layout_json: [
           {
+            id: "bg-1743997208225",
+            controlType: "svg",
+            designType: "background",
+            componentName: "BackgroundEmptyHatch",
+            background: "transparent",
+            width: 1130,
+            height: 770,
+            x: 11,
+            y: 20,
+            order: 1,
+            text: "BackgroundEmptyHatch",
+            mainColor: "#FFF",
+            subColor: "#FFF",
+          },
+          {
             id: "0",
             order: 13,
             controlType: "text",
@@ -628,7 +643,7 @@ const testCertificateData = {
   },
 };
 const testOptions = {
-  type: "badge",
+  type: "certificate",
   size: 300,
   returnType: "base64",
 };

@@ -9,7 +9,11 @@ import {
 } from "./interface";
 import { getBindingValue } from "./utils/getBindingValue";
 import QRCode from "qrcode";
-import { badgeTemplates, ribbonTemplates } from "./templates/svgTemplate";
+import {
+  badgeTemplates,
+  ribbonTemplates,
+  backgroundTemplates,
+} from "./templates/svgTemplate";
 
 const DEFAULT_IMAGE_URL =
   "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
@@ -19,7 +23,7 @@ export async function renderCertificate(
   options: CertificateOptions = {}
 ): Promise<string> {
   const { type = "certificate", size = 600, noSpace = false } = options;
-  
+
   // type에 따라 적절한 layout_json 선택
   const elements =
     type === "badge"
@@ -141,7 +145,11 @@ export async function renderCertificate(
 
     if (element.controlType === "svg") {
       const templates =
-        element.designType === "badge" ? badgeTemplates : ribbonTemplates;
+        element.designType === "background"
+          ? backgroundTemplates
+          : element.designType === "badge"
+          ? badgeTemplates
+          : ribbonTemplates;
       const template = templates.find((t) => t.id === element.componentName);
 
       if (template) {

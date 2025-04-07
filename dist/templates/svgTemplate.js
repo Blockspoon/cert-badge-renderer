@@ -3,9 +3,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.IconTemplates = exports.ribbonTemplates = exports.badgeTemplates = void 0;
+exports.IconTemplates = exports.ribbonTemplates = exports.badgeTemplates = exports.backgroundTemplates = void 0;
 const badges_1 = __importDefault(require("./badges"));
 const ribbons_1 = __importDefault(require("./ribbons"));
+const backgrounds_1 = __importDefault(require("./backgrounds"));
+exports.backgroundTemplates = [
+    {
+        id: "BackgroundEmptyHatch",
+        Component: backgrounds_1.default.BackgroundEmptyHatch,
+    },
+];
 exports.badgeTemplates = [
     {
         id: "BadgeType1",

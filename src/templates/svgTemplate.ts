@@ -1,12 +1,20 @@
 import Badges from "./badges";
 import Ribbons from "./ribbons";
 import Icons from "./icons";
+import Backgrounds from "./backgrounds";
 
 export interface templateType {
   id: string;
   Component: (props: any) => string | HTMLElement;
   colors?: any;
 }
+
+export const backgroundTemplates: templateType[] = [
+  {
+    id: "BackgroundEmptyHatch",
+    Component: Backgrounds.BackgroundEmptyHatch,
+  },
+];
 
 export const badgeTemplates: templateType[] = [
   {
