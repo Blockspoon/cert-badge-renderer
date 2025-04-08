@@ -9,11 +9,7 @@ import {
 } from "./interface";
 import { getBindingValue } from "./utils/getBindingValue";
 import QRCode from "qrcode";
-import {
-  badgeTemplates,
-  ribbonTemplates,
-  backgroundTemplates,
-} from "./templates/svgTemplate";
+import { badgeTemplates, ribbonTemplates } from "./templates/svgTemplate";
 
 const DEFAULT_IMAGE_URL =
   "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
@@ -145,11 +141,7 @@ export async function renderCertificate(
 
     if (element.controlType === "svg") {
       const templates =
-        element.designType === "background"
-          ? backgroundTemplates
-          : element.designType === "badge"
-          ? badgeTemplates
-          : ribbonTemplates;
+        element.designType === "badge" ? badgeTemplates : ribbonTemplates;
       const template = templates.find((t) => t.id === element.componentName);
 
       if (template) {
