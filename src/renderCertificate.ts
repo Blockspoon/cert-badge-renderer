@@ -1,7 +1,4 @@
 import {
-  IAchievementItem,
-  IKollegeItem,
-  IUserItem,
   ElementStyle,
   CERTIFICATE_DESIGN_TYPE,
   CertificateData,
@@ -10,6 +7,7 @@ import {
 import { getBindingValue } from "./utils/getBindingValue";
 import QRCode from "qrcode";
 import { badgeTemplates, ribbonTemplates } from "./templates/svgTemplate";
+import Certificates from "./templates/certificates";
 
 const DEFAULT_IMAGE_URL =
   "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
@@ -75,15 +73,36 @@ export async function renderCertificate(
             ${noSpace ? "position: absolute; top: 0; left: 0;" : ""}
           "
         >
+        
         <div style="
-          position: relative;
-          width: ${width}px;
-          height: ${height}px;
-          overflow: hidden;
-          transform: scale(${size / width});
-          transform-origin: top left;
+        position: relative;
+        width: ${width}px;
+        height: ${height}px;
+        overflow: hidden;
+        transform: scale(${size / width});
+        transform-origin: top left;
         ">
-  `;
+        `;
+
+  if (type == "certificate") {
+    html += Certificates[
+      data.achievementInfo?.achievementForm?.achievementCertificateDesign
+        ?.template_type
+    ]({
+      mainColor:
+        data.achievementInfo?.achievementForm?.achievementCertificateDesign
+          ?.main_color || "#000000",
+      subColor:
+        data.achievementInfo?.achievementForm?.achievementCertificateDesign
+          ?.sub_color || "#000000",
+      extraColor1:
+        data.achievementInfo?.achievementForm?.achievementCertificateDesign
+          ?.extra_color_1 || "#000000",
+      extraColor2:
+        data.achievementInfo?.achievementForm?.achievementCertificateDesign
+          ?.extra_color_2 || "#000000",
+    });
+  }
 
   for (const element of sortedElements) {
     if (element.bindingKey === "requirements") continue;
@@ -241,6 +260,16 @@ export async function renderCertificate(
         />`;
       }
       html += `</div>`;
+    }
+    if (element.controlType === "line") {
+      html += `<div style="${commonStyles}">`;
+      html += `<div style="
+        background-color: ${element.color || "black"};
+        transform: ${element.isVertical ? "none" : "rotate(0deg)"};
+        width: ${element.isVertical ? `${element.lineWidth || 1}px` : "100%"};
+        height: ${element.isVertical ? "100%" : `${element.lineWidth || 1}px`};
+      "></div>
+      </div>`;
     }
   }
 

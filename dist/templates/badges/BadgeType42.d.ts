@@ -1,5 +1,2 @@
-export interface ISvgProps {
-    mainColor?: string;
-    subColor?: string;
-}
+import { ISvgProps } from "../../interface";
 export declare function createBadgeType42({ mainColor, subColor, }: ISvgProps): string;

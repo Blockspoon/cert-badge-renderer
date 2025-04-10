@@ -1,7 +1,4 @@
-export interface ISvgProps {
-  mainColor?: string;
-  subColor?: string;
-}
+import { ISvgProps } from "../../interface"; 
 
 export function createIconSpring1({
   mainColor = "#96A6B4",

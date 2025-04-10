@@ -1,7 +1,4 @@
-export interface ISvgProps {
-  mainColor?: string;
-  subColor?: string;
-}
+import { ISvgProps } from "../../interface"; 
 
 export function createIconFrame2({
   mainColor = "#96A6B4",

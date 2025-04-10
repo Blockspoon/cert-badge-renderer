@@ -1,7 +1,4 @@
-export interface ISvgProps {
-  mainColor?: string;
-  subColor?: string;
-}
+import { ISvgProps } from "../../interface"; 
 
 export function createIconContainer5({
   mainColor = "#96A6B4",

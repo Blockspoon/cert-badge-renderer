@@ -467,7 +467,7 @@ export declare enum CERTIFICATE_DESIGN_TYPE {
 }
 export interface ElementStyle {
     id: string;
-    controlType: "text" | "image" | "svg";
+    controlType: "text" | "image" | "svg" | "line";
     designType: CERTIFICATE_DESIGN_TYPE;
     order?: number;
     text?: string;
@@ -490,6 +490,8 @@ export interface ElementStyle {
     componentName?: string;
     mainColor?: string;
     subColor?: string;
+    isVertical?: boolean;
+    lineWidth?: number;
 }
 export interface IAchievementDesignItem {
     id: number;
@@ -519,4 +521,10 @@ export interface CertificateOptions {
     size?: number;
     noSpace?: boolean;
     returnType?: "file" | "base64";
+}
+export interface ISvgProps {
+    mainColor?: string;
+    subColor?: string;
+    extraColor1?: string;
+    extraColor2?: string;
 }

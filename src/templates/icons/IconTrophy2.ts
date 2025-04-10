@@ -1,8 +1,4 @@
-export interface ISvgProps {
-  mainColor?: string;
-  subColor?: string;
-  extraColor1?: string;
-}
+import { ISvgProps } from "../../interface"; 
 
 export function createIconTrophy2({
   mainColor = "#96A6B4",

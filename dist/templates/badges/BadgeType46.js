@@ -38,7 +38,6 @@ function createBadgeType46({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         // fill="url(#paint1_linear_2407_456)"
         fill="url(#${paintId1})"
       />
-      {/* <g style="mix-blend-mode:overlay"> */}
       <g
         style={{
           mixBlendMode: "overlay",
@@ -121,7 +120,7 @@ function createBadgeType46({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
       <defs>
         <linearGradient
           // id="paint0_linear_2407_456"
-          id={paintId0}
+          id="${paintId0}"
           x1="231.464"
           y1="-0.000244141"
           x2="231.464"
@@ -133,7 +132,7 @@ function createBadgeType46({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         </linearGradient>
         <linearGradient
           // id="paint1_linear_2407_456"
-          id={paintId1}
+          id="${paintId1}"
           x1="231.463"
           y1="6.48535"
           x2="231.463"
@@ -146,7 +145,7 @@ function createBadgeType46({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         </linearGradient>
         <linearGradient
           // id="paint2_linear_2407_456"
-          id={paintId2}
+          id="${paintId2}"
           x1="231.197"
           y1="29.042"
           x2="231.197"
@@ -158,7 +157,7 @@ function createBadgeType46({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         </linearGradient>
         <linearGradient
           // id="paint3_linear_2407_456"
-          id={paintId3}
+          id="${paintId3}"
           x1="231.384"
           y1="77.3588"
           x2="231.384"
@@ -170,7 +169,7 @@ function createBadgeType46({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         </linearGradient>
         <linearGradient
           // id="paint4_linear_2407_456"
-          id={paintId4}
+          id="${paintId4}"
           x1="231"
           y1="46.9998"
           x2="231"
