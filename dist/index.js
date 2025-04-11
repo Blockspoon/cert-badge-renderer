@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.generateCertificateFile = exports.renderCertificate = void 0;
+exports.generateAchievementFile = exports.renderCertificate = void 0;
 var renderCertificate_1 = require("./renderCertificate");
 Object.defineProperty(exports, "renderCertificate", { enumerable: true, get: function () { return renderCertificate_1.renderCertificate; } });
-var generateCertificateFile_1 = require("./utils/generateCertificateFile");
-Object.defineProperty(exports, "generateCertificateFile", { enumerable: true, get: function () { return generateCertificateFile_1.generateCertificateFile; } });
+var generateAchievementFile_1 = require("./utils/generateAchievementFile");
+Object.defineProperty(exports, "generateAchievementFile", { enumerable: true, get: function () { return generateAchievementFile_1.generateAchievementFile; } });
 // export { getBindingValue } from "./utils/getBindingValue";

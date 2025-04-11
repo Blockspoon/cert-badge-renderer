@@ -1,8 +1,8 @@
 const fs = require("fs");
 const { renderCertificate } = require("../dist/renderCertificate");
 const {
-  generateCertificateFile,
-} = require("../dist/utils/generateCertificateFile");
+  generateAchievementFile,
+} = require("../dist/utils/generateAchievementFile");
 const fsPromises = require("fs").promises;
 const path = require("path");
 
@@ -512,7 +512,7 @@ async function runTests() {
     console.log("✅ HTML 변환 완료: test/certificate.html");
 
     // PNG 변환 테스트
-    const pngResult = await generateCertificateFile(
+    const pngResult = await generateAchievementFile(
       {
         user: testCertificateData.user,
         kollegeInfo: testCertificateData.kollegeInfo,

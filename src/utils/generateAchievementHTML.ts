@@ -6,7 +6,7 @@ function isHorizontal(name?: string) {
   return !portraitComponents.includes(name);
 }
 
-export function generateCertificateHTML(jsonData: any[], templateComponentName: string) {
+export function generateAchievementHTML(jsonData: any[], templateComponentName: string) {
   const width = isHorizontal(templateComponentName) ? 1152 : 810;
   const height = isHorizontal(templateComponentName) ? 810 : 1152;
 

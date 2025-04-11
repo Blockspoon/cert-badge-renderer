@@ -2,7 +2,7 @@ import puppeteer from "puppeteer";
 import { renderCertificate } from "../renderCertificate";
 import { CertificateData, CertificateOptions } from "../interface";
 
-export async function generateCertificateFile(
+export async function generateAchievementFile(
   data: CertificateData,
   options: CertificateOptions = {}
 ) {

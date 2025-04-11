@@ -13,7 +13,7 @@ npm install json-to-certificate
 ### 기본 사용
 
 ```typescript
-import { generateCertificateFile, renderCertificate } from 'json-to-certificate';
+import { generateAchievementFile, renderCertificate } from 'json-to-certificate';
 
 const certificateData = {
   user: {
@@ -36,7 +36,7 @@ const htmlContent = await renderCertificate(certificateData, {
 });
 
 // 이미지로 변환
-const result = await generateCertificateFile(certificateData, {
+const result = await generateAchievementFile(certificateData, {
   type: "certificate",
   size: 600,
   returnType: "base64"
@@ -88,7 +88,7 @@ if (result.returnType === "file") {
 
 ### Base64 이미지로 저장하기
 ```typescript
-const result = await generateCertificateFile(certificateData, {
+const result = await generateAchievementFile(certificateData, {
   type: "badge",
   size: 300,
   returnType: "base64"
