@@ -19,21 +19,21 @@ export declare enum KOLLEGE_JOIN_STATUS {
     MANUAL_APPROVAL = "manual_approval"
 }
 export interface IKollegeItem {
-    id: number;
-    name: string;
-    description: string;
-    cover_image: string;
-    logo_image: string;
-    color_main: string;
-    is_public: boolean;
-    domain: string;
-    type: KOLLEGE_TYPE;
-    owner: IUserItem;
-    email: string;
-    updated_at: string;
+    id?: number;
+    name?: string;
+    description?: string;
+    cover_image?: string;
+    logo_image?: string;
+    color_main?: string;
+    is_public?: boolean;
+    domain?: string;
+    type?: KOLLEGE_TYPE;
+    owner?: IUserItem;
+    email?: string;
+    updated_at?: string;
     custom_domain?: string;
     survey_form_url?: string;
-    images: {
+    images?: {
         club_cover: IImageType[];
         club_logo: IImageType[];
         club_symbol: IImageType[];
@@ -72,19 +72,19 @@ export interface ICreateUser {
 }
 export interface IUserItem {
     id: number;
-    email: string;
+    email?: string;
     name: string;
-    description: string;
-    last_login_at: string;
-    verified: boolean;
-    created_at: string;
-    updated_at: string;
-    deleted_at: null;
-    googleId: null;
+    description?: string;
+    last_login_at?: string;
+    verified?: boolean;
+    created_at?: string;
+    updated_at?: string;
+    deleted_at?: null;
+    googleId?: null;
     image?: string;
     avatar: string[];
-    clubMemberId: number;
-    profileImageType: "avatar" | "profile";
+    clubMemberId?: number;
+    profileImageType?: "avatar" | "profile";
     achievement_id?: number;
     phoneNumber?: string;
     isPhoneVerified?: boolean;
@@ -120,20 +120,20 @@ export interface IAchievementFormItem {
     clubInstitutions: IOrganizationItem[];
     course_begin_at?: string;
     course_end_at?: string;
-    created_at: string;
-    description: string;
+    created_at?: string;
+    description?: string;
     id?: number;
-    name: string;
+    name?: string;
     prefix?: string;
     program_type?: string;
     program_name?: string;
     program_url?: string;
     requirements?: any[];
-    sort_order: number;
+    sort_order?: number;
     standardScore?: number;
-    tags: string[];
-    type: string;
-    updated_at: string;
+    tags?: string[];
+    type?: string;
+    updated_at?: string;
     representativeInstitution?: any;
     representativeInstitutionId?: number;
     hasAchievements?: boolean;
@@ -148,11 +148,11 @@ export interface IAchievementItem {
     cid?: any;
     course_begin_at?: string;
     course_end_at?: string;
-    created_at: string;
+    created_at?: string;
     expiration_date?: string;
     id?: number;
     is_received?: boolean;
-    issuance_route: {
+    issuance_route?: {
         submissions: ISubmissionItem[];
         route: "automatic";
     } | "manual";
