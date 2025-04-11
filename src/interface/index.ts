@@ -115,12 +115,17 @@ export interface ISvgProps {
   extraColor2?: string;
 }
 
-export interface CertificateData {
-  user: IUserItem;
-  kollegeInfo: IKollegeItem;
-  achievementInfo: IAchievementItem;
-}
+// export interface CertificateData {
+//   user: IUserItem;
+//   kollegeInfo: IKollegeItem;
+//   achievementInfo: IAchievementItem;
+// }
 
+export interface CertificateData {
+  user: any;
+  kollegeInfo: any;
+  achievementInfo: any;
+}
 export interface CertificateOptions {
   type?: "badge" | "certificate";
   size?: number;
