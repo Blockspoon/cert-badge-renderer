@@ -1,33 +1,7 @@
-export interface IImageType {
-  imageId: number;
-  path: string;
-  type: string;
-  url: string;
-  order?: number;
-}
-
-export interface IExtendedImageType extends IImageType {
-  id: number; // 추가된 속성
-}
-
 export interface IKollegeItem {
   name?: string;
-  images?: {
-    club_cover: IImageType[];
-    club_logo: IImageType[];
-    club_symbol: IImageType[];
-    path?: string;
-  };
+  images?: any;
   [key: string]: any;
-}
-
-export interface ITagItem {
-  tagKey: string;
-  tagName: string;
-  order: number;
-  is_visible: boolean;
-  is_removable: boolean;
-  pinnedTagKey: string | null | undefined;
 }
 
 export interface IUserItem {
@@ -68,15 +42,10 @@ export interface IAchievementItem {
 }
 
 export interface IOrganizationItem {
-  type: "운영기관" | "민간기관" | "공공기관" | "커뮤니티";
-  name: string;
-  id: number;
-  images: any; // 현재 구조가 두 가지로 나뉘어져 있어서 일단 any로 처리 (추후 수정 필요)
-  // images: IImageType[][];
-  contact_person_name: string;
-  contact_email: string;
-  phone_number: string;
-  website_url: string;
+  name?: string;
+  id?: number;
+  images?: any;
+  [key: string]: any;
 }
 
 export enum ACHIEVEMENT_IMAGES {
@@ -134,7 +103,7 @@ export interface IAchievementDesignItem {
   sub_color: string;
   layout_json: ElementStyle[];
   template_type: string;
-  image: IImageType;
+  image: any;
   extra_color_1: string;
   extra_color_2: string;
 }
