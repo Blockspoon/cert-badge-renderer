@@ -18,10 +18,11 @@ const getBindingValue_1 = require("./utils/getBindingValue");
 const qrcode_1 = __importDefault(require("qrcode"));
 const svgTemplate_1 = require("./templates/svgTemplate");
 const certificates_1 = __importDefault(require("./templates/certificates"));
+const componentsDirection_1 = require("./constants/componentsDirection");
 const DEFAULT_IMAGE_URL = "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
 function renderCertificate(data_1) {
     return __awaiter(this, arguments, void 0, function* (data, options = {}) {
-        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z;
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2;
         const { type = "certificate", size = 600, noSpace = false } = options;
         // type에 따라 적절한 layout_json 선택
         const elements = type === "badge"
@@ -32,8 +33,14 @@ function renderCertificate(data_1) {
             return `<div style="position: relative; width: 100%; height: 100%;"></div>`;
         }
         const sortedElements = elements.sort((a, b) => (a.order || 0) - (b.order || 0));
-        const height = type == "badge" ? 600 : 810;
-        const width = type == "badge" ? 600 : 1152;
+        function isHorizontal(name) {
+            if (!name)
+                return false;
+            return !componentsDirection_1.portraitComponents.includes(name);
+        }
+        const templateComponentName = (_j = (_h = (_g = data.achievementInfo) === null || _g === void 0 ? void 0 : _g.achievementForm) === null || _h === void 0 ? void 0 : _h.achievementCertificateDesign) === null || _j === void 0 ? void 0 : _j.template_type;
+        const height = type == "badge" ? 600 : isHorizontal(templateComponentName) ? 810 : 1152;
+        const width = type == "badge" ? 600 : isHorizontal(templateComponentName) ? 1152 : 810;
         let html = `
     <!DOCTYPE html>
     <html lang="ko">
@@ -61,30 +68,31 @@ function renderCertificate(data_1) {
           overflow: hidden;
           display: flex;
           align-items: center;
+          justify-content: center;
         ">
         <div
           style="
-            height: ${(size / height) * 600}px;
-            width: ${size}px;
+            width: ${isHorizontal(templateComponentName) ? size : size * (width / height)}px;
+            height: ${isHorizontal(templateComponentName) ? size * (height / width) : size}px;
+            aspect-ratio: ${width / height};
             ${noSpace ? "position: absolute; top: 0; left: 0;" : ""}
           "
         >
-        
         <div style="
         position: relative;
         width: ${width}px;
         height: ${height}px;
         overflow: hidden;
-        transform: scale(${size / width});
+        transform: scale(${isHorizontal(templateComponentName) ? size / width : size / height});
         transform-origin: top left;
         ">
         `;
         if (type == "certificate") {
-            html += certificates_1.default[(_j = (_h = (_g = data.achievementInfo) === null || _g === void 0 ? void 0 : _g.achievementForm) === null || _h === void 0 ? void 0 : _h.achievementCertificateDesign) === null || _j === void 0 ? void 0 : _j.template_type]({
-                mainColor: ((_m = (_l = (_k = data.achievementInfo) === null || _k === void 0 ? void 0 : _k.achievementForm) === null || _l === void 0 ? void 0 : _l.achievementCertificateDesign) === null || _m === void 0 ? void 0 : _m.main_color) || "#000000",
-                subColor: ((_q = (_p = (_o = data.achievementInfo) === null || _o === void 0 ? void 0 : _o.achievementForm) === null || _p === void 0 ? void 0 : _p.achievementCertificateDesign) === null || _q === void 0 ? void 0 : _q.sub_color) || "#000000",
-                extraColor1: ((_t = (_s = (_r = data.achievementInfo) === null || _r === void 0 ? void 0 : _r.achievementForm) === null || _s === void 0 ? void 0 : _s.achievementCertificateDesign) === null || _t === void 0 ? void 0 : _t.extra_color_1) || "#000000",
-                extraColor2: ((_w = (_v = (_u = data.achievementInfo) === null || _u === void 0 ? void 0 : _u.achievementForm) === null || _v === void 0 ? void 0 : _v.achievementCertificateDesign) === null || _w === void 0 ? void 0 : _w.extra_color_2) || "#000000",
+            html += certificates_1.default[(_m = (_l = (_k = data.achievementInfo) === null || _k === void 0 ? void 0 : _k.achievementForm) === null || _l === void 0 ? void 0 : _l.achievementCertificateDesign) === null || _m === void 0 ? void 0 : _m.template_type]({
+                mainColor: ((_q = (_p = (_o = data.achievementInfo) === null || _o === void 0 ? void 0 : _o.achievementForm) === null || _p === void 0 ? void 0 : _p.achievementCertificateDesign) === null || _q === void 0 ? void 0 : _q.main_color) || "#000000",
+                subColor: ((_t = (_s = (_r = data.achievementInfo) === null || _r === void 0 ? void 0 : _r.achievementForm) === null || _s === void 0 ? void 0 : _s.achievementCertificateDesign) === null || _t === void 0 ? void 0 : _t.sub_color) || "#000000",
+                extraColor1: ((_w = (_v = (_u = data.achievementInfo) === null || _u === void 0 ? void 0 : _u.achievementForm) === null || _v === void 0 ? void 0 : _v.achievementCertificateDesign) === null || _w === void 0 ? void 0 : _w.extra_color_1) || "#000000",
+                extraColor2: ((_z = (_y = (_x = data.achievementInfo) === null || _x === void 0 ? void 0 : _x.achievementForm) === null || _y === void 0 ? void 0 : _y.achievementCertificateDesign) === null || _z === void 0 ? void 0 : _z.extra_color_2) || "#000000",
             });
         }
         for (const element of sortedElements) {
@@ -175,7 +183,7 @@ function renderCertificate(data_1) {
                 html += `<div style="${commonStyles}">`;
                 if (element.bindingKey === "badge" && type !== "badge") {
                     // 뱃지 (certificate 타입일 때만 뱃지를 중첩해서 렌더링)
-                    const badgeElements = (_z = (_y = (_x = data.achievementInfo) === null || _x === void 0 ? void 0 : _x.achievementForm) === null || _y === void 0 ? void 0 : _y.achievementBadgeDesign) === null || _z === void 0 ? void 0 : _z.layout_json;
+                    const badgeElements = (_2 = (_1 = (_0 = data.achievementInfo) === null || _0 === void 0 ? void 0 : _0.achievementForm) === null || _1 === void 0 ? void 0 : _1.achievementBadgeDesign) === null || _2 === void 0 ? void 0 : _2.layout_json;
                     html += `<div style="
           width: 600px;
           height: 600px;

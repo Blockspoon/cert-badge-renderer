@@ -8,6 +8,7 @@ import { getBindingValue } from "./utils/getBindingValue";
 import QRCode from "qrcode";
 import { badgeTemplates, ribbonTemplates } from "./templates/svgTemplate";
 import Certificates from "./templates/certificates";
+import { portraitComponents } from "./constants/componentsDirection";
 
 const DEFAULT_IMAGE_URL =
   "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
@@ -35,8 +36,19 @@ export async function renderCertificate(
     (a, b) => (a.order || 0) - (b.order || 0)
   );
 
-  const height = type == "badge" ? 600 : 810;
-  const width = type == "badge" ? 600 : 1152;
+  function isHorizontal(name?: string) {
+    if (!name) return false;
+    return !portraitComponents.includes(name);
+  }
+
+  const templateComponentName =
+    data.achievementInfo?.achievementForm?.achievementCertificateDesign
+      ?.template_type;
+
+  const height =
+    type == "badge" ? 600 : isHorizontal(templateComponentName) ? 810 : 1152;
+  const width =
+    type == "badge" ? 600 : isHorizontal(templateComponentName) ? 1152 : 810;
 
   let html = `
     <!DOCTYPE html>
@@ -65,21 +77,22 @@ export async function renderCertificate(
           overflow: hidden;
           display: flex;
           align-items: center;
+          justify-content: center;
         ">
         <div
           style="
-            height: ${(size / height) * 600}px;
-            width: ${size}px;
+            width: ${isHorizontal(templateComponentName) ? size : size * (width / height)}px;
+            height: ${isHorizontal(templateComponentName) ? size * (height / width) : size}px;
+            aspect-ratio: ${width / height};
             ${noSpace ? "position: absolute; top: 0; left: 0;" : ""}
           "
         >
-        
         <div style="
         position: relative;
         width: ${width}px;
         height: ${height}px;
         overflow: hidden;
-        transform: scale(${size / width});
+        transform: scale(${isHorizontal(templateComponentName) ? size / width : size / height});
         transform-origin: top left;
         ">
         `;
