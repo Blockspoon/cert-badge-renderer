@@ -14,6 +14,7 @@ import { createNewCertificateType11 } from "./NewCertificateType11";
 import { createNewCertificateType12 } from "./NewCertificateType12";
 import { createNewCertificateType13 } from "./NewCertificateType13";
 import { createNewCertificateType14 } from "./NewCertificateType14";
+import { createNewCertificateType15 } from "./NewCertificateType15";
 import { createNewCertificateType16 } from "./NewCertificateType16";
 import { createNewCertificateType17 } from "./NewCertificateType17";
 import { createNewCertificateType18 } from "./NewCertificateType18";
@@ -52,7 +53,7 @@ declare const Certificates: {
     NewCertificateType12: typeof createNewCertificateType12;
     NewCertificateType13: typeof createNewCertificateType13;
     NewCertificateType14: typeof createNewCertificateType14;
-    NewCertificateType15: any;
+    NewCertificateType15: typeof createNewCertificateType15;
     NewCertificateType16: typeof createNewCertificateType16;
     NewCertificateType17: typeof createNewCertificateType17;
     NewCertificateType18: typeof createNewCertificateType18;
