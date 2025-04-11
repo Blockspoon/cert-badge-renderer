@@ -1,4 +1,4 @@
-export { renderCertificate } from './renderCertificate';
 export { generateAchievementFile } from './utils/generateAchievementFile';
+export { generateAchievementHTML } from './utils/generateAchievementHTML';
 export type { CertificateData, CertificateOptions } from './interface';
 // export { getBindingValue } from "./utils/getBindingValue";

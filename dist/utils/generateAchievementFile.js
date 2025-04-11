@@ -14,7 +14,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateAchievementFile = generateAchievementFile;
 const puppeteer_1 = __importDefault(require("puppeteer"));
-const renderCertificate_1 = require("../renderCertificate");
+const generateAchievementHTML_1 = require("./generateAchievementHTML");
 function generateAchievementFile(data_1) {
     return __awaiter(this, arguments, void 0, function* (data, options = {}) {
         const { returnType = "file", type = "certificate", size = 600 } = options;
@@ -38,7 +38,7 @@ function generateAchievementFile(data_1) {
                 request.continue();
             }
         });
-        const htmlContent = yield (0, renderCertificate_1.renderCertificate)(data, { type, size });
+        const htmlContent = yield (0, generateAchievementHTML_1.generateAchievementHTML)(data, { type, size });
         yield page.setContent(htmlContent, {
             waitUntil: "domcontentloaded",
         });

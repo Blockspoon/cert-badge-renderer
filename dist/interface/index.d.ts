@@ -1,30 +1,7 @@
-export interface IImageType {
-    imageId: number;
-    path: string;
-    type: string;
-    url: string;
-    order?: number;
-}
-export interface IExtendedImageType extends IImageType {
-    id: number;
-}
 export interface IKollegeItem {
     name?: string;
-    images?: {
-        club_cover: IImageType[];
-        club_logo: IImageType[];
-        club_symbol: IImageType[];
-        path?: string;
-    };
+    images?: any;
     [key: string]: any;
-}
-export interface ITagItem {
-    tagKey: string;
-    tagName: string;
-    order: number;
-    is_visible: boolean;
-    is_removable: boolean;
-    pinnedTagKey: string | null | undefined;
 }
 export interface IUserItem {
     name: string;
@@ -62,14 +39,10 @@ export interface IAchievementItem {
     }[];
 }
 export interface IOrganizationItem {
-    type: "운영기관" | "민간기관" | "공공기관" | "커뮤니티";
-    name: string;
-    id: number;
-    images: any;
-    contact_person_name: string;
-    contact_email: string;
-    phone_number: string;
-    website_url: string;
+    name?: string;
+    id?: number;
+    images?: any;
+    [key: string]: any;
 }
 export declare enum ACHIEVEMENT_IMAGES {
     ACHIEVEMENT_FORM = "achievement_form",
@@ -120,7 +93,7 @@ export interface IAchievementDesignItem {
     sub_color: string;
     layout_json: ElementStyle[];
     template_type: string;
-    image: IImageType;
+    image: any;
     extra_color_1: string;
     extra_color_2: string;
 }
@@ -131,13 +104,13 @@ export interface ISvgProps {
     extraColor2?: string;
 }
 export interface CertificateData {
-    user: IUserItem;
-    kollegeInfo: IKollegeItem;
-    achievementInfo: IAchievementItem;
+    user: any;
+    kollegeInfo: any;
+    achievementInfo: any;
 }
 export interface CertificateOptions {
-    type?: "badge" | "certificate";
+    type?: string;
     size?: number;
+    returnType?: string;
     noSpace?: boolean;
-    returnType?: "file" | "base64";
 }

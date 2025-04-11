@@ -120,15 +120,15 @@ export interface ISvgProps {
 //   kollegeInfo: IKollegeItem;
 //   achievementInfo: IAchievementItem;
 // }
-
 export interface CertificateData {
   user: any;
   kollegeInfo: any;
   achievementInfo: any;
 }
+
 export interface CertificateOptions {
-  type?: "badge" | "certificate";
+  type?: string; //"badge" | "certificate";
   size?: number;
+  returnType?: string; //"file" | "base64";
   noSpace?: boolean;
-  returnType?: "file" | "base64";
 }

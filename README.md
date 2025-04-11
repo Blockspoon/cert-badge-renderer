@@ -13,7 +13,7 @@ npm install json-to-certificate
 ### 기본 사용
 
 ```typescript
-import { generateAchievementFile, renderCertificate } from 'json-to-certificate';
+import { generateAchievementFile, generateAchievementHTML } from 'json-to-certificate';
 
 const certificateData = {
   user: {
@@ -30,7 +30,7 @@ const certificateData = {
 };
 
 // HTML로 변환
-const htmlContent = await renderCertificate(certificateData, {
+const htmlContent = await generateAchievementHTML(certificateData, {
   type: "certificate",
   size: 600
 });

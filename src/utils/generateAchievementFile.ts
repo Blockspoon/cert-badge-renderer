@@ -1,5 +1,5 @@
 import puppeteer from "puppeteer";
-import { renderCertificate } from "../renderCertificate";
+import { generateAchievementHTML } from "./generateAchievementHTML";
 import { CertificateData, CertificateOptions } from "../interface";
 
 export async function generateAchievementFile(
@@ -29,7 +29,7 @@ export async function generateAchievementFile(
     }
   });
 
-  const htmlContent = await renderCertificate(data, { type, size });
+  const htmlContent = await generateAchievementHTML(data, { type, size });
 
   await page.setContent(htmlContent, {
     waitUntil: "domcontentloaded",
