@@ -24,14 +24,21 @@ function convertImageToBase64(url) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const response = yield fetch(url);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const contentType = response.headers.get('content-type');
+            if (!(contentType === null || contentType === void 0 ? void 0 : contentType.startsWith('image/'))) {
+                throw new Error(`Not an image! content-type: ${contentType}`);
+            }
             const buffer = yield response.arrayBuffer();
             const base64 = Buffer.from(buffer).toString('base64');
-            const mimeType = response.headers.get('content-type') || 'image/png';
-            return `data:${mimeType};base64,${base64}`;
+            return `data:${contentType};base64,${base64}`;
         }
         catch (error) {
             console.error(`이미지 변환 실패: ${url}`, error);
-            return '';
+            // 에러 시 기본 이미지나 빈 이미지를 반환
+            return 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
         }
     });
 }

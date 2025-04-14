@@ -20,13 +20,20 @@ const DEFAULT_IMAGE_URL =
 async function convertImageToBase64(url: string): Promise<string> {
   try {
     const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const contentType = response.headers.get('content-type');
+    if (!contentType?.startsWith('image/')) {
+      throw new Error(`Not an image! content-type: ${contentType}`);
+    }
     const buffer = await response.arrayBuffer();
     const base64 = Buffer.from(buffer).toString('base64');
-    const mimeType = response.headers.get('content-type') || 'image/png';
-    return `data:${mimeType};base64,${base64}`;
+    return `data:${contentType};base64,${base64}`;
   } catch (error) {
     console.error(`이미지 변환 실패: ${url}`, error);
-    return '';
+    // 에러 시 기본 이미지나 빈 이미지를 반환
+    return 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
   }
 }
 
