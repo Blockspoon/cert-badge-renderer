@@ -27,36 +27,43 @@ function convertImageToBase64(url) {
             finalUrls = url.split("https://");
             const finalUrl = "https://" + finalUrls.pop();
             const response = yield fetch(finalUrl, {
-                credentials: 'include',
+                credentials: "include",
                 headers: {
-                    'Accept': 'image/*',
-                }
+                    Accept: "image/*",
+                },
             });
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            const contentType = response.headers.get('content-type');
-            if (!(contentType === null || contentType === void 0 ? void 0 : contentType.startsWith('image/'))) {
+            const contentType = response.headers.get("content-type");
+            if (!(contentType === null || contentType === void 0 ? void 0 : contentType.startsWith("image/"))) {
                 throw new Error(`Not an image! content-type: ${contentType}`);
             }
             const buffer = yield response.arrayBuffer();
-            const base64 = Buffer.from(buffer).toString('base64');
+            const base64 = Buffer.from(buffer).toString("base64");
             return `data:${contentType};base64,${base64}`;
         }
         catch (error) {
             console.error(`이미지 변환 실패: ${url}`, error);
-            return 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
+            return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
         }
     });
 }
 function generateAchievementHTML(data_1) {
     return __awaiter(this, arguments, void 0, function* (data, options = {}) {
-        var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2;
+        var _a, _b, _c, _d, _e, _f, _g, _h, _j;
         const { type = "certificate", size = 600, noSpace = false } = options;
+        let achievementForm;
+        if (data.achievementInfo.achievementForm) {
+            achievementForm = data.achievementInfo.achievementForm;
+        }
+        else {
+            achievementForm = data.achievementInfo;
+        }
         // type에 따라 적절한 layout_json 선택
         const elements = type === "badge"
-            ? (_c = (_b = (_a = data.achievementInfo) === null || _a === void 0 ? void 0 : _a.achievementForm) === null || _b === void 0 ? void 0 : _b.achievementBadgeDesign) === null || _c === void 0 ? void 0 : _c.layout_json
-            : (_f = (_e = (_d = data.achievementInfo) === null || _d === void 0 ? void 0 : _d.achievementForm) === null || _e === void 0 ? void 0 : _e.achievementCertificateDesign) === null || _f === void 0 ? void 0 : _f.layout_json;
+            ? (_a = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementBadgeDesign) === null || _a === void 0 ? void 0 : _a.layout_json
+            : (_b = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _b === void 0 ? void 0 : _b.layout_json;
         if (!elements || !Array.isArray(elements) || elements.length === 0) {
             console.error("❌ [generateAchievementHTML] elements가 비어 있음:", elements);
             return `<div style="position: relative; width: 100%; height: 100%;"></div>`;
@@ -67,7 +74,7 @@ function generateAchievementHTML(data_1) {
                 return false;
             return !componentsDirection_1.portraitComponents.includes(name);
         }
-        const templateComponentName = (_j = (_h = (_g = data.achievementInfo) === null || _g === void 0 ? void 0 : _g.achievementForm) === null || _h === void 0 ? void 0 : _h.achievementCertificateDesign) === null || _j === void 0 ? void 0 : _j.template_type;
+        const templateComponentName = (_c = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _c === void 0 ? void 0 : _c.template_type;
         const height = type == "badge" ? 600 : isHorizontal(templateComponentName) ? 810 : 1152;
         const width = type == "badge" ? 600 : isHorizontal(templateComponentName) ? 1152 : 810;
         let html = `
@@ -121,11 +128,11 @@ function generateAchievementHTML(data_1) {
         ">
         `;
         if (type == "certificate") {
-            html += certificates_1.default[(_m = (_l = (_k = data.achievementInfo) === null || _k === void 0 ? void 0 : _k.achievementForm) === null || _l === void 0 ? void 0 : _l.achievementCertificateDesign) === null || _m === void 0 ? void 0 : _m.template_type]({
-                mainColor: ((_q = (_p = (_o = data.achievementInfo) === null || _o === void 0 ? void 0 : _o.achievementForm) === null || _p === void 0 ? void 0 : _p.achievementCertificateDesign) === null || _q === void 0 ? void 0 : _q.main_color) || "#000000",
-                subColor: ((_t = (_s = (_r = data.achievementInfo) === null || _r === void 0 ? void 0 : _r.achievementForm) === null || _s === void 0 ? void 0 : _s.achievementCertificateDesign) === null || _t === void 0 ? void 0 : _t.sub_color) || "#000000",
-                extraColor1: ((_w = (_v = (_u = data.achievementInfo) === null || _u === void 0 ? void 0 : _u.achievementForm) === null || _v === void 0 ? void 0 : _v.achievementCertificateDesign) === null || _w === void 0 ? void 0 : _w.extra_color_1) || "#000000",
-                extraColor2: ((_z = (_y = (_x = data.achievementInfo) === null || _x === void 0 ? void 0 : _x.achievementForm) === null || _y === void 0 ? void 0 : _y.achievementCertificateDesign) === null || _z === void 0 ? void 0 : _z.extra_color_2) || "#000000",
+            html += certificates_1.default[(_d = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _d === void 0 ? void 0 : _d.template_type]({
+                mainColor: ((_e = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _e === void 0 ? void 0 : _e.main_color) || "#000000",
+                subColor: ((_f = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _f === void 0 ? void 0 : _f.sub_color) || "#000000",
+                extraColor1: ((_g = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _g === void 0 ? void 0 : _g.extra_color_1) || "#000000",
+                extraColor2: ((_h = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _h === void 0 ? void 0 : _h.extra_color_2) || "#000000",
             });
         }
         for (const element of sortedElements) {
@@ -222,7 +229,7 @@ function generateAchievementHTML(data_1) {
                 html += `<div style="${commonStyles}">`;
                 if (element.bindingKey === "badge" && type !== "badge") {
                     // 뱃지 (certificate 타입일 때만 뱃지를 중첩해서 렌더링)
-                    const badgeElements = (_2 = (_1 = (_0 = data.achievementInfo) === null || _0 === void 0 ? void 0 : _0.achievementForm) === null || _1 === void 0 ? void 0 : _1.achievementBadgeDesign) === null || _2 === void 0 ? void 0 : _2.layout_json;
+                    const badgeElements = (_j = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementBadgeDesign) === null || _j === void 0 ? void 0 : _j.layout_json;
                     html += `<div style="
           width: 600px;
           height: 600px;

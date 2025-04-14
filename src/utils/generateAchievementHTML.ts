@@ -20,29 +20,29 @@ async function convertImageToBase64(url: string): Promise<string> {
     let finalUrls = [];
     finalUrls = url.split("https://");
     const finalUrl = "https://" + finalUrls.pop();
-    
+
     const response = await fetch(finalUrl, {
-      credentials: 'include',
+      credentials: "include",
       headers: {
-        'Accept': 'image/*',
-      }
+        Accept: "image/*",
+      },
     });
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    
-    const contentType = response.headers.get('content-type');
-    if (!contentType?.startsWith('image/')) {
+
+    const contentType = response.headers.get("content-type");
+    if (!contentType?.startsWith("image/")) {
       throw new Error(`Not an image! content-type: ${contentType}`);
     }
-    
+
     const buffer = await response.arrayBuffer();
-    const base64 = Buffer.from(buffer).toString('base64');
+    const base64 = Buffer.from(buffer).toString("base64");
     return `data:${contentType};base64,${base64}`;
   } catch (error) {
     console.error(`이미지 변환 실패: ${url}`, error);
-    return 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
+    return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
   }
 }
 
@@ -50,15 +50,22 @@ export async function generateAchievementHTML(
   data: CertificateData,
   options: CertificateOptions = {}
 ): Promise<string> {
-  
   const { type = "certificate", size = 600, noSpace = false } = options;
+
+  let achievementForm;
+
+  if (data.achievementInfo.achievementForm) {
+    achievementForm = data.achievementInfo.achievementForm;
+  } else {
+    achievementForm = data.achievementInfo;
+  }
 
   // type에 따라 적절한 layout_json 선택
   const elements =
     type === "badge"
-      ? (data.achievementInfo?.achievementForm?.achievementBadgeDesign
+      ? (achievementForm?.achievementBadgeDesign
           ?.layout_json as ElementStyle[])
-      : (data.achievementInfo?.achievementForm?.achievementCertificateDesign
+      : (achievementForm?.achievementCertificateDesign
           ?.layout_json as ElementStyle[]);
 
   if (!elements || !Array.isArray(elements) || elements.length === 0) {
@@ -79,7 +86,7 @@ export async function generateAchievementHTML(
   }
 
   const templateComponentName =
-    data.achievementInfo?.achievementForm?.achievementCertificateDesign
+    achievementForm?.achievementCertificateDesign
       ?.template_type;
 
   const height =
@@ -146,20 +153,20 @@ export async function generateAchievementHTML(
 
   if (type == "certificate") {
     html += Certificates[
-      data.achievementInfo?.achievementForm?.achievementCertificateDesign
+      achievementForm?.achievementCertificateDesign
         ?.template_type
     ]({
       mainColor:
-        data.achievementInfo?.achievementForm?.achievementCertificateDesign
+        achievementForm?.achievementCertificateDesign
           ?.main_color || "#000000",
       subColor:
-        data.achievementInfo?.achievementForm?.achievementCertificateDesign
+        achievementForm?.achievementCertificateDesign
           ?.sub_color || "#000000",
       extraColor1:
-        data.achievementInfo?.achievementForm?.achievementCertificateDesign
+        achievementForm?.achievementCertificateDesign
           ?.extra_color_1 || "#000000",
       extraColor2:
-        data.achievementInfo?.achievementForm?.achievementCertificateDesign
+        achievementForm?.achievementCertificateDesign
           ?.extra_color_2 || "#000000",
     });
   }
@@ -270,12 +277,11 @@ export async function generateAchievementHTML(
     } else if (element.controlType === "text") {
       html += `<div style="${commonStyles}">${element.text || ""}</div>`;
     } else if (element.controlType === "image") {
-
       html += `<div style="${commonStyles}">`;
 
       if (element.bindingKey === "badge" && type !== "badge") {
         // 뱃지 (certificate 타입일 때만 뱃지를 중첩해서 렌더링)
-        const badgeElements = data.achievementInfo?.achievementForm
+        const badgeElements = achievementForm
           ?.achievementBadgeDesign?.layout_json as ElementStyle[];
         html += `<div style="
           width: 600px;

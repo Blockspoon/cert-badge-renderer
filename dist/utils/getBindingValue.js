@@ -36,33 +36,40 @@ const getUserValue = (bindingKey, user) => {
         : (user === null || user === void 0 ? void 0 : user[bindingKey]) || null;
 };
 const getClubValue = (bindingKey, kollegeInfo, achievementInfo) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l;
     if (!kollegeInfo)
         return null;
+    let achievementForm;
+    if (achievementInfo.achievementForm) {
+        achievementForm = achievementInfo.achievementForm;
+    }
+    else {
+        achievementForm = achievementInfo;
+    }
     if (bindingKey.startsWith("name_")) {
         const index = Number(bindingKey.split("_")[1]) - 1;
-        return (((_c = (_b = (_a = achievementInfo === null || achievementInfo === void 0 ? void 0 : achievementInfo.achievementForm) === null || _a === void 0 ? void 0 : _a.clubInstitutions) === null || _b === void 0 ? void 0 : _b[index]) === null || _c === void 0 ? void 0 : _c.name) || "");
+        return (((_b = (_a = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.clubInstitutions) === null || _a === void 0 ? void 0 : _a[index]) === null || _b === void 0 ? void 0 : _b.name) || "");
     }
     if (["sign_image_1", "sign_image_2", "club_symbol_1", "club_symbol_2"].includes(bindingKey)) {
         const index = bindingKey.endsWith("1") ? 0 : 1;
         const imageKey = bindingKey.includes("sign_image")
             ? "sign_image"
             : "club_symbol";
-        return ((_e = (_d = achievementInfo === null || achievementInfo === void 0 ? void 0 : achievementInfo.achievementForm.clubInstitutions) === null || _d === void 0 ? void 0 : _d[index]) === null || _e === void 0 ? void 0 : _e.images)
-            ? (_g = (_f = (0, util_1.groupByType)(achievementInfo === null || achievementInfo === void 0 ? void 0 : achievementInfo.achievementForm.clubInstitutions[index].images)[imageKey]) === null || _f === void 0 ? void 0 : _f[0]) === null || _g === void 0 ? void 0 : _g.path
+        return ((_d = (_c = achievementForm.clubInstitutions) === null || _c === void 0 ? void 0 : _c[index]) === null || _d === void 0 ? void 0 : _d.images)
+            ? (_f = (_e = (0, util_1.groupByType)(achievementForm.clubInstitutions[index].images)[imageKey]) === null || _e === void 0 ? void 0 : _e[0]) === null || _f === void 0 ? void 0 : _f.path
             : null;
     }
     if (["club_logo", "sign_image", "club_symbol"].includes(bindingKey)) {
-        if (achievementInfo === null || achievementInfo === void 0 ? void 0 : achievementInfo.achievementForm.representativeInstitution) {
-            const groupByTypeImages = (0, util_1.groupByType)(achievementInfo === null || achievementInfo === void 0 ? void 0 : achievementInfo.achievementForm.representativeInstitution.images);
-            return (((_j = (_h = groupByTypeImages[bindingKey]) === null || _h === void 0 ? void 0 : _h[0]) === null || _j === void 0 ? void 0 : _j.path) || null);
+        if (achievementForm.representativeInstitution) {
+            const groupByTypeImages = (0, util_1.groupByType)(achievementForm.representativeInstitution.images);
+            return (((_h = (_g = groupByTypeImages[bindingKey]) === null || _g === void 0 ? void 0 : _g[0]) === null || _h === void 0 ? void 0 : _h.path) || null);
         }
         const groupByTypeImages = (0, util_1.groupByType)(kollegeInfo.images);
-        return (((_l = (_k = groupByTypeImages[bindingKey]) === null || _k === void 0 ? void 0 : _k[0]) === null || _l === void 0 ? void 0 : _l.path) || null);
+        return (((_k = (_j = groupByTypeImages[bindingKey]) === null || _j === void 0 ? void 0 : _j[0]) === null || _k === void 0 ? void 0 : _k.path) || null);
     }
     if (bindingKey === "name" &&
-        (achievementInfo === null || achievementInfo === void 0 ? void 0 : achievementInfo.achievementForm.representativeInstitution)) {
-        return (_m = achievementInfo === null || achievementInfo === void 0 ? void 0 : achievementInfo.achievementForm.representativeInstitution) === null || _m === void 0 ? void 0 : _m.name;
+        achievementForm.representativeInstitution) {
+        return (_l = achievementForm.representativeInstitution) === null || _l === void 0 ? void 0 : _l.name;
     }
     return (kollegeInfo === null || kollegeInfo === void 0 ? void 0 : kollegeInfo[bindingKey]) || null;
 };

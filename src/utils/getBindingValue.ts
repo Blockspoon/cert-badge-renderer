@@ -58,10 +58,18 @@ const getClubValue = (
 ) => {
   if (!kollegeInfo) return null;
 
+  let achievementForm;
+
+  if (achievementInfo.achievementForm) {
+    achievementForm = achievementInfo.achievementForm;
+  } else {
+    achievementForm = achievementInfo;
+  }
+
   if (bindingKey.startsWith("name_")) {
     const index = Number(bindingKey.split("_")[1]) - 1;
     return (
-      achievementInfo?.achievementForm?.clubInstitutions?.[index]?.name || ""
+      achievementForm?.clubInstitutions?.[index]?.name || ""
     );
   }
 
@@ -75,17 +83,17 @@ const getClubValue = (
       ? "sign_image"
       : "club_symbol";
 
-    return achievementInfo?.achievementForm.clubInstitutions?.[index]?.images
+    return achievementForm.clubInstitutions?.[index]?.images
       ? groupByType(
-          achievementInfo?.achievementForm.clubInstitutions[index].images
+          achievementForm.clubInstitutions[index].images
         )[imageKey]?.[0]?.path
       : null;
   }
 
   if (["club_logo", "sign_image", "club_symbol"].includes(bindingKey)) {
-    if (achievementInfo?.achievementForm.representativeInstitution) {
+    if (achievementForm.representativeInstitution) {
       const groupByTypeImages = groupByType(
-        achievementInfo?.achievementForm.representativeInstitution.images
+        achievementForm.representativeInstitution.images
       );
       return (
         groupByTypeImages[bindingKey as keyof typeof groupByTypeImages]?.[0]
@@ -103,9 +111,9 @@ const getClubValue = (
 
   if (
     bindingKey === "name" &&
-    achievementInfo?.achievementForm.representativeInstitution
+    achievementForm.representativeInstitution
   ) {
-    return achievementInfo?.achievementForm.representativeInstitution?.name;
+    return achievementForm.representativeInstitution?.name;
   }
 
   return kollegeInfo?.[bindingKey] || null;
