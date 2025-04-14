@@ -52,16 +52,16 @@ const test_object = {
         type: "community",
         images: [
           {
-            path: "uploads/club/symbol/7ed92a1b-d87f-4ddb-9af6-ae8fd7403e36",
-            type: "club_symbol",
+            path: "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/club/logo/91e4d176-4df8-46a7-bbbc-ee4a2bb72d6a",
+            type: "club_logo",
           },
           {
-            path: "uploads/club/cover/d962e0ba-b981-4ff8-96ab-0a0f325ddb8a",
+            path: "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/club/cover/d962e0ba-b981-4ff8-96ab-0a0f325ddb8a",
             type: "club_cover",
           },
           {
-            path: "uploads/club/logo/91e4d176-4df8-46a7-bbbc-ee4a2bb72d6a",
-            type: "club_logo",
+            path: "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/club/symbol/7ed92a1b-d87f-4ddb-9af6-ae8fd7403e36",
+            type: "club_symbol",
           },
         ],
       },
@@ -449,9 +449,177 @@ const test_object = {
 };
 
 const testCertificateData = {
-  user: test_object.achievement.user,
-  kollegeInfo: test_object.achievement.achievementForm.club,
-  achievementInfo: test_object.achievement,
+  user: {
+    email: "kolleges1234@gmail.com",
+    name: "칼리지스 헬퍼",
+    avatar: [
+      "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/background.webp",
+      "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/clothes.webp",
+      "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/face.webp",
+      "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/eye.webp",
+      "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/hair.webp",
+      "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/mouth.webp",
+      "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/accessory.webp",
+    ],
+    deleted_at: null,
+    image: null,
+    profileImageType: "avatar",
+  },
+  kollegeInfo: {
+    domain: "sandbox",
+    name: "Kolleges API Sandbox",
+    type: "community",
+    images: [
+      {
+        path: "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/club/symbol/7ed92a1b-d87f-4ddb-9af6-ae8fd7403e36",
+        type: "club_symbol",
+      },
+      {
+        path: "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/club/logo/91e4d176-4df8-46a7-bbbc-ee4a2bb72d6a",
+        type: "club_logo",
+      },
+    ],
+  },
+  achievementInfo: {
+    id: 1539,
+    certificate_number: "SAND-202504-r9a1pt",
+    expiration_date: null,
+    is_received: false,
+    issuance_method: "EMAIL",
+    created_at: "2025-04-06T21:40:39.316Z",
+    updated_at: "2025-04-06T21:40:55.500Z",
+    user: {
+      email: "kolleges1234@gmail.com",
+      name: "칼리지스 헬퍼",
+      avatar: [
+        "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/background.webp",
+        "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/clothes.webp",
+        "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/face.webp",
+        "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/eye.webp",
+        "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/hair.webp",
+        "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/mouth.webp",
+        "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/user/avatar/accessory.webp",
+      ],
+      deleted_at: null,
+      image: null,
+      profileImageType: "avatar",
+    },
+    achievementForm: {
+      id: 551,
+      name: "sandbox-achievement",
+      achievementBadgeDesign: {
+        id: 83,
+        name: "sandbox-badge-v1",
+        main_color: "#322899",
+        sub_color: "#7468E8",
+        extra_color_1: null,
+        extra_color_2: null,
+        layout_json: [
+          {
+            controlType: "svg",
+            designType: "badge",
+            componentName: "BadgeType31",
+            background: "transparent",
+            width: 538,
+            height: 594,
+            x: 31.00006103515625,
+            y: 3,
+            text: "BadgeType31",
+            mainColor: "#322899",
+            subColor: "#7368E8",
+            order: 0,
+            id: "0",
+          },
+          {
+            controlType: "svg",
+            designType: "icon",
+            componentName: "IconMortarboard3",
+            background: "transparent",
+            width: 240,
+            height: 222,
+            x: 188,
+            y: 134,
+            text: "IconMortarboard3",
+            mainColor: "#322899",
+            subColor: "#7468e8",
+            extraColor1: "#ffffff",
+            order: 1,
+            id: "1",
+          },
+          {
+            controlType: "text",
+            designType: "text",
+            text: "· CERTIFICATE of COMPLETION ·",
+            fontSize: 16,
+            fontWeight: "600",
+            textAlign: "center",
+            fontFamily: "Pretendard, sans-serif",
+            color: "white",
+            width: 332,
+            height: 50,
+            x: 135,
+            y: 122,
+            order: 2,
+            id: "2",
+          },
+          {
+            controlType: "text",
+            designType: "props",
+            type: "achievement",
+            bindingKey: "name",
+            text: "[인증서.제목]",
+            fontSize: 40,
+            fontWeight: "700",
+            textAlign: "center",
+            fontFamily: "Pretendard, sans-serif",
+            color: "black",
+            width: 375,
+            height: 108,
+            x: 115,
+            y: 398,
+            order: 3,
+            id: "3",
+          },
+          {
+            controlType: "image",
+            designType: "props",
+            type: "club",
+            bindingKey: "club_symbol",
+            src: "",
+            text: "[발급기관[1].심볼]",
+            fontSize: 16,
+            fontWeight: "400",
+            textAlign: "center",
+            fontFamily: "Pretendard, sans-serif",
+            width: 65,
+            height: 65,
+            x: 415,
+            y: 243,
+            order: 4,
+            id: "4",
+          },
+        ],
+        template_type: "NewBadgeType31",
+        created_at: "2025-04-09T18:37:27.940Z",
+        updated_at: "2025-04-09T18:37:27.940Z",
+      },
+      club: {
+        domain: "sandbox",
+        name: "Kolleges API Sandbox",
+        type: "community",
+        images: [
+          {
+            path: "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/club/symbol/7ed92a1b-d87f-4ddb-9af6-ae8fd7403e36",
+            type: "club_symbol",
+          },
+          {
+            path: "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/club/logo/91e4d176-4df8-46a7-bbbc-ee4a2bb72d6a",
+            type: "club_logo",
+          },
+        ],
+      },
+    },
+  },
 };
 const testOptions = {
   type: "badge",
@@ -462,16 +630,13 @@ const testOptions = {
 async function runTests() {
   try {
     // HTML 변환 테스트
-    const htmlOutput = await generateAchievementHTML(
-      testCertificateData,
-      {
-        type: "badge",
-        size: 300,
-        noSpace: false,
-        mainColor: "#322899",
-        subColor: "#7368E8"
-      }
-    );
+    const htmlOutput = await generateAchievementHTML(testCertificateData, {
+      type: "badge",
+      size: 300,
+      noSpace: false,
+      mainColor: "#322899",
+      subColor: "#7368E8",
+    });
     fs.writeFileSync("test/certificate.html", htmlOutput, "utf8");
     console.log("✅ HTML 변환 완료: test/certificate.html");
 

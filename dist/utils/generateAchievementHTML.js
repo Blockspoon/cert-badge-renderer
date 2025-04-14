@@ -21,14 +21,11 @@ const certificates_1 = __importDefault(require("../templates/certificates"));
 const componentsDirection_1 = require("../constants/componentsDirection");
 function convertImageToBase64(url) {
     return __awaiter(this, void 0, void 0, function* () {
-        console.log("url");
-        console.log(url);
         try {
             // URL이 이미 baseUrl을 포함하고 있는지 확인
             let finalUrls = [];
             finalUrls = url.split("https://");
             const finalUrl = "https://" + finalUrls.pop();
-            console.log('이미지 URL:', finalUrl);
             const response = yield fetch(finalUrl, {
                 credentials: 'include',
                 headers: {
@@ -142,6 +139,10 @@ function generateAchievementHTML(data_1) {
                 }
                 if (element.controlType === "image") {
                     element.src = bindingValue;
+                    console.log("element");
+                    console.log(element);
+                    console.log("bindingValue");
+                    console.log(bindingValue);
                 }
             }
             if (bindingValue === null &&

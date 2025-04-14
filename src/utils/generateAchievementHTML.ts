@@ -15,16 +15,11 @@ import Certificates from "../templates/certificates";
 import { portraitComponents } from "../constants/componentsDirection";
 
 async function convertImageToBase64(url: string): Promise<string> {
-  console.log("url");
-  console.log(url);
   try {
-
     // URL이 이미 baseUrl을 포함하고 있는지 확인
     let finalUrls = [];
     finalUrls = url.split("https://");
     const finalUrl = "https://" + finalUrls.pop();
-    
-    console.log('이미지 URL:', finalUrl);
     
     const response = await fetch(finalUrl, {
       credentials: 'include',
@@ -55,6 +50,7 @@ export async function generateAchievementHTML(
   data: CertificateData,
   options: CertificateOptions = {}
 ): Promise<string> {
+  
   const { type = "certificate", size = 600, noSpace = false } = options;
 
   // type에 따라 적절한 layout_json 선택
@@ -274,6 +270,7 @@ export async function generateAchievementHTML(
     } else if (element.controlType === "text") {
       html += `<div style="${commonStyles}">${element.text || ""}</div>`;
     } else if (element.controlType === "image") {
+
       html += `<div style="${commonStyles}">`;
 
       if (element.bindingKey === "badge" && type !== "badge") {
