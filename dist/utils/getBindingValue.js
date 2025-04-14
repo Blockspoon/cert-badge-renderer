@@ -57,7 +57,8 @@ const getClubValue = (bindingKey, kollegeInfo, achievementInfo) => {
             const groupByTypeImages = (0, util_1.groupByType)(achievementInfo === null || achievementInfo === void 0 ? void 0 : achievementInfo.achievementForm.representativeInstitution.images);
             return (((_j = (_h = groupByTypeImages[bindingKey]) === null || _h === void 0 ? void 0 : _h[0]) === null || _j === void 0 ? void 0 : _j.path) || null);
         }
-        return (_l = (_k = kollegeInfo.images[bindingKey]) === null || _k === void 0 ? void 0 : _k[0]) === null || _l === void 0 ? void 0 : _l.path;
+        const groupByTypeImages = (0, util_1.groupByType)(kollegeInfo.images);
+        return (((_l = (_k = groupByTypeImages[bindingKey]) === null || _k === void 0 ? void 0 : _k[0]) === null || _l === void 0 ? void 0 : _l.path) || null);
     }
     if (bindingKey === "name" &&
         (achievementInfo === null || achievementInfo === void 0 ? void 0 : achievementInfo.achievementForm.representativeInstitution)) {

@@ -139,10 +139,6 @@ function generateAchievementHTML(data_1) {
                 }
                 if (element.controlType === "image") {
                     element.src = bindingValue;
-                    console.log("element");
-                    console.log(element);
-                    console.log("bindingValue");
-                    console.log(bindingValue);
                 }
             }
             if (bindingValue === null &&

@@ -87,14 +87,18 @@ const getClubValue = (
       const groupByTypeImages = groupByType(
         achievementInfo?.achievementForm.representativeInstitution.images
       );
-
       return (
         groupByTypeImages[bindingKey as keyof typeof groupByTypeImages]?.[0]
           ?.path || null
       );
     }
 
-    return kollegeInfo.images[bindingKey]?.[0]?.path;
+    const groupByTypeImages = groupByType(kollegeInfo.images);
+
+    return (
+      groupByTypeImages[bindingKey as keyof typeof groupByTypeImages]?.[0]
+        ?.path || null
+    );
   }
 
   if (
