@@ -19,11 +19,22 @@ const qrcode_1 = __importDefault(require("qrcode"));
 const svgTemplate_1 = require("../templates/svgTemplate");
 const certificates_1 = __importDefault(require("../templates/certificates"));
 const componentsDirection_1 = require("../constants/componentsDirection");
-const DEFAULT_IMAGE_URL = "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
 function convertImageToBase64(url) {
     return __awaiter(this, void 0, void 0, function* () {
+        console.log("url");
+        console.log(url);
         try {
-            const response = yield fetch(url);
+            // URL이 이미 baseUrl을 포함하고 있는지 확인
+            let finalUrls = [];
+            finalUrls = url.split("https://");
+            const finalUrl = "https://" + finalUrls.pop();
+            console.log('이미지 URL:', finalUrl);
+            const response = yield fetch(finalUrl, {
+                credentials: 'include',
+                headers: {
+                    'Accept': 'image/*',
+                }
+            });
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -37,7 +48,6 @@ function convertImageToBase64(url) {
         }
         catch (error) {
             console.error(`이미지 변환 실패: ${url}`, error);
-            // 에러 시 기본 이미지나 빈 이미지를 반환
             return 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
         }
     });

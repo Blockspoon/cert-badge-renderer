@@ -14,25 +14,39 @@ import {
 import Certificates from "../templates/certificates";
 import { portraitComponents } from "../constants/componentsDirection";
 
-const DEFAULT_IMAGE_URL =
-  "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
-
 async function convertImageToBase64(url: string): Promise<string> {
+  console.log("url");
+  console.log(url);
   try {
-    const response = await fetch(url);
+
+    // URL이 이미 baseUrl을 포함하고 있는지 확인
+    let finalUrls = [];
+    finalUrls = url.split("https://");
+    const finalUrl = "https://" + finalUrls.pop();
+    
+    console.log('이미지 URL:', finalUrl);
+    
+    const response = await fetch(finalUrl, {
+      credentials: 'include',
+      headers: {
+        'Accept': 'image/*',
+      }
+    });
+    
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
+    
     const contentType = response.headers.get('content-type');
     if (!contentType?.startsWith('image/')) {
       throw new Error(`Not an image! content-type: ${contentType}`);
     }
+    
     const buffer = await response.arrayBuffer();
     const base64 = Buffer.from(buffer).toString('base64');
     return `data:${contentType};base64,${base64}`;
   } catch (error) {
     console.error(`이미지 변환 실패: ${url}`, error);
-    // 에러 시 기본 이미지나 빈 이미지를 반환
     return 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
   }
 }
