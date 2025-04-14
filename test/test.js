@@ -1,91 +1,102 @@
 const fs = require("fs");
-const { renderCertificate } = require("../dist/renderCertificate");
+const {
+  generateAchievementHTML,
+} = require("../dist/utils/generateAchievementHTML");
 const {
   generateAchievementFile,
 } = require("../dist/utils/generateAchievementFile");
 const fsPromises = require("fs").promises;
 const path = require("path");
 
-const testCertificateData = {
-  user: {
-    name: "테스트 사용자",
-  },
-  kollegeInfo: {
-    domain: "2fasdfsdfasdf",
-    name: "ㅁㄴㅇㄹㅁㄴㄷㄹㅁㅈㄷ",
-    color_main: "#e83b3b",
-    color_sub: "#fffb80",
-    plan: "starter",
-    updated_at: "2025-02-26T17:14:02.126Z",
-    images: {
-      club_symbol: [
-        {
-          id: 3504,
-          path: "uploads/club/symbol/f277bcc0-3194-473f-98f5-32ded1ee2c07",
-          order: 1,
-        },
-      ],
-      club_logo: [
-        {
-          id: 3505,
-          path: "uploads/club/logo/fd2c4f5c-48dc-4f9f-a72a-3f50608cc80f",
-          order: 0,
-        },
-      ],
-    },
-  },
-  achievementInfo: {
-    id: 1450,
-    admin_comment: "Node HTTPS patch test",
-    level: 2,
+const test_object = {
+  statusCode: 200,
+  message: "인증서가 조회되었습니다.",
+  achievement: {
+    id: 1539,
+    admin_comment: null,
+    level: null,
     nft_token: null,
-    issuance_route: "automatic",
-    certificate_number: "CERT-202504-123456",
-    cid: null,
-    course_begin_at: "2025-04-02T00:00:00.000Z",
-    course_end_at: "2025-07-02T00:00:00.000Z",
-    expiration_date: "2025-12-02T00:00:00.000Z",
+    issuance_route: "manual",
+    certificate_number: "SAND-202504-r9a1pt",
+    course_begin_at: "2025-04-01T00:00:00.000Z",
+    course_end_at: "2025-04-07T00:00:00.000Z",
+    expiration_date: null,
     is_received: false,
     status: "ISSUED",
     issuance_method: "EMAIL",
-    created_at: "2025-04-19T12:00:00.000Z",
-    updated_at: "2025-03-18T23:07:05.247Z",
+    created_at: "2025-04-06T21:40:39.316Z",
+    updated_at: "2025-04-06T21:40:55.500Z",
     user: {
-      id: 2156,
-      email: "eogks999@naver.com",
-      name: "김천재",
-      avatar: [
-        "uploads/user/avatar/background.webp",
-        "uploads/user/avatar/clothes.webp",
-        "uploads/user/avatar/face.webp",
-        "uploads/user/avatar/eye.webp",
-        "uploads/user/avatar/hair.webp",
-        "uploads/user/avatar/mouth.webp",
-        "uploads/user/avatar/accessory.webp",
-      ],
-      deleted_at: null,
-      image: null,
-      profileImageType: "avatar",
-      memberships: [{ id: 2301 }],
+      id: 2107,
+      email: "kolleges1234@gmail.com",
+      name: "칼리지스 헬퍼",
     },
     customAttributes: [],
     achievementForm: {
-      id: 496,
-      name: "OpenApi 테스트 인증서",
-      description: "OpenApi 테스트 인증서",
+      id: 551,
+      name: "sandbox-achievement",
+      description: "sandbox-achievement",
       type: "completion",
-      tags: [],
-      club_name: null,
-      prefix: "OPEN",
-      program_type: "degree_course",
-      program_name: "프로프로그램",
-      program_url: "https://프로프로그램.com",
-      course_begin_at: "2025-03-11T00:00:00.000Z",
-      course_end_at: "2025-03-14T00:00:00.000Z",
-      created_at: "2025-03-11T20:37:47.814Z",
-      updated_at: "2025-03-13T21:39:08.750Z",
-      avatar_type: null,
-      sort_order: 1,
+      tags: ["sandbox", "test", "api"],
+      prefix: "SAND",
+      program_type: "community",
+      program_name: "kolleges",
+      program_url: "https://landing.kolleges.net/",
+      course_begin_at: "2025-04-01T00:00:00.000Z",
+      course_end_at: "2025-04-07T00:00:00.000Z",
+      created_at: "2025-04-06T21:38:26.918Z",
+      updated_at: "2025-04-06T21:38:26.918Z",
+      club: {
+        domain: "sandbox",
+        name: "Kolleges API Sandbox",
+        type: "community",
+        images: [
+          {
+            path: "uploads/club/symbol/7ed92a1b-d87f-4ddb-9af6-ae8fd7403e36",
+            type: "club_symbol",
+          },
+          {
+            path: "uploads/club/cover/d962e0ba-b981-4ff8-96ab-0a0f325ddb8a",
+            type: "club_cover",
+          },
+          {
+            path: "uploads/club/logo/91e4d176-4df8-46a7-bbbc-ee4a2bb72d6a",
+            type: "club_logo",
+          },
+        ],
+      },
+      clubInstitutions: [],
+      representativeInstitution: {
+        name: "Kolleges API Sandbox",
+        type: "community",
+        images: [
+          {
+            path: "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/club/symbol/7ed92a1b-d87f-4ddb-9af6-ae8fd7403e36",
+            type: "club_symbol",
+          },
+          {
+            path: "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/club/cover/d962e0ba-b981-4ff8-96ab-0a0f325ddb8a",
+            type: "club_cover",
+          },
+          {
+            path: "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/uploads/club/logo/91e4d176-4df8-46a7-bbbc-ee4a2bb72d6a",
+            type: "club_logo",
+          },
+        ],
+        website_url: "http://localhost:3000/sandbox",
+      },
+      requirements: [
+        {
+          type: "submit_homework",
+          url: "https://admin.kolleges.net/ko/onboard/sign_in",
+          description: "kolleges main",
+        },
+        {
+          type: "read",
+          url: "https://landing.kolleges.net/",
+          description: "kolleges landing",
+        },
+      ],
       achievementCertificateDesign: {
         id: 139,
         name: "OpenApi1",
@@ -347,72 +358,71 @@ const testCertificateData = {
         extra_color_2: null,
         layout_json: [
           {
-            id: "badge-1742881999662",
             controlType: "svg",
             designType: "badge",
-            componentName: "BadgeType5",
+            componentName: "BadgeType31",
             background: "transparent",
-            width: 500,
-            height: 530,
-            x: 48,
-            y: 44,
-            order: 1,
-            text: "BadgeType2",
-            mainColor: "#FF1B64",
-            subColor: "#FF91B2",
-          },
-          {
-            id: "ribbon-1742881765599",
-            controlType: "svg",
-            designType: "ribbon",
-            componentName: "RibbonWing12",
-            background: "transparent",
-            width: 510,
-            height: 210,
-            x: 45,
-            y: 195,
-            order: 2,
-            text: "RibbonWing12",
-            mainColor: "#FF1B64",
-            subColor: "#FF91B2",
-          },
-          {
+            width: 538,
+            height: 594,
+            x: 31.00006103515625,
+            y: 3,
+            text: "BadgeType31",
+            mainColor: "#322899",
+            subColor: "#7368E8",
+            order: 0,
             id: "0",
-            order: 3,
+          },
+          {
+            controlType: "svg",
+            designType: "icon",
+            componentName: "IconMortarboard3",
+            background: "transparent",
+            width: 240,
+            height: 222,
+            x: 188,
+            y: 134,
+            text: "IconMortarboard3",
+            mainColor: "#322899",
+            subColor: "#7468e8",
+            extraColor1: "#ffffff",
+            order: 1,
+            id: "1",
+          },
+          {
             controlType: "text",
             designType: "text",
             text: "· CERTIFICATE of COMPLETION ·",
-            fontSize: 15,
-            fontWeight: "500",
+            fontSize: 16,
+            fontWeight: "600",
             textAlign: "center",
             fontFamily: "Pretendard, sans-serif",
-            color: "black",
-            width: 515,
-            height: 32,
-            x: 42,
-            y: 385,
+            color: "white",
+            width: 332,
+            height: 50,
+            x: 135,
+            y: 122,
+            order: 2,
+            id: "2",
           },
           {
-            id: "1",
-            order: 4,
             controlType: "text",
             designType: "props",
             type: "achievement",
             bindingKey: "name",
             text: "[인증서.제목]",
-            fontSize: 32,
+            fontSize: 40,
             fontWeight: "700",
             textAlign: "center",
             fontFamily: "Pretendard, sans-serif",
             color: "black",
-            width: 340,
-            height: 100,
-            x: 130,
-            y: 270,
+            width: 375,
+            height: 108,
+            x: 115,
+            y: 398,
+            order: 3,
+            id: "3",
           },
           {
-            id: "club-symbol",
-            order: 5,
             controlType: "image",
             designType: "props",
             type: "club",
@@ -423,83 +433,28 @@ const testCertificateData = {
             fontWeight: "400",
             textAlign: "center",
             fontFamily: "Pretendard, sans-serif",
-            width: 77,
-            height: 77,
-            x: 266,
-            y: 172,
+            width: 65,
+            height: 65,
+            x: 415,
+            y: 243,
+            order: 4,
+            id: "4",
           },
         ],
         template_type: "NewBadgeType48",
       },
-      club: { domain: "ddenzu2", name: "미세먼지 그만" },
-      clubInstitutions: [
-        {
-          id: 23,
-          type: "공공기관",
-          name: "주승이 코퍼레이션",
-          website_url: "https://test.kolleges.net/ko/ddenzu",
-          images: [
-            {
-              id: 3514,
-              path: "uploads/achievement/form/sign/5c9a7fdc-a07f-45e7-b807-8cee06339abf",
-              file_name: "pngwing.com.webp",
-              type: "sign_image",
-              order: 0,
-            },
-            {
-              id: 3513,
-              path: "uploads/club/symbol/befa306c-1fef-4f4f-a4e1-41ca3d015193",
-              file_name: "pngegg.webp",
-              type: "club_symbol",
-              order: 0,
-            },
-          ],
-        },
-      ],
-      representativeInstitution: {
-        id: 39,
-        type: "민간기관",
-        name: "ddd",
-        website_url: "https://www.naver.com",
-        images: [
-          {
-            id: 4213,
-            path: "uploads/club/symbol/51580395-7523-4e15-a475-b6e1e2403091",
-            file_name: "face.webp",
-            type: "club_symbol",
-            order: 0,
-          },
-          {
-            id: 4226,
-            path: "uploads/achievement/form/sign/8ee38af0-7336-41dc-ae44-e4b3a5194af9",
-            file_name: "áá³áá³ááµá«áá£áº 2025-03-11 áá©áá® 12.21.17.webp",
-            type: "sign_image",
-            order: 0,
-          },
-        ],
-      },
-      requirements: [
-        {
-          id: 207,
-          type: "project",
-          url: "https://",
-          description: "헤응",
-          order: 1,
-        },
-        {
-          id: 206,
-          type: "submit_homework",
-          url: "https://",
-          description: "으어엉",
-          order: 0,
-        },
-      ],
     },
-    achievementFormId: 496,
+    achievementFormId: 551,
   },
 };
+
+const testCertificateData = {
+  user: test_object.achievement.user,
+  kollegeInfo: test_object.achievement.achievementForm.club,
+  achievementInfo: test_object.achievement,
+};
 const testOptions = {
-  type: "certificate",
+  type: "badge",
   size: 300,
   returnType: "base64",
 };
@@ -507,22 +462,23 @@ const testOptions = {
 async function runTests() {
   try {
     // HTML 변환 테스트
-    const htmlOutput = await renderCertificate(testCertificateData, testOptions);
+    const htmlOutput = await generateAchievementHTML(
+      testCertificateData,
+      {
+        type: "badge",
+        size: 300,
+        noSpace: false,
+        mainColor: "#322899",
+        subColor: "#7368E8"
+      }
+    );
     fs.writeFileSync("test/certificate.html", htmlOutput, "utf8");
     console.log("✅ HTML 변환 완료: test/certificate.html");
 
     // PNG 변환 테스트
     const pngResult = await generateAchievementFile(
-      {
-        user: testCertificateData.user,
-        kollegeInfo: testCertificateData.kollegeInfo,
-        achievementInfo: testCertificateData.achievementInfo,
-      },
-      {
-        type: testOptions.type,
-        size: testOptions.size,
-        returnType: testOptions.returnType,
-      }
+      testCertificateData,
+      testOptions
     );
 
     if (testOptions.returnType === "base64") {

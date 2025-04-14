@@ -5,4 +5,4 @@ export interface templateType {
 }
 export declare const badgeTemplates: templateType[];
 export declare const ribbonTemplates: templateType[];
-export declare const IconTemplates: templateType[];
+export declare const iconTemplates: templateType[];

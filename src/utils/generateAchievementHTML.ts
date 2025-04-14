@@ -6,7 +6,11 @@ import {
 } from "../interface";
 import { getBindingValue } from "./getBindingValue";
 import QRCode from "qrcode";
-import { badgeTemplates, ribbonTemplates } from "../templates/svgTemplate";
+import {
+  badgeTemplates,
+  iconTemplates,
+  ribbonTemplates,
+} from "../templates/svgTemplate";
 import Certificates from "../templates/certificates";
 import { portraitComponents } from "../constants/componentsDirection";
 
@@ -28,7 +32,10 @@ export async function generateAchievementHTML(
           ?.layout_json as ElementStyle[]);
 
   if (!elements || !Array.isArray(elements) || elements.length === 0) {
-    console.error("❌ [generateAchievementHTML] elements가 비어 있음:", elements);
+    console.error(
+      "❌ [generateAchievementHTML] elements가 비어 있음:",
+      elements
+    );
     return `<div style="position: relative; width: 100%; height: 100%;"></div>`;
   }
 
@@ -81,8 +88,16 @@ export async function generateAchievementHTML(
         ">
         <div
           style="
-            width: ${isHorizontal(templateComponentName) ? size : size * (width / height)}px;
-            height: ${isHorizontal(templateComponentName) ? size * (height / width) : size}px;
+            width: ${
+              isHorizontal(templateComponentName)
+                ? size
+                : size * (width / height)
+            }px;
+            height: ${
+              isHorizontal(templateComponentName)
+                ? size * (height / width)
+                : size
+            }px;
             aspect-ratio: ${width / height};
             ${noSpace ? "position: absolute; top: 0; left: 0;" : ""}
           "
@@ -92,7 +107,9 @@ export async function generateAchievementHTML(
         width: ${width}px;
         height: ${height}px;
         overflow: hidden;
-        transform: scale(${isHorizontal(templateComponentName) ? size / width : size / height});
+        transform: scale(${
+          isHorizontal(templateComponentName) ? size / width : size / height
+        });
         transform-origin: top left;
         ">
         `;
@@ -173,7 +190,11 @@ export async function generateAchievementHTML(
 
     if (element.controlType === "svg") {
       const templates =
-        element.designType === "badge" ? badgeTemplates : ribbonTemplates;
+        element.designType === "badge"
+          ? badgeTemplates
+          : element.designType === "icon"
+          ? iconTemplates
+          : ribbonTemplates;
       const template = templates.find((t) => t.id === element.componentName);
 
       if (template) {
@@ -194,8 +215,10 @@ export async function generateAchievementHTML(
 
         html += `<div style="${optimizedStyles}">`;
         const svgString = template.Component({
-          mainColor: element.mainColor || template.colors.mainColor,
-          subColor: element.subColor || template.colors.subColor,
+          mainColor: element.mainColor,
+          subColor: element.subColor,
+          extraColor1: element.extraColor1 || "#000000",
+          extraColor2: element.extraColor2 || "#000000",
         });
 
         if (typeof svgString === "string") {
@@ -232,7 +255,10 @@ export async function generateAchievementHTML(
         ">
           ${
             badgeElements
-              ? await generateAchievementHTML(data, { type: "badge", noSpace: true })
+              ? await generateAchievementHTML(data, {
+                  type: "badge",
+                  noSpace: true,
+                })
               : ""
           }
         </div>`;
@@ -259,8 +285,9 @@ export async function generateAchievementHTML(
         }
       } else if (element.src) {
         // 이미지
+
         html += `<img
-          src="${DEFAULT_IMAGE_URL}${element.src}"
+          src="${element.src}"
           alt="Uploaded"
           style="
             width: 100%;

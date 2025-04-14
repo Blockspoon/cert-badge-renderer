@@ -479,6 +479,249 @@ export const ribbonTemplates: templateType[] = [
   },
 ];
 
-export const IconTemplates: templateType[] = [
+export const iconTemplates: templateType[] = [
   // customIcon
+  {
+    id: "IconArrow",
+    Component: Icons.IconArrow,
+  },
+  {
+    id: "IconBg1",
+    Component: Icons.IconBg1,
+  },
+  {
+    id: "IconBg2",
+    Component: Icons.IconBg2,
+  },
+  {
+    id: "IconBg3",
+    Component: Icons.IconBg3,
+  },
+  {
+    id: "IconBg4",
+    Component: Icons.IconBg4,
+  },
+  {
+    id: "IconBg5",
+    Component: Icons.IconBg5,
+  },
+  {
+    id: "IconBg6",
+    Component: Icons.IconBg6,
+  },
+  {
+    id: "IconBg7",
+    Component: Icons.IconBg7,
+  },
+  {
+    id: "IconBg8",
+    Component: Icons.IconBg8,
+  },
+  {
+    id: "IconBg9",
+    Component: Icons.IconBg9,
+  },
+  {
+    id: "IconBottomLeft1",
+    Component: Icons.IconBottomLeft1,
+  },
+  {
+    id: "IconBottomLeft2",
+    Component: Icons.IconBottomLeft2,
+  },
+  {
+    id: "IconBottomRight1",
+    Component: Icons.IconBottomRight1,
+  },
+  {
+    id: "IconBottomRight2",
+    Component: Icons.IconBottomRight2,
+  },
+  {
+    id: "IconContainer1",
+    Component: Icons.IconContainer1,
+  },
+  {
+    id: "IconContainer2",
+    Component: Icons.IconContainer2,
+  },
+  {
+    id: "IconContainer3",
+    Component: Icons.IconContainer3,
+  },
+  {
+    id: "IconContainer4",
+    Component: Icons.IconContainer4,
+  },
+  {
+    id: "IconContainer5",
+    Component: Icons.IconContainer5,
+  },
+  {
+    id: "IconDonut",
+    Component: Icons.IconDonut,
+  },
+  {
+    id: "IconEllipse1",
+    Component: Icons.IconEllipse1,
+  },
+  {
+    id: "IconEllipse2",
+    Component: Icons.IconEllipse2,
+  },
+  {
+    id: "IconEtc1",
+    Component: Icons.IconEtc1,
+  },
+  {
+    id: "IconEtc2",
+    Component: Icons.IconEtc2,
+  },
+  {
+    id: "IconEtc3",
+    Component: Icons.IconEtc3,
+  },
+  { id: "IconFrame1", Component: Icons.IconFrame1 },
+  { id: "IconFrame2", Component: Icons.IconFrame2 },
+  { id: "IconFrame3", Component: Icons.IconFrame3 },
+  { id: "IconFrame4", Component: Icons.IconFrame4 },
+  { id: "IconGear", Component: Icons.IconGear },
+  { id: "IconMedal", Component: Icons.IconMedal },
+  { id: "IconMortarboard1", Component: Icons.IconMortarboard1 },
+  { id: "IconMortarboard2", Component: Icons.IconMortarboard2 },
+  { id: "IconMortarboard3", Component: Icons.IconMortarboard3 },
+  { id: "IconMortarboard4", Component: Icons.IconMortarboard4 },
+  { id: "IconMortarboard5", Component: Icons.IconMortarboard5 },
+  { id: "IconPhrase1", Component: Icons.IconPhrase1 },
+  { id: "IconPhrase2", Component: Icons.IconPhrase2 },
+  { id: "IconPhrase3", Component: Icons.IconPhrase3 },
+  { id: "IconPhrase4", Component: Icons.IconPhrase4 },
+  { id: "IconPillar1", Component: Icons.IconPillar1 },
+  { id: "IconPillar2", Component: Icons.IconPillar2 },
+  { id: "IconSkewedLeft", Component: Icons.IconSkewedLeft },
+  { id: "IconSkewedRight", Component: Icons.IconSkewedRight },
+  { id: "IconSmallType1", Component: Icons.IconSmallType1 },
+  { id: "IconSmallType2", Component: Icons.IconSmallType2 },
+  { id: "IconSmallType3", Component: Icons.IconSmallType3 },
+  { id: "IconSmallType4", Component: Icons.IconSmallType4 },
+  { id: "IconSmallType5", Component: Icons.IconSmallType5 },
+  { id: "IconSmallType6", Component: Icons.IconSmallType6 },
+  { id: "IconSmallType7", Component: Icons.IconSmallType7 },
+  { id: "IconSmallType8", Component: Icons.IconSmallType8 },
+  { id: "IconSmallType9", Component: Icons.IconSmallType9 },
+  { id: "IconSmallType10", Component: Icons.IconSmallType10 },
+  { id: "IconSpring1", Component: Icons.IconSpring1 },
+  { id: "IconSpring2", Component: Icons.IconSpring2 },
+  { id: "IconStar", Component: Icons.IconStar },
+  { id: "IconStar2", Component: Icons.IconStar2 },
+  { id: "IconStar3", Component: Icons.IconStar3 },
+  { id: "IconStar4", Component: Icons.IconStar4 },
+  { id: "IconStar5", Component: Icons.IconStar5 },
+  { id: "IconStar6", Component: Icons.IconStar6 },
+  { id: "IconTopLeft1", Component: Icons.IconTopLeft1 },
+  { id: "IconTopLeft2", Component: Icons.IconTopLeft2 },
+  { id: "IconTopRight1", Component: Icons.IconTopRight1 },
+  { id: "IconTopRight2", Component: Icons.IconTopRight2 },
+  { id: "IconTrophy1", Component: Icons.IconTrophy1 },
+  { id: "IconTrophy2", Component: Icons.IconTrophy2 },
+  { id: "IconTrophy3", Component: Icons.IconTrophy3 },
+  { id: "IconTrophy4", Component: Icons.IconTrophy4 },
+  { id: "IconType47", Component: Icons.IconType47 },
+  { id: "IconWave1", Component: Icons.IconWave1 },
+  { id: "IconWave2", Component: Icons.IconWave2 },
 ];
+
+// const Icons = {
+//   IconArrow: createIconArrow,
+
+//   IconBg1: createIconBg1,
+//   IconBg2: createIconBg2,
+//   IconBg3: createIconBg3,
+//   IconBg4: createIconBg4,
+//   IconBg5: createIconBg5,
+//   IconBg6: createIconBg6,
+//   IconBg7: createIconBg7,
+//   IconBg8: createIconBg8,
+//   IconBg9: createIconBg9,
+
+//   IconBottomLeft1: createIconBottomLeft1,
+//   IconBottomLeft2: createIconBottomLeft2,
+//   IconBottomRight1: createIconBottomRight1,
+//   IconBottomRight2: createIconBottomRight2,
+
+//   IconContainer1: createIconContainer1,
+//   IconContainer2: createIconContainer2,
+//   IconContainer3: createIconContainer3,
+//   IconContainer4: createIconContainer4,
+//   IconContainer5: createIconContainer5,
+
+//   IconDonut: createIconDonut,
+
+//   IconEllipse1: createIconEllipse1,
+//   IconEllipse2: createIconEllipse2,
+
+//   IconEtc1: createIconEtc1,
+//   IconEtc2: createIconEtc2,
+//   IconEtc3: createIconEtc3,
+
+//   IconFrame1: createIconFrame1,
+//   IconFrame2: createIconFrame2,
+//   IconFrame3: createIconFrame3,
+//   IconFrame4: createIconFrame4,
+
+//   IconGear: createIconGear,
+//   IconMedal: createIconMedal,
+
+//   IconMortarboard1: createIconMortarboard1,
+//   IconMortarboard2: createIconMortarboard2,
+//   IconMortarboard3: createIconMortarboard3,
+//   IconMortarboard4: createIconMortarboard4,
+//   IconMortarboard5: createIconMortarboard5,
+
+//   IconPhrase1: createIconPhrase1,
+//   IconPhrase2: createIconPhrase2,
+//   IconPhrase3: createIconPhrase3,
+//   IconPhrase4: createIconPhrase4,
+
+//   IconPillar1: createIconPillar1,
+//   IconPillar2: createIconPillar2,
+
+//   IconSkewedLeft: createIconSkewedLeft,
+//   IconSkewedRight: createIconSkewedRight,
+
+//   IconSmallType1: createIconSmallType1,
+//   IconSmallType2: createIconSmallType2,
+//   IconSmallType3: createIconSmallType3,
+//   IconSmallType4: createIconSmallType4,
+//   IconSmallType5: createIconSmallType5,
+//   IconSmallType6: createIconSmallType6,
+//   IconSmallType7: createIconSmallType7,
+//   IconSmallType8: createIconSmallType8,
+//   IconSmallType9: createIconSmallType9,
+//   IconSmallType10: createIconSmallType10,
+
+//   IconSpring1: createIconSpring1,
+//   IconSpring2: createIconSpring2,
+
+//   IconStar: createIconStar1,
+//   IconStar2: createIconStar2,
+//   IconStar3: createIconStar3,
+//   IconStar4: createIconStar4,
+//   IconStar5: createIconStar5,
+//   IconStar6: createIconStar6,
+
+//   IconTopLeft1: createIconTopLeft1,
+//   IconTopLeft2: createIconTopLeft2,
+//   IconTopRight1: createIconTopRight1,
+//   IconTopRight2: createIconTopRight2,
+
+//   IconTrophy1: createIconTrophy1,
+//   IconTrophy2: createIconTrophy2,
+//   IconTrophy3: createIconTrophy3,
+//   IconTrophy4: createIconTrophy4,
+
+//   IconType47: createIconType47,
+
+//   IconWave1: createIconWave1,
+//   IconWave2: createIconWave2,
+// };

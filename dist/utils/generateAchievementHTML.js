@@ -72,8 +72,12 @@ function generateAchievementHTML(data_1) {
         ">
         <div
           style="
-            width: ${isHorizontal(templateComponentName) ? size : size * (width / height)}px;
-            height: ${isHorizontal(templateComponentName) ? size * (height / width) : size}px;
+            width: ${isHorizontal(templateComponentName)
+            ? size
+            : size * (width / height)}px;
+            height: ${isHorizontal(templateComponentName)
+            ? size * (height / width)
+            : size}px;
             aspect-ratio: ${width / height};
             ${noSpace ? "position: absolute; top: 0; left: 0;" : ""}
           "
@@ -140,7 +144,11 @@ function generateAchievementHTML(data_1) {
       white-space: pre-wrap;
     `;
             if (element.controlType === "svg") {
-                const templates = element.designType === "badge" ? svgTemplate_1.badgeTemplates : svgTemplate_1.ribbonTemplates;
+                const templates = element.designType === "badge"
+                    ? svgTemplate_1.badgeTemplates
+                    : element.designType === "icon"
+                        ? svgTemplate_1.iconTemplates
+                        : svgTemplate_1.ribbonTemplates;
                 const template = templates.find((t) => t.id === element.componentName);
                 if (template) {
                     const optimizedStyles = `
@@ -159,8 +167,10 @@ function generateAchievementHTML(data_1) {
         `;
                     html += `<div style="${optimizedStyles}">`;
                     const svgString = template.Component({
-                        mainColor: element.mainColor || template.colors.mainColor,
-                        subColor: element.subColor || template.colors.subColor,
+                        mainColor: element.mainColor,
+                        subColor: element.subColor,
+                        extraColor1: element.extraColor1 || "#000000",
+                        extraColor2: element.extraColor2 || "#000000",
                     });
                     if (typeof svgString === "string") {
                         // live-server 스크립트 제거
@@ -192,7 +202,10 @@ function generateAchievementHTML(data_1) {
           transform-origin: top left;
         ">
           ${badgeElements
-                        ? yield generateAchievementHTML(data, { type: "badge", noSpace: true })
+                        ? yield generateAchievementHTML(data, {
+                            type: "badge",
+                            noSpace: true,
+                        })
                         : ""}
         </div>`;
                 }
@@ -222,7 +235,7 @@ function generateAchievementHTML(data_1) {
                 else if (element.src) {
                     // 이미지
                     html += `<img
-          src="${DEFAULT_IMAGE_URL}${element.src}"
+          src="${element.src}"
           alt="Uploaded"
           style="
             width: 100%;

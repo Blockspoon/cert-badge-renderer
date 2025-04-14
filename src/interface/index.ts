@@ -92,6 +92,8 @@ export interface ElementStyle {
   componentName?: string;
   mainColor?: string;
   subColor?: string;
+  extraColor1?: string;
+  extraColor2?: string;
   isVertical?: boolean;
   lineWidth?: number;
 }
