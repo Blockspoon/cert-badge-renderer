@@ -17,6 +17,19 @@ import { portraitComponents } from "../constants/componentsDirection";
 const DEFAULT_IMAGE_URL =
   "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
 
+async function convertImageToBase64(url: string): Promise<string> {
+  try {
+    const response = await fetch(url);
+    const buffer = await response.arrayBuffer();
+    const base64 = Buffer.from(buffer).toString('base64');
+    const mimeType = response.headers.get('content-type') || 'image/png';
+    return `data:${mimeType};base64,${base64}`;
+  } catch (error) {
+    console.error(`이미지 변환 실패: ${url}`, error);
+    return '';
+  }
+}
+
 export async function generateAchievementHTML(
   data: CertificateData,
   options: CertificateOptions = {}
@@ -284,10 +297,10 @@ export async function generateAchievementHTML(
           ">QR Code Error</div>`;
         }
       } else if (element.src) {
-        // 이미지
-
+        // 이미지를 base64로 변환
+        const base64Image = await convertImageToBase64(element.src);
         html += `<img
-          src="${element.src}"
+          src="${base64Image}"
           alt="Uploaded"
           style="
             width: 100%;

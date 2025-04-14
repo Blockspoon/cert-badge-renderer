@@ -20,6 +20,21 @@ const svgTemplate_1 = require("../templates/svgTemplate");
 const certificates_1 = __importDefault(require("../templates/certificates"));
 const componentsDirection_1 = require("../constants/componentsDirection");
 const DEFAULT_IMAGE_URL = "https://ufcglnoegwgklehhpzlj.supabase.co/storage/v1/object/public/blockspoon_images/";
+function convertImageToBase64(url) {
+    return __awaiter(this, void 0, void 0, function* () {
+        try {
+            const response = yield fetch(url);
+            const buffer = yield response.arrayBuffer();
+            const base64 = Buffer.from(buffer).toString('base64');
+            const mimeType = response.headers.get('content-type') || 'image/png';
+            return `data:${mimeType};base64,${base64}`;
+        }
+        catch (error) {
+            console.error(`이미지 변환 실패: ${url}`, error);
+            return '';
+        }
+    });
+}
 function generateAchievementHTML(data_1) {
     return __awaiter(this, arguments, void 0, function* (data, options = {}) {
         var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2;
@@ -233,9 +248,10 @@ function generateAchievementHTML(data_1) {
                     }
                 }
                 else if (element.src) {
-                    // 이미지
+                    // 이미지를 base64로 변환
+                    const base64Image = yield convertImageToBase64(element.src);
                     html += `<img
-          src="${element.src}"
+          src="${base64Image}"
           alt="Uploaded"
           style="
             width: 100%;
