@@ -65,7 +65,7 @@ function generateAchievementHTML(data_1) {
             ? (_a = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementBadgeDesign) === null || _a === void 0 ? void 0 : _a.layout_json
             : (_b = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _b === void 0 ? void 0 : _b.layout_json;
         if (!elements || !Array.isArray(elements) || elements.length === 0) {
-            console.error("❌ [generateAchievementHTML] elements가 비어 있음:", elements);
+            console.error("❌ [generateAchievementHTML] layout_json이 비어 있음:", elements);
             return `<div style="position: relative; width: 100%; height: 100%;"></div>`;
         }
         const sortedElements = elements.sort((a, b) => (a.order || 0) - (b.order || 0));
@@ -131,8 +131,10 @@ function generateAchievementHTML(data_1) {
             html += certificates_1.default[(_d = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _d === void 0 ? void 0 : _d.template_type]({
                 mainColor: ((_e = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _e === void 0 ? void 0 : _e.main_color) || "#000000",
                 subColor: ((_f = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _f === void 0 ? void 0 : _f.sub_color) || "#000000",
-                extraColor1: ((_g = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _g === void 0 ? void 0 : _g.extra_color_1) || "#000000",
-                extraColor2: ((_h = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _h === void 0 ? void 0 : _h.extra_color_2) || "#000000",
+                extraColor1: ((_g = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _g === void 0 ? void 0 : _g.extra_color_1) ||
+                    "#000000",
+                extraColor2: ((_h = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.achievementCertificateDesign) === null || _h === void 0 ? void 0 : _h.extra_color_2) ||
+                    "#000000",
             });
         }
         for (const element of sortedElements) {
@@ -166,7 +168,7 @@ function generateAchievementHTML(data_1) {
       font-family: ${element.fontFamily || "inherit"};
       color: ${element.color || "black"};
       border: none;
-      padding: ${element.controlType === "text" ? "4px" : "0"};
+      padding: 0;
       display: flex;
       align-items: start;
       justify-content: ${element.textAlign === "center"
@@ -174,8 +176,8 @@ function generateAchievementHTML(data_1) {
                 : element.textAlign === "left"
                     ? "flex-start"
                     : "flex-end"};
-      padding-left: ${element.textAlign === "left" ? "4px" : "0"};
-      padding-right: ${element.textAlign === "right" ? "4px" : "0"};
+      padding-left: "0";
+      padding-right: "0";
       word-break: break-word;
       white-space: pre-wrap;
     `;

@@ -116,3 +116,8 @@ export interface CertificateOptions {
     returnType?: string;
     noSpace?: boolean;
 }
+export interface DesignOptions {
+    size?: number;
+    returnType?: string;
+    noSpace?: boolean;
+}

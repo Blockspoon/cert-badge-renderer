@@ -63,14 +63,13 @@ export async function generateAchievementHTML(
   // type에 따라 적절한 layout_json 선택
   const elements =
     type === "badge"
-      ? (achievementForm?.achievementBadgeDesign
-          ?.layout_json as ElementStyle[])
+      ? (achievementForm?.achievementBadgeDesign?.layout_json as ElementStyle[])
       : (achievementForm?.achievementCertificateDesign
           ?.layout_json as ElementStyle[]);
 
   if (!elements || !Array.isArray(elements) || elements.length === 0) {
     console.error(
-      "❌ [generateAchievementHTML] elements가 비어 있음:",
+      "❌ [generateAchievementHTML] layout_json이 비어 있음:",
       elements
     );
     return `<div style="position: relative; width: 100%; height: 100%;"></div>`;
@@ -86,8 +85,7 @@ export async function generateAchievementHTML(
   }
 
   const templateComponentName =
-    achievementForm?.achievementCertificateDesign
-      ?.template_type;
+    achievementForm?.achievementCertificateDesign?.template_type;
 
   const height =
     type == "badge" ? 600 : isHorizontal(templateComponentName) ? 810 : 1152;
@@ -153,21 +151,18 @@ export async function generateAchievementHTML(
 
   if (type == "certificate") {
     html += Certificates[
-      achievementForm?.achievementCertificateDesign
-        ?.template_type
+      achievementForm?.achievementCertificateDesign?.template_type
     ]({
       mainColor:
-        achievementForm?.achievementCertificateDesign
-          ?.main_color || "#000000",
+        achievementForm?.achievementCertificateDesign?.main_color || "#000000",
       subColor:
-        achievementForm?.achievementCertificateDesign
-          ?.sub_color || "#000000",
+        achievementForm?.achievementCertificateDesign?.sub_color || "#000000",
       extraColor1:
-        achievementForm?.achievementCertificateDesign
-          ?.extra_color_1 || "#000000",
+        achievementForm?.achievementCertificateDesign?.extra_color_1 ||
+        "#000000",
       extraColor2:
-        achievementForm?.achievementCertificateDesign
-          ?.extra_color_2 || "#000000",
+        achievementForm?.achievementCertificateDesign?.extra_color_2 ||
+        "#000000",
     });
   }
 
@@ -209,7 +204,7 @@ export async function generateAchievementHTML(
       font-family: ${element.fontFamily || "inherit"};
       color: ${element.color || "black"};
       border: none;
-      padding: ${element.controlType === "text" ? "4px" : "0"};
+      padding: 0;
       display: flex;
       align-items: start;
       justify-content: ${
@@ -219,8 +214,8 @@ export async function generateAchievementHTML(
           ? "flex-start"
           : "flex-end"
       };
-      padding-left: ${element.textAlign === "left" ? "4px" : "0"};
-      padding-right: ${element.textAlign === "right" ? "4px" : "0"};
+      padding-left: "0";
+      padding-right: "0";
       word-break: break-word;
       white-space: pre-wrap;
     `;
@@ -281,8 +276,8 @@ export async function generateAchievementHTML(
 
       if (element.bindingKey === "badge" && type !== "badge") {
         // 뱃지 (certificate 타입일 때만 뱃지를 중첩해서 렌더링)
-        const badgeElements = achievementForm
-          ?.achievementBadgeDesign?.layout_json as ElementStyle[];
+        const badgeElements = achievementForm?.achievementBadgeDesign
+          ?.layout_json as ElementStyle[];
         html += `<div style="
           width: 600px;
           height: 600px;

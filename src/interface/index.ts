@@ -134,3 +134,9 @@ export interface CertificateOptions {
   returnType?: string; //"file" | "base64";
   noSpace?: boolean;
 }
+
+export interface DesignOptions {
+  size?: number;
+  returnType?: string; //"file" | "base64";
+  noSpace?: boolean;
+}
