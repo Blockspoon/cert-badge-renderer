@@ -1,4 +1,4 @@
-# @blockspoon/json-to-certificate
+# @blockspoon/cert-badge-renderer
 
 디지털 배지 또는 인증서 디자인 JSON을 기반으로 HTML 또는 PNG로 렌더링할 수 있는 Node.js 기반 렌더링 도구입니다. Open API와 연결하거나 내부 렌더링 엔진으로 사용할 수 있도록 설계되었습니다.
 
@@ -19,7 +19,7 @@
 ## ⚡️ 설치 방법
 
 ```bash
-npm install @blockspoon/json-to-certificate
+npm install @blockspoon/cert-badge-renderer
 ```
 
 ---
@@ -29,7 +29,7 @@ npm install @blockspoon/json-to-certificate
 ### 1. 인증서 또는 배지 HTML 생성
 
 ```ts
-import { generateAchievementHTML } from "@blockspoon/json-to-certificate";
+import { generateAchievementHTML } from "@blockspoon/cert-badge-renderer";
 
 const html = await generateAchievementHTML(data, {
   type: "certificate", // 또는 "badge"
@@ -40,7 +40,7 @@ const html = await generateAchievementHTML(data, {
 ### 2. 인증서 또는 배지 PNG 이미지 생성
 
 ```ts
-import { generateAchievementFile } from "@blockspoon/json-to-certificate";
+import { generateAchievementFile } from "@blockspoon/cert-badge-renderer";
 
 const result = await generateAchievementFile(data, {
   type: "certificate",   // 또는 "badge"
@@ -56,7 +56,7 @@ require("fs").writeFileSync("certificate.png", Buffer.from(base64, "base64"));
 ### 3. 디자인(JSON) 기반으로 PNG 생성하기
 
 ```ts
-import { generateDesignFile } from "@blockspoon/json-to-certificate";
+import { generateDesignFile } from "@blockspoon/cert-badge-renderer";
 
 const png = await generateDesignFile({
   layout_json: [...],       // 요소 정의 배열
@@ -71,14 +71,9 @@ require("fs").writeFileSync("badge.png", png.buffer);
 ### 4. 디자인(JSON) 기반으로 HTML 생성하기
 
 ```ts
-import { generateDesignHTML } from "@blockspoon/json-to-certificate";
+import { generateDesignHTML } from "@blockspoon/cert-badge-renderer";
 
-const html = await generateDesignHTML({
-  layout_json: [...],
-  template_type: "...",
-  main_color: "#000",
-  sub_color: "#999",
-});
+const html = await generateDesignHTML(achievement);
 
 require("fs").writeFileSync("badge.html", html, "utf-8");
 ```
@@ -105,13 +100,7 @@ node test/test.js
 이는 인증서 생성 및 검증 요청의 보안을 위한 절차이며,  
 패키지 내부의 Open API 호출 시 자동으로 토큰이 헤더에 포함됩니다.
 
-```ts
-const html = await generateAchievementHTML(data, {
-  apiKey: "your-api-key",
-});
-```
-
-추후 `.env` 또는 런타임에서 직접 관리할 수 있도록 인터페이스를 제공합니다.
+자세한 정보는 https://developers.kolleges.net 참고 부탁드립니다.
 
 ---
 
@@ -130,20 +119,6 @@ const html = await generateAchievementHTML(data, {
 
 ---
 
-## 🚀 향후 업데이트 예정
-- API Key 기반 인증 완전 통합
-- 폰트 설정 커스터마이징 지원
-- 디자인 템플릿 확장
-- React/Web 기반 프리뷰 도구 제공
-
----
-
 ## 📣 기여 및 문의
 
-Pull Request는 언제든 환영합니다.  
-문의는 blockspoon GitHub 이슈 페이지에 남겨주세요!
-
----
-
-✨ 이제 HTML & PNG 인증서 렌더링도 완전 럭키비키잖아💛✨
-
+문의는 support@kolleges.net으로 보내주세요!

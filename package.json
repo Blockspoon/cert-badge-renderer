@@ -1,5 +1,5 @@
 {
-  "name": "@blockspoon/json-to-certificate",
+  "name": "@blockspoon/cert-badge-renderer",
   "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
