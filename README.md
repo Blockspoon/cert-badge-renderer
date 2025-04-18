@@ -27,7 +27,8 @@ npm install @blockspoon/cert-badge-renderer
 ```ts
 import { generateAchievementHTML } from "@blockspoon/cert-badge-renderer";
 
-const html = await generateAchievementHTML([achievement](https://developers.kolleges.net/docs/achievement-object), {
+// achievement: https://developers.kolleges.net/docs/achievement_get#achievement-object
+const html = await generateAchievementHTML(achievement, {
   type: "certificate", // 또는 "badge"
   size: 600, // 렌더링 크기 (px)
 });
@@ -38,10 +39,11 @@ const html = await generateAchievementHTML([achievement](https://developers.koll
 ```ts
 import { generateAchievementFile } from "@blockspoon/cert-badge-renderer";
 
+// achievement: https://developers.kolleges.net/docs/achievement_get#achievement-object
 const result = await generateAchievementFile(achievement, {
   type: "certificate", // 또는 "badge"
   size: 600,
-  returnType: "base64", // 또는 "buffer"
+  returnType: "base64", // 또는 "png"
 });
 
 // Base64 저장 예시
@@ -54,6 +56,8 @@ require("fs").writeFileSync("certificate.png", Buffer.from(base64, "base64"));
 ```ts
 import { generateDesignHTML } from "@blockspoon/cert-badge-renderer";
 
+// certificateDesign: https://developers.kolleges.net/docs/design_get_certificate#certificatedesign-object
+// badgeDesign: https://developers.kolleges.net/docs/design_get_badge#badgedesign-object
 const html = await generateDesignHTML(certificateDesign || badgeDesign);
 
 require("fs").writeFileSync("badge.html", html, "utf-8");
@@ -64,6 +68,8 @@ require("fs").writeFileSync("badge.html", html, "utf-8");
 ```ts
 import { generateDesignFile } from "@blockspoon/cert-badge-renderer";
 
+// certificateDesign: https://developers.kolleges.net/docs/design_get_certificate#certificatedesign-object
+// badgeDesign: https://developers.kolleges.net/docs/design_get_badge#badgedesign-object
 const png = await generateDesignFile(certificateDesign || badgeDesign);
 
 require("fs").writeFileSync("badge.png", png.buffer);
