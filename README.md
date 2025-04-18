@@ -1,4 +1,4 @@
-# @blockspoon/json-to-certificate
+# @blockspoon/cert-badge-renderer
 
 디지털 배지 또는 인증서 디자인 JSON을 기반으로 HTML 또는 PNG로 렌더링할 수 있는 Node.js 기반 렌더링 도구입니다. Open API와 연결하거나 내부 렌더링 엔진으로 사용할 수 있도록 설계되었습니다.
 
