@@ -1,7 +1,7 @@
 {
   "name": "@blockspoon/cert-badge-renderer",
   "version": "1.0.1",
-  "description": "",
+  "description": "Render certificate and badge designs from Kolleges achievement data into HTML, PNG, or Base64.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -9,8 +9,8 @@
     "test": "node test/test.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Blockspoon <support@kolleges.net>",
+  "license": "MIT",
   "dependencies": {
     "@sparticuz/chromium": "^133.0.0",
     "date-fns": "^4.1.0",
