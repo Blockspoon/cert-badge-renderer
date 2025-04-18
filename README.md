@@ -27,7 +27,7 @@ npm install @blockspoon/cert-badge-renderer
 ```ts
 import { generateAchievementHTML } from "@blockspoon/cert-badge-renderer";
 
-const html = await generateAchievementHTML(achievement, {
+const html = await generateAchievementHTML([achievement](https://developers.kolleges.net/docs/achievement-object), {
   type: "certificate", // 또는 "badge"
   size: 600, // 렌더링 크기 (px)
 });
@@ -47,8 +47,6 @@ const result = await generateAchievementFile(achievement, {
 // Base64 저장 예시
 const base64 = result.base64.replace(/^data:image\/png;base64,/, "");
 require("fs").writeFileSync("certificate.png", Buffer.from(base64, "base64"));
-
-
 ```
 
 ### 3. 디자인(JSON) 기반으로 HTML 생성하기
@@ -56,11 +54,9 @@ require("fs").writeFileSync("certificate.png", Buffer.from(base64, "base64"));
 ```ts
 import { generateDesignHTML } from "@blockspoon/cert-badge-renderer";
 
-const html = await generateDesignHTML(achievement);
+const html = await generateDesignHTML(certificateDesign || badgeDesign);
 
 require("fs").writeFileSync("badge.html", html, "utf-8");
-
-
 ```
 
 ### 4. 디자인(JSON) 기반으로 PNG 생성하기
@@ -68,31 +64,10 @@ require("fs").writeFileSync("badge.html", html, "utf-8");
 ```ts
 import { generateDesignFile } from "@blockspoon/cert-badge-renderer";
 
-const png = await generateDesignFile({
-  layout_json: [...],       // 요소 정의 배열
-  template_type: "...",    // 템플릿 ID
-  main_color: "#000",
-  sub_color: "#999",
-});
+const png = await generateDesignFile(certificateDesign || badgeDesign);
 
 require("fs").writeFileSync("badge.png", png.buffer);
-
 ```
-
----
-
-## 📂 테스트 실행 예제
-
-```bash
-node test/test.js
-```
-
-`test.js`는 다음과 같은 작업을 수행합니다:
-
-- `generateDesignHTML()` → HTML 저장
-- `generateDesignFile()` → PNG 저장
-- `generateAchievementHTML()` → HTML 저장 (주석 해제 시)
-- `generateAchievementFile()` → PNG 저장 또는 base64 변환 (주석 해제 시)
 
 ---
 
