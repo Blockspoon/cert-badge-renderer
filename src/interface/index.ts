@@ -123,9 +123,7 @@ export interface ISvgProps {
 //   achievementInfo: IAchievementItem;
 // }
 export interface CertificateData {
-  user: any;
-  kollegeInfo: any;
-  achievementInfo: any;
+  achievementForm: any;
 }
 
 export interface CertificateOptions {

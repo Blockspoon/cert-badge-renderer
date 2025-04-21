@@ -106,9 +106,7 @@ export interface ISvgProps {
     extraColor2?: string;
 }
 export interface CertificateData {
-    user: any;
-    kollegeInfo: any;
-    achievementInfo: any;
+    achievementForm: any;
 }
 export interface CertificateOptions {
     type?: string;

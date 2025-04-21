@@ -19,16 +19,18 @@ const qrcode_1 = __importDefault(require("qrcode"));
 const svgTemplate_1 = require("../templates/svgTemplate");
 const certificates_1 = __importDefault(require("../templates/certificates"));
 const componentsDirection_1 = require("../constants/componentsDirection");
-function generateAchievementHTML(data_1) {
-    return __awaiter(this, arguments, void 0, function* (data, options = {}) {
+function generateAchievementHTML(achievementInfo_1) {
+    return __awaiter(this, arguments, void 0, function* (achievementInfo, options = {}) {
         var _a, _b, _c, _d, _e, _f, _g, _h, _j;
         const { type = "certificate", size = 600, noSpace = false } = options;
+        console.log("achievementInfo");
+        console.log(achievementInfo);
         let achievementForm;
-        if (data.achievementInfo.achievementForm) {
-            achievementForm = data.achievementInfo.achievementForm;
+        if (achievementInfo.achievementForm) {
+            achievementForm = achievementInfo.achievementForm;
         }
         else {
-            achievementForm = data.achievementInfo;
+            achievementForm = achievementInfo;
         }
         // type에 따라 적절한 layout_json 선택
         const elements = type === "badge"
@@ -112,7 +114,7 @@ function generateAchievementHTML(data_1) {
                 continue;
             let bindingValue = null;
             if (element.designType === interface_1.CERTIFICATE_DESIGN_TYPE.PROPS) {
-                bindingValue = (0, getBindingValue_1.getBindingValue)(element.type, element.bindingKey, data);
+                bindingValue = (0, getBindingValue_1.getBindingValue)(element.type, element.bindingKey, achievementInfo);
                 if (element.controlType === "text") {
                     element.text = bindingValue;
                 }
@@ -210,7 +212,7 @@ function generateAchievementHTML(data_1) {
           transform-origin: top left;
         ">
           ${badgeElements
-                        ? yield generateAchievementHTML(data, {
+                        ? yield generateAchievementHTML(achievementInfo, {
                             type: "badge",
                             noSpace: true,
                         })

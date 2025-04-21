@@ -68,9 +68,7 @@ const getClubValue = (
 
   if (bindingKey.startsWith("name_")) {
     const index = Number(bindingKey.split("_")[1]) - 1;
-    return (
-      achievementForm?.clubInstitutions?.[index]?.name || ""
-    );
+    return achievementForm?.clubInstitutions?.[index]?.name || "";
   }
 
   if (
@@ -84,9 +82,9 @@ const getClubValue = (
       : "club_symbol";
 
     return achievementForm.clubInstitutions?.[index]?.images
-      ? groupByType(
-          achievementForm.clubInstitutions[index].images
-        )[imageKey]?.[0]?.path
+      ? groupByType(achievementForm.clubInstitutions[index].images)[
+          imageKey
+        ]?.[0]?.path
       : null;
   }
 
@@ -109,10 +107,7 @@ const getClubValue = (
     );
   }
 
-  if (
-    bindingKey === "name" &&
-    achievementForm.representativeInstitution
-  ) {
+  if (bindingKey === "name" && achievementForm.representativeInstitution) {
     return achievementForm.representativeInstitution?.name;
   }
 
@@ -136,17 +131,20 @@ export const getBindingValue = (
   bindingKey: string,
   data: any
 ) => {
-  const { achievementInfo, user, kollegeInfo } = data;
 
   switch (type) {
     case "achievement":
-      return getAchievementValue(bindingKey, achievementInfo);
+      return getAchievementValue(bindingKey, data);
     case "user":
-      return getUserValue(bindingKey, user);
+      return getUserValue(bindingKey, data.user);
     case "club":
-      return getClubValue(bindingKey, kollegeInfo, achievementInfo);
+      return getClubValue(
+        bindingKey,
+        data?.achievementForm?.club || data?.club,
+        data 
+      );
     case "custom":
-      return getCustomValue(bindingKey, achievementInfo);
+      return getCustomValue(bindingKey, data);
     default:
       return null;
   }

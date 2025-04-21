@@ -15,17 +15,20 @@ import Certificates from "../templates/certificates";
 import { portraitComponents } from "../constants/componentsDirection";
 
 export async function generateAchievementHTML(
-  data: CertificateData,
+  achievementInfo: CertificateData,
   options: CertificateOptions = {}
 ): Promise<string> {
   const { type = "certificate", size = 600, noSpace = false } = options;
 
+  console.log("achievementInfo");
+  console.log(achievementInfo);
+  
   let achievementForm;
 
-  if (data.achievementInfo.achievementForm) {
-    achievementForm = data.achievementInfo.achievementForm;
+  if (achievementInfo.achievementForm) {
+    achievementForm = achievementInfo.achievementForm;
   } else {
-    achievementForm = data.achievementInfo;
+    achievementForm = achievementInfo;
   }
 
   // type에 따라 적절한 layout_json 선택
@@ -139,7 +142,7 @@ export async function generateAchievementHTML(
 
     let bindingValue: any = null;
     if (element.designType === CERTIFICATE_DESIGN_TYPE.PROPS) {
-      bindingValue = getBindingValue(element.type, element.bindingKey, data);
+      bindingValue = getBindingValue(element.type, element.bindingKey, achievementInfo);
 
       if (element.controlType === "text") {
         element.text = bindingValue;
@@ -255,7 +258,7 @@ export async function generateAchievementHTML(
         ">
           ${
             badgeElements
-              ? await generateAchievementHTML(data, {
+              ? await generateAchievementHTML(achievementInfo, {
                   type: "badge",
                   noSpace: true,
                 })

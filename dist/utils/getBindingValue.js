@@ -48,7 +48,7 @@ const getClubValue = (bindingKey, kollegeInfo, achievementInfo) => {
     }
     if (bindingKey.startsWith("name_")) {
         const index = Number(bindingKey.split("_")[1]) - 1;
-        return (((_b = (_a = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.clubInstitutions) === null || _a === void 0 ? void 0 : _a[index]) === null || _b === void 0 ? void 0 : _b.name) || "");
+        return ((_b = (_a = achievementForm === null || achievementForm === void 0 ? void 0 : achievementForm.clubInstitutions) === null || _a === void 0 ? void 0 : _a[index]) === null || _b === void 0 ? void 0 : _b.name) || "";
     }
     if (["sign_image_1", "sign_image_2", "club_symbol_1", "club_symbol_2"].includes(bindingKey)) {
         const index = bindingKey.endsWith("1") ? 0 : 1;
@@ -67,8 +67,7 @@ const getClubValue = (bindingKey, kollegeInfo, achievementInfo) => {
         const groupByTypeImages = (0, util_1.groupByType)(kollegeInfo.images);
         return (((_k = (_j = groupByTypeImages[bindingKey]) === null || _j === void 0 ? void 0 : _j[0]) === null || _k === void 0 ? void 0 : _k.path) || null);
     }
-    if (bindingKey === "name" &&
-        achievementForm.representativeInstitution) {
+    if (bindingKey === "name" && achievementForm.representativeInstitution) {
         return (_l = achievementForm.representativeInstitution) === null || _l === void 0 ? void 0 : _l.name;
     }
     return (kollegeInfo === null || kollegeInfo === void 0 ? void 0 : kollegeInfo[bindingKey]) || null;
@@ -81,16 +80,16 @@ const getCustomValue = (bindingKey, achievementInfo) => {
 };
 // 🔥 메인 함수: 데이터 타입별로 자동 호출하도록 변경!
 const getBindingValue = (type, bindingKey, data) => {
-    const { achievementInfo, user, kollegeInfo } = data;
+    var _a;
     switch (type) {
         case "achievement":
-            return getAchievementValue(bindingKey, achievementInfo);
+            return getAchievementValue(bindingKey, data);
         case "user":
-            return getUserValue(bindingKey, user);
+            return getUserValue(bindingKey, data.user);
         case "club":
-            return getClubValue(bindingKey, kollegeInfo, achievementInfo);
+            return getClubValue(bindingKey, ((_a = data === null || data === void 0 ? void 0 : data.achievementForm) === null || _a === void 0 ? void 0 : _a.club) || (data === null || data === void 0 ? void 0 : data.club), data);
         case "custom":
-            return getCustomValue(bindingKey, achievementInfo);
+            return getCustomValue(bindingKey, data);
         default:
             return null;
     }
