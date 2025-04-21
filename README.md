@@ -58,9 +58,9 @@ import { generateDesignHTML } from "@blockspoon/cert-badge-renderer/browser";
 
 // certificateDesign: https://developers.kolleges.net/docs/design_get_certificate#certificatedesign-object
 // badgeDesign: https://developers.kolleges.net/docs/design_get_badge#badgedesign-object
-const html = await generateDesignHTML(certificateDesign || badgeDesign);
-
-require("fs").writeFileSync("badge.html", html, "utf-8");
+const html = await generateDesignHTML(certificateDesign || badgeDesign, {
+  size: 600, // 렌더링 크기 (px)
+});
 ```
 
 <!-- ### 4. 디자인(JSON) 기반으로 PNG 생성하기
