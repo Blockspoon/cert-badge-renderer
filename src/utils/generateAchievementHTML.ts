@@ -14,51 +14,6 @@ import {
 import Certificates from "../templates/certificates";
 import { portraitComponents } from "../constants/componentsDirection";
 
-async function convertImageToBase64(url: string): Promise<string> {
-  try {
-    // URL이 이미 baseUrl을 포함하고 있는지 확인
-    let finalUrls = [];
-    finalUrls = url.split("https://");
-    const finalUrl = "https://" + finalUrls.pop();
-
-    const response = await fetch(finalUrl, {
-      credentials: "include",
-      headers: {
-        Accept: "image/*",
-      },
-    });
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-
-    const contentType = response.headers.get("content-type");
-    if (!contentType?.startsWith("image/")) {
-      throw new Error(`Not an image! content-type: ${contentType}`);
-    }
-
-    const buffer = await response.arrayBuffer();
-    let base64 = "";
-
-    if (typeof window === "undefined") {
-      // Node.js 환경
-      base64 = Buffer.from(buffer).toString("base64");
-    } else {
-      // 브라우저 환경
-      base64 = btoa(
-        new Uint8Array(buffer).reduce(
-          (data, byte) => data + String.fromCharCode(byte),
-          ""
-        )
-      );
-    }
-    return `data:${contentType};base64,${base64}`;
-  } catch (error) {
-    console.error(`이미지 변환 실패: ${url}`, error);
-    return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
-  }
-}
-
 export async function generateAchievementHTML(
   data: CertificateData,
   options: CertificateOptions = {}
@@ -330,9 +285,9 @@ export async function generateAchievementHTML(
         }
       } else if (element.src) {
         // 이미지를 base64로 변환
-        const base64Image = await convertImageToBase64(element.src);
+        // const base64Image = await convertImageToBase64(element.src);
         html += `<img
-          src="${base64Image}"
+          src="${element.src}"
           alt="Uploaded"
           style="
             width: 100%;

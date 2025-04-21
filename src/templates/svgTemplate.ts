@@ -65,10 +65,10 @@ export const badgeTemplates: templateType[] = [
     id: "BadgeType14",
     Component: Badges.BadgeType14,
   },
-  // {
-  //   id: "BadgeType15",
-  //   Component: Badges.BadgeType15,
-  // },
+  {
+    id: "BadgeType15",
+    Component: Badges.BadgeType15,
+  },
   {
     id: "BadgeType16",
     Component: Badges.BadgeType16,
@@ -89,10 +89,10 @@ export const badgeTemplates: templateType[] = [
     id: "BadgeType20",
     Component: Badges.BadgeType20,
   },
-  // {
-  //   id: "BadgeType21",
-  //   Component: Badges.BadgeType21,
-  // },
+  {
+    id: "BadgeType21",
+    Component: Badges.BadgeType21,
+  },
   {
     id: "BadgeType22",
     Component: Badges.BadgeType22,
@@ -631,97 +631,3 @@ export const iconTemplates: templateType[] = [
   { id: "IconWave2", Component: Icons.IconWave2 },
 ];
 
-// const Icons = {
-//   IconArrow: createIconArrow,
-
-//   IconBg1: createIconBg1,
-//   IconBg2: createIconBg2,
-//   IconBg3: createIconBg3,
-//   IconBg4: createIconBg4,
-//   IconBg5: createIconBg5,
-//   IconBg6: createIconBg6,
-//   IconBg7: createIconBg7,
-//   IconBg8: createIconBg8,
-//   IconBg9: createIconBg9,
-
-//   IconBottomLeft1: createIconBottomLeft1,
-//   IconBottomLeft2: createIconBottomLeft2,
-//   IconBottomRight1: createIconBottomRight1,
-//   IconBottomRight2: createIconBottomRight2,
-
-//   IconContainer1: createIconContainer1,
-//   IconContainer2: createIconContainer2,
-//   IconContainer3: createIconContainer3,
-//   IconContainer4: createIconContainer4,
-//   IconContainer5: createIconContainer5,
-
-//   IconDonut: createIconDonut,
-
-//   IconEllipse1: createIconEllipse1,
-//   IconEllipse2: createIconEllipse2,
-
-//   IconEtc1: createIconEtc1,
-//   IconEtc2: createIconEtc2,
-//   IconEtc3: createIconEtc3,
-
-//   IconFrame1: createIconFrame1,
-//   IconFrame2: createIconFrame2,
-//   IconFrame3: createIconFrame3,
-//   IconFrame4: createIconFrame4,
-
-//   IconGear: createIconGear,
-//   IconMedal: createIconMedal,
-
-//   IconMortarboard1: createIconMortarboard1,
-//   IconMortarboard2: createIconMortarboard2,
-//   IconMortarboard3: createIconMortarboard3,
-//   IconMortarboard4: createIconMortarboard4,
-//   IconMortarboard5: createIconMortarboard5,
-
-//   IconPhrase1: createIconPhrase1,
-//   IconPhrase2: createIconPhrase2,
-//   IconPhrase3: createIconPhrase3,
-//   IconPhrase4: createIconPhrase4,
-
-//   IconPillar1: createIconPillar1,
-//   IconPillar2: createIconPillar2,
-
-//   IconSkewedLeft: createIconSkewedLeft,
-//   IconSkewedRight: createIconSkewedRight,
-
-//   IconSmallType1: createIconSmallType1,
-//   IconSmallType2: createIconSmallType2,
-//   IconSmallType3: createIconSmallType3,
-//   IconSmallType4: createIconSmallType4,
-//   IconSmallType5: createIconSmallType5,
-//   IconSmallType6: createIconSmallType6,
-//   IconSmallType7: createIconSmallType7,
-//   IconSmallType8: createIconSmallType8,
-//   IconSmallType9: createIconSmallType9,
-//   IconSmallType10: createIconSmallType10,
-
-//   IconSpring1: createIconSpring1,
-//   IconSpring2: createIconSpring2,
-
-//   IconStar: createIconStar1,
-//   IconStar2: createIconStar2,
-//   IconStar3: createIconStar3,
-//   IconStar4: createIconStar4,
-//   IconStar5: createIconStar5,
-//   IconStar6: createIconStar6,
-
-//   IconTopLeft1: createIconTopLeft1,
-//   IconTopLeft2: createIconTopLeft2,
-//   IconTopRight1: createIconTopRight1,
-//   IconTopRight2: createIconTopRight2,
-
-//   IconTrophy1: createIconTrophy1,
-//   IconTrophy2: createIconTrophy2,
-//   IconTrophy3: createIconTrophy3,
-//   IconTrophy4: createIconTrophy4,
-
-//   IconType47: createIconType47,
-
-//   IconWave1: createIconWave1,
-//   IconWave2: createIconWave2,
-// };
