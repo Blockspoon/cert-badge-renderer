@@ -34,7 +34,7 @@ const html = await generateAchievementHTML(achievement, {
 });
 ```
 
-### 2. 인증서 또는 배지 PNG 이미지 생성
+<!-- ### 2. 인증서 또는 배지 PNG 이미지 생성
 
 ```ts
 import { generateAchievementFile } from "@blockspoon/cert-badge-renderer/server";
@@ -49,9 +49,9 @@ const result = await generateAchievementFile(achievement, {
 // Base64 저장 예시
 const base64 = result.base64.replace(/^data:image\/png;base64,/, "");
 require("fs").writeFileSync("certificate.png", Buffer.from(base64, "base64"));
-```
+``` -->
 
-### 3. 디자인(JSON) 기반으로 HTML 생성하기
+### 2. 디자인(JSON) 기반으로 HTML 생성하기
 
 ```ts
 import { generateDesignHTML } from "@blockspoon/cert-badge-renderer/browser";
@@ -63,7 +63,7 @@ const html = await generateDesignHTML(certificateDesign || badgeDesign);
 require("fs").writeFileSync("badge.html", html, "utf-8");
 ```
 
-### 4. 디자인(JSON) 기반으로 PNG 생성하기
+<!-- ### 4. 디자인(JSON) 기반으로 PNG 생성하기
 
 ```ts
 import { generateDesignFile } from "@blockspoon/cert-badge-renderer/server";
@@ -75,7 +75,7 @@ const png = await generateDesignFile(certificateDesign || badgeDesign);
 require("fs").writeFileSync("badge.png", png.buffer);
 ```
 
----
+--- -->
 
 ## 🔐 API Key 사용 방식
 
