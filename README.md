@@ -25,7 +25,7 @@ npm install @blockspoon/cert-badge-renderer
 ### 1. 인증서 또는 배지 HTML 생성
 
 ```ts
-import { generateAchievementHTML } from "@blockspoon/cert-badge-renderer";
+import { generateAchievementHTML } from "@blockspoon/cert-badge-renderer/browser";
 
 // achievement: https://developers.kolleges.net/docs/achievement_get#achievement-object
 const html = await generateAchievementHTML(achievement, {
@@ -37,7 +37,7 @@ const html = await generateAchievementHTML(achievement, {
 ### 2. 인증서 또는 배지 PNG 이미지 생성
 
 ```ts
-import { generateAchievementFile } from "@blockspoon/cert-badge-renderer";
+import { generateAchievementFile } from "@blockspoon/cert-badge-renderer/server";
 
 // achievement: https://developers.kolleges.net/docs/achievement_get#achievement-object
 const result = await generateAchievementFile(achievement, {
@@ -54,7 +54,7 @@ require("fs").writeFileSync("certificate.png", Buffer.from(base64, "base64"));
 ### 3. 디자인(JSON) 기반으로 HTML 생성하기
 
 ```ts
-import { generateDesignHTML } from "@blockspoon/cert-badge-renderer";
+import { generateDesignHTML } from "@blockspoon/cert-badge-renderer/browser";
 
 // certificateDesign: https://developers.kolleges.net/docs/design_get_certificate#certificatedesign-object
 // badgeDesign: https://developers.kolleges.net/docs/design_get_badge#badgedesign-object
@@ -66,7 +66,7 @@ require("fs").writeFileSync("badge.html", html, "utf-8");
 ### 4. 디자인(JSON) 기반으로 PNG 생성하기
 
 ```ts
-import { generateDesignFile } from "@blockspoon/cert-badge-renderer";
+import { generateDesignFile } from "@blockspoon/cert-badge-renderer/server";
 
 // certificateDesign: https://developers.kolleges.net/docs/design_get_certificate#certificatedesign-object
 // badgeDesign: https://developers.kolleges.net/docs/design_get_badge#badgedesign-object
