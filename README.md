@@ -22,7 +22,7 @@ npm install @blockspoon/cert-badge-renderer
 
 ## 📝 사용법 예제
 
-### 1. 인증서 또는 배지 HTML 생성
+### 1. 인증서 또는 배지 객체 기반으로 HTML 생성하기
 
 ```ts
 import { generateAchievementHTML } from "@blockspoon/cert-badge-renderer/browser";
@@ -51,7 +51,7 @@ const base64 = result.base64.replace(/^data:image\/png;base64,/, "");
 require("fs").writeFileSync("certificate.png", Buffer.from(base64, "base64"));
 ``` -->
 
-### 2. 디자인(JSON) 기반으로 HTML 생성하기
+### 2. 디자인 객체 기반으로 HTML 생성하기
 
 ```ts
 import { generateDesignHTML } from "@blockspoon/cert-badge-renderer/browser";
