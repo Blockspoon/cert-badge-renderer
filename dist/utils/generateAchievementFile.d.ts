@@ -5,7 +5,7 @@ export declare function generateAchievementFile(data: CertificateData, options?:
     buffer?: undefined;
     fileName?: undefined;
 } | {
-    buffer: Uint8Array<ArrayBufferLike>;
+    buffer: Uint8Array;
     contentType: string;
     fileName: string;
     base64?: undefined;

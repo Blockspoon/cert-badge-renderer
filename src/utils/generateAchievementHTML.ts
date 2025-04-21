@@ -38,7 +38,20 @@ async function convertImageToBase64(url: string): Promise<string> {
     }
 
     const buffer = await response.arrayBuffer();
-    const base64 = Buffer.from(buffer).toString("base64");
+    let base64 = "";
+
+    if (typeof window === "undefined") {
+      // Node.js 환경
+      base64 = Buffer.from(buffer).toString("base64");
+    } else {
+      // 브라우저 환경
+      base64 = btoa(
+        new Uint8Array(buffer).reduce(
+          (data, byte) => data + String.fromCharCode(byte),
+          ""
+        )
+      );
+    }
     return `data:${contentType};base64,${base64}`;
   } catch (error) {
     console.error(`이미지 변환 실패: ${url}`, error);

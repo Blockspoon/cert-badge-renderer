@@ -40,7 +40,15 @@ function convertImageToBase64(url) {
                 throw new Error(`Not an image! content-type: ${contentType}`);
             }
             const buffer = yield response.arrayBuffer();
-            const base64 = Buffer.from(buffer).toString("base64");
+            let base64 = "";
+            if (typeof window === "undefined") {
+                // Node.js 환경
+                base64 = Buffer.from(buffer).toString("base64");
+            }
+            else {
+                // 브라우저 환경
+                base64 = btoa(new Uint8Array(buffer).reduce((data, byte) => data + String.fromCharCode(byte), ""));
+            }
             return `data:${contentType};base64,${base64}`;
         }
         catch (error) {
