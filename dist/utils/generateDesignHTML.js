@@ -19,36 +19,6 @@ const qrcode_1 = __importDefault(require("qrcode"));
 const svgTemplate_1 = require("../templates/svgTemplate");
 const certificates_1 = __importDefault(require("../templates/certificates"));
 const componentsDirection_1 = require("../constants/componentsDirection");
-function convertImageToBase64(url) {
-    return __awaiter(this, void 0, void 0, function* () {
-        try {
-            // URL이 이미 baseUrl을 포함하고 있는지 확인
-            let finalUrls = [];
-            finalUrls = url.split("https://");
-            const finalUrl = "https://" + finalUrls.pop();
-            const response = yield fetch(finalUrl, {
-                credentials: "include",
-                headers: {
-                    Accept: "image/*",
-                },
-            });
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            const contentType = response.headers.get("content-type");
-            if (!(contentType === null || contentType === void 0 ? void 0 : contentType.startsWith("image/"))) {
-                throw new Error(`Not an image! content-type: ${contentType}`);
-            }
-            const buffer = yield response.arrayBuffer();
-            const base64 = Buffer.from(buffer).toString("base64");
-            return `data:${contentType};base64,${base64}`;
-        }
-        catch (error) {
-            console.error(`이미지 변환 실패: ${url}`, error);
-            return "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
-        }
-    });
-}
 function generateDesignHTML(data_1) {
     return __awaiter(this, arguments, void 0, function* (data, options = {}) {
         const { size = 600, noSpace = false } = options;
@@ -251,19 +221,19 @@ function generateDesignHTML(data_1) {
                 }
                 else if (element.src) {
                     // 이미지를 base64로 변환
-                    const base64Image = yield convertImageToBase64(element.src);
+                    // const base64Image = await convertImageToBase64(element.src);
                     html += `<img
-            src="${base64Image}"
-            alt="Uploaded"
-            style="
-              width: 100%;
-              height: 100%;
-              max-width: 100%;
-              max-height: 100%;
-              object-fit: contain;
-              align-self: center;
-            "
-          />`;
+          src="${element.src}"
+          alt="Uploaded"
+          style="
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            align-self: center;
+          "
+        />`;
                 }
                 html += `</div>`;
             }
