@@ -22,14 +22,14 @@ function createNewCertificateType27({ mainColor = "#96A6B4", subColor = "#96A6B4
             fill="white"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M84.9206 316.325H84.9318V290.949L-5.15227 290.949L-5.15227 316.325H-5.14164C-5.14876 316.655 -5.15234 316.985 -5.15234 317.317C-5.15234 342.193 15.0136 362.359 39.8895 362.359C64.7654 362.359 84.9313 342.193 84.9313 317.317C84.9313 316.985 84.9277 316.655 84.9206 316.325Z"
             fill="${subColor}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M1080.33 540.393L1080.32 540.393L1080.32 562.701L1159.52 562.701L1159.52 540.393L1159.51 540.393C1159.51 540.103 1159.52 539.813 1159.52 539.521C1159.52 517.653 1141.79 499.926 1119.92 499.926C1098.05 499.926 1080.32 517.653 1080.32 539.521C1080.32 539.813 1080.33 540.103 1080.33 540.393Z"
             fill="${subColor}"
           />
@@ -139,68 +139,68 @@ function createNewCertificateType27({ mainColor = "#96A6B4", subColor = "#96A6B4
             fill="#002333"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M98.254 156.049C120.327 156.049 138.221 138.155 138.221 116.082C138.221 115.524 138.209 114.968 138.187 114.416L58.3212 114.416C58.2985 114.968 58.2871 115.524 58.2871 116.082C58.2871 138.155 76.1809 156.049 98.254 156.049Z"
             fill="${mainColor}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M1068.61 681.289C1049.21 681.289 1033.48 697.019 1033.48 716.423C1033.48 716.914 1033.49 717.402 1033.51 717.888L1103.72 717.888C1103.74 717.402 1103.75 716.914 1103.75 716.423C1103.75 697.019 1088.02 681.289 1068.61 681.289Z"
             fill="${mainColor}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M30.2959 600.07C30.2959 595.061 26.2349 591 21.2255 591C21.099 591 20.973 591.003 20.8477 591.008L20.8477 609.133C20.973 609.138 21.099 609.141 21.2255 609.141C26.2349 609.141 30.2959 605.08 30.2959 600.07Z"
             fill="${subColor}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M90.6483 208.295L90.6484 208.295L1.19006 120.735L1.19005 208.295L90.6483 208.295Z"
             fill="white"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M90.6484 208.294L1.19109 309.81L1.19109 208.294L90.6484 208.294Z"
             fill="${mainColor}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M19.2637 208.29C19.2637 208.29 19.2637 208.29 19.2637 208.29C19.2637 197.928 27.7595 189.527 38.2397 189.527C48.7199 189.527 57.2157 197.928 57.2157 208.29C57.2157 208.29 57.2157 208.29 57.2157 208.29L19.2637 208.29Z"
             fill="${mainColor}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M57.2148 208.294C57.2148 208.294 57.2148 208.294 57.2148 208.294C57.2148 218.657 48.719 227.057 38.2388 227.057C27.7587 227.057 19.2628 218.657 19.2628 208.294C19.2628 208.294 19.2628 208.294 19.2628 208.294L57.2148 208.294Z"
             fill="white"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M1075.3 635.36L1075.3 635.36L1153.94 712.332L1153.94 635.36L1075.3 635.36Z"
             fill="white"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M1075.3 635.361L1153.94 546.121L1153.94 635.361L1075.3 635.361Z"
             fill="${mainColor}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M1138.05 635.365C1138.05 635.365 1138.05 635.365 1138.05 635.365C1138.05 644.475 1130.58 651.859 1121.37 651.859C1112.16 651.859 1104.69 644.475 1104.69 635.365C1104.69 635.365 1104.69 635.365 1104.69 635.365L1138.05 635.365Z"
             fill="${mainColor}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M1104.69 635.361C1104.69 635.361 1104.69 635.361 1104.69 635.361C1104.69 626.251 1112.16 618.867 1121.37 618.867C1130.58 618.867 1138.05 626.251 1138.05 635.361C1138.05 635.361 1138.05 635.361 1138.05 635.361L1104.69 635.361Z"
             fill="white"
           />
@@ -215,54 +215,54 @@ function createNewCertificateType27({ mainColor = "#96A6B4", subColor = "#96A6B4
           <path
             d="M156.848 115L279.848 -7"
             stroke="${mainColor}"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <path
             d="M1017.85 718L908.848 825"
             stroke="${mainColor}"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <path
             d="M12.0939 832.049L12.801 682.849"
             stroke="${mainColor}"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <path
             d="M176.848 112L299.848 -11"
             stroke="${mainColor}"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <path
             d="M986.848 731L878.848 839"
             stroke="${mainColor}"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <path
             d="M23.4064 849.906V700"
             stroke="${mainColor}"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M97.7413 642.333L78.8477 661.227L97.7413 680.12V642.333Z"
             fill="${mainColor}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M97.7411 665.786L116.635 646.893L97.7411 627.999L97.7411 665.786Z"
             fill="#002333"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M219.848 395L227.848 387L219.848 379L219.848 395Z"
             fill="black"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M933.848 395.25L925.848 387.25L933.848 379.25L933.848 395.25Z"
             fill="black"
           />

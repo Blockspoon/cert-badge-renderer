@@ -19,9 +19,6 @@ export async function generateAchievementHTML(
   options: CertificateOptions = {}
 ): Promise<string> {
   const { type = "certificate", size = 600, noSpace = false } = options;
-
-  console.log("achievementInfo");
-  console.log(achievementInfo);
   
   let achievementForm;
 

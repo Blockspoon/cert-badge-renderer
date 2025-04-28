@@ -23,8 +23,6 @@ function generateAchievementHTML(achievementInfo_1) {
     return __awaiter(this, arguments, void 0, function* (achievementInfo, options = {}) {
         var _a, _b, _c, _d, _e, _f, _g, _h, _j;
         const { type = "certificate", size = 600, noSpace = false } = options;
-        console.log("achievementInfo");
-        console.log(achievementInfo);
         let achievementForm;
         if (achievementInfo.achievementForm) {
             achievementForm = achievementInfo.achievementForm;

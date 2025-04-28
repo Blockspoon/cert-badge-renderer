@@ -32,8 +32,8 @@ function createBadgeType21({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           fill="${subColor}"
         />
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
           d="M224.328 448.935L376.328 366.31C385.987 361.059 392 350.946 392 339.952V267C392 250.431 378.569 237 362 237H58C41.4315 237 28 250.431 28 267V339.952C28 350.946 34.0134 361.059 43.6724 366.31L195.672 448.935C204.607 453.792 215.393 453.792 224.328 448.935ZM377.283 368.067L225.283 450.692C215.753 455.873 204.247 455.873 194.717 450.692L42.7172 368.067C32.4143 362.466 26 351.679 26 339.952V267C26 249.327 40.3269 235 58 235H362C379.673 235 394 249.327 394 267V339.952C394 351.679 387.586 362.466 377.283 368.067Z"
           fill="white"
         />
@@ -42,8 +42,8 @@ function createBadgeType21({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           fill="white"
         />
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
           d="M25 110.492V191C25 205.912 37.0883 218 52 218H368C382.912 218 395 205.912 395 191V110.489C395 101.278 390.37 92.5812 382.743 87.2638C350.521 64.7985 292.079 25.1622 215.122 24.0254C132.84 22.8251 70.3137 64.4019 37.2545 87.294C29.6234 92.5783 25 101.274 25 110.492ZM20 191V110.492C20 99.6015 25.4544 89.3834 34.408 83.1834C67.5397 60.241 131.21 17.8008 215.195 19.026C293.8 20.187 353.344 60.671 385.603 83.1623C394.535 89.39 400 99.6002 400 110.489V191C400 208.673 385.673 223 368 223H52C34.3269 223 20 208.673 20 191Z"
           fill="${mainColor}"
         />
@@ -56,8 +56,8 @@ function createBadgeType21({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
             y2="488"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
         </defs>
     </svg>

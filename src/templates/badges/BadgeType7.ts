@@ -86,7 +86,7 @@ export function createBadgeType7({
       <path
         d="M23 244C23 121.952 121.952 23 244 23H465V244C465 366.048 366.048 465 244 465C121.952 465 23 366.048 23 244Z"
         stroke="${mainColor}"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <path
         d="M244 471C118.638 471 51.249 381.296 26.7227 314H460.311C443.193 374.213 369.361 471 244 471Z"

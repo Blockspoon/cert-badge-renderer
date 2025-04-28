@@ -61,8 +61,8 @@ function createIconPillar1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           fill="${mainColor}"
         />
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
           d="M96.582 346.838C43.5627 346.838 0.582036 389.819 0.582032 442.838C0.582031 444.178 0.609482 445.511 0.663849 446.838L192.5 446.838C192.555 445.511 192.582 444.178 192.582 442.838C192.582 389.819 149.601 346.838 96.582 346.838Z"
           fill="${subColor}"
         />

@@ -27,8 +27,8 @@ function createIconTopLeft2({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
             y2="237"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
         </defs>
       </svg>

@@ -14,7 +14,7 @@ function createNewCertificateType17({ mainColor = "#96A6B4", subColor = "#96A6B4
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clipPath="url(#clip0_1917_1877)">
+         <g clipPath="url(#clip0_1917_1877)">
           <rect
             width="1152"
             height="814"
@@ -26,7 +26,7 @@ function createNewCertificateType17({ mainColor = "#96A6B4", subColor = "#96A6B4
             width="1152"
             height="814"
             fill="${mainColor}"
-            fillOpacity="0.08"
+            fill-opacity="0.08"
           />
           <rect x="41.3477" y="40.5" width="1071" height="733" stroke="black" />
           <path
@@ -37,7 +37,7 @@ function createNewCertificateType17({ mainColor = "#96A6B4", subColor = "#96A6B4
             d="M1031.7 299.96C1031.81 300.467 1031.42 300.449 1031.16 300.513C1027.51 301.435 1019.73 302.347 1017.61 307.065C1015.47 311.819 1015.12 319.513 1014.35 324.977C1014.01 325.125 1014.16 324.517 1014.14 324.249C1013.8 319.633 1012.54 308.272 1009.96 305.378C1006.85 301.895 1000.64 301.398 996.848 300.357C996.904 299.96 997.137 299.997 997.351 299.951C1000.63 299.196 1007.89 297.998 1010.25 294.727C1012.82 291.161 1013.57 281.006 1014.13 276.058C1014.16 275.754 1014.13 275.423 1014.42 275.34C1014.71 279.293 1015.14 283.255 1015.9 287.069C1017.2 293.612 1017.94 295.565 1022.62 297.583C1025.5 298.827 1028.69 299.555 1031.7 299.942V299.96Z"
             fill="${mainColor}"
             stroke="black"
-            strokeWidth="1.5"
+            stroke-width="1.5"
             strokeMiterlimit="10"
           />
           <rect
@@ -86,13 +86,13 @@ function createNewCertificateType17({ mainColor = "#96A6B4", subColor = "#96A6B4
             <path
               d="M174.848 216C246.645 216 304.848 193.39 304.848 165.5C304.848 137.61 246.645 115 174.848 115C103.051 115 44.8477 137.61 44.8477 165.5C44.8477 193.39 103.051 216 174.848 216Z"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
             />
             <path
               d="M304.848 235.5C304.848 207.614 246.646 185 174.843 185C103.04 185 44.8477 207.605 44.8477 235.5C44.8477 263.395 103.049 286 174.852 286"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
             />
             <path
@@ -102,20 +102,20 @@ function createNewCertificateType17({ mainColor = "#96A6B4", subColor = "#96A6B4
             <path
               d="M44.8477 295.646C44.8477 294.39 44.9677 293.152 45.1892 291.915"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
             />
             <path
               d="M47.7734 284.894C60.4104 262.042 112.481 244.907 174.808 244.907C246.577 244.907 304.768 267.619 304.768 295.645C304.768 323.672 250.546 344.8 182.22 346.299"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
               strokeDasharray="8.04 8.04"
             />
             <path
               d="M178.501 346.365C177.273 346.375 176.046 346.384 174.809 346.384"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
             />
             <path
@@ -130,7 +130,7 @@ function createNewCertificateType17({ mainColor = "#96A6B4", subColor = "#96A6B4
             <path
               d="M174.848 807C246.645 807 304.848 784.39 304.848 756.5C304.848 728.61 246.645 706 174.848 706C103.051 706 44.8477 728.61 44.8477 756.5C44.8477 784.39 103.051 807 174.848 807Z"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
             />
             <path
@@ -146,13 +146,13 @@ function createNewCertificateType17({ mainColor = "#96A6B4", subColor = "#96A6B4
             <path
               d="M174.848 467C246.645 467 304.848 444.39 304.848 416.5C304.848 388.61 246.645 366 174.848 366C103.051 366 44.8477 388.61 44.8477 416.5C44.8477 444.39 103.051 467 174.848 467Z"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
             />
             <path
               d="M304.848 486.5C304.848 458.614 246.646 436 174.843 436C103.04 436 44.8477 458.605 44.8477 486.5C44.8477 514.395 103.049 537 174.852 537"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
             />
             <path
@@ -162,20 +162,20 @@ function createNewCertificateType17({ mainColor = "#96A6B4", subColor = "#96A6B4
             <path
               d="M44.8477 546.646C44.8477 545.39 44.9677 544.152 45.1892 542.915"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
             />
             <path
               d="M47.7734 535.894C60.4104 513.042 112.481 495.907 174.808 495.907C246.577 495.907 304.768 518.619 304.768 546.645C304.768 574.672 250.546 595.8 182.22 597.299"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
               strokeDasharray="8.04 8.04"
             />
             <path
               d="M178.501 597.365C177.273 597.375 176.046 597.384 174.809 597.384"
               stroke="black"
-              strokeWidth="2"
+              stroke-width="2"
               strokeMiterlimit="10"
             />
             <path

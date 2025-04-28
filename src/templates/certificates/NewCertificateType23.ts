@@ -113,12 +113,12 @@ export function createNewCertificateType23({
             fill="url(#pattern0_1917_861)"
           />
 
-          <path d="M833.047 621.8H1032.85" stroke="white" strokeWidth="1.6" />
+          <path d="M833.047 621.8H1032.85" stroke="white" stroke-width="1.6" />
 
           <path
             d="M832.849 542.4C832.849 516.332 853.981 495.2 880.049 495.2H1032.85V645.6C1032.85 671.668 1011.72 692.8 985.649 692.8H832.849V542.4Z"
             stroke="white"
-            strokeWidth="1.6"
+            stroke-width="1.6"
           />
 
           <mask

@@ -28,7 +28,7 @@ function createNewCertificateType22({ mainColor = "#96A6B4", subColor = "#96A6B4
             height="730"
             rx="10"
             stroke="black"
-            strokeWidth="4"
+            stroke-width="4"
           />
           <path
             d="M412.848 0L0.847656 124V0H412.848Z"
@@ -61,7 +61,7 @@ function createNewCertificateType22({ mainColor = "#96A6B4", subColor = "#96A6B4
           <path
             d="M1050.85 706H899.848"
             stroke="${mainColor}"
-            strokeWidth="2"
+            stroke-width="2"
           /> */}
           <path
             d="M0.847656 291V0H103.848L0.847656 291Z"

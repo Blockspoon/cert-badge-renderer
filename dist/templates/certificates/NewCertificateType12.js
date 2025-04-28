@@ -36,79 +36,79 @@ function createNewCertificateType12({ mainColor = "#96A6B4", subColor = "#96A6B4
               <path
                 d="M1708.52 -26.5518L987.016 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1722.16 -26.5518L1000.66 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1735.91 -26.5518L1014.41 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1749.56 -26.5518L1028.06 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1763.21 -26.5518L1041.81 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1776.96 -26.5518L1055.46 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1790.61 -26.5518L1069.21 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1804.35 -26.5518L1082.85 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1818 -26.5518L1096.5 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1831.75 -26.5518L1110.25 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1845.4 -26.5518L1123.9 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1859.15 -26.5518L1137.65 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M1872.8 -26.5518L1151.3 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
             </g>
@@ -116,271 +116,271 @@ function createNewCertificateType12({ mainColor = "#96A6B4", subColor = "#96A6B4
               <path
                 d="M72.8696 -26.552L-648.631 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M86.52 -26.552L-634.98 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M100.266 -26.552L-621.234 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M113.917 -26.552L-607.584 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M127.663 -26.552L-593.838 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M18.4643 -26.552L-702.939 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M32.2114 -26.552L-689.289 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M45.8599 -26.552L-675.641 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M59.6079 -26.552L-661.893 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M141.313 -26.552L-580.188 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M155.059 -26.552L-566.441 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M168.708 -26.552L-552.793 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M182.357 -26.552L-539.047 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M196.104 -26.552L-525.396 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M209.753 -26.552L-511.65 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M223.5 -26.552L-498 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M237.151 -26.552L-484.35 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M250.897 -26.552L-470.604 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M264.547 -26.552L-456.953 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M278.293 -26.552L-443.207 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M291.944 -26.552L-429.557 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M305.69 -26.552L-415.811 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M319.34 -26.552L-402.16 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M333.086 -26.552L-388.414 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M346.735 -26.552L-374.766 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M360.386 -26.552L-361.018 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M374.131 -26.552L-347.369 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M387.781 -26.552L-333.623 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M401.528 -26.552L-319.973 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M415.178 -26.552L-306.322 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M428.924 -26.552L-292.576 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M442.575 -26.552L-278.926 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M456.321 -26.552L-265.18 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M469.971 -26.552L-251.529 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M483.717 -26.552L-237.783 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M497.368 -26.552L-224.133 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M511.017 -26.552L-210.387 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M524.764 -26.552L-196.736 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M538.411 -26.552L-182.992 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M552.159 -26.552L-169.342 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M565.809 -26.552L-155.691 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M579.555 -26.552L-141.945 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M593.206 -26.552L-128.295 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
               <path
                 d="M606.952 -26.552L-114.549 841.424"
                 stroke="${mainColor}"
-                strokeWidth="0.84"
+                stroke-width="0.84"
                 strokeMiterlimit="10"
               />
             </g>
             <path
-              fillRule="evenodd"
-              clipRule="evenodd"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
               d="M1185.35 373C1239.19 373 1282.85 329.348 1282.85 275.5C1282.85 221.652 1239.19 178 1185.35 178C1131.5 178 1087.85 221.652 1087.85 275.5C1087.85 329.348 1131.5 373 1185.35 373ZM1185.35 330C1215.45 330 1239.85 305.599 1239.85 275.5C1239.85 245.4 1215.45 221 1185.35 221C1155.25 221 1130.85 245.4 1130.85 275.5C1130.85 305.599 1155.25 330 1185.35 330Z"
               fill="${mainColor}"
             />
@@ -396,14 +396,14 @@ function createNewCertificateType12({ mainColor = "#96A6B4", subColor = "#96A6B4
             />
 
             <path
-              fillRule="evenodd"
-              clipRule="evenodd"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
               d="M501.725 737.543V869.527L461.325 827.863L417.847 826C419.207 790.17 399.587 765.037 380.256 744.256L373.746 737.543H501.725Z"
               fill="#FF5A59"
             />
             <path
-              fillRule="evenodd"
-              clipRule="evenodd"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
               d="M287.346 933C341.193 933 384.846 889.348 384.846 835.5C384.846 781.652 341.193 738 287.346 738C233.498 738 189.846 781.652 189.846 835.5C189.846 889.348 233.498 933 287.346 933ZM287.346 890C317.445 890 341.846 865.599 341.846 835.5C341.846 805.4 317.445 781 287.346 781C257.246 781 232.846 805.4 232.846 835.5C232.846 865.599 257.246 890 287.346 890Z"
               fill="${mainColor}"
             />
@@ -412,8 +412,8 @@ function createNewCertificateType12({ mainColor = "#96A6B4", subColor = "#96A6B4
               fill="${subColor}"
             />
             <path
-              fillRule="evenodd"
-              clipRule="evenodd"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
               d="M501.725 737.543V869.527L461.325 827.863L417.847 826C419.207 790.17 399.587 765.037 380.256 744.256L373.746 737.543H501.725Z"
               fill="${extraColor1}"
             />

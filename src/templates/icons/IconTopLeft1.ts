@@ -18,7 +18,7 @@ export function createIconTopLeft1({
         <path
           d="M307 0C291.5 61.5086 160.947 51.5843 129 97.3612C84 174 55.5 228.273 2.0158e-05 237L3.05176e-05 2.2798e-05L307 0Z"
           fill="${mainColor}"
-          fillOpacity="0.9"
+          fill-opacity="0.9"
         />
       </svg>
     </div>

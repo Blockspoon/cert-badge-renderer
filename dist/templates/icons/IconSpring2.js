@@ -21,13 +21,13 @@ function createIconSpring2({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
         <path
           d="M131.896 102.211C203.693 102.211 261.896 79.6013 261.896 51.7109C261.896 23.8206 203.693 1.21094 131.896 1.21094C60.0995 1.21094 1.89648 23.8206 1.89648 51.7109C1.89648 79.6013 60.0995 102.211 131.896 102.211Z"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
           strokeMiterlimit="10"
         />
         <path
           d="M261.896 121.711C261.896 93.8254 203.695 71.2109 131.892 71.2109C60.0888 71.2109 1.89648 93.816 1.89648 121.711C1.89648 149.606 60.098 172.211 131.901 172.211"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
           strokeMiterlimit="10"
         />
         <path
@@ -37,20 +37,20 @@ function createIconSpring2({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
         <path
           d="M1.89648 181.857C1.89648 180.601 2.01648 179.363 2.23802 178.126"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
           strokeMiterlimit="10"
         />
         <path
           d="M4.82227 171.105C17.4592 148.253 69.5301 131.118 131.856 131.118C203.626 131.118 261.817 153.83 261.817 181.856C261.817 209.883 207.595 231.011 139.269 232.51"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
           strokeMiterlimit="10"
           strokeDasharray="8.04 8.04"
         />
         <path
           d="M135.55 232.576C134.322 232.586 133.094 232.595 131.857 232.595"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
           strokeMiterlimit="10"
         />
         <path

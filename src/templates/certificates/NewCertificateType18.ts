@@ -5403,14 +5403,14 @@ export function createNewCertificateType18({
           </g>
           <mask id="path-1073-inside-1_1917_2025" fill="white">
             <path
-              fillRule="evenodd"
-              clipRule="evenodd"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
               d="M52.8477 40C46.2202 40 40.8477 45.3726 40.8477 52V763C40.8477 769.627 46.2203 775 52.8477 775H1017.85C1024.48 775 1029.85 769.627 1029.85 763V274C1029.85 267.373 1035.22 262 1041.85 262H1100.85C1107.48 262 1112.85 256.627 1112.85 250V52C1112.85 45.3726 1107.48 40 1100.85 40H1017.85H942.848H52.8477Z"
             />
           </mask>
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M52.8477 40C46.2202 40 40.8477 45.3726 40.8477 52V763C40.8477 769.627 46.2203 775 52.8477 775H1017.85C1024.48 775 1029.85 769.627 1029.85 763V274C1029.85 267.373 1035.22 262 1041.85 262H1100.85C1107.48 262 1112.85 256.627 1112.85 250V52C1112.85 45.3726 1107.48 40 1100.85 40H1017.85H942.848H52.8477Z"
             fill="#FAFAFA"
           />
@@ -5450,7 +5450,7 @@ export function createNewCertificateType18({
               rx="6.5"
               fill="#D9D9D9"
               stroke="white"
-              strokeWidth="0.333333"
+              stroke-width="0.333333"
             />
           </mask>
         </g>

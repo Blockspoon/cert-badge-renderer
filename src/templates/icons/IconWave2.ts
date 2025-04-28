@@ -40,8 +40,8 @@ export function createIconWave2({
             y2="386218"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
         </defs>
       </svg>

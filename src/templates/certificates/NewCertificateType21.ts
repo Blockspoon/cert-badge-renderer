@@ -34,15 +34,9 @@ export function createNewCertificateType21({
             height="814"
             transform="matrix(1 0 0 -1 0.847656 814)"
             fill="${mainColor}"
-            fillOpacity="0.1"
+            fill-opacity="0.1"
           />
-          <path d="M300.848 0V814" stroke="black" strokeWidth="2" />
-
-          <path
-            d="M1020.85 552H869.848"
-            stroke="${mainColor}"
-            strokeWidth="2"
-          /> */}
+          <path d="M300.848 0V814" stroke="black" stroke-width="2" />
 
           <path
             d="M364 214.5C364 215.6 363.1 216.5 362 216.5C360.9 216.5 360 215.6 360 214.5C360 213.4 360.9 212.5 362 212.5C363.1 212.5 364 213.4 364 214.5Z"
@@ -70,7 +64,7 @@ export function createNewCertificateType21({
             height="196"
             transform="matrix(1 0 0 -1 -28.1523 196)"
             fill="${extraColor1}"
-            fillOpacity="0.4"
+            fill-opacity="0.4"
           />
 
           <rect
@@ -96,7 +90,7 @@ export function createNewCertificateType21({
             rx="19"
             transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 228.98 398.852)"
             stroke="black"
-            strokeWidth="2"
+            stroke-width="2"
           />
 
           <rect x="360.848" y="641" width="80" height="80" />
@@ -118,14 +112,14 @@ export function createNewCertificateType21({
             fill="${extraColor2}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M188.848 624.619V575.784C188.848 521.243 148.106 477.028 97.8476 477.028H-44.1524C-94.4103 477.028 -135.152 521.243 -135.152 575.784L-135.152 823.216C-135.152 877.757 -94.4102 921.972 -44.1523 921.972L97.8477 921.972C148.106 921.972 188.848 877.757 188.848 823.216V709.267H247.848V823.216C247.848 913.119 180.69 986 97.8477 986L-44.1523 986C-126.995 986 -194.152 913.119 -194.152 823.216L-194.152 575.784C-194.152 485.881 -126.995 413 -44.1524 413H97.8476C180.69 413 247.848 485.881 247.848 575.784V624.619H188.848Z"
             fill="${subColor}"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M112.848 -19.5V227.5C112.848 270.854 77.702 306 34.3477 306C-9.00669 306 -54.1523 270.854 -54.1523 227.5V-19.5C-54.1523 -62.8543 -9.00669 -98 34.3477 -98C77.702 -98 112.848 -62.8543 112.848 -19.5ZM34.3477 365C-41.5915 365 -113.152 303.439 -113.152 227.5V-19.5C-113.152 -95.4391 -41.5915 -157 34.3477 -157C110.287 -157 171.848 -95.4391 171.848 -19.5V227.5C171.848 303.439 110.287 365 34.3477 365Z"
             fill="${mainColor}"
           />
@@ -143,7 +137,7 @@ export function createNewCertificateType21({
             rx="19"
             transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 228.98 398.852)"
             stroke="black"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <rect
             y="-1.41421"
@@ -152,7 +146,7 @@ export function createNewCertificateType21({
             rx="13"
             transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 85.2813 701.452)"
             stroke="black"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <rect
             width="51.1951"
@@ -164,15 +158,15 @@ export function createNewCertificateType21({
           <path
             d="M259.848 853.5L259.848 771.5"
             stroke="black"
-            strokeWidth="2"
+            stroke-width="2"
           />
-          <path d="M235.848 831.5V757" stroke="black" strokeWidth="2" />
+          <path d="M235.848 831.5V757" stroke="black" stroke-width="2" />
           <path
             d="M225.848 174.5L300.348 174.5"
             stroke="black"
-            strokeWidth="2"
+            stroke-width="2"
           />
-          <path d="M245.848 150L299.848 150" stroke="black" strokeWidth="2" />
+          <path d="M245.848 150L299.848 150" stroke="black" stroke-width="2" />
           <rect
             x="1112.85"
             y="196"
@@ -187,10 +181,10 @@ export function createNewCertificateType21({
             height="196"
             transform="matrix(1 0 0 -1 -28.1523 196)"
             fill="${extraColor1}"
-            fillOpacity="0.4"
+            fill-opacity="0.4"
           />
-          <path d="M53.8477 90L53.8477 -5" stroke="black" strokeWidth="2" />
-          <path d="M29.8477 67.5V-7" stroke="black" strokeWidth="2" />
+          <path d="M53.8477 90L53.8477 -5" stroke="black" stroke-width="2" />
+          <path d="M29.8477 67.5V-7" stroke="black" stroke-width="2" />
 
           <mask
             id="mask0_1917_600"

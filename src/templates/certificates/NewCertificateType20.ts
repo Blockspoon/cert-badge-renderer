@@ -68,7 +68,7 @@ export function createNewCertificateType20({
             height="238.403"
             transform="rotate(-30 -269.962 154.08)"
             stroke="url(#${paintId0})"
-            strokeWidth="1.36817"
+            stroke-width="1.36817"
           />
           <rect
             x="369.041"
@@ -77,7 +77,7 @@ export function createNewCertificateType20({
             height="83.8251"
             transform="rotate(-30 369.041 28.3411)"
             stroke="url(#${paintId1})"
-            strokeWidth="5.47268"
+            stroke-width="5.47268"
           />
           <rect
             x="-248.071"
@@ -86,7 +86,7 @@ export function createNewCertificateType20({
             height="238.403"
             transform="rotate(-30 -248.071 91.1433)"
             stroke="url(#${paintId2})"
-            strokeWidth="1.36817"
+            stroke-width="1.36817"
           />
           <rect
             x="-209.696"
@@ -95,7 +95,7 @@ export function createNewCertificateType20({
             height="133.572"
             transform="rotate(-30 -209.696 114.536)"
             stroke="url(#${paintId3})"
-            strokeWidth="5.47268"
+            stroke-width="5.47268"
           />
           <rect
             x="544.102"
@@ -104,7 +104,7 @@ export function createNewCertificateType20({
             height="238.403"
             transform="rotate(-30 544.102 951.723)"
             stroke="url(#${paintId4})"
-            strokeWidth="1.36817"
+            stroke-width="1.36817"
           />
           <rect
             x="764.378"
@@ -113,7 +113,7 @@ export function createNewCertificateType20({
             height="238.403"
             transform="rotate(-30 764.378 894.26)"
             stroke="url(#${paintId5})"
-            strokeWidth="1.36817"
+            stroke-width="1.36817"
           />
           <rect
             x="815.068"
@@ -122,7 +122,7 @@ export function createNewCertificateType20({
             height="133.572"
             transform="rotate(-30 815.068 758.945)"
             stroke="url(#${paintId6})"
-            strokeWidth="5.47268"
+            stroke-width="5.47268"
           />
           <g filter="url(#filter0_d_1917_501)">
             <rect
@@ -135,8 +135,8 @@ export function createNewCertificateType20({
             />
           </g>
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M1051.24 72H1026.63V97.9804H77.8477V122.593H1026.63V742H1051.24V122.593H1075.85V97.9804H1051.24V72Z"
             fill="url(#${paintId7})"
           />
@@ -163,7 +163,7 @@ export function createNewCertificateType20({
             height="173.758"
             transform="rotate(-45 -49.086 738.297)"
             stroke="url(#${paintId8})"
-            strokeWidth="4.10451"
+            stroke-width="4.10451"
           />
           <rect
             x="12.4824"
@@ -172,7 +172,7 @@ export function createNewCertificateType20({
             height="87.0954"
             transform="rotate(-45 12.4824 635.972)"
             stroke="url(#${paintId9})"
-            strokeWidth="4.10451"
+            stroke-width="4.10451"
           />
           <rect
             x="161.613"
@@ -181,7 +181,7 @@ export function createNewCertificateType20({
             height="88.0261"
             transform="rotate(-45 161.613 737.875)"
             stroke="url(#${paintId10}"}
-            strokeWidth="4.10451"
+            stroke-width="4.10451"
           />
 
           <rect
@@ -202,7 +202,7 @@ export function createNewCertificateType20({
             filterUnits="userSpaceOnUse"
             colorInterpolationFilters="sRGB"
           >
-            <feFlood floodOpacity="0" result="BackgroundImageFix" />
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
             <feColorMatrix
               in="SourceAlpha"
               type="matrix"
@@ -230,13 +230,13 @@ export function createNewCertificateType20({
           </filter>
           <pattern
             id="pattern0_1917_501"
-            patternContentUnits="objectBoundingBox"
+            pattern-content-units="objectBoundingBox"
             width="1"
             height="1"
           ></pattern>
           <pattern
             id="pattern1_1917_501"
-            patternContentUnits="objectBoundingBox"
+            pattern-content-units="objectBoundingBox"
             width="1"
             height="1"
           >
@@ -248,10 +248,10 @@ export function createNewCertificateType20({
             y1="354.044"
             x2="-87.1615"
             y2="296.665"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop offset="0.0001" stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="0.0001" stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId1}"
@@ -259,10 +259,10 @@ export function createNewCertificateType20({
             y1="101.905"
             x2="474.614"
             y2="50.3467"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop offset="0.0001" stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="0.0001" stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId2}"
@@ -270,10 +270,10 @@ export function createNewCertificateType20({
             y1="291.108"
             x2="-65.2709"
             y2="233.728"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop offset="0.0001" stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="0.0001" stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId3}"
@@ -281,10 +281,10 @@ export function createNewCertificateType20({
             y1="229.64"
             x2="-106.885"
             y2="196.365"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop offset="0.0001" stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="0.0001" stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId4}"
@@ -292,10 +292,10 @@ export function createNewCertificateType20({
             y1="1151.69"
             x2="726.903"
             y2="1094.31"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop offset="0.0001" stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="0.0001" stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId5}"
@@ -303,10 +303,10 @@ export function createNewCertificateType20({
             y1="1094.22"
             x2="947.178"
             y2="1036.84"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop offset="0.0001" stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="0.0001" stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId6}"
@@ -314,10 +314,10 @@ export function createNewCertificateType20({
             y1="874.049"
             x2="917.879"
             y2="840.774"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop offset="0.0001" stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="0.0001" stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId7}"
@@ -325,10 +325,10 @@ export function createNewCertificateType20({
             y1="-82.5102"
             x2="845.594"
             y2="860.233"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId8}"
@@ -336,10 +336,10 @@ export function createNewCertificateType20({
             y1="738.371"
             x2="-52.0619"
             y2="916.38"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId9}"
@@ -347,10 +347,10 @@ export function createNewCertificateType20({
             y1="636.01"
             x2="9.54232"
             y2="727.286"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId10}"
@@ -358,10 +358,10 @@ export function createNewCertificateType20({
             y1="737.913"
             x2="158.673"
             y2="830.12"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId11}"
@@ -369,10 +369,10 @@ export function createNewCertificateType20({
             y1="196"
             x2="1008.85"
             y2="231.2"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop stopOpacity="0.4" />
-            <stop offset="1" stopOpacity="0" />
+            <stop stop-opacity="0.4" />
+            <stop offset="1" stop-opacity="0" />
           </linearGradient>
           <linearGradient
             id="${paintId12}"
@@ -380,10 +380,10 @@ export function createNewCertificateType20({
             y1="92.8"
             x2="1008.85"
             y2="218.4"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId13}"
@@ -391,10 +391,10 @@ export function createNewCertificateType20({
             y1="178.616"
             x2="957.234"
             y2="207.432"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId14}"
@@ -402,10 +402,10 @@ export function createNewCertificateType20({
             y1="162.046"
             x2="967.207"
             y2="176.822"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId15}"
@@ -413,10 +413,10 @@ export function createNewCertificateType20({
             y1="178.542"
             x2="991.347"
             y2="193.468"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId16}"
@@ -424,10 +424,10 @@ export function createNewCertificateType20({
             y1="222.669"
             x2="1011.7"
             y2="217.132"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop offset="0.0001" stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="0.0001" stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId17}"
@@ -435,10 +435,10 @@ export function createNewCertificateType20({
             y1="212.95"
             x2="1031.41"
             y2="207.413"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop offset="0.0001" stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="0.0001" stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId18}"
@@ -446,10 +446,10 @@ export function createNewCertificateType20({
             y1="191.18"
             x2="1024.74"
             y2="188.308"
-            gradientUnits="userSpaceOnUse"
+            gradient-units="userSpaceOnUse"
           >
-            <stop offset="0.0001" stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="0.0001" stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <clipPath id="clip0_1917_501">
             <rect

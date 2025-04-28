@@ -266,8 +266,8 @@ function createNewCertificateType11({ mainColor = "#96A6B4", subColor = "#96A6B4
           fill="${mainColor}"
         />
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
           d="M576.779 743.017L571.023 737.272L576.779 731.391L582.672 737.272L576.779 743.017ZM572.942 737.135L576.779 740.965L580.617 737.135L576.779 733.306L572.942 737.135Z"
           fill="${mainColor}"
         />
@@ -288,8 +288,8 @@ function createNewCertificateType11({ mainColor = "#96A6B4", subColor = "#96A6B4
           fill="${mainColor}"
         />
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
           d="M1097.41 760.251L1086.18 758.2L1084.12 746.847L1095.5 748.898L1097.41 760.251ZM1087.27 757.105L1095.63 758.61L1094.13 750.129L1085.77 748.625L1087.27 757.105Z"
           fill="${mainColor}"
         />
@@ -302,8 +302,8 @@ function createNewCertificateType11({ mainColor = "#96A6B4", subColor = "#96A6B4
           fill="${mainColor}"
         />
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
           d="M1083.98 106.848L1086.04 95.6318L1097.28 93.5801L1095.36 104.933L1083.98 106.848ZM1087.14 96.726L1085.63 105.07L1094.13 103.565L1095.63 95.2214L1087.14 96.726Z"
           fill="${mainColor}"
         />
@@ -316,8 +316,8 @@ function createNewCertificateType11({ mainColor = "#96A6B4", subColor = "#96A6B4
           fill="${mainColor}"
         />
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
           d="M69.5749 107.121L58.2002 105.07L56.1445 93.7168L67.5193 95.7685L69.5749 107.121ZM59.4336 103.975L67.9304 105.48L66.4229 96.9995L57.9261 95.495L59.4336 103.975Z"
           fill="${mainColor}"
         />
@@ -330,8 +330,8 @@ function createNewCertificateType11({ mainColor = "#96A6B4", subColor = "#96A6B4
           fill="${mainColor}"
         />
         <path
-          fillRule="evenodd"
-          clipRule="evenodd"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
           d="M56.418 760.388L58.3366 749.035L69.7113 747.12L67.6557 758.336L56.418 760.388ZM59.707 750.266L58.1996 758.747L66.5593 757.242L68.0668 748.762L59.707 750.266Z"
           fill="${mainColor}"
         />

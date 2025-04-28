@@ -40,46 +40,14 @@ const test_object = {
     achievementForm: {
       id: 496,
       name: "OpenApi 테스트 인증서",
-      achievementBadgeDesign: {
+      achievementCertificateDesign: {
         id: 64,
         name: "배지리본합체!",
         main_color: "#FF1B64",
         sub_color: "#FF8FB1",
-        extra_color_1: "#000000",
-        extra_color_2: "#000000",
+        extra_color_1: "yellow",
+        extra_color_2: "green",
         layout_json: [
-          {
-            id: "badge-1742881999662",
-            controlType: "svg",
-            designType: "badge",
-            componentName: "BadgeType63",
-            background: "transparent",
-            width: 500,
-            height: 530,
-            x: 48,
-            y: 44,
-            order: 1,
-            text: "BadgeType63",
-            mainColor: "#FF1B64",
-            subColor: "#FF91B2",
-            extraColor1: "yellow",
-            extraColor2: "green",
-          },
-          {
-            id: "ribbon-1742881765599",
-            controlType: "svg",
-            designType: "ribbon",
-            componentName: "RibbonType7",
-            background: "transparent",
-            width: 510,
-            height: 210,
-            x: 45,
-            y: 195,
-            order: 2,
-            text: "RibbonType7",
-            mainColor: "#FF1B64",
-            subColor: "#FF91B2",
-          },
           {
             id: "2",
             order: 3,
@@ -150,7 +118,7 @@ const test_object = {
             y: 240,
           },
         ],
-        template_type: "NewBadgeTypeEmpty",
+        template_type: "NewCertificateType33",
         created_at: "2025-04-09T18:37:27.940Z",
         updated_at: "2025-04-09T18:37:27.940Z",
       },
@@ -182,7 +150,7 @@ const testCertificateData = {
   achievementInfo: test_object.achievement,
 };
 const testOptions = {
-  type: "badge",
+  type: "certificate",
   size: 300,
   returnType: "base64",
 };

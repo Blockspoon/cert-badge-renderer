@@ -22,8 +22,8 @@ function createNewCertificateType29({ mainColor = "#96A6B4", subColor = "#96A6B4
             fill="white"
           />
           <path
-            fillRule="evenodd"
-            clipRule="evenodd"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
             d="M167.737 24.4995L149.062 53.4521L121.228 96.2883L71.8518 83.2183L22.5196 69.9833L20 24.4995H167.737Z"
             fill="${subColor}"
           />
@@ -83,7 +83,7 @@ function createNewCertificateType29({ mainColor = "#96A6B4", subColor = "#96A6B4
             width="1106"
             height="768"
             stroke="${mainColor}"
-            strokeWidth="6"
+            stroke-width="6"
           />
         </g>
         <defs>

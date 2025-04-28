@@ -16,7 +16,7 @@ function createIconTopRight1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
         <path
           d="M0 0C15.5 61.5086 146.053 51.5843 178 97.3612C223 174 251.5 228.273 307 237L307 2.2798e-05L0 0Z"
           fill="${mainColor}"
-          fillOpacity="0.9"
+          fill-opacity="0.9"
         />
       </svg>
     </div>
