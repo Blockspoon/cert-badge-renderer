@@ -1,0 +1,43 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createNewCertificateType37 = createNewCertificateType37;
+function createNewCertificateType37({ mainColor = "#96A6B4", subColor = "#96A6B4", extraColor1 = "#96A6B4", extraColor2 = "#96A6B4", }) {
+    const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId3 = `paint3_linear_${Math.random().toString(36).substr(2, 9)}`;
+    return `
+     <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 810 1152"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <rect width="810" height="1152" fill="white" />
+        <g clipPath="url(#clip0_3039_654)">
+          <path
+            d="M174.568 1091.01H126.978C121.853 1059.82 94.3781 1054.31 94.3781 1054.31C46.3379 1051.34 51.3829 1093.32 51.3829 1093.32C90.9076 1099.05 92.932 1058.25 92.932 1058.25C89.7347 1021.75 52.9253 1019.91 52.9253 1019.91V149.102C52.9253 149.102 89.7187 147.266 92.932 110.761C92.916 110.761 90.9076 69.9684 51.3668 75.6965C51.3668 75.6965 46.3218 117.676 94.362 114.701C94.362 114.701 121.836 109.195 126.962 78.0067H683.007C688.132 109.195 715.607 114.701 715.607 114.701C763.647 117.676 758.602 75.6965 758.602 75.6965C719.077 69.9684 717.053 110.761 717.053 110.761C720.266 147.266 757.06 149.102 757.06 149.102V1019.91C757.06 1019.91 720.266 1021.75 717.053 1058.25C717.053 1058.25 719.061 1099.05 758.602 1093.32C758.602 1093.32 763.647 1051.34 715.607 1054.31C715.607 1054.31 688.132 1059.82 683.007 1091.01H174.568Z"
+            stroke="${mainColor}"
+            strokeWidth="10.6781"
+          />
+          <path
+            d="M172.784 1082.42H134.127C128.118 1054.01 100.178 1046.12 100.178 1046.12C91.6784 1016.23 62.0349 1012.52 62.0349 1012.52V156.491C62.0349 156.491 91.6945 152.788 100.178 122.898C100.178 122.898 128.118 115.002 134.127 86.5988H675.889C681.898 115.002 709.838 122.898 709.838 122.898C718.338 152.788 747.981 156.491 747.981 156.491V1012.52C747.981 1012.52 718.322 1016.23 709.838 1046.12C709.838 1046.12 681.898 1054.01 675.889 1082.42H172.784Z"
+            stroke="${mainColor}"
+            strokeWidth="1.64278"
+          />
+        </g>
+        <rect x="310" width="190" height="100" fill="white" />
+        <defs>
+          <clipPath id="clip0_3039_654">
+            <rect
+              width="718"
+              height="1029"
+              fill="white"
+              transform="translate(46 70)"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+  `;
+} 

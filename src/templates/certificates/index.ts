@@ -34,6 +34,27 @@ import { createNewCertificateType31 } from "./NewCertificateType31";
 import { createNewCertificateType32 } from "./NewCertificateType32";
 import { createNewCertificateType33 } from "./NewCertificateType33";
 import { createNewCertificateType34 } from "./NewCertificateType34";
+import { createNewCertificateType35 } from "./NewCertificateType35";
+import { createNewCertificateType36 } from "./NewCertificateType36";
+import { createNewCertificateType37 } from "./NewCertificateType37";
+import { createNewCertificateType38 } from "./NewCertificateType38";
+import { createNewCertificateType39 } from "./NewCertificateType39";
+import { createNewCertificateType40 } from "./NewCertificateType40";
+import { createNewCertificateType41 } from "./NewCertificateType41";
+import { createNewCertificateType42 } from "./NewCertificateType42";
+import { createNewCertificateType43 } from "./NewCertificateType43";
+import { createNewCertificateType44 } from "./NewCertificateType44";
+import { createNewCertificateType45 } from "./NewCertificateType45";
+import { createNewCertificateType46 } from "./NewCertificateType46";
+import { createNewCertificateType47 } from "./NewCertificateType47";
+import { createNewCertificateType48 } from "./NewCertificateType48";
+import { createNewCertificateType49 } from "./NewCertificateType49";
+import { createNewCertificateType50 } from "./NewCertificateType50";
+import { createNewCertificateType51 } from "./NewCertificateType51";
+import { createNewCertificateType52 } from "./NewCertificateType52";
+import { createNewCertificateType53 } from "./NewCertificateType53";
+import { createNewCertificateType54 } from "./NewCertificateType54";
+
 import { createNewEmptyLandscapeCertificate } from "./NewEmptyLandscapeCertificate";
 import { createNewEmptyPortraitCertificate } from "./NewEmptyPortraitCertificate";
 
@@ -74,6 +95,27 @@ const Certificates = {
   NewCertificateType32: createNewCertificateType32,
   NewCertificateType33: createNewCertificateType33,
   NewCertificateType34: createNewCertificateType34,
+  NewCertificateType35: createNewCertificateType35,
+  NewCertificateType36: createNewCertificateType36,
+  NewCertificateType37: createNewCertificateType37,
+  NewCertificateType38: createNewCertificateType38,
+  NewCertificateType39: createNewCertificateType39,
+  NewCertificateType40: createNewCertificateType40,
+  NewCertificateType41: createNewCertificateType41,
+  NewCertificateType42: createNewCertificateType42,
+  NewCertificateType43: createNewCertificateType43,
+  NewCertificateType44: createNewCertificateType44,
+  NewCertificateType45: createNewCertificateType45,
+  NewCertificateType46: createNewCertificateType46,
+  NewCertificateType47: createNewCertificateType47,
+  NewCertificateType48: createNewCertificateType48,
+  NewCertificateType49: createNewCertificateType49,
+  NewCertificateType50: createNewCertificateType50,
+  NewCertificateType51: createNewCertificateType51,
+  NewCertificateType52: createNewCertificateType52,
+  NewCertificateType53: createNewCertificateType53,
+  NewCertificateType54: createNewCertificateType54,
+
   NewEmptyLandscapeCertificate: createNewEmptyLandscapeCertificate,
   NewEmptyPortraitCertificate: createNewEmptyPortraitCertificate,
 };
