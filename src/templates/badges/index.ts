@@ -69,6 +69,14 @@ import { createBadgeType68 } from "./BadgeType68";
 import { createBadgeType69 } from "./BadgeType69";
 import { createBadgeType70 } from "./BadgeType70";
 import { createBadgeType71 } from "./BadgeType71";
+import { createBadgeType72 } from "./BadgeType72";
+import { createBadgeType73 } from "./BadgeType73";
+import { createBadgeType74 } from "./BadgeType74";
+import { createBadgeType75 } from "./BadgeType75";
+import { createBadgeType76 } from "./BadgeType76";
+import { createBadgeType77 } from "./BadgeType77";
+import { createBadgeType78 } from "./BadgeType78";
+import { createBadgeType81 } from "./BadgeType81";
 
 const Badges = {
   BadgeType1: createBadgeType1,
@@ -142,6 +150,14 @@ const Badges = {
   BadgeType69: createBadgeType69,
   BadgeType70: createBadgeType70,
   BadgeType71: createBadgeType71,
+  BadgeType72: createBadgeType72,
+  BadgeType73: createBadgeType73,
+  BadgeType74: createBadgeType74,
+  BadgeType75: createBadgeType75,
+  BadgeType76: createBadgeType76,
+  BadgeType77: createBadgeType77,
+  BadgeType78: createBadgeType78,
+  BadgeType81: createBadgeType81,
 }
 export default Badges;
 

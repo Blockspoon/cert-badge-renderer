@@ -36,6 +36,12 @@ import { createNewCertificateType33 } from "./NewCertificateType33";
 import { createNewCertificateType34 } from "./NewCertificateType34";
 import { createNewEmptyLandscapeCertificate } from "./NewEmptyLandscapeCertificate";
 import { createNewEmptyPortraitCertificate } from "./NewEmptyPortraitCertificate";
+import { createNewCertificateType35 } from "./NewCertificateType35";
+import { createNewCertificateType36 } from "./NewCertificateType36";
+import { createNewCertificateType37 } from "./NewCertificateType37";
+import { createNewCertificateType38 } from "./NewCertificateType38";
+import { createNewCertificateType40 } from "./NewCertificateType40";
+import { createNewCertificateType44 } from "./NewCertificateType44";
 
 const Certificates = {
   NewCertificateType1: createNewCertificateType1,
@@ -74,6 +80,13 @@ const Certificates = {
   NewCertificateType32: createNewCertificateType32,
   NewCertificateType33: createNewCertificateType33,
   NewCertificateType34: createNewCertificateType34,
+  NewCertificateType35: createNewCertificateType35,
+  NewCertificateType36: createNewCertificateType36,
+  NewCertificateType37: createNewCertificateType37,
+  NewCertificateType38: createNewCertificateType38,
+  NewCertificateType40: createNewCertificateType40,
+  NewCertificateType44: createNewCertificateType44,
+  
   NewEmptyLandscapeCertificate: createNewEmptyLandscapeCertificate,
   NewEmptyPortraitCertificate: createNewEmptyPortraitCertificate,
 };
