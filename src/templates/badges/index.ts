@@ -69,6 +69,26 @@ import { createBadgeType68 } from "./BadgeType68";
 import { createBadgeType69 } from "./BadgeType69";
 import { createBadgeType70 } from "./BadgeType70";
 import { createBadgeType71 } from "./BadgeType71";
+import { createBadgeType72 } from "./BadgeType72";
+import { createBadgeType73 } from "./BadgeType73";
+import { createBadgeType74 } from "./BadgeType74";
+import { createBadgeType75 } from "./BadgeType75";
+import { createBadgeType76 } from "./BadgeType76";
+import { createBadgeType77 } from "./BadgeType77";
+import { createBadgeType78 } from "./BadgeType78";
+import { createBadgeType79 } from "./BadgeType79";
+import { createBadgeType80 } from "./BadgeType80";
+import { createBadgeType81 } from "./BadgeType81";
+import { createBadgeType82 } from "./BadgeType82";
+import { createBadgeType83 } from "./BadgeType83";
+import { createBadgeType84 } from "./BadgeType84";
+import { createBadgeType85 } from "./BadgeType85";
+import { createBadgeType86 } from "./BadgeType86";
+import { createBadgeType87 } from "./BadgeType87";
+import { createBadgeType88 } from "./BadgeType88";
+import { createBadgeType89 } from "./BadgeType89";
+import { createBadgeType90 } from "./BadgeType90";
+import { createBadgeType91 } from "./BadgeType91";
 
 const Badges = {
   BadgeType1: createBadgeType1,
@@ -142,6 +162,25 @@ const Badges = {
   BadgeType69: createBadgeType69,
   BadgeType70: createBadgeType70,
   BadgeType71: createBadgeType71,
-}
+  BadgeType72: createBadgeType72,
+  BadgeType73: createBadgeType73,
+  BadgeType74: createBadgeType74,
+  BadgeType75: createBadgeType75,
+  BadgeType76: createBadgeType76,
+  BadgeType77: createBadgeType77,
+  BadgeType78: createBadgeType78,
+  BadgeType79: createBadgeType79,
+  BadgeType80: createBadgeType80,
+  BadgeType81: createBadgeType81,
+  BadgeType82: createBadgeType82,
+  BadgeType83: createBadgeType83,
+  BadgeType84: createBadgeType84,
+  BadgeType85: createBadgeType85,
+  BadgeType86: createBadgeType86,
+  BadgeType87: createBadgeType87,
+  BadgeType88: createBadgeType88,
+  BadgeType89: createBadgeType89,
+  BadgeType90: createBadgeType90,
+  BadgeType91: createBadgeType91,
+};
 export default Badges;
-
