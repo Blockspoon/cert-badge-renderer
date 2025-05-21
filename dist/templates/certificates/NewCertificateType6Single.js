@@ -51,7 +51,7 @@ function createNewCertificateType6Single({ mainColor = "#96A6B4", subColor = "#9
           height="221"
           fill="url(#pattern0_1639_121)"
         />
-        {/* <path d="M105 957H265" stroke="black" /> */}
+
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -71,11 +71,7 @@ function createNewCertificateType6Single({ mainColor = "#96A6B4", subColor = "#9
           height="52.4444"
           fill="url(#pattern1_1639_121)"
         />
-        {/* <path
-          d="M272.5 249H537.5"
-          stroke="url(#${paintId0})"
-          stroke-width="3"
-        /> */}
+       
         <rect
           x="43.3135"
           y="36"
@@ -119,7 +115,7 @@ function createNewCertificateType6Single({ mainColor = "#96A6B4", subColor = "#9
           height="80"
           fill="url(#pattern2_1639_121)"
         />
-        {/* <path d="M546 956.5H706" stroke="black" /> */}
+
       </g>
       <defs>
         <pattern

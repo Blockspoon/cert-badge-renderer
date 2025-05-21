@@ -29,8 +29,7 @@ function createBadgeType7({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
       />
       <mask
         id="mask0_2384_132"
-        // style="mask-type:alpha"
-        style={{ maskType: "alpha" }}
+        style="mask-type: alpha;"
         maskUnits="userSpaceOnUse"
         x="17"
         y="17"

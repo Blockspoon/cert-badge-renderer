@@ -1,5 +1,4 @@
-import { ISvgProps } from "../../interface"; 
-
+import { ISvgProps } from "../../interface";
 
 export function createNewCertificateType24({
   mainColor = "#96A6B4",
@@ -7,12 +6,10 @@ export function createNewCertificateType24({
   extraColor1 = "#96A6B4",
   extraColor2 = "#96A6B4",
 }: ISvgProps): string {
-
   const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId3 = `paint3_linear_${Math.random().toString(36).substr(2, 9)}`;
-
 
   return `
     <svg
@@ -98,7 +95,7 @@ export function createNewCertificateType24({
             gradientUnits="userSpaceOnUse"
           >
             <stop stop-color="${mainColor}" />
-            <stop offset="1" stop-color={"#57A5FF"} />
+            <stop offset="1" stop-color="#57A5FF"  />
           </linearGradient>
           <linearGradient
             id="${paintId1}"
@@ -109,7 +106,7 @@ export function createNewCertificateType24({
             gradientUnits="userSpaceOnUse"
           >
             <stop stop-color="${mainColor}" />
-            <stop offset="1" stop-color={"#57A5FF"} />
+            <stop offset="1" stop-color="#57A5FF"  />
           </linearGradient>
           <linearGradient
             id="${paintId2}"
@@ -154,9 +151,9 @@ export function createNewCertificateType24({
               transform="translate(0.847656)"
             />
           </clipPath>
-          <image id="image0_1917_8" width="357" height="357" />
-          <image id="image1_1917_8" width="360" height="360" />
+          <image id="image0_1917_8" width="357" height="357" href="" />
+          <image id="image1_1917_8" width="360" height="360" href="" />
         </defs>
       </svg>
   `;
-} 
+}

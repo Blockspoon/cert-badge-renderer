@@ -385,7 +385,7 @@ function createNewCertificateType12({ mainColor = "#96A6B4", subColor = "#96A6B4
               fill="${mainColor}"
             />
 
-            {/* 디자인요소 누락 임시추가 */}
+
             <path
               d="M435.822 653.735H-27.3984V517.972H435.822V653.735Z"
               fill="#4386FC"

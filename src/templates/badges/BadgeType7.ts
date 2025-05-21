@@ -32,8 +32,7 @@ export function createBadgeType7({
       />
       <mask
         id="mask0_2384_132"
-        // style="mask-type:alpha"
-        style={{ maskType: "alpha" }}
+        style="mask-type: alpha;"
         maskUnits="userSpaceOnUse"
         x="17"
         y="17"
