@@ -7,7 +7,7 @@ function createNewCertificateType42({ mainColor = "#96A6B4", subColor = "#96A6B4
     const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
     const paintId3 = `paint3_linear_${Math.random().toString(36).substr(2, 9)}`;
     return `
-     <svg
+      <svg
         width="100%"
         height="100%"
         viewBox="0 0 1152 814"
@@ -42081,4 +42081,4 @@ function createNewCertificateType42({ mainColor = "#96A6B4", subColor = "#96A6B4
         />
       </svg>
   `;
-} 
+}

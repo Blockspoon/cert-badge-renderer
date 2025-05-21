@@ -16,7 +16,7 @@ function createBadgeType81({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
             y="32"
             width="536"
             height="536"
-            fill={selectedCertificate.extraColor2}
+            fill="${extraColor2}"
           />
           <path
             d="M503 32V52H52V532H32V32H503Z"
@@ -24,7 +24,7 @@ function createBadgeType81({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
           />
           <mask
             id="mask0_3052_45161"
-            style={{ maskType: "alpha" }}
+            style="mask-type: alpha;"
             maskUnits="userSpaceOnUse"
             x="32"
             y="32"
@@ -97,10 +97,10 @@ function createBadgeType81({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
             <rect
               width="600"
               height="600"
-              fill={selectedCertificate.extraColor2}
+              fill="${extraColor2}"
             />
           </clipPath>
         </defs>
       </svg>
   `;
-} 
+}

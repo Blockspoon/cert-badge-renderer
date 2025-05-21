@@ -91,7 +91,6 @@ const BadgeType88_1 = require("./BadgeType88");
 const BadgeType89_1 = require("./BadgeType89");
 const BadgeType90_1 = require("./BadgeType90");
 const BadgeType91_1 = require("./BadgeType91");
-
 const Badges = {
     BadgeType1: BadgeType1_1.createBadgeType1,
     BadgeType2: BadgeType2_1.createBadgeType2,
@@ -184,7 +183,5 @@ const Badges = {
     BadgeType89: BadgeType89_1.createBadgeType89,
     BadgeType90: BadgeType90_1.createBadgeType90,
     BadgeType91: BadgeType91_1.createBadgeType91,
-
-
 };
 exports.default = Badges;

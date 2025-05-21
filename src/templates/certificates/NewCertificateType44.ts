@@ -154,13 +154,13 @@ export function createNewCertificateType44({
           </g>
           <path
             d="M80 512H20L20 303L80 303"
-            stroke={selectedCertificate.extraColor1}
+            stroke="${extraColor1}"
             strokeWidth="1.95255"
             strokeLinejoin="round"
           />
           <path
             d="M1072 303L1132 303L1132 512L1072 512"
-            stroke={selectedCertificate.extraColor1}
+            stroke="${extraColor1}"
             strokeWidth="1.95255"
             strokeLinejoin="round"
           />

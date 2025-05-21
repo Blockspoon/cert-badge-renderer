@@ -27,9 +27,17 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
     const paintId22 = `paint22_linear_${Math.random().toString(36).substr(2, 9)}`;
     const paintId23 = `paint23_linear_${Math.random().toString(36).substr(2, 9)}`;
     const paintId24 = `paint24_linear_${Math.random().toString(36).substr(2, 9)}`;
-
+    const paintId25 = `paint25_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId26 = `paint26_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId27 = `paint27_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId28 = `paint28_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId29 = `paint29_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId30 = `paint30_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId31 = `paint30_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId32 = `paint30_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId33 = `paint30_linear_${Math.random().toString(36).substr(2, 9)}`;
     return `
-     <svg
+       <svg
         width="100%"
         height="100%"
         viewBox="0 0 1152 814"
@@ -66,7 +74,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
           <path d="M915 818L1152.5 580.5L1152.5 818L915 818Z" fill="black" />
           <path
             d="M50.5 130L120 199L81 238.5L11.5 169L50.5 130Z"
-            fill="url(#${paintId0})"}
+            fill="url(#${paintId0})"
           />
           <path
             d="M1130 720L1060.5 651L1099.5 611.5L1169 681L1130 720Z"
@@ -245,7 +253,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <use transform="translate(-0.131198 -0.126971) scale(0.00353698)" />
           </pattern>
           <linearGradient
-            id={paintId0}
+            id="${paintId0}"
             x1="65.75"
             y1="130"
             x2="65.75"
@@ -256,7 +264,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId1}
+            id="${paintId1}"
             x1="1114.75"
             y1="720"
             x2="1114.75"
@@ -267,7 +275,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId2}
+            id="${paintId2}"
             x1="86.75"
             y1="65"
             x2="86.75"
@@ -278,7 +286,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId3}
+            id="${paintId3}"
             x1="1062.75"
             y1="822"
             x2="1062.75"
@@ -289,7 +297,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId4}
+            id="${paintId4}"
             x1="-15"
             y1="-19"
             x2="-15"
@@ -300,7 +308,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId5}
+            id="${paintId5}"
             x1="86.75"
             y1="65"
             x2="86.75"
@@ -311,7 +319,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopOpacity="0.3" />
           </linearGradient>
           <linearGradient
-            id={paintId6}
+            id="${paintId6}"
             x1="1062.75"
             y1="822"
             x2="1062.75"
@@ -322,7 +330,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopOpacity="0.3" />
           </linearGradient>
           <linearGradient
-            id={paintId7}
+            id="${paintId7}"
             x1="266"
             y1="20"
             x2="173"
@@ -336,7 +344,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId8}
+            id="${paintId8}"
             x1="883.5"
             y1="867"
             x2="976.5"
@@ -347,7 +355,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId9}
+            id="${paintId9}"
             x1="131.96"
             y1="-56.3417"
             x2="55.5182"
@@ -361,7 +369,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId10}
+            id="${paintId10}"
             x1="235"
             y1="-13"
             x2="295"
@@ -372,7 +380,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId11}
+            id="${paintId11}"
             x1="958.5"
             y1="847.5"
             x2="898.5"
@@ -383,7 +391,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId12}
+            id="${paintId12}"
             x1="235"
             y1="-13"
             x2="295"
@@ -394,7 +402,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopOpacity="0.3" />
           </linearGradient>
           <linearGradient
-            id={paintId13}
+            id="${paintId13}"
             x1="958.5"
             y1="847.5"
             x2="898.5"
@@ -405,7 +413,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopOpacity="0.3" />
           </linearGradient>
           <linearGradient
-            id={paintId14}
+            id="${paintId14}"
             x1="377"
             y1="2.5"
             x2="311.5"
@@ -419,7 +427,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId15}
+            id="${paintId15}"
             x1="816.5"
             y1="832"
             x2="882"
@@ -433,7 +441,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId16}
+            id="${paintId16}"
             x1="58.5"
             y1="199"
             x2="58.5"
@@ -444,7 +452,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId17}
+            id="${paintId17}"
             x1="1099.65"
             y1="173.104"
             x2="1063.85"
@@ -455,7 +463,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopOpacity="0.02" />
           </linearGradient>
           <linearGradient
-            id={paintId18}
+            id="${paintId18}"
             x1="646.147"
             y1="72.104"
             x2="610.353"
@@ -466,7 +474,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopOpacity="0.05" />
           </linearGradient>
           <linearGradient
-            id={paintId19}
+            id="${paintId19}"
             x1="119"
             y1="457.5"
             x2="57.5"
@@ -477,7 +485,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopOpacity="0.05" />
           </linearGradient>
           <linearGradient
-            id={paintId20}
+            id="${paintId20}"
             x1="165"
             y1="584.5"
             x2="103.5"
@@ -488,7 +496,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopOpacity="0.02" />
           </linearGradient>
           <linearGradient
-            id={paintId21}
+            id="${paintId21}"
             x1="1099.65"
             y1="355.104"
             x2="1063.85"
@@ -499,7 +507,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopOpacity="0.05" />
           </linearGradient>
           <linearGradient
-            id={paintId22}
+            id="${paintId22}"
             x1="1122"
             y1="651"
             x2="1122"
@@ -510,7 +518,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId23}
+            id="${paintId23}"
             x1="161"
             y1="-6.99996"
             x2="3.50008"
@@ -521,7 +529,7 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId24}
+            id="${paintId24}"
             x1="1029.5"
             y1="853"
             x2="1187"
@@ -532,7 +540,8 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId25}
+            id="${paintId25}"
+
             x1="621.867"
             y1="637.533"
             x2="621.867"
@@ -543,7 +552,8 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="#666666" />
           </linearGradient>
           <linearGradient
-            id={paintId26}
+            id="${paintId26}"
+
             x1="637.6"
             y1="654.867"
             x2="626.134"
@@ -554,7 +564,8 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" />
           </linearGradient>
           <linearGradient
-            id={paintId27}
+            id="${paintId27}"
+
             x1="530.133"
             y1="637.533"
             x2="530.133"
@@ -565,7 +576,8 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="#666666" />
           </linearGradient>
           <linearGradient
-            id={paintId28}
+            id="${paintId28}"
+
             x1="514.4"
             y1="658.067"
             x2="525.866"
@@ -576,7 +588,8 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" />
           </linearGradient>
           <linearGradient
-            id={paintId29}
+            id="${paintId29}"
+
             x1="575.999"
             y1="564.512"
             x2="575.999"
@@ -587,7 +600,8 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId30}
+            id="${paintId30}"
+
             x1="576.001"
             y1="566.113"
             x2="576.001"
@@ -598,7 +612,8 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${subColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId31}
+            id="${paintId31}"
+
             x1="576"
             y1="546.719"
             x2="576"
@@ -613,7 +628,8 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${subColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId32}
+            id="${paintId32}"
+
             x1="576"
             y1="550.191"
             x2="576"
@@ -625,7 +641,8 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
             <stop offset="1" stopColor="${mainColor}" />
           </linearGradient>
           <linearGradient
-            id={paintId33}
+            id="${paintId33}"
+
             x1="577.074"
             y1="613.012"
             x2="574.893"
@@ -657,4 +674,4 @@ function createNewCertificateType52({ mainColor = "#96A6B4", subColor = "#96A6B4
         </defs>
       </svg>
   `;
-} 
+}

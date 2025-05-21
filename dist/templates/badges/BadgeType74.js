@@ -7,7 +7,7 @@ function createBadgeType74({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
     const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
     const paintId3 = `paint3_linear_${Math.random().toString(36).substr(2, 9)}`;
     return `
-       <svg
+    <svg
         width="100%"
         height="100%"
         viewBox="0 0 600 600"
@@ -40,7 +40,8 @@ fill="url(#${paintId3})"
         />
         <defs>
           <linearGradient
-            id={paintId0}
+            id="${paintId0}"
+
             x1="300.002"
             y1="857.457"
             x2="300.002"
@@ -55,7 +56,7 @@ fill="url(#${paintId3})"
             <stop offset="1" stopColor="#C59158" />
           </linearGradient>
           <linearGradient
-            id={paintId1}
+            id="${paintId1}"  
             x1="479.543"
             y1="474.726"
             x2="115.641"
@@ -70,7 +71,8 @@ fill="url(#${paintId3})"
             <stop offset="1" stopColor="#9B6220" />
           </linearGradient>
           <linearGradient
-            id={paintId2}
+            id="${paintId2}"
+
             x1="298.975"
             y1="85.6945"
             x2="298.975"
@@ -81,7 +83,8 @@ fill="url(#${paintId3})"
             <stop offset="0.994647" stopColor="#352D20" />
           </linearGradient>
           <linearGradient
-            id={paintId3}
+            id="${paintId3}"
+
             x1="304.851"
             y1="542.049"
             x2="294.134"
@@ -97,4 +100,4 @@ fill="url(#${paintId3})"
         </defs>
       </svg>
   `;
-} 
+}

@@ -56,7 +56,6 @@ const NewCertificateType51_1 = require("./NewCertificateType51");
 const NewCertificateType52_1 = require("./NewCertificateType52");
 const NewCertificateType53_1 = require("./NewCertificateType53");
 const NewCertificateType54_1 = require("./NewCertificateType54");
-
 const NewEmptyLandscapeCertificate_1 = require("./NewEmptyLandscapeCertificate");
 const NewEmptyPortraitCertificate_1 = require("./NewEmptyPortraitCertificate");
 const Certificates = {
@@ -116,7 +115,6 @@ const Certificates = {
     NewCertificateType52: NewCertificateType52_1.createNewCertificateType52,
     NewCertificateType53: NewCertificateType53_1.createNewCertificateType53,
     NewCertificateType54: NewCertificateType54_1.createNewCertificateType54,
-
     NewEmptyLandscapeCertificate: NewEmptyLandscapeCertificate_1.createNewEmptyLandscapeCertificate,
     NewEmptyPortraitCertificate: NewEmptyPortraitCertificate_1.createNewEmptyPortraitCertificate,
 };

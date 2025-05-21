@@ -53,7 +53,7 @@ export function createNewCertificateType35({
             <use transform="translate(-0.131198 -0.126971) scale(0.00353698)" />
           </pattern>
           <linearGradient
-            id={paintId0}
+            id="${paintId0}"
             x1="-205.595"
             y1="-27070.3"
             x2="1427.16"

@@ -6847,4 +6847,4 @@ function createBadgeType80({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         </defs>
       </svg>
   `;
-} 
+}

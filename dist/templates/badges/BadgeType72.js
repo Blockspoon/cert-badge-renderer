@@ -2,19 +2,19 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createBadgeType72 = createBadgeType72;
 function createBadgeType72({ mainColor = "#96A6B4", subColor = "#96A6B4", extraColor1 = "#96A6B4", extraColor2 = "#96A6B4", }) {
-  const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId3 = `paint3_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId4 = `paint4_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId5 = `paint5_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId6 = `paint6_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId7 = `paint7_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId8 = `paint8_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId9 = `paint9_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId10 = `paint10_linear_${Math.random().toString(36).substr(2, 9)}`;
-  return `
-    <svg
+    const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId3 = `paint3_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId4 = `paint4_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId5 = `paint5_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId6 = `paint6_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId7 = `paint7_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId8 = `paint8_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId9 = `paint9_linear_${Math.random().toString(36).substr(2, 9)}`;
+    const paintId10 = `paint10_linear_${Math.random().toString(36).substr(2, 9)}`;
+    return `
+     <svg
         width="100%"
         height="100%"
         viewBox="0 0 600 600"
@@ -67,7 +67,7 @@ fill="url(#${paintId10})"
         />
         <defs>
           <linearGradient
-            id={paintId0}
+            id="${paintId0}"
             x1="299.998"
             y1="-102.383"
             x2="299.998"
@@ -82,7 +82,7 @@ fill="url(#${paintId10})"
             <stop offset="1" stopColor="#B17A3E" />
           </linearGradient>
           <linearGradient
-            id={paintId1}
+            id="${paintId1}"
             x1="300.001"
             y1="-95.4856"
             x2="300.001"
@@ -97,7 +97,7 @@ fill="url(#${paintId10})"
             <stop offset="1" stopColor="#9B6220" />
           </linearGradient>
           <linearGradient
-            id={paintId2}
+            id="${paintId2}"
             x1="300.001"
             y1="-179.852"
             x2="300.001"
@@ -112,7 +112,7 @@ fill="url(#${paintId10})"
             <stop offset="1" stopColor="#B17A3E" />
           </linearGradient>
           <linearGradient
-            id={paintId3}
+            id="${paintId3}"
             x1="300.001"
             y1="-165.246"
             x2="300.001"
@@ -127,7 +127,7 @@ fill="url(#${paintId10})"
             <stop offset="1" stopColor="#9B6220" />
           </linearGradient>
           <linearGradient
-            id={paintId4}
+            id="${paintId4}"
             x1="579.638"
             y1="303.671"
             x2="31.2489"
@@ -142,7 +142,7 @@ fill="url(#${paintId10})"
             <stop offset="1" stopColor="#9B6220" />
           </linearGradient>
           <linearGradient
-            id={paintId5}
+            id="${paintId5}"
             x1="300.002"
             y1="501.787"
             x2="300.002"
@@ -156,7 +156,7 @@ fill="url(#${paintId10})"
             <stop offset="1" stopColor="#F2DDBE" />
           </linearGradient>
           <linearGradient
-            id={paintId6}
+            id="${paintId6}"
             x1="305.534"
             y1="73.0363"
             x2="295.345"
@@ -170,7 +170,8 @@ fill="url(#${paintId10})"
             <stop offset="1" stopColor="#F8EDDC" />
           </linearGradient>
           <linearGradient
-            id={paintId7}
+            id="${paintId7}"
+
             x1="304.672"
             y1="108.053"
             x2="295.186"
@@ -185,7 +186,7 @@ fill="url(#${paintId10})"
             <stop offset="1" stopColor="#9B6220" />
           </linearGradient>
           <linearGradient
-            id={paintId8}
+            id="${paintId8}"
             x1="299.898"
             y1="407.58"
             x2="299"
@@ -200,7 +201,7 @@ fill="url(#${paintId10})"
             <stop offset="1" stopColor="#9B6220" />
           </linearGradient>
           <linearGradient
-            id={paintId9}
+            id="${paintId9}"
             x1="355.011"
             y1="408.749"
             x2="354.418"
@@ -215,7 +216,7 @@ fill="url(#${paintId10})"
             <stop offset="1" stopColor="#9B6220" />
           </linearGradient>
           <linearGradient
-            id={paintId10}
+            id="${paintId10}"
             x1="246.095"
             y1="408.749"
             x2="245.502"

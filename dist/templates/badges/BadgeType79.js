@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.createBadgeType79 = createBadgeType79;
 function createBadgeType79({ mainColor = "#96A6B4", subColor = "#96A6B4", extraColor1 = "#96A6B4", extraColor2 = "#96A6B4", }) {
     return `
-     <svg
+    <svg
         width="100%"
         height="100%"
         viewBox="0 0 600 600"
@@ -17623,4 +17623,4 @@ function createBadgeType79({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         </defs>
       </svg>
   `;
-} 
+}

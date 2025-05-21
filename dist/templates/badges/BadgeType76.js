@@ -303,4 +303,4 @@ function createBadgeType76({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         />
       </svg>
   `;
-} 
+}
