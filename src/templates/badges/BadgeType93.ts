@@ -12,7 +12,7 @@ export function createBadgeType93({
     <svg
       width="100%"
       height="100%"
-      viewBox="0 0 600 600"
+      viewBox="0 0 504 504"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

@@ -6,7 +6,7 @@ function createBadgeType94({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
     <svg
       width="100%"
       height="100%"
-      viewBox="0 0 600 600"
+      viewBox="0 0 560 560"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >

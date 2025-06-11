@@ -6,7 +6,7 @@ function createRibbonWing105({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     <svg
       width="100%"
       height="100%"
-      viewBox="0 0 392 149"
+      viewBox="0 0 586 467"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"
