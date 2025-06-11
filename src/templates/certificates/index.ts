@@ -54,6 +54,36 @@ import { createNewCertificateType51 } from "./NewCertificateType51";
 import { createNewCertificateType52 } from "./NewCertificateType52";
 import { createNewCertificateType53 } from "./NewCertificateType53";
 import { createNewCertificateType54 } from "./NewCertificateType54";
+import { createNewCertificateType55 } from "./NewCertificateType55";
+import { createNewCertificateType56 } from "./NewCertificateType56";
+import { createNewCertificateType57 } from "./NewCertificateType57";
+import { createNewCertificateType58 } from "./NewCertificateType58";
+import { createNewCertificateType59 } from "./NewCertificateType59";
+import { createNewCertificateType60 } from "./NewCertificateType60";
+import { createNewCertificateType61 } from "./NewCertificateType61";
+import { createNewCertificateType62 } from "./NewCertificateType62";
+import { createNewCertificateType63 } from "./NewCertificateType63";
+import { createNewCertificateType64 } from "./NewCertificateType64";
+import { createNewCertificateType65 } from "./NewCertificateType65";
+import { createNewCertificateType66 } from "./NewCertificateType66";
+import { createNewCertificateType67 } from "./NewCertificateType67";
+import { createNewCertificateType68 } from "./NewCertificateType68";
+import { createNewCertificateType69 } from "./NewCertificateType69";
+import { createNewCertificateType70 } from "./NewCertificateType70";
+import { createNewCertificateType71 } from "./NewCertificateType71";
+import { createNewCertificateType72 } from "./NewCertificateType72";
+import { createNewCertificateType73 } from "./NewCertificateType73";
+import { createNewCertificateType74 } from "./NewCertificateType74";
+import { createNewCertificateType75 } from "./NewCertificateType75";
+import { createNewCertificateType76 } from "./NewCertificateType76";
+import { createNewCertificateType77 } from "./NewCertificateType77";
+import { createNewCertificateType78 } from "./NewCertificateType78";
+import { createNewCertificateType79 } from "./NewCertificateType79";
+import { createNewCertificateType80 } from "./NewCertificateType80";
+import { createNewCertificateType81 } from "./NewCertificateType81";
+import { createNewCertificateType82 } from "./NewCertificateType82";
+import { createNewCertificateType83 } from "./NewCertificateType83";
+import { createNewCertificateType84 } from "./NewCertificateType84";
 
 import { createNewEmptyLandscapeCertificate } from "./NewEmptyLandscapeCertificate";
 import { createNewEmptyPortraitCertificate } from "./NewEmptyPortraitCertificate";
@@ -115,6 +145,37 @@ const Certificates = {
   NewCertificateType52: createNewCertificateType52,
   NewCertificateType53: createNewCertificateType53,
   NewCertificateType54: createNewCertificateType54,
+  NewCertificateType55: createNewCertificateType55,
+  NewCertificateType56: createNewCertificateType56,
+  NewCertificateType57: createNewCertificateType57,
+  NewCertificateType58: createNewCertificateType58,
+  NewCertificateType59: createNewCertificateType59,
+  NewCertificateType60: createNewCertificateType60,
+  NewCertificateType61: createNewCertificateType61,
+  NewCertificateType62: createNewCertificateType62,
+  NewCertificateType63: createNewCertificateType63,
+  NewCertificateType64: createNewCertificateType64,
+  NewCertificateType65: createNewCertificateType65,
+  NewCertificateType66: createNewCertificateType66,
+  NewCertificateType67: createNewCertificateType67,
+  NewCertificateType68: createNewCertificateType68,
+  NewCertificateType69: createNewCertificateType69,
+  NewCertificateType70: createNewCertificateType70,
+  NewCertificateType71: createNewCertificateType71,
+  NewCertificateType72: createNewCertificateType72,
+  NewCertificateType73: createNewCertificateType73,
+  NewCertificateType74: createNewCertificateType74,
+  NewCertificateType75: createNewCertificateType75,
+  NewCertificateType76: createNewCertificateType76,
+  NewCertificateType77: createNewCertificateType77,
+  NewCertificateType78: createNewCertificateType78,
+  NewCertificateType79: createNewCertificateType79,
+  NewCertificateType80: createNewCertificateType80,
+  NewCertificateType81: createNewCertificateType81,
+  NewCertificateType82: createNewCertificateType82,
+  NewCertificateType83: createNewCertificateType83,
+  NewCertificateType84: createNewCertificateType84,
+
 
   NewEmptyLandscapeCertificate: createNewEmptyLandscapeCertificate,
   NewEmptyPortraitCertificate: createNewEmptyPortraitCertificate,

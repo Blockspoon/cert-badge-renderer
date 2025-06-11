@@ -56,6 +56,36 @@ const NewCertificateType51_1 = require("./NewCertificateType51");
 const NewCertificateType52_1 = require("./NewCertificateType52");
 const NewCertificateType53_1 = require("./NewCertificateType53");
 const NewCertificateType54_1 = require("./NewCertificateType54");
+const NewCertificateType55_1 = require("./NewCertificateType55");
+const NewCertificateType56_1 = require("./NewCertificateType56");
+const NewCertificateType57_1 = require("./NewCertificateType57");
+const NewCertificateType58_1 = require("./NewCertificateType58");
+const NewCertificateType59_1 = require("./NewCertificateType59");
+const NewCertificateType60_1 = require("./NewCertificateType60");
+const NewCertificateType61_1 = require("./NewCertificateType61");
+const NewCertificateType62_1 = require("./NewCertificateType62");
+const NewCertificateType63_1 = require("./NewCertificateType63");
+const NewCertificateType64_1 = require("./NewCertificateType64");
+const NewCertificateType65_1 = require("./NewCertificateType65");
+const NewCertificateType66_1 = require("./NewCertificateType66");
+const NewCertificateType67_1 = require("./NewCertificateType67");
+const NewCertificateType68_1 = require("./NewCertificateType68");
+const NewCertificateType69_1 = require("./NewCertificateType69");
+const NewCertificateType70_1 = require("./NewCertificateType70");
+const NewCertificateType71_1 = require("./NewCertificateType71");
+const NewCertificateType72_1 = require("./NewCertificateType72");
+const NewCertificateType73_1 = require("./NewCertificateType73");
+const NewCertificateType74_1 = require("./NewCertificateType74");
+const NewCertificateType75_1 = require("./NewCertificateType75");
+const NewCertificateType76_1 = require("./NewCertificateType76");
+const NewCertificateType77_1 = require("./NewCertificateType77");
+const NewCertificateType78_1 = require("./NewCertificateType78");
+const NewCertificateType79_1 = require("./NewCertificateType79");
+const NewCertificateType80_1 = require("./NewCertificateType80");
+const NewCertificateType81_1 = require("./NewCertificateType81");
+const NewCertificateType82_1 = require("./NewCertificateType82");
+const NewCertificateType83_1 = require("./NewCertificateType83");
+const NewCertificateType84_1 = require("./NewCertificateType84");
 const NewEmptyLandscapeCertificate_1 = require("./NewEmptyLandscapeCertificate");
 const NewEmptyPortraitCertificate_1 = require("./NewEmptyPortraitCertificate");
 const Certificates = {
@@ -115,6 +145,36 @@ const Certificates = {
     NewCertificateType52: NewCertificateType52_1.createNewCertificateType52,
     NewCertificateType53: NewCertificateType53_1.createNewCertificateType53,
     NewCertificateType54: NewCertificateType54_1.createNewCertificateType54,
+    NewCertificateType55: NewCertificateType55_1.createNewCertificateType55,
+    NewCertificateType56: NewCertificateType56_1.createNewCertificateType56,
+    NewCertificateType57: NewCertificateType57_1.createNewCertificateType57,
+    NewCertificateType58: NewCertificateType58_1.createNewCertificateType58,
+    NewCertificateType59: NewCertificateType59_1.createNewCertificateType59,
+    NewCertificateType60: NewCertificateType60_1.createNewCertificateType60,
+    NewCertificateType61: NewCertificateType61_1.createNewCertificateType61,
+    NewCertificateType62: NewCertificateType62_1.createNewCertificateType62,
+    NewCertificateType63: NewCertificateType63_1.createNewCertificateType63,
+    NewCertificateType64: NewCertificateType64_1.createNewCertificateType64,
+    NewCertificateType65: NewCertificateType65_1.createNewCertificateType65,
+    NewCertificateType66: NewCertificateType66_1.createNewCertificateType66,
+    NewCertificateType67: NewCertificateType67_1.createNewCertificateType67,
+    NewCertificateType68: NewCertificateType68_1.createNewCertificateType68,
+    NewCertificateType69: NewCertificateType69_1.createNewCertificateType69,
+    NewCertificateType70: NewCertificateType70_1.createNewCertificateType70,
+    NewCertificateType71: NewCertificateType71_1.createNewCertificateType71,
+    NewCertificateType72: NewCertificateType72_1.createNewCertificateType72,
+    NewCertificateType73: NewCertificateType73_1.createNewCertificateType73,
+    NewCertificateType74: NewCertificateType74_1.createNewCertificateType74,
+    NewCertificateType75: NewCertificateType75_1.createNewCertificateType75,
+    NewCertificateType76: NewCertificateType76_1.createNewCertificateType76,
+    NewCertificateType77: NewCertificateType77_1.createNewCertificateType77,
+    NewCertificateType78: NewCertificateType78_1.createNewCertificateType78,
+    NewCertificateType79: NewCertificateType79_1.createNewCertificateType79,
+    NewCertificateType80: NewCertificateType80_1.createNewCertificateType80,
+    NewCertificateType81: NewCertificateType81_1.createNewCertificateType81,
+    NewCertificateType82: NewCertificateType82_1.createNewCertificateType82,
+    NewCertificateType83: NewCertificateType83_1.createNewCertificateType83,
+    NewCertificateType84: NewCertificateType84_1.createNewCertificateType84,
     NewEmptyLandscapeCertificate: NewEmptyLandscapeCertificate_1.createNewEmptyLandscapeCertificate,
     NewEmptyPortraitCertificate: NewEmptyPortraitCertificate_1.createNewEmptyPortraitCertificate,
 };
