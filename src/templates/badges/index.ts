@@ -242,6 +242,5 @@ const Badges = {
   BadgeType119: createBadgeType119,
   BadgeType120: createBadgeType120,
   BadgeType121: createBadgeType121,
-  
 };
 export default Badges;

@@ -292,6 +292,206 @@ exports.badgeTemplates = [
         id: "BadgeType71",
         Component: badges_1.default.BadgeType71,
     },
+    {
+        id: "BadgeType72",
+        Component: badges_1.default.BadgeType72,
+    },
+    {
+        id: "BadgeType73",
+        Component: badges_1.default.BadgeType73,
+    },
+    {
+        id: "BadgeType74",
+        Component: badges_1.default.BadgeType74,
+    },
+    {
+        id: "BadgeType75",
+        Component: badges_1.default.BadgeType75,
+    },
+    {
+        id: "BadgeType76",
+        Component: badges_1.default.BadgeType76,
+    },
+    {
+        id: "BadgeType77",
+        Component: badges_1.default.BadgeType77,
+    },
+    {
+        id: "BadgeType78",
+        Component: badges_1.default.BadgeType78,
+    },
+    {
+        id: "BadgeType79",
+        Component: badges_1.default.BadgeType79,
+    },
+    {
+        id: "BadgeType80",
+        Component: badges_1.default.BadgeType80,
+    },
+    {
+        id: "BadgeType81",
+        Component: badges_1.default.BadgeType81,
+    },
+    {
+        id: "BadgeType82",
+        Component: badges_1.default.BadgeType82,
+    },
+    {
+        id: "BadgeType83",
+        Component: badges_1.default.BadgeType83,
+    },
+    {
+        id: "BadgeType84",
+        Component: badges_1.default.BadgeType84,
+    },
+    {
+        id: "BadgeType85",
+        Component: badges_1.default.BadgeType85,
+    },
+    {
+        id: "BadgeType86",
+        Component: badges_1.default.BadgeType86,
+    },
+    {
+        id: "BadgeType87",
+        Component: badges_1.default.BadgeType87,
+    },
+    {
+        id: "BadgeType88",
+        Component: badges_1.default.BadgeType88,
+    },
+    {
+        id: "BadgeType89",
+        Component: badges_1.default.BadgeType89,
+    },
+    {
+        id: "BadgeType90",
+        Component: badges_1.default.BadgeType90,
+    },
+    {
+        id: "BadgeType91",
+        Component: badges_1.default.BadgeType91,
+    },
+    {
+        id: "BadgeType92",
+        Component: badges_1.default.BadgeType92,
+    },
+    {
+        id: "BadgeType93",
+        Component: badges_1.default.BadgeType93,
+    },
+    {
+        id: "BadgeType94",
+        Component: badges_1.default.BadgeType94,
+    },
+    {
+        id: "BadgeType95",
+        Component: badges_1.default.BadgeType95,
+    },
+    {
+        id: "BadgeType96",
+        Component: badges_1.default.BadgeType96,
+    },
+    {
+        id: "BadgeType97",
+        Component: badges_1.default.BadgeType97,
+    },
+    {
+        id: "BadgeType98",
+        Component: badges_1.default.BadgeType98,
+    },
+    {
+        id: "BadgeType99",
+        Component: badges_1.default.BadgeType99,
+    },
+    {
+        id: "BadgeType100",
+        Component: badges_1.default.BadgeType100,
+    },
+    {
+        id: "BadgeType101",
+        Component: badges_1.default.BadgeType101,
+    },
+    {
+        id: "BadgeType102",
+        Component: badges_1.default.BadgeType102,
+    },
+    {
+        id: "BadgeType103",
+        Component: badges_1.default.BadgeType103,
+    },
+    {
+        id: "BadgeType104",
+        Component: badges_1.default.BadgeType104,
+    },
+    {
+        id: "BadgeType105",
+        Component: badges_1.default.BadgeType105,
+    },
+    {
+        id: "BadgeType106",
+        Component: badges_1.default.BadgeType106,
+    },
+    {
+        id: "BadgeType107",
+        Component: badges_1.default.BadgeType107,
+    },
+    {
+        id: "BadgeType108",
+        Component: badges_1.default.BadgeType108,
+    },
+    {
+        id: "BadgeType109",
+        Component: badges_1.default.BadgeType109,
+    },
+    {
+        id: "BadgeType110",
+        Component: badges_1.default.BadgeType110,
+    },
+    {
+        id: "BadgeType111",
+        Component: badges_1.default.BadgeType111,
+    },
+    {
+        id: "BadgeType112",
+        Component: badges_1.default.BadgeType112,
+    },
+    {
+        id: "BadgeType113",
+        Component: badges_1.default.BadgeType113,
+    },
+    {
+        id: "BadgeType114",
+        Component: badges_1.default.BadgeType114,
+    },
+    {
+        id: "BadgeType115",
+        Component: badges_1.default.BadgeType115,
+    },
+    {
+        id: "BadgeType116",
+        Component: badges_1.default.BadgeType116,
+    },
+    {
+        id: "BadgeType117",
+        Component: badges_1.default.BadgeType117,
+    },
+    {
+        id: "BadgeType118",
+        Component: badges_1.default.BadgeType118,
+    },
+    {
+        id: "BadgeType119",
+        Component: badges_1.default.BadgeType119,
+    },
+    {
+        id: "BadgeType120",
+        Component: badges_1.default.BadgeType120,
+    },
+    {
+        id: "BadgeType121",
+        Component: badges_1.default.BadgeType121,
+    },
 ];
 exports.ribbonTemplates = [
     {
@@ -422,6 +622,78 @@ exports.ribbonTemplates = [
         id: "RibbonType61",
         Component: ribbons_1.default.RibbonType61,
     },
+    {
+        id: "RibbonType92",
+        Component: ribbons_1.default.RibbonType92,
+    },
+    {
+        id: "RibbonType93",
+        Component: ribbons_1.default.RibbonType93,
+    },
+    {
+        id: "RibbonType93_1",
+        Component: ribbons_1.default.RibbonType93_1,
+    },
+    {
+        id: "RibbonType96",
+        Component: ribbons_1.default.RibbonType96,
+    },
+    {
+        id: "RibbonType96_1",
+        Component: ribbons_1.default.RibbonType96_1,
+    },
+    {
+        id: "RibbonType97",
+        Component: ribbons_1.default.RibbonType97,
+    },
+    {
+        id: "RibbonType99",
+        Component: ribbons_1.default.RibbonType99,
+    },
+    {
+        id: "RibbonType101",
+        Component: ribbons_1.default.RibbonType101,
+    },
+    {
+        id: "RibbonType101_1",
+        Component: ribbons_1.default.RibbonType101_1,
+    },
+    {
+        id: "RibbonType103",
+        Component: ribbons_1.default.RibbonType103,
+    },
+    {
+        id: "RibbonType107",
+        Component: ribbons_1.default.RibbonType107,
+    },
+    {
+        id: "RibbonType109",
+        Component: ribbons_1.default.RibbonType109,
+    },
+    {
+        id: "RibbonType110",
+        Component: ribbons_1.default.RibbonType110,
+    },
+    {
+        id: "RibbonType113",
+        Component: ribbons_1.default.RibbonType113,
+    },
+    {
+        id: "RibbonType115",
+        Component: ribbons_1.default.RibbonType115,
+    },
+    {
+        id: "RibbonType116_1",
+        Component: ribbons_1.default.RibbonType116_1,
+    },
+    {
+        id: "RibbonType116",
+        Component: ribbons_1.default.RibbonType116,
+    },
+    {
+        id: "RibbonType118",
+        Component: ribbons_1.default.RibbonType118,
+    },
     // 윙 타입 추가
     {
         id: "RibbonWing1",
@@ -474,6 +746,18 @@ exports.ribbonTemplates = [
     {
         id: "RibbonWing14",
         Component: ribbons_1.default.RibbonWing14,
+    },
+    {
+        id: "RibbonWing104",
+        Component: ribbons_1.default.RibbonWing104,
+    },
+    {
+        id: "RibbonWing105",
+        Component: ribbons_1.default.RibbonWing105,
+    },
+    {
+        id: "RibbonWing106",
+        Component: ribbons_1.default.RibbonWing106,
     },
 ];
 exports.iconTemplates = [
@@ -540,6 +824,8 @@ exports.iconTemplates = [
     { id: "IconStar4", Component: icons_1.default.IconStar4 },
     { id: "IconStar5", Component: icons_1.default.IconStar5 },
     { id: "IconStar6", Component: icons_1.default.IconStar6 },
+    { id: "IconStar7", Component: icons_1.default.IconStar7 },
+    { id: "IconStar8", Component: icons_1.default.IconStar8 },
     { id: "IconTrophy1", Component: icons_1.default.IconTrophy1 },
     { id: "IconTrophy2", Component: icons_1.default.IconTrophy2 },
     { id: "IconTrophy3", Component: icons_1.default.IconTrophy3 },

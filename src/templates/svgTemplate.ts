@@ -293,6 +293,206 @@ export const badgeTemplates: templateType[] = [
     id: "BadgeType71",
     Component: Badges.BadgeType71,
   },
+  {
+    id: "BadgeType72",
+    Component: Badges.BadgeType72,
+  },
+  {
+    id: "BadgeType73",
+    Component: Badges.BadgeType73,
+  },
+  {
+    id: "BadgeType74",
+    Component: Badges.BadgeType74,
+  },
+  {
+    id: "BadgeType75",
+    Component: Badges.BadgeType75,
+  },
+  {
+    id: "BadgeType76",
+    Component: Badges.BadgeType76,
+  },
+  {
+    id: "BadgeType77",
+    Component: Badges.BadgeType77,
+  },
+  {
+    id: "BadgeType78",
+    Component: Badges.BadgeType78,
+  },
+  {
+    id: "BadgeType79",
+    Component: Badges.BadgeType79,
+  },
+  {
+    id: "BadgeType80",
+    Component: Badges.BadgeType80,
+  },
+  {
+    id: "BadgeType81",
+    Component: Badges.BadgeType81,
+  },
+  {
+    id: "BadgeType82",
+    Component: Badges.BadgeType82,
+  },
+  {
+    id: "BadgeType83",
+    Component: Badges.BadgeType83,
+  },
+  {
+    id: "BadgeType84",
+    Component: Badges.BadgeType84,
+  },
+  {
+    id: "BadgeType85",
+    Component: Badges.BadgeType85,
+  },
+  {
+    id: "BadgeType86",
+    Component: Badges.BadgeType86,
+  },
+  {
+    id: "BadgeType87",
+    Component: Badges.BadgeType87,
+  },
+  {
+    id: "BadgeType88",
+    Component: Badges.BadgeType88,
+  },
+  {
+    id: "BadgeType89",
+    Component: Badges.BadgeType89,
+  },
+  {
+    id: "BadgeType90",
+    Component: Badges.BadgeType90,
+  },
+  {
+    id: "BadgeType91",
+    Component: Badges.BadgeType91,
+  },
+  {
+    id: "BadgeType92",
+    Component: Badges.BadgeType92,
+  },
+  {
+    id: "BadgeType93",
+    Component: Badges.BadgeType93,
+  },
+  {
+    id: "BadgeType94",
+    Component: Badges.BadgeType94,
+  },
+  {
+    id: "BadgeType95",
+    Component: Badges.BadgeType95,
+  },
+  {
+    id: "BadgeType96",
+    Component: Badges.BadgeType96,
+  },
+  {
+    id: "BadgeType97",
+    Component: Badges.BadgeType97,
+  },
+  {
+    id: "BadgeType98",
+    Component: Badges.BadgeType98,
+  },
+  {
+    id: "BadgeType99",
+    Component: Badges.BadgeType99,
+  },
+  {
+    id: "BadgeType100",
+    Component: Badges.BadgeType100,
+  },
+  {
+    id: "BadgeType101",
+    Component: Badges.BadgeType101,
+  },
+  {
+    id: "BadgeType102",
+    Component: Badges.BadgeType102,
+  },
+  {
+    id: "BadgeType103",
+    Component: Badges.BadgeType103,
+  },
+  {
+    id: "BadgeType104",
+    Component: Badges.BadgeType104,
+  },
+  {
+    id: "BadgeType105",
+    Component: Badges.BadgeType105,
+  },
+  {
+    id: "BadgeType106",
+    Component: Badges.BadgeType106,
+  },
+  {
+    id: "BadgeType107",
+    Component: Badges.BadgeType107,
+  },
+  {
+    id: "BadgeType108",
+    Component: Badges.BadgeType108,
+  },
+  {
+    id: "BadgeType109",
+    Component: Badges.BadgeType109,
+  },
+  {
+    id: "BadgeType110",
+    Component: Badges.BadgeType110,
+  },
+  {
+    id: "BadgeType111",
+    Component: Badges.BadgeType111,
+  },
+  {
+    id: "BadgeType112",
+    Component: Badges.BadgeType112,
+  },
+  {
+    id: "BadgeType113",
+    Component: Badges.BadgeType113,
+  },
+  {
+    id: "BadgeType114",
+    Component: Badges.BadgeType114,
+  },
+  {
+    id: "BadgeType115",
+    Component: Badges.BadgeType115,
+  },
+  {
+    id: "BadgeType116",
+    Component: Badges.BadgeType116,
+  },
+  {
+    id: "BadgeType117",
+    Component: Badges.BadgeType117,
+  },
+  {
+    id: "BadgeType118",
+    Component: Badges.BadgeType118,
+  },
+  {
+    id: "BadgeType119",
+    Component: Badges.BadgeType119,
+  },
+  {
+    id: "BadgeType120",
+    Component: Badges.BadgeType120,
+  },
+  {
+    id: "BadgeType121",
+    Component: Badges.BadgeType121,
+  },
 ];
 
 export const ribbonTemplates: templateType[] = [
@@ -424,6 +624,79 @@ export const ribbonTemplates: templateType[] = [
     id: "RibbonType61",
     Component: Ribbons.RibbonType61,
   },
+  {
+    id: "RibbonType92",
+    Component: Ribbons.RibbonType92,
+  },
+  {
+    id: "RibbonType93",
+    Component: Ribbons.RibbonType93,
+  },
+  {
+    id: "RibbonType93_1",
+    Component: Ribbons.RibbonType93_1,
+  },
+  {
+    id: "RibbonType96",
+    Component: Ribbons.RibbonType96,
+  },
+  {
+    id: "RibbonType96_1",
+    Component: Ribbons.RibbonType96_1,
+  },
+  {
+    id: "RibbonType97",
+    Component: Ribbons.RibbonType97,
+  },
+  {
+    id: "RibbonType99",
+    Component: Ribbons.RibbonType99,
+  },
+  {
+    id: "RibbonType101",
+    Component: Ribbons.RibbonType101,
+  },
+  {
+    id: "RibbonType101_1",
+    Component: Ribbons.RibbonType101_1,
+  },
+  {
+    id: "RibbonType103",
+    Component: Ribbons.RibbonType103,
+  },
+  {
+    id: "RibbonType107",
+    Component: Ribbons.RibbonType107,
+  },
+  {
+    id: "RibbonType109",
+    Component: Ribbons.RibbonType109,
+  },
+  {
+    id: "RibbonType110",
+    Component: Ribbons.RibbonType110,
+  },
+  {
+    id: "RibbonType113",
+    Component: Ribbons.RibbonType113,
+  },
+  {
+    id: "RibbonType115",
+    Component: Ribbons.RibbonType115,
+  },
+  {
+    id: "RibbonType116_1",
+    Component: Ribbons.RibbonType116_1,
+  },
+  {
+    id: "RibbonType116",
+    Component: Ribbons.RibbonType116,
+  },
+  {
+    id: "RibbonType118",
+    Component: Ribbons.RibbonType118,
+  },
+
   // 윙 타입 추가
   {
     id: "RibbonWing1",
@@ -476,6 +749,18 @@ export const ribbonTemplates: templateType[] = [
   {
     id: "RibbonWing14",
     Component: Ribbons.RibbonWing14,
+  },
+  {
+    id: "RibbonWing104",
+    Component: Ribbons.RibbonWing104,
+  },
+  {
+    id: "RibbonWing105",
+    Component: Ribbons.RibbonWing105,
+  },
+  {
+    id: "RibbonWing106",
+    Component: Ribbons.RibbonWing106,
   },
 ];
 
@@ -543,6 +828,8 @@ export const iconTemplates: templateType[] = [
   { id: "IconStar4", Component: Icons.IconStar4 },
   { id: "IconStar5", Component: Icons.IconStar5 },
   { id: "IconStar6", Component: Icons.IconStar6 },
+  { id: "IconStar7", Component: Icons.IconStar7 },
+  { id: "IconStar8", Component: Icons.IconStar8 },
   { id: "IconTrophy1", Component: Icons.IconTrophy1 },
   { id: "IconTrophy2", Component: Icons.IconTrophy2 },
   { id: "IconTrophy3", Component: Icons.IconTrophy3 },
