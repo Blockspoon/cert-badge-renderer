@@ -159,7 +159,7 @@ export function createNewCertificateType69({
             <use transform="scale(0.00280112)" />
           </pattern>
           <linearGradient
-            id={paintId0}
+            id="${paintId0}"
             x1="65.5"
             y1="389"
             x2="65.5"
@@ -171,7 +171,7 @@ export function createNewCertificateType69({
             <stop offset="1" stop-color="${mainColor}" stop-opacity="0.2" />
           </linearGradient>
           <linearGradient
-            id={paintId1}
+            id="${paintId1}"
             x1="743.5"
             y1="389"
             x2="743.5"
