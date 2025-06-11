@@ -89,6 +89,36 @@ import { createBadgeType88 } from "./BadgeType88";
 import { createBadgeType89 } from "./BadgeType89";
 import { createBadgeType90 } from "./BadgeType90";
 import { createBadgeType91 } from "./BadgeType91";
+import { createBadgeType92 } from "./BadgeType92";
+import { createBadgeType93 } from "./BadgeType93";
+import { createBadgeType94 } from "./BadgeType94";
+import { createBadgeType95 } from "./BadgeType95";
+import { createBadgeType96 } from "./BadgeType96";
+import { createBadgeType97 } from "./BadgeType97";
+import { createBadgeType98 } from "./BadgeType98";
+import { createBadgeType99 } from "./BadgeType99";
+import { createBadgeType100 } from "./BadgeType100";
+import { createBadgeType101 } from "./BadgeType101";
+import { createBadgeType102 } from "./BadgeType102";
+import { createBadgeType103 } from "./BadgeType103";
+import { createBadgeType104 } from "./BadgeType104";
+import { createBadgeType105 } from "./BadgeType105";
+import { createBadgeType106 } from "./BadgeType106";
+import { createBadgeType107 } from "./BadgeType107";
+import { createBadgeType108 } from "./BadgeType108";
+import { createBadgeType109 } from "./BadgeType109";
+import { createBadgeType110 } from "./BadgeType110";
+import { createBadgeType111 } from "./BadgeType111";
+import { createBadgeType112 } from "./BadgeType112";
+import { createBadgeType113 } from "./BadgeType113";
+import { createBadgeType114 } from "./BadgeType114";
+import { createBadgeType115 } from "./BadgeType115";
+import { createBadgeType116 } from "./BadgeType116";
+import { createBadgeType117 } from "./BadgeType117";
+import { createBadgeType118 } from "./BadgeType118";
+import { createBadgeType119 } from "./BadgeType119";
+import { createBadgeType120 } from "./BadgeType120";
+import { createBadgeType121 } from "./BadgeType121";
 
 const Badges = {
   BadgeType1: createBadgeType1,
@@ -182,5 +212,36 @@ const Badges = {
   BadgeType89: createBadgeType89,
   BadgeType90: createBadgeType90,
   BadgeType91: createBadgeType91,
+  BadgeType92: createBadgeType92,
+  BadgeType93: createBadgeType93,
+  BadgeType94: createBadgeType94,
+  BadgeType95: createBadgeType95,
+  BadgeType96: createBadgeType96,
+  BadgeType97: createBadgeType97,
+  BadgeType98: createBadgeType98,
+  BadgeType99: createBadgeType99,
+  BadgeType100: createBadgeType100,
+  BadgeType101: createBadgeType101,
+  BadgeType102: createBadgeType102,
+  BadgeType103: createBadgeType103,
+  BadgeType104: createBadgeType104,
+  BadgeType105: createBadgeType105,
+  BadgeType106: createBadgeType106,
+  BadgeType107: createBadgeType107,
+  BadgeType108: createBadgeType108,
+  BadgeType109: createBadgeType109,
+  BadgeType110: createBadgeType110,
+  BadgeType111: createBadgeType111,
+  BadgeType112: createBadgeType112,
+  BadgeType113: createBadgeType113,
+  BadgeType114: createBadgeType114,
+  BadgeType115: createBadgeType115,
+  BadgeType116: createBadgeType116,
+  BadgeType117: createBadgeType117,
+  BadgeType118: createBadgeType118,
+  BadgeType119: createBadgeType119,
+  BadgeType120: createBadgeType120,
+  BadgeType121: createBadgeType121,
+  
 };
 export default Badges;

@@ -32,6 +32,24 @@ const RibbonType46_1 = require("./RibbonType46");
 const RibbonType53_1 = require("./RibbonType53");
 const RibbonType57_1 = require("./RibbonType57");
 const RibbonType61_1 = require("./RibbonType61");
+const RibbonType92_1 = require("./RibbonType92");
+const RibbonType93_2 = require("./RibbonType93");
+const RibbonType93_1_1 = require("./RibbonType93_1");
+const RibbonType96_2 = require("./RibbonType96");
+const RibbonType96_1_1 = require("./RibbonType96_1");
+const RibbonType97_1 = require("./RibbonType97");
+const RibbonType99_1 = require("./RibbonType99");
+const RibbonType101_2 = require("./RibbonType101");
+const RibbonType101_1_1 = require("./RibbonType101_1");
+const RibbonType103_1 = require("./RibbonType103");
+const RibbonType107_1 = require("./RibbonType107");
+const RibbonType109_1 = require("./RibbonType109");
+const RibbonType110_1 = require("./RibbonType110");
+const RibbonType113_1 = require("./RibbonType113");
+const RibbonType115_1 = require("./RibbonType115");
+const RibbonType116_1_1 = require("./RibbonType116_1");
+const RibbonType116_2 = require("./RibbonType116");
+const RibbonType118_1 = require("./RibbonType118");
 const RibbonWing1_1 = require("./RibbonWing1");
 const RibbonWing2_1 = require("./RibbonWing2");
 const RibbonWing3_1 = require("./RibbonWing3");
@@ -45,6 +63,9 @@ const RibbonWing10_1 = require("./RibbonWing10");
 const RibbonWing11_1 = require("./RibbonWing11");
 const RibbonWing12_1 = require("./RibbonWing12");
 const RibbonWing14_1 = require("./RibbonWing14");
+const RibbonWing104_1 = require("./RibbonWing104");
+const RibbonWing105_1 = require("./RibbonWing105");
+const RibbonWing106_1 = require("./RibbonWing106");
 const Ribbons = {
     // RibbonType Type
     RibbonType1: RibbonType1_1.createRibbonType1,
@@ -79,6 +100,24 @@ const Ribbons = {
     RibbonType53: RibbonType53_1.createRibbonType53,
     RibbonType57: RibbonType57_1.createRibbonType57,
     RibbonType61: RibbonType61_1.createRibbonType61,
+    RibbonType92: RibbonType92_1.createRibbonType92,
+    RibbonType93: RibbonType93_2.createRibbonType93,
+    RibbonType93_1: RibbonType93_1_1.createRibbonType93_1,
+    RibbonType96: RibbonType96_2.createRibbonType96,
+    RibbonType96_1: RibbonType96_1_1.createRibbonType96_1,
+    RibbonType97: RibbonType97_1.createRibbonType97,
+    RibbonType99: RibbonType99_1.createRibbonType99,
+    RibbonType101: RibbonType101_2.createRibbonType101,
+    RibbonType101_1: RibbonType101_1_1.createRibbonType101_1,
+    RibbonType103: RibbonType103_1.createRibbonType103,
+    RibbonType107: RibbonType107_1.createRibbonType107,
+    RibbonType109: RibbonType109_1.createRibbonType109,
+    RibbonType110: RibbonType110_1.createRibbonType110,
+    RibbonType113: RibbonType113_1.createRibbonType113,
+    RibbonType115: RibbonType115_1.createRibbonType115,
+    RibbonType116_1: RibbonType116_1_1.createRibbonType116_1,
+    RibbonType116: RibbonType116_2.createRibbonType116,
+    RibbonType118: RibbonType118_1.createRibbonType118,
     // RibbonWing Type
     RibbonWing1: RibbonWing1_1.createRibbonWing1,
     RibbonWing2: RibbonWing2_1.createRibbonWing2,
@@ -93,5 +132,8 @@ const Ribbons = {
     RibbonWing11: RibbonWing11_1.createRibbonWing11,
     RibbonWing12: RibbonWing12_1.createRibbonWing12,
     RibbonWing14: RibbonWing14_1.createRibbonWing14,
+    RibbonWing104: RibbonWing104_1.createRibbonWing104,
+    RibbonWing105: RibbonWing105_1.createRibbonWing105,
+    RibbonWing106: RibbonWing106_1.createRibbonWing106,
 };
 exports.default = Ribbons;

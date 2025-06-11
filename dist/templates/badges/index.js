@@ -91,6 +91,36 @@ const BadgeType88_1 = require("./BadgeType88");
 const BadgeType89_1 = require("./BadgeType89");
 const BadgeType90_1 = require("./BadgeType90");
 const BadgeType91_1 = require("./BadgeType91");
+const BadgeType92_1 = require("./BadgeType92");
+const BadgeType93_1 = require("./BadgeType93");
+const BadgeType94_1 = require("./BadgeType94");
+const BadgeType95_1 = require("./BadgeType95");
+const BadgeType96_1 = require("./BadgeType96");
+const BadgeType97_1 = require("./BadgeType97");
+const BadgeType98_1 = require("./BadgeType98");
+const BadgeType99_1 = require("./BadgeType99");
+const BadgeType100_1 = require("./BadgeType100");
+const BadgeType101_1 = require("./BadgeType101");
+const BadgeType102_1 = require("./BadgeType102");
+const BadgeType103_1 = require("./BadgeType103");
+const BadgeType104_1 = require("./BadgeType104");
+const BadgeType105_1 = require("./BadgeType105");
+const BadgeType106_1 = require("./BadgeType106");
+const BadgeType107_1 = require("./BadgeType107");
+const BadgeType108_1 = require("./BadgeType108");
+const BadgeType109_1 = require("./BadgeType109");
+const BadgeType110_1 = require("./BadgeType110");
+const BadgeType111_1 = require("./BadgeType111");
+const BadgeType112_1 = require("./BadgeType112");
+const BadgeType113_1 = require("./BadgeType113");
+const BadgeType114_1 = require("./BadgeType114");
+const BadgeType115_1 = require("./BadgeType115");
+const BadgeType116_1 = require("./BadgeType116");
+const BadgeType117_1 = require("./BadgeType117");
+const BadgeType118_1 = require("./BadgeType118");
+const BadgeType119_1 = require("./BadgeType119");
+const BadgeType120_1 = require("./BadgeType120");
+const BadgeType121_1 = require("./BadgeType121");
 const Badges = {
     BadgeType1: BadgeType1_1.createBadgeType1,
     BadgeType2: BadgeType2_1.createBadgeType2,
@@ -183,5 +213,35 @@ const Badges = {
     BadgeType89: BadgeType89_1.createBadgeType89,
     BadgeType90: BadgeType90_1.createBadgeType90,
     BadgeType91: BadgeType91_1.createBadgeType91,
+    BadgeType92: BadgeType92_1.createBadgeType92,
+    BadgeType93: BadgeType93_1.createBadgeType93,
+    BadgeType94: BadgeType94_1.createBadgeType94,
+    BadgeType95: BadgeType95_1.createBadgeType95,
+    BadgeType96: BadgeType96_1.createBadgeType96,
+    BadgeType97: BadgeType97_1.createBadgeType97,
+    BadgeType98: BadgeType98_1.createBadgeType98,
+    BadgeType99: BadgeType99_1.createBadgeType99,
+    BadgeType100: BadgeType100_1.createBadgeType100,
+    BadgeType101: BadgeType101_1.createBadgeType101,
+    BadgeType102: BadgeType102_1.createBadgeType102,
+    BadgeType103: BadgeType103_1.createBadgeType103,
+    BadgeType104: BadgeType104_1.createBadgeType104,
+    BadgeType105: BadgeType105_1.createBadgeType105,
+    BadgeType106: BadgeType106_1.createBadgeType106,
+    BadgeType107: BadgeType107_1.createBadgeType107,
+    BadgeType108: BadgeType108_1.createBadgeType108,
+    BadgeType109: BadgeType109_1.createBadgeType109,
+    BadgeType110: BadgeType110_1.createBadgeType110,
+    BadgeType111: BadgeType111_1.createBadgeType111,
+    BadgeType112: BadgeType112_1.createBadgeType112,
+    BadgeType113: BadgeType113_1.createBadgeType113,
+    BadgeType114: BadgeType114_1.createBadgeType114,
+    BadgeType115: BadgeType115_1.createBadgeType115,
+    BadgeType116: BadgeType116_1.createBadgeType116,
+    BadgeType117: BadgeType117_1.createBadgeType117,
+    BadgeType118: BadgeType118_1.createBadgeType118,
+    BadgeType119: BadgeType119_1.createBadgeType119,
+    BadgeType120: BadgeType120_1.createBadgeType120,
+    BadgeType121: BadgeType121_1.createBadgeType121,
 };
 exports.default = Badges;

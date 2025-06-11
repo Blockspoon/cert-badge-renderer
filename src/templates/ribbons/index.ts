@@ -30,6 +30,24 @@ import { createRibbonType46 } from "./RibbonType46";
 import { createRibbonType53 } from "./RibbonType53";
 import { createRibbonType57 } from "./RibbonType57";
 import { createRibbonType61 } from "./RibbonType61";
+import { createRibbonType92 } from "./RibbonType92";
+import { createRibbonType93 } from "./RibbonType93";
+import { createRibbonType93_1 } from "./RibbonType93_1";
+import { createRibbonType96 } from "./RibbonType96";
+import { createRibbonType96_1 } from "./RibbonType96_1";
+import { createRibbonType97 } from "./RibbonType97";
+import { createRibbonType99 } from "./RibbonType99";
+import { createRibbonType101 } from "./RibbonType101";
+import { createRibbonType101_1 } from "./RibbonType101_1";
+import { createRibbonType103 } from "./RibbonType103";
+import { createRibbonType107 } from "./RibbonType107";
+import { createRibbonType109 } from "./RibbonType109";
+import { createRibbonType110 } from "./RibbonType110";
+import { createRibbonType113 } from "./RibbonType113";
+import { createRibbonType115 } from "./RibbonType115";
+import { createRibbonType116_1 } from "./RibbonType116_1";
+import { createRibbonType116 } from "./RibbonType116";
+import { createRibbonType118 } from "./RibbonType118";
 
 import { createRibbonWing1 } from "./RibbonWing1";
 import { createRibbonWing2 } from "./RibbonWing2";
@@ -44,6 +62,9 @@ import { createRibbonWing10 } from "./RibbonWing10";
 import { createRibbonWing11 } from "./RibbonWing11";
 import { createRibbonWing12 } from "./RibbonWing12";
 import { createRibbonWing14 } from "./RibbonWing14";
+import { createRibbonWing104 } from "./RibbonWing104";
+import { createRibbonWing105 } from "./RibbonWing105";
+import { createRibbonWing106 } from "./RibbonWing106";
 
 const Ribbons = {
   // RibbonType Type
@@ -79,6 +100,24 @@ const Ribbons = {
   RibbonType53: createRibbonType53,
   RibbonType57: createRibbonType57,
   RibbonType61: createRibbonType61,
+  RibbonType92: createRibbonType92,
+  RibbonType93: createRibbonType93,
+  RibbonType93_1: createRibbonType93_1,
+  RibbonType96: createRibbonType96,
+  RibbonType96_1: createRibbonType96_1,
+  RibbonType97: createRibbonType97,
+  RibbonType99: createRibbonType99,
+  RibbonType101: createRibbonType101,
+  RibbonType101_1: createRibbonType101_1,
+  RibbonType103: createRibbonType103,
+  RibbonType107: createRibbonType107,
+  RibbonType109: createRibbonType109,
+  RibbonType110: createRibbonType110,
+  RibbonType113: createRibbonType113,
+  RibbonType115: createRibbonType115,
+  RibbonType116_1: createRibbonType116_1,
+  RibbonType116: createRibbonType116,
+  RibbonType118: createRibbonType118,
 
   // RibbonWing Type
   RibbonWing1: createRibbonWing1,
@@ -94,6 +133,9 @@ const Ribbons = {
   RibbonWing11: createRibbonWing11,
   RibbonWing12: createRibbonWing12,
   RibbonWing14: createRibbonWing14,
+  RibbonWing104: createRibbonWing104,
+  RibbonWing105: createRibbonWing105,
+  RibbonWing106: createRibbonWing106,
 };
 
 export default Ribbons;
