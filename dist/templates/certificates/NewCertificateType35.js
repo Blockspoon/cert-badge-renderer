@@ -3,9 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.createNewCertificateType35 = createNewCertificateType35;
 function createNewCertificateType35({ mainColor = "#96A6B4", subColor = "#96A6B4", extraColor1 = "#96A6B4", extraColor2 = "#96A6B4", }) {
     const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
-    const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
-    const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
-    const paintId3 = `paint3_linear_${Math.random().toString(36).substr(2, 9)}`;
     return `
       <svg
         width="100%"
