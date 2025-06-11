@@ -29,6 +29,7 @@ import { createIconStar6 } from "./IconStar6";
 import { createIconSmallType1 } from "./IconSmallType1";
 import { createIconSmallType10 } from "./IconSmallType10";
 import { createIconStar7 } from "./IconStar7";
+import { createIconStar8 } from "./IconStar8";
 
 const Icons = {
   IconBg1: createIconBg1,
@@ -63,6 +64,7 @@ const Icons = {
   IconStar5: createIconStar5,
   IconStar6: createIconStar6,
   IconStar7: createIconStar7,
+  IconStar8: createIconStar8,
 
   IconTrophy1: createIconTrophy1,
   IconTrophy2: createIconTrophy2,

@@ -31,6 +31,7 @@ const IconStar6_1 = require("./IconStar6");
 const IconSmallType1_1 = require("./IconSmallType1");
 const IconSmallType10_1 = require("./IconSmallType10");
 const IconStar7_1 = require("./IconStar7");
+const IconStar8_1 = require("./IconStar8");
 const Icons = {
     IconBg1: IconBg1_1.createIconBg1,
     IconBg2: IconBg2_1.createIconBg2,
@@ -59,6 +60,7 @@ const Icons = {
     IconStar5: IconStar5_1.createIconStar5,
     IconStar6: IconStar6_1.createIconStar6,
     IconStar7: IconStar7_1.createIconStar7,
+    IconStar8: IconStar8_1.createIconStar8,
     IconTrophy1: IconTrophy1_1.createIconTrophy1,
     IconTrophy2: IconTrophy2_1.createIconTrophy2,
     IconTrophy3: IconTrophy3_1.createIconTrophy3,

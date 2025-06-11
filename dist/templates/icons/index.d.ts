@@ -29,6 +29,7 @@ import { createIconStar6 } from "./IconStar6";
 import { createIconSmallType1 } from "./IconSmallType1";
 import { createIconSmallType10 } from "./IconSmallType10";
 import { createIconStar7 } from "./IconStar7";
+import { createIconStar8 } from "./IconStar8";
 declare const Icons: {
     IconBg1: typeof createIconBg1;
     IconBg2: typeof createIconBg2;
@@ -57,6 +58,7 @@ declare const Icons: {
     IconStar5: typeof createIconStar5;
     IconStar6: typeof createIconStar6;
     IconStar7: typeof createIconStar7;
+    IconStar8: typeof createIconStar8;
     IconTrophy1: typeof createIconTrophy1;
     IconTrophy2: typeof createIconTrophy2;
     IconTrophy3: typeof createIconTrophy3;
