@@ -36,6 +36,26 @@ const NewCertificateType31_1 = require("./NewCertificateType31");
 const NewCertificateType32_1 = require("./NewCertificateType32");
 const NewCertificateType33_1 = require("./NewCertificateType33");
 const NewCertificateType34_1 = require("./NewCertificateType34");
+const NewCertificateType35_1 = require("./NewCertificateType35");
+const NewCertificateType36_1 = require("./NewCertificateType36");
+const NewCertificateType37_1 = require("./NewCertificateType37");
+const NewCertificateType38_1 = require("./NewCertificateType38");
+const NewCertificateType39_1 = require("./NewCertificateType39");
+const NewCertificateType40_1 = require("./NewCertificateType40");
+const NewCertificateType41_1 = require("./NewCertificateType41");
+const NewCertificateType42_1 = require("./NewCertificateType42");
+const NewCertificateType43_1 = require("./NewCertificateType43");
+const NewCertificateType44_1 = require("./NewCertificateType44");
+const NewCertificateType45_1 = require("./NewCertificateType45");
+const NewCertificateType46_1 = require("./NewCertificateType46");
+const NewCertificateType47_1 = require("./NewCertificateType47");
+const NewCertificateType48_1 = require("./NewCertificateType48");
+const NewCertificateType49_1 = require("./NewCertificateType49");
+const NewCertificateType50_1 = require("./NewCertificateType50");
+const NewCertificateType51_1 = require("./NewCertificateType51");
+const NewCertificateType52_1 = require("./NewCertificateType52");
+const NewCertificateType53_1 = require("./NewCertificateType53");
+const NewCertificateType54_1 = require("./NewCertificateType54");
 const NewEmptyLandscapeCertificate_1 = require("./NewEmptyLandscapeCertificate");
 const NewEmptyPortraitCertificate_1 = require("./NewEmptyPortraitCertificate");
 const Certificates = {
@@ -75,6 +95,26 @@ const Certificates = {
     NewCertificateType32: NewCertificateType32_1.createNewCertificateType32,
     NewCertificateType33: NewCertificateType33_1.createNewCertificateType33,
     NewCertificateType34: NewCertificateType34_1.createNewCertificateType34,
+    NewCertificateType35: NewCertificateType35_1.createNewCertificateType35,
+    NewCertificateType36: NewCertificateType36_1.createNewCertificateType36,
+    NewCertificateType37: NewCertificateType37_1.createNewCertificateType37,
+    NewCertificateType38: NewCertificateType38_1.createNewCertificateType38,
+    NewCertificateType39: NewCertificateType39_1.createNewCertificateType39,
+    NewCertificateType40: NewCertificateType40_1.createNewCertificateType40,
+    NewCertificateType41: NewCertificateType41_1.createNewCertificateType41,
+    NewCertificateType42: NewCertificateType42_1.createNewCertificateType42,
+    NewCertificateType43: NewCertificateType43_1.createNewCertificateType43,
+    NewCertificateType44: NewCertificateType44_1.createNewCertificateType44,
+    NewCertificateType45: NewCertificateType45_1.createNewCertificateType45,
+    NewCertificateType46: NewCertificateType46_1.createNewCertificateType46,
+    NewCertificateType47: NewCertificateType47_1.createNewCertificateType47,
+    NewCertificateType48: NewCertificateType48_1.createNewCertificateType48,
+    NewCertificateType49: NewCertificateType49_1.createNewCertificateType49,
+    NewCertificateType50: NewCertificateType50_1.createNewCertificateType50,
+    NewCertificateType51: NewCertificateType51_1.createNewCertificateType51,
+    NewCertificateType52: NewCertificateType52_1.createNewCertificateType52,
+    NewCertificateType53: NewCertificateType53_1.createNewCertificateType53,
+    NewCertificateType54: NewCertificateType54_1.createNewCertificateType54,
     NewEmptyLandscapeCertificate: NewEmptyLandscapeCertificate_1.createNewEmptyLandscapeCertificate,
     NewEmptyPortraitCertificate: NewEmptyPortraitCertificate_1.createNewEmptyPortraitCertificate,
 };

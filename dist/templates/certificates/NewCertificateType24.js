@@ -90,7 +90,7 @@ function createNewCertificateType24({ mainColor = "#96A6B4", subColor = "#96A6B4
             gradientUnits="userSpaceOnUse"
           >
             <stop stop-color="${mainColor}" />
-            <stop offset="1" stop-color={"#57A5FF"} />
+            <stop offset="1" stop-color="#57A5FF"  />
           </linearGradient>
           <linearGradient
             id="${paintId1}"
@@ -101,7 +101,7 @@ function createNewCertificateType24({ mainColor = "#96A6B4", subColor = "#96A6B4
             gradientUnits="userSpaceOnUse"
           >
             <stop stop-color="${mainColor}" />
-            <stop offset="1" stop-color={"#57A5FF"} />
+            <stop offset="1" stop-color="#57A5FF"  />
           </linearGradient>
           <linearGradient
             id="${paintId2}"
@@ -146,8 +146,8 @@ function createNewCertificateType24({ mainColor = "#96A6B4", subColor = "#96A6B4
               transform="translate(0.847656)"
             />
           </clipPath>
-          <image id="image0_1917_8" width="357" height="357" />
-          <image id="image1_1917_8" width="360" height="360" />
+          <image id="image0_1917_8" width="357" height="357" href="" />
+          <image id="image1_1917_8" width="360" height="360" href="" />
         </defs>
       </svg>
   `;

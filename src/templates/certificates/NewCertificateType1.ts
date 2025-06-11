@@ -1,4 +1,4 @@
-import { ISvgProps } from "../../interface"; 
+import { ISvgProps } from "../../interface";
 
 export function createNewCertificateType1({
   mainColor = "#96A6B4",
@@ -14,21 +14,6 @@ export function createNewCertificateType1({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid meet"
-      style={{
-        width: "100%",
-        height: "100%",
-        objectFit: "contain",
-        position: "absolute",
-        left: "50%",
-        top: "50%",
-        transform: "translate(-50%, -50%)",
-        maxWidth: "100%",
-        maxHeight: "100%",
-        zIndex: 1,
-        mixBlendMode: "normal",
-        pointerEvents: "none",
-        display: "block",
-      }}
     >
       <rect width="1152" height="810" fill="white" />
       <rect x="50" y="50" width="1052" height="710" rx="18" fill="#FDFDFF" />
@@ -64,4 +49,4 @@ export function createNewCertificateType1({
       </defs>
     </svg>
   `;
-} 
+}

@@ -1,5 +1,4 @@
-import { ISvgProps } from "../../interface"; 
-
+import { ISvgProps } from "../../interface";
 
 export function createNewCertificateType20({
   mainColor = "#96A6B4",
@@ -7,7 +6,6 @@ export function createNewCertificateType20({
   extraColor1 = "#96A6B4",
   extraColor2 = "#96A6B4",
 }: ISvgProps): string {
-
   const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
@@ -18,34 +16,16 @@ export function createNewCertificateType20({
   const paintId7 = `paint7_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId8 = `paint8_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId9 = `paint9_linear_${Math.random().toString(36).substr(2, 9)}`;
-  const paintId10 = `paint10_linear_${Math.random()
-    .toString(36)
-    .substr(2, 9)}`;
-  const paintId11 = `paint11_linear_${Math.random()
-    .toString(36)
-    .substr(2, 9)}`;
-  const paintId12 = `paint12_linear_${Math.random()
-    .toString(36)
-    .substr(2, 9)}`;
-  const paintId13 = `paint13_linear_${Math.random()
-    .toString(36)
-    .substr(2, 9)}`;
-  const paintId14 = `paint14_linear_${Math.random()
-    .toString(36)
-    .substr(2, 9)}`;
-  const paintId15 = `paint15_linear_${Math.random()
-    .toString(36)
-    .substr(2, 9)}`;
-  const paintId16 = `paint16_linear_${Math.random()
-    .toString(36)
-    .substr(2, 9)}`;
-  const paintId17 = `paint17_linear_${Math.random()
-    .toString(36)
-    .substr(2, 9)}`;
-  const paintId18 = `paint18_linear_${Math.random()
-    .toString(36)
-    .substr(2, 9)}`;
-    
+  const paintId10 = `paint10_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId11 = `paint11_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId12 = `paint12_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId13 = `paint13_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId14 = `paint14_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId15 = `paint15_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId16 = `paint16_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId17 = `paint17_linear_${Math.random().toString(36).substr(2, 9)}`;
+  const paintId18 = `paint18_linear_${Math.random().toString(36).substr(2, 9)}`;
+
   return `
         <svg
         width="100%"
@@ -180,7 +160,7 @@ export function createNewCertificateType20({
             width="88.0261"
             height="88.0261"
             transform="rotate(-45 161.613 737.875)"
-            stroke="url(#${paintId10}"}
+            stroke="url(#${paintId10}"
             stroke-width="4.10451"
           />
 
@@ -464,4 +444,4 @@ export function createNewCertificateType20({
         </defs>
       </svg>
   `;
-} 
+}
