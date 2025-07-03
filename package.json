@@ -26,9 +26,7 @@
   "author": "Blockspoon <support@kolleges.net>",
   "license": "MIT",
   "dependencies": {
-    "@sparticuz/chromium": "^133.0.0",
     "date-fns": "^4.1.0",
-    "puppeteer": "^24.4.0",
     "qrcode": "^1.5.4"
   },
   "devDependencies": {

@@ -131,7 +131,6 @@ export const getBindingValue = (
   bindingKey: string,
   data: any
 ) => {
-
   switch (type) {
     case "achievement":
       return getAchievementValue(bindingKey, data);
@@ -141,7 +140,7 @@ export const getBindingValue = (
       return getClubValue(
         bindingKey,
         data?.achievementForm?.club || data?.club,
-        data 
+        data
       );
     case "custom":
       return getCustomValue(bindingKey, data);
