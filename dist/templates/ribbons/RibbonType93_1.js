@@ -40,10 +40,10 @@ function createRibbonType93_1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) 
           y2="53.8844"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${mainColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id={paintId1}
@@ -53,10 +53,10 @@ function createRibbonType93_1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) 
           y2="51.2318"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${mainColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
       </defs>
     </svg>

@@ -41,7 +41,7 @@ function createRibbonType96({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id={paintId1}
@@ -52,7 +52,7 @@ function createRibbonType96({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
       </defs>
     </svg>

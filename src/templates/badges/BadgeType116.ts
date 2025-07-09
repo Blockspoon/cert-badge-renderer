@@ -21,8 +21,8 @@ export function createBadgeType116({
       <path
         d="M441.331 298.317C467.395 193.703 403.717 87.7677 299.103 61.7038C194.489 35.6399 88.5535 99.3176 62.4897 203.932C36.4258 308.546 100.103 414.481 204.718 440.545C309.332 466.609 415.267 402.932 441.331 298.317Z"
         stroke="white"
-        strokeWidth="6"
-        strokeLinejoin="round"
+        stroke-width="6"
+        stroke-linejoin="round"
       />
       <path
         d="M433.897 296.464C458.938 195.956 397.76 94.1783 297.251 69.1374C196.743 44.0965 94.9654 105.275 69.9245 205.783C44.8836 306.291 106.062 408.069 206.57 433.11C307.079 458.151 408.856 396.973 433.897 296.464Z"
@@ -35,7 +35,7 @@ export function createBadgeType116({
       <path
         d="M286.398 46.0714L252 14.6445V43.2259L286.398 46.0714Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M251.881 487.533L286.28 456.106L251.881 458.952L217.482 456.106L251.881 487.533Z"
@@ -80,27 +80,27 @@ export function createBadgeType116({
       <path
         d="M214.07 46.6709L180.777 55.7764L171.008 28.9023L214.07 46.6709Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M146.44 71.9339L118.27 91.8523L99.8691 69.9736L146.44 71.9339Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M91.5228 118.792L71.8573 147.184L47.1016 132.861L91.5228 118.792Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M55.9535 181.609L47.1641 214.996L19.0254 210.033L55.9535 181.609Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M44.0025 252.812L47.1641 287.18L19.0254 292.143L44.0025 252.812Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M484.737 210.033L447.777 181.609L456.567 214.996L459.728 249.364L484.737 210.033Z"
@@ -129,27 +129,27 @@ export function createBadgeType116({
       <path
         d="M286.28 456.106L251.881 487.533V458.952L286.28 456.106Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M354.319 431.984L332.756 473.276L322.955 446.433L354.319 431.984Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M409.997 386.043L403.863 432.235L385.494 410.324L409.997 386.043Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M146.44 430.243L99.8691 432.235L118.27 410.324L146.44 430.243Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M214.07 455.508L171.008 473.276L180.777 446.434L214.07 455.508Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M332.757 28.9023L289.664 46.6709L322.956 55.7764L354.32 70.2252L332.757 28.9023Z"
@@ -158,27 +158,27 @@ export function createBadgeType116({
       <path
         d="M447.777 320.567L456.567 287.18L484.737 292.143L447.777 320.567Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M459.728 249.363L456.566 214.996L484.737 210.032L459.728 249.363Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M446.608 178.389L431.875 147.184L456.631 132.861L446.608 178.389Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M409.997 116.165L385.494 91.8523L403.863 69.9736L409.997 116.165Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <path
         d="M354.319 70.2252L322.955 55.7764L332.756 28.9023L354.319 70.2252Z"
         fill="black"
-        fillOpacity="0.1"
+        fill-opacity="0.1"
       />
       <g opacity="0.3">
         <path
@@ -194,9 +194,9 @@ export function createBadgeType116({
         opacity="0.3"
         d="M129.082 178H374.648"
         stroke="${mainColor}"
-        strokeWidth="6.32331"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        stroke-width="6.32331"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       />
       <path
         opacity="0.3"

@@ -48,8 +48,8 @@ export function createRibbonType110({
           y2="-234.95"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.296774" stopColor="${subColor}" />
-          <stop offset="0.736337" stopColor="${mainColor}" />
+          <stop offset="0.296774" stop-color="${subColor}" />
+          <stop offset="0.736337" stop-color="${mainColor}" />
         </linearGradient>
       </defs>
     </svg>

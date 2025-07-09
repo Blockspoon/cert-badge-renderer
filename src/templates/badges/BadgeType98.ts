@@ -101,7 +101,7 @@ export function createBadgeType98({
         rx="37"
         transform="rotate(45 280 23.2426)"
         stroke="${subColor}"
-        strokeWidth="6"
+        stroke-width="6"
       />
       <rect
         x="280"
@@ -111,7 +111,7 @@ export function createBadgeType98({
         rx="38"
         transform="rotate(45 280 16.8284)"
         stroke="white"
-        strokeWidth="4"
+        stroke-width="4"
       />
       <rect
         x="280"
@@ -193,7 +193,7 @@ export function createBadgeType98({
         rx="37"
         transform="rotate(45 280 23.2426)"
         stroke="${subColor}"
-        strokeWidth="6"
+        stroke-width="6"
       />
       <rect
         x="280"
@@ -203,7 +203,7 @@ export function createBadgeType98({
         rx="38"
         transform="rotate(45 280 16.8284)"
         stroke="white"
-        strokeWidth="4"
+        stroke-width="4"
       />
       <defs>
         <pattern

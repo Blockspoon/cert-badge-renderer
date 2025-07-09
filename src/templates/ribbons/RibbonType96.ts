@@ -44,7 +44,7 @@ export function createRibbonType96({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id={paintId1}
@@ -55,7 +55,7 @@ export function createRibbonType96({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
       </defs>
     </svg>

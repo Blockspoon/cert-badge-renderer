@@ -24,12 +24,12 @@ export function createNewCertificateType50({
           <path
             d="M176 339.5L-1.5 843L-41 558L83 226L176 339.5Z"
             fill="black"
-            fillOpacity="0.05"
+            fill-opacity="0.05"
           />
           <path
             d="M973 473L1150.5 -26.5L1193 98L1099 495L973 473Z"
             fill="black"
-            fillOpacity="0.05"
+            fill-opacity="0.05"
           />
           <path
             d="M167 298L-6 782L-50 516.5L74 184.5L167 298Z"
@@ -42,12 +42,12 @@ export function createNewCertificateType50({
           <path
             d="M83 -114.5L175 -2L97 212.5L91 205L-7 476.5L-41 217.5L83 -114.5Z"
             fill="black"
-            fillOpacity="0.1"
+            fill-opacity="0.1"
           />
           <path
             d="M1056 907.5L949 828L1057.5 525.5L1067 527L1158 277.5L1180 575.5L1056 907.5Z"
             fill="black"
-            fillOpacity="0.1"
+            fill-opacity="0.1"
           />
           <path
             d="M167 -42.5L-6 441.5L-79 169.5L45 -162.5L167 -42.5Z"

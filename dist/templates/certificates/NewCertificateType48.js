@@ -80,65 +80,65 @@ function createNewCertificateType48({ mainColor = "#96A6B4", subColor = "#96A6B4
         <path
           d="M651.951 61.4491C649.232 64.5969 643.7 64.1498 640.943 61.0393C638.186 57.9288 638.056 53.0487 639.919 49.3422C641.781 45.6356 645.32 42.9721 649.139 41.2957C657.427 37.6264 667.653 38.2411 675.029 43.5122C682.386 48.7834 686.297 58.7669 683.746 67.4653C680.896 77.2439 670.689 83.7071 660.519 84.2287C650.349 84.7502 640.459 80.2427 632.468 73.9285C629.786 71.8238 627.253 69.4769 624.198 67.9495C621.144 66.4222 617.418 65.8076 614.364 67.2976C610.899 68.9926 609.13 72.8668 607.901 76.5175C606.671 80.1682 605.572 84.1355 602.704 86.7059C599.835 89.295 594.49 89.5185 592.683 86.1099"
           stroke="${mainColor}"
-          strokeWidth="2.13629"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="2.13629"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         <path
           d="M504.136 61.4491C506.856 64.5969 512.388 64.1498 515.144 61.0393C517.901 57.9288 518.031 53.0487 516.169 49.3422C514.306 45.6356 510.767 42.9721 506.949 41.2957C498.66 37.6264 488.435 38.2411 481.059 43.5122C473.701 48.7834 469.79 58.7669 472.342 67.4653C475.192 77.2439 485.399 83.7072 495.568 84.2287C505.738 84.7502 515.629 80.2427 523.619 73.9285C526.301 71.8238 528.834 69.4769 531.889 67.9495C534.925 66.4222 538.669 65.8076 541.724 67.2976C545.188 68.9926 546.958 72.8668 548.187 76.5175C549.416 80.1682 550.515 84.1355 553.384 86.7059C556.252 89.2949 561.598 89.5185 563.404 86.1099"
           stroke="${mainColor}"
-          strokeWidth="2.13629"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="2.13629"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         <path
           d="M700.697 58.1892C705.242 59.5116 710.55 56.0844 711.221 51.3907C711.891 46.7156 707.756 41.9287 703.025 41.9101C698.76 41.9101 695.091 45.1882 693.116 48.9693C691.142 52.7504 690.416 57.0344 689.205 61.1135C687.976 65.1926 684.139 71.5068 680.544 73.8164"
           stroke="${mainColor}"
-          strokeWidth="2.13629"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="2.13629"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         <path
           d="M454.777 58.1892C450.232 59.5116 444.924 56.0844 444.253 51.3907C443.583 46.7156 447.718 41.9287 452.449 41.9101C456.714 41.9101 460.383 45.1882 462.358 48.9693C464.332 52.7504 465.059 57.0344 466.269 61.1135C467.499 65.1926 471.95 71.5068 475.526 73.8164"
           stroke="${mainColor}"
-          strokeWidth="2.13629"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="2.13629"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         <path
           d="M665.027 83.5586C671.639 80.4481 674.209 75.6798 675.42 71.3213C676.631 66.9628 675.438 61.7848 671.806 59.1026C670.018 57.7802 667.578 57.1469 665.548 58.041C663.518 58.9164 662.288 61.5985 663.406 63.517C664.524 65.4355 668.025 65.2865 668.621 63.1445"
           stroke="${mainColor}"
-          strokeWidth="2.13629"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="2.13629"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         <path
           d="M492.812 83.5586C486.2 80.4481 483.629 75.6798 482.419 71.3213C481.208 66.9628 482.4 61.7848 486.032 59.1026C487.82 57.7802 490.26 57.1469 492.29 58.041C494.321 58.9164 495.55 61.5985 494.432 63.517C493.315 65.4355 489.813 65.2865 489.217 63.1445"
           stroke="${mainColor}"
-          strokeWidth="2.13629"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="2.13629"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         <path
           d="M604.511 57.5201L588.325 80.8398"
           stroke="${mainColor}"
-          strokeWidth="2.13629"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="2.13629"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         <path
           d="M548.634 57.5201L564.82 80.8398"
           stroke="${mainColor}"
-          strokeWidth="2.13629"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="2.13629"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         <path
           d="M588.754 36.6592L562.659 36.6592"
           stroke="${mainColor}"
-          strokeWidth="1.06815"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="1.06815"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         <path
           d="M455.759 741.466C453.91 742.456 452.375 743.704 451.816 745.152C451.371 746.299 451.558 747.489 451.959 748.636C452.777 750.96 454.555 753.154 456.993 755.032L452.576 753.627C448.604 752.766 438.494 755.333 438.494 758.832C438.494 762.331 448.618 764.898 452.576 764.038L456.878 762.675C454.498 764.539 452.777 766.705 451.959 768.999C451.558 770.146 451.371 771.337 451.816 772.484C452.375 773.918 453.91 775.18 455.759 776.169C457.609 777.159 459.775 777.904 461.926 778.65C460.592 777.704 460.033 776.456 459.674 775.251C458.283 770.405 460.119 765.328 464.378 761.127C464.765 761.284 465.181 761.385 465.64 761.385C467.274 761.385 468.608 760.252 468.608 758.847C468.608 757.441 467.289 756.308 465.64 756.308C465.195 756.308 464.779 756.409 464.406 756.552C460.133 752.336 458.283 747.26 459.674 742.399C460.018 741.18 460.592 739.946 461.926 739C459.775 739.746 457.609 740.491 455.759 741.481V741.466Z"
@@ -151,8 +151,8 @@ function createNewCertificateType48({ mainColor = "#96A6B4", subColor = "#96A6B4
         <path
           d="M468.608 758.833H684.826"
           stroke="${mainColor}"
-          strokeWidth="1.95024"
-          strokeMiterlimit="10"
+          stroke-width="1.95024"
+          stroke-miterlimit="10"
         />
         <path
           d="M580.159 758.531C580.159 764.999 577.549 770.247 574.337 770.247C571.124 770.247 568.515 764.999 568.515 758.531C568.515 752.064 571.124 746.815 574.337 746.815C577.549 746.815 580.159 752.064 580.159 758.531Z"
@@ -180,7 +180,7 @@ function createNewCertificateType48({ mainColor = "#96A6B4", subColor = "#96A6B4
           width="1093"
           height="755"
           stroke="${mainColor}"
-          strokeWidth="3"
+          stroke-width="3"
         />
         <rect
           x="23"
@@ -188,7 +188,7 @@ function createNewCertificateType48({ mainColor = "#96A6B4", subColor = "#96A6B4
           width="1106"
           height="768"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
         />
 
         <path
@@ -240,9 +240,9 @@ function createNewCertificateType48({ mainColor = "#96A6B4", subColor = "#96A6B4
             y2="-958.795"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#835B2D" />
-            <stop offset="0.001155" stopColor="#835B2D" />
-            <stop offset="1" stopColor="#F9E07E" />
+            <stop stop-color="#835B2D" />
+            <stop offset="0.001155" stop-color="#835B2D" />
+            <stop offset="1" stop-color="#F9E07E" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_3305_939"
@@ -252,9 +252,9 @@ function createNewCertificateType48({ mainColor = "#96A6B4", subColor = "#96A6B4
             y2="-958.795"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#835B2D" />
-            <stop offset="0.001155" stopColor="#835B2D" />
-            <stop offset="1" stopColor="#F9E07E" />
+            <stop stop-color="#835B2D" />
+            <stop offset="0.001155" stop-color="#835B2D" />
+            <stop offset="1" stop-color="#F9E07E" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_3305_939"
@@ -264,9 +264,9 @@ function createNewCertificateType48({ mainColor = "#96A6B4", subColor = "#96A6B4
             y2="-958.795"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#835B2D" />
-            <stop offset="0.001155" stopColor="#835B2D" />
-            <stop offset="1" stopColor="#F9E07E" />
+            <stop stop-color="#835B2D" />
+            <stop offset="0.001155" stop-color="#835B2D" />
+            <stop offset="1" stop-color="#F9E07E" />
           </linearGradient>
           <image
             id="image0_3305_588"

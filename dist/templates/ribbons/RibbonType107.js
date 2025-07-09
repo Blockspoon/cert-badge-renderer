@@ -34,7 +34,7 @@ function createRibbonType107({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
         d="M354.918 139.052L350.136 138.491L350.131 138.49L344.923 137.907H344.924L296.144 132.189L295.709 132.139L295.377 132.423L257.994 164.397L253.988 167.82L250.364 170.913L209.128 35.5869L313.683 3.72754L354.918 139.052Z"
         stroke="white"
         strokeOpacity="0.4"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <path
         d="M304.236 5.59082L344.809 138.9L350.021 139.484L308.826 4.19043L304.236 5.59082Z"
@@ -56,7 +56,7 @@ function createRibbonType107({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
         d="M13.1895 139.052L17.9717 138.491L17.9766 138.49L23.1846 137.907H23.1836L71.9639 132.189L72.3984 132.139L72.7305 132.423L110.113 164.397L114.119 167.82L117.743 170.913L158.979 35.5869L54.4248 3.72754L13.1895 139.052Z"
         stroke="white"
         strokeOpacity="0.4"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <path
         d="M63.8711 5.59082L23.2987 138.9L18.0861 139.484L59.2809 4.19043L63.8711 5.59082Z"
@@ -86,7 +86,7 @@ function createRibbonType107({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
         d="M354.918 139.052L350.136 138.491L350.131 138.49L344.923 137.907H344.924L296.144 132.189L295.709 132.139L295.377 132.423L257.994 164.397L253.988 167.82L250.364 170.913L209.128 35.5869L313.683 3.72754L354.918 139.052Z"
         stroke="white"
         strokeOpacity="0.4"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <path
         d="M304.236 5.59082L344.809 138.9L350.021 139.484L308.826 4.19043L304.236 5.59082Z"
@@ -108,7 +108,7 @@ function createRibbonType107({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
         d="M13.1895 139.052L17.9717 138.491L17.9766 138.49L23.1846 137.907H23.1836L71.9639 132.189L72.3984 132.139L72.7305 132.423L110.113 164.397L114.119 167.82L117.743 170.913L158.979 35.5869L54.4248 3.72754L13.1895 139.052Z"
         stroke="white"
         strokeOpacity="0.4"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <path
         d="M63.8711 5.59082L23.2987 138.9L18.0861 139.484L59.2809 4.19043L63.8711 5.59082Z"
@@ -128,7 +128,7 @@ function createRibbonType107({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopOpacity="0" />
+          <stop offset="1" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3488_6913"
@@ -139,7 +139,7 @@ function createRibbonType107({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopOpacity="0" />
+          <stop offset="1" stop-opacity="0" />
         </linearGradient>
       </defs>
     </svg>

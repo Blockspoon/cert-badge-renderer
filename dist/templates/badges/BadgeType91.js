@@ -15,13 +15,13 @@ function createBadgeType91({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
           cy="300"
           r="264"
           stroke="${mainColor}"
-          strokeWidth="8"
+          stroke-width="8"
         />
         
         
-        <path d="M130 399L470 399" stroke="black" strokeWidth="2" />
-        <path d="M130 248L470 248" stroke="black" strokeWidth="2" />
-        <path d="M131 391L469 391" stroke="black" strokeWidth="2" />
+        <path d="M130 399L470 399" stroke="black" stroke-width="2" />
+        <path d="M130 248L470 248" stroke="black" stroke-width="2" />
+        <path d="M131 391L469 391" stroke="black" stroke-width="2" />
         <path
           d="M309.265 140.801C305.864 140.603 300.712 140.94 297.918 139.243C294.942 137.43 294.564 133.862 294.209 131.177C294.129 130.538 294.094 129.701 294.071 129.074L293.51 114L292.732 130.376C292.732 130.376 292.594 136.291 290.694 138.104C287.74 141.347 281.545 140.568 277 140.801V141.184C281.855 141.51 288.518 140.742 291.037 144.775C293.762 149.169 292.995 159.884 293.27 165.056C293.316 165.846 293.144 166.799 293.258 167.543C293.304 167.81 293.339 168.031 293.774 167.996C293.842 165.161 293.694 162.313 293.774 159.466C293.877 155.816 293.923 151.935 294.678 148.32C296.224 140.859 301.067 141.661 309.265 141.196C309.586 141.173 309.597 140.812 309.276 140.789L309.265 140.801Z"
           fill="black"
@@ -37,7 +37,7 @@ function createBadgeType91({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
           r="246.328"
           transform="rotate(-0.0769217 299.999 300)"
           stroke="${mainColor}"
-          strokeWidth="4"
+          stroke-width="4"
         />
         <circle
           cx="300"
@@ -45,7 +45,7 @@ function createBadgeType91({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
           r="238.318"
           transform="rotate(-0.0769217 300 300)"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <defs>
           <pattern

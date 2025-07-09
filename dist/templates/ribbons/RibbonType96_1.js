@@ -149,7 +149,7 @@ function createRibbonType96_1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) 
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.533654" stopColor="${mainColor}" />
+          <stop offset="0.533654" stop-color="${mainColor}" />
           <stop offset="1" />
         </linearGradient>
         <linearGradient
@@ -161,7 +161,7 @@ function createRibbonType96_1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) 
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="0.533654" stopColor="${mainColor}" />
+          <stop offset="0.533654" stop-color="${mainColor}" />
           <stop offset="1" />
         </linearGradient>
         <clipPath id="clip0_3497_80512">

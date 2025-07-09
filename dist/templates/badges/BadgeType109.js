@@ -62,11 +62,11 @@ function createBadgeType109({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           width="396"
           height="133"
           fill="white"
-          fillOpacity="0.3"
+          fill-opacity="0.3"
         />
       </g>
-      <path d="M40 208.5H402.5" stroke="white" strokeWidth="2" />
-      <path d="M42 326H400" stroke="white" strokeWidth="2" />
+      <path d="M40 208.5H402.5" stroke="white" stroke-width="2" />
+      <path d="M42 326H400" stroke="white" stroke-width="2" />
     </svg>
   `;
 }

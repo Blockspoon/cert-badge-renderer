@@ -17,82 +17,82 @@ export function createNewCertificateType36({
           <path
             d="M30.7458 118.927V1036.21"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M37.8589 113.143V1042.14"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M110.496 32.7218H701.025"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M105.901 39.9192H705.901"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M111.788 1123.83H701.025"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M110.047 1116.92H703.047"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M782.918 118V1036.21"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M775.859 116.187V1038.19"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M29.0283 117.073V1034.37"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M35.8589 111.143V1040.14"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M108.777 30.8834H699.307"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M103.901 37.9191H703.901"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M110.07 1122H699.307"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M108.047 1114.92H701.047"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M781.2 116.162V1034.37"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M773.859 114.187V1036.19"
             stroke="${mainColor}"
-            strokeWidth="1.51166"
+            stroke-width="1.51166"
           />
           <path
             d="M32.4328 29.4194C32.4328 29.4194 32.4784 23.27 25.0005 22.9609C25.0005 22.9609 24.2101 22.8632 23.3286 22.2613C23.3286 22.2613 22.1278 21.5943 22.3254 22.8307C22.3254 22.8307 22.827 24.2135 22.9486 25.6939C22.9486 25.6939 22.9182 32.5266 29.1042 33.096C29.1042 33.096 29.7274 33.4376 29.2562 34.0721C29.2562 34.0721 25.958 33.7955 24.8637 34.4462C24.8637 34.4462 23.2982 35.1132 24.4837 36.5936C24.4837 36.5936 26.4596 39.4569 31.7489 38.676C31.7489 38.676 35.1078 37.8626 36.5518 38.9525L36.8709 39.1152L38.1021 39.1478L38.1325 38.3344C38.1325 38.3344 37.3421 36.9516 37.3725 34.674C37.3725 34.674 37.3725 32.3476 37.5853 31.0462C37.5853 31.0462 38.4668 26.5073 35.1078 24.4575C35.1078 24.4575 33.7855 23.6116 33.4055 25.3035C33.4055 25.3035 32.9344 27.4509 33.2232 29.4682C33.2232 29.4682 32.752 29.9725 32.448 29.4031L32.4328 29.4194Z"

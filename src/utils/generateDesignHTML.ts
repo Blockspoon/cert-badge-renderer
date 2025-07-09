@@ -129,6 +129,10 @@ export async function generateDesignHTML(
         element.text = bindingValue;
       }
       if (element.controlType === "image") {
+        if (element.bindingKey === "badge") {
+          continue;
+        }
+
         element.src = bindingValue;
       }
     }

@@ -40,7 +40,7 @@ function createRibbonType103({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
       <path
         d="M269 121C255.819 106.1 176.5 85 55.5 113.5L60 52.0001L15 31.5001C44.6178 17.0652 132.5 -13 229.5 22.5"
         stroke="url(#${paintId0})"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <rect
         x="92"
@@ -66,7 +66,7 @@ function createRibbonType103({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
       <path
         d="M269 121C255.819 106.1 176.5 85 55.5 113.5L60 52.0001L15 31.5001C44.6178 17.0652 132.5 -13 229.5 22.5"
         stroke="url(#${paintId1})"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <defs>
         <filter
@@ -129,8 +129,8 @@ function createRibbonType103({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           y2="57.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#0C1A39" />
-          <stop offset="1" stopColor="${subColor}" />
+          <stop stop-color="#0C1A39" />
+          <stop offset="1" stop-color="${subColor}" />
         </linearGradient>
         <linearGradient
           id={paintId1}
@@ -140,8 +140,8 @@ function createRibbonType103({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           y2="57.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#0C1A39" />
-          <stop offset="1" stopColor="${subColor}" />
+          <stop stop-color="#0C1A39" />
+          <stop offset="1" stop-color="${subColor}" />
         </linearGradient>
         <image
           id="image0_3488_6905"

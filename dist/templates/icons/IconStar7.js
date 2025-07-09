@@ -45,12 +45,12 @@ function createIconStar7({ mainColor = "#96A6B4", subColor = "#96A6B4", extraCol
           y2="69.1316"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${extraColor1}" />
-          <stop offset="0.192458" stopColor="${extraColor1}" />
-          <stop offset="0.402404" stopColor="${mainColor}" />
-          <stop offset="0.614201" stopColor="${subColor}" />
-          <stop offset="0.807016" stopColor="${extraColor1}" />
-          <stop offset="1" stopColor="${extraColor1}" />
+          <stop stop-color="${extraColor1}" />
+          <stop offset="0.192458" stop-color="${extraColor1}" />
+          <stop offset="0.402404" stop-color="${mainColor}" />
+          <stop offset="0.614201" stop-color="${subColor}" />
+          <stop offset="0.807016" stop-color="${extraColor1}" />
+          <stop offset="1" stop-color="${extraColor1}" />
         </linearGradient>
         <linearGradient
           id="${paintId1}"
@@ -60,12 +60,12 @@ function createIconStar7({ mainColor = "#96A6B4", subColor = "#96A6B4", extraCol
           y2="41.8944"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${extraColor1}" />
-          <stop offset="0.192458" stopColor="${extraColor1}" />
-          <stop offset="0.402404" stopColor="${mainColor}" />
-          <stop offset="0.614201" stopColor="${subColor}" />
-          <stop offset="0.807016" stopColor="${extraColor1}" />
-          <stop offset="1" stopColor="${extraColor1}" />
+          <stop stop-color="${extraColor1}" />
+          <stop offset="0.192458" stop-color="${extraColor1}" />
+          <stop offset="0.402404" stop-color="${mainColor}" />
+          <stop offset="0.614201" stop-color="${subColor}" />
+          <stop offset="0.807016" stop-color="${extraColor1}" />
+          <stop offset="1" stop-color="${extraColor1}" />
         </linearGradient>
         <linearGradient
           id="${paintId2}"
@@ -75,12 +75,12 @@ function createIconStar7({ mainColor = "#96A6B4", subColor = "#96A6B4", extraCol
           y2="41.8944"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${extraColor1}" />
-          <stop offset="0.192458" stopColor="${extraColor1}" />
-          <stop offset="0.402404" stopColor="${mainColor}" />
-          <stop offset="0.614201" stopColor="${subColor}" />
-          <stop offset="0.807016" stopColor="${extraColor1}" />
-          <stop offset="1" stopColor="${extraColor1}" />
+          <stop stop-color="${extraColor1}" />
+          <stop offset="0.192458" stop-color="${extraColor1}" />
+          <stop offset="0.402404" stop-color="${mainColor}" />
+          <stop offset="0.614201" stop-color="${subColor}" />
+          <stop offset="0.807016" stop-color="${extraColor1}" />
+          <stop offset="1" stop-color="${extraColor1}" />
         </linearGradient>
       </defs>
     </svg>

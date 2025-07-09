@@ -183,10 +183,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="125.774"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${mainColor}" />
-          <stop offset="0.06" stopColor="${subColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.06" stop-color="${subColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId1}"
@@ -196,10 +196,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="129.796"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.23801" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.23801" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId2}"
@@ -209,10 +209,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="144.349"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId3}"
@@ -222,10 +222,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="136.16"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId4}"
@@ -235,10 +235,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="147.002"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId5}"
@@ -248,10 +248,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="125.774"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${mainColor}" />
-          <stop offset="0.06" stopColor="${subColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.06" stop-color="${subColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId6}"
@@ -261,10 +261,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="129.796"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.23801" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.23801" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId7}"
@@ -274,10 +274,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="144.349"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId8}"
@@ -287,10 +287,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="136.16"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId9}"
@@ -300,10 +300,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="147.002"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId10}"
@@ -313,10 +313,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="93.3944"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${mainColor}" />
-          <stop offset="0.06" stopColor="${subColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.06" stop-color="${subColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId11}"
@@ -326,10 +326,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="99.5175"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.23801" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.23801" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId12}"
@@ -339,10 +339,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="121.675"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId13}"
@@ -352,10 +352,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="109.208"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId14}"
@@ -365,10 +365,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="125.715"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId15}"
@@ -378,10 +378,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="416.277"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${mainColor}" />
-          <stop offset="0.06" stopColor="${subColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.06" stop-color="${subColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId16}"
@@ -391,10 +391,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="412.255"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.23801" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.23801" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId17}"
@@ -404,10 +404,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="397.702"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId18}"
@@ -417,10 +417,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="405.89"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId19}"
@@ -430,10 +430,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="395.048"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId20}"
@@ -443,10 +443,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="416.277"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${mainColor}" />
-          <stop offset="0.06" stopColor="${subColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.06" stop-color="${subColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId21}"
@@ -456,10 +456,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="412.255"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.23801" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.23801" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId22}"
@@ -469,10 +469,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="397.702"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId23}"
@@ -482,10 +482,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="405.89"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId24}"
@@ -495,10 +495,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="395.048"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId25}"
@@ -508,10 +508,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="448.655"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${mainColor}" />
-          <stop offset="0.06" stopColor="${subColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.06" stop-color="${subColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId26}"
@@ -521,10 +521,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="442.532"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.23801" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.23801" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId27}"
@@ -534,10 +534,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="420.374"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId28}"
@@ -547,10 +547,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="432.842"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId29}"
@@ -560,10 +560,10 @@ function createBadgeType106({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="416.335"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${subColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${subColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <clipPath id="clip0_3493_80485">
           <rect width="542.21" height="542.21" fill="white" />

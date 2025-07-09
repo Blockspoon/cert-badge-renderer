@@ -35,7 +35,7 @@ function createBadgeType87({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
           <path
             d="M383.623 365.419L823.532 642.019L537.211 613.639L243.51 415.297L383.623 365.419Z"
             fill="black"
-            fillOpacity="0.05"
+            fill-opacity="0.05"
           />
           <path
             d="M346.622 364.419L763.176 632.1L494.757 612.664L201.056 414.322L346.622 364.419Z"
@@ -44,7 +44,7 @@ function createBadgeType87({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
           <path
             d="M-60.1032 329.97L70.8221 266.892L261.5 393.5L253.001 396.5L493.355 555.946L233.598 528.311L-60.1032 329.97Z"
             fill="black"
-            fillOpacity="0.1"
+            fill-opacity="0.1"
           />
           <path
             d="M29.6283 272.472L459.617 554.066L178.084 561.299L-115.618 362.958L29.6283 272.472Z"
@@ -102,12 +102,12 @@ function createBadgeType87({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         <path
           d="M504 183.109V416.89L299.128 534.538L95 416.893V183.106L299.128 65.4609L504 183.109Z"
           stroke="${mainColor}"
-          strokeWidth="6"
+          stroke-width="6"
         />
         <path
           d="M499.5 185.73V414.269L299.137 529.27L99.5 414.27V185.729L299.137 70.7295L499.5 185.73Z"
           stroke="white"
-          strokeWidth="3"
+          stroke-width="3"
         />
         
         <defs>

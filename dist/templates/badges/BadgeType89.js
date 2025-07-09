@@ -51,12 +51,12 @@ fill="url(#${paintId2})"
         <path
           d="M588 234L370 234L370 361.768L588 362"
           stroke="white"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <path
           d="M12 362L230 362L230 234.232L12 234"
           stroke="white"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <mask
           id="mask1_3305_20"
@@ -168,7 +168,7 @@ fill="url(#${paintId8})"
             gradientUnits="userSpaceOnUse"
           >
             <stop />
-            <stop offset="1" stopColor="#666666" />
+            <stop offset="1" stop-color="#666666" />
           </linearGradient>
           <linearGradient
             id="${paintId1}"
@@ -178,7 +178,7 @@ fill="url(#${paintId8})"
             y2="297.75"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopOpacity="0.3" />
+            <stop stop-opacity="0.3" />
             <stop offset="1" />
           </linearGradient>
           <linearGradient
@@ -190,7 +190,7 @@ fill="url(#${paintId8})"
             gradientUnits="userSpaceOnUse"
           >
             <stop />
-            <stop offset="1" stopColor="#666666" />
+            <stop offset="1" stop-color="#666666" />
           </linearGradient>
           <linearGradient
               id="${paintId3}"
@@ -200,7 +200,7 @@ fill="url(#${paintId8})"
             y2="298.25"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopOpacity="0.3" />
+            <stop stop-opacity="0.3" />
             <stop offset="1" />
           </linearGradient>
           <linearGradient
@@ -211,8 +211,8 @@ fill="url(#${paintId8})"
             y2="547.299"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId5}"
@@ -222,8 +222,8 @@ fill="url(#${paintId8})"
             y2="543.013"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId6}"
@@ -233,12 +233,12 @@ fill="url(#${paintId8})"
             y2="627.799"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.807016" stopColor="${subColor}" />
+            <stop offset="0.807016" stop-color="${subColor}" />
             <stop
               offset="0.903508"
-              stopColor="${mainColor}"
+              stop-color="${mainColor}"
             />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId7}"
@@ -248,9 +248,9 @@ fill="url(#${paintId8})"
             y2="616.784"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${mainColor}" />
-            <stop offset="0.5" stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${mainColor}" />
+            <stop offset="0.5" stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId8}"
@@ -262,10 +262,10 @@ fill="url(#${paintId8})"
           >
             <stop
               offset="0.614201"
-              stopColor="${mainColor}"
+              stop-color="${mainColor}"
             />
-            <stop offset="0.807016" stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop offset="0.807016" stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <image
             id="image0_3305_20"

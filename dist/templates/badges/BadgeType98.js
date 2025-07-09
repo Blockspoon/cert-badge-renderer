@@ -97,7 +97,7 @@ function createBadgeType98({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         rx="37"
         transform="rotate(45 280 23.2426)"
         stroke="${subColor}"
-        strokeWidth="6"
+        stroke-width="6"
       />
       <rect
         x="280"
@@ -107,7 +107,7 @@ function createBadgeType98({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         rx="38"
         transform="rotate(45 280 16.8284)"
         stroke="white"
-        strokeWidth="4"
+        stroke-width="4"
       />
       <rect
         x="280"
@@ -189,7 +189,7 @@ function createBadgeType98({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         rx="37"
         transform="rotate(45 280 23.2426)"
         stroke="${subColor}"
-        strokeWidth="6"
+        stroke-width="6"
       />
       <rect
         x="280"
@@ -199,7 +199,7 @@ function createBadgeType98({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         rx="38"
         transform="rotate(45 280 16.8284)"
         stroke="white"
-        strokeWidth="4"
+        stroke-width="4"
       />
       <defs>
         <pattern

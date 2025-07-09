@@ -47,7 +47,7 @@ function createBadgeType101({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           r="116.509"
           transform="rotate(-180 399.009 65.0096)"
           stroke="${mainColor}"
-          strokeWidth="25"
+          stroke-width="25"
         />
       </g>
       <path
@@ -148,7 +148,7 @@ function createBadgeType101({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           r="116.509"
           transform="rotate(-180 399.009 65.0096)"
           stroke="${mainColor}"
-          strokeWidth="25"
+          stroke-width="25"
         />
       </g>
       <defs>

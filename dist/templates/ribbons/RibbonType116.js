@@ -37,12 +37,12 @@ function createRibbonType116({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
       <path
         d="M166.556 73.2556H0L37.3708 36.612L0 0H166.556V73.2556Z"
         fill="black"
-        fillOpacity="0.14"
+        fill-opacity="0.14"
       />
       <path
         d="M395.176 73.2556H561.732L524.393 36.612L561.732 0H395.176V73.2556Z"
         fill="black"
-        fillOpacity="0.14"
+        fill-opacity="0.14"
       />
       <path
         d="M508.268 29.7812L395.176 73.2541V29.7812H508.268Z"
@@ -51,12 +51,12 @@ function createRibbonType116({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
       <path
         d="M53.4648 29.7812L166.557 73.2541V29.7812H53.4648Z"
         fill="black"
-        fillOpacity="0.75"
+        fill-opacity="0.75"
       />
       <path
         d="M508.268 29.7812L395.176 73.2541V29.7812H508.268Z"
         fill="black"
-        fillOpacity="0.75"
+        fill-opacity="0.75"
       />
     </svg>
   `;

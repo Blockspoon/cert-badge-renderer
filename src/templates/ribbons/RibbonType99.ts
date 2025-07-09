@@ -26,13 +26,13 @@ export function createRibbonType99({
       "
     >
       <path d="M0 1V166L79 130.98L158 166V1H0Z" fill="${mainColor}" />
-      <path d="M143 160V1H15.2324L15 160" stroke="white" strokeWidth="2" />
+      <path d="M143 160V1H15.2324L15 160" stroke="white" stroke-width="2" />
       <path
         d="M0 32H158V96.5L79 102L0 96.5V32Z"
         fill="url(#paint0_linear_3488_6871)"
       />
       <path d="M0 1V166L79 130.98L158 166V1H0Z" fill="${mainColor}" />
-      <path d="M143 160V1H15.2324L15 160" stroke="white" strokeWidth="2" />
+      <path d="M143 160V1H15.2324L15 160" stroke="white" stroke-width="2" />
       <path
         d="M0 32H158V96.5L79 102L0 96.5V32Z"
         fill="url(#paint1_linear_3488_6871)"
@@ -47,7 +47,7 @@ export function createRibbonType99({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopOpacity="0" />
+          <stop offset="1" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3488_6871"
@@ -58,7 +58,7 @@ export function createRibbonType99({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopOpacity="0" />
+          <stop offset="1" stop-opacity="0" />
         </linearGradient>
       </defs>
     </svg>

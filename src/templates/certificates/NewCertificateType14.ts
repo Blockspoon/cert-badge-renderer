@@ -41,19 +41,19 @@ export function createNewCertificateType14({
               d="M1045.57 43L1045.57 740.119L986.389 799.525L567.848 799.525M167.39 799.524L-3.65238 799.524"
               stroke="white"
               stroke-width="2.2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M780.943 786.921L1033.19 786.921L1033.19 540.972"
               stroke="white"
               stroke-width="1.1"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M1033.19 802C1024.87 802 1018.12 795.249 1018.12 786.923C1018.12 778.823 1024.87 772.072 1033.19 772.072C1041.29 772.072 1048.04 778.823 1048.04 786.923C1048.04 795.249 1041.29 802 1033.19 802Z"
               stroke="white"
               stroke-width="1.1"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M1034.32 54.9262L1024.19 49.0756L1034.32 43L1034.32 54.9262Z"

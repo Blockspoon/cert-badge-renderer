@@ -57,7 +57,7 @@ export function createNewCertificateType52({
             width="937"
             height="705"
             stroke="#D9D9D9"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <rect
             x="115"
@@ -65,7 +65,7 @@ export function createNewCertificateType52({
             width="937"
             height="705"
             stroke="#D9D9D9"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <rect
             x="98"
@@ -73,7 +73,7 @@ export function createNewCertificateType52({
             width="937"
             height="705"
             stroke="#D9D9D9"
-            strokeWidth="2"
+            stroke-width="2"
           />
           <path d="M226.5 -2L-11 235.5V-2H226.5Z" fill="black" />
           <path d="M915 818L1152.5 580.5L1152.5 818L915 818Z" fill="black" />
@@ -265,8 +265,8 @@ export function createNewCertificateType52({
             y2="238.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId1}"
@@ -276,8 +276,8 @@ export function createNewCertificateType52({
             y2="611.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId2}"
@@ -287,8 +287,8 @@ export function createNewCertificateType52({
             y2="158"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId3}"
@@ -298,8 +298,8 @@ export function createNewCertificateType52({
             y2="729"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId4}"
@@ -309,8 +309,8 @@ export function createNewCertificateType52({
             y2="57"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId5}"
@@ -320,8 +320,8 @@ export function createNewCertificateType52({
             y2="158"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopOpacity="0" />
-            <stop offset="1" stopOpacity="0.3" />
+            <stop stop-opacity="0" />
+            <stop offset="1" stop-opacity="0.3" />
           </linearGradient>
           <linearGradient
             id="${paintId6}"
@@ -331,8 +331,8 @@ export function createNewCertificateType52({
             y2="729"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopOpacity="0" />
-            <stop offset="1" stopOpacity="0.3" />
+            <stop stop-opacity="0" />
+            <stop offset="1" stop-opacity="0.3" />
           </linearGradient>
           <linearGradient
             id="${paintId7}"
@@ -343,10 +343,10 @@ export function createNewCertificateType52({
             gradientUnits="userSpaceOnUse"
           >
             <stop
-              stopColor="${subColor}"
-              stopOpacity="0.35"
+              stop-color="${subColor}"
+              stop-opacity="0.35"
             />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId8}"
@@ -356,8 +356,8 @@ export function createNewCertificateType52({
             y2="732"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId9}"
@@ -368,10 +368,10 @@ export function createNewCertificateType52({
             gradientUnits="userSpaceOnUse"
           >
             <stop
-              stopColor="${subColor}"
-              stopOpacity="0.35"
+              stop-color="${subColor}"
+              stop-opacity="0.35"
             />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId10}"
@@ -381,8 +381,8 @@ export function createNewCertificateType52({
             y2="72.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId11}"
@@ -392,8 +392,8 @@ export function createNewCertificateType52({
             y2="762"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId12}"
@@ -403,8 +403,8 @@ export function createNewCertificateType52({
             y2="72.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopOpacity="0" />
-            <stop offset="1" stopOpacity="0.3" />
+            <stop stop-opacity="0" />
+            <stop offset="1" stop-opacity="0.3" />
           </linearGradient>
           <linearGradient
             id="${paintId13}"
@@ -414,8 +414,8 @@ export function createNewCertificateType52({
             y2="762"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopOpacity="0" />
-            <stop offset="1" stopOpacity="0.3" />
+            <stop stop-opacity="0" />
+            <stop offset="1" stop-opacity="0.3" />
           </linearGradient>
           <linearGradient
             id="${paintId14}"
@@ -426,10 +426,10 @@ export function createNewCertificateType52({
             gradientUnits="userSpaceOnUse"
           >
             <stop
-              stopColor="${subColor}"
-              stopOpacity="0.35"
+              stop-color="${subColor}"
+              stop-opacity="0.35"
             />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId15}"
@@ -440,10 +440,10 @@ export function createNewCertificateType52({
             gradientUnits="userSpaceOnUse"
           >
             <stop
-              stopColor="${subColor}"
-              stopOpacity="0.35"
+              stop-color="${subColor}"
+              stop-opacity="0.35"
             />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId16}"
@@ -453,8 +453,8 @@ export function createNewCertificateType52({
             y2="425"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId17}"
@@ -464,8 +464,8 @@ export function createNewCertificateType52({
             y2="112.896"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" stopOpacity="0" />
-            <stop offset="1" stopOpacity="0.02" />
+            <stop stop-color="white" stop-opacity="0" />
+            <stop offset="1" stop-opacity="0.02" />
           </linearGradient>
           <linearGradient
             id="${paintId18}"
@@ -475,8 +475,8 @@ export function createNewCertificateType52({
             y2="11.896"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" stopOpacity="0" />
-            <stop offset="1" stopOpacity="0.05" />
+            <stop stop-color="white" stop-opacity="0" />
+            <stop offset="1" stop-opacity="0.05" />
           </linearGradient>
           <linearGradient
             id="${paintId19}"
@@ -486,8 +486,8 @@ export function createNewCertificateType52({
             y2="421"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" stopOpacity="0" />
-            <stop offset="1" stopOpacity="0.05" />
+            <stop stop-color="white" stop-opacity="0" />
+            <stop offset="1" stop-opacity="0.05" />
           </linearGradient>
           <linearGradient
             id="${paintId20}"
@@ -497,8 +497,8 @@ export function createNewCertificateType52({
             y2="548"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" stopOpacity="0" />
-            <stop offset="1" stopOpacity="0.02" />
+            <stop stop-color="white" stop-opacity="0" />
+            <stop offset="1" stop-opacity="0.02" />
           </linearGradient>
           <linearGradient
             id="${paintId21}"
@@ -508,8 +508,8 @@ export function createNewCertificateType52({
             y2="294.896"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" stopOpacity="0" />
-            <stop offset="1" stopOpacity="0.05" />
+            <stop stop-color="white" stop-opacity="0" />
+            <stop offset="1" stop-opacity="0.05" />
           </linearGradient>
           <linearGradient
             id="${paintId22}"
@@ -519,8 +519,8 @@ export function createNewCertificateType52({
             y2="425"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId23}"
@@ -530,8 +530,8 @@ export function createNewCertificateType52({
             y2="187.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId24}"
@@ -541,8 +541,8 @@ export function createNewCertificateType52({
             y2="658.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId25}"
@@ -554,7 +554,7 @@ export function createNewCertificateType52({
             gradientUnits="userSpaceOnUse"
           >
             <stop />
-            <stop offset="1" stopColor="#666666" />
+            <stop offset="1" stop-color="#666666" />
           </linearGradient>
           <linearGradient
             id="${paintId26}"
@@ -565,7 +565,7 @@ export function createNewCertificateType52({
             y2="656.4"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopOpacity="0.3" />
+            <stop stop-opacity="0.3" />
             <stop offset="1" />
           </linearGradient>
           <linearGradient
@@ -578,7 +578,7 @@ export function createNewCertificateType52({
             gradientUnits="userSpaceOnUse"
           >
             <stop />
-            <stop offset="1" stopColor="#666666" />
+            <stop offset="1" stop-color="#666666" />
           </linearGradient>
           <linearGradient
             id="${paintId28}"
@@ -589,7 +589,7 @@ export function createNewCertificateType52({
             y2="656.533"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopOpacity="0.3" />
+            <stop stop-opacity="0.3" />
             <stop offset="1" />
           </linearGradient>
           <linearGradient
@@ -601,8 +601,8 @@ export function createNewCertificateType52({
             y2="722.946"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId30}"
@@ -613,8 +613,8 @@ export function createNewCertificateType52({
             y2="721.803"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${mainColor}" />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop stop-color="${mainColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId31}"
@@ -625,12 +625,12 @@ export function createNewCertificateType52({
             y2="744.413"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.807016" stopColor="${subColor}" />
+            <stop offset="0.807016" stop-color="${subColor}" />
             <stop
               offset="0.903508"
-              stopColor="${mainColor}"
+              stop-color="${mainColor}"
             />
-            <stop offset="1" stopColor="${subColor}" />
+            <stop offset="1" stop-color="${subColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId32}"
@@ -641,9 +641,9 @@ export function createNewCertificateType52({
             y2="741.476"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="${mainColor}" />
-            <stop offset="0.5" stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop stop-color="${mainColor}" />
+            <stop offset="0.5" stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <linearGradient
             id="${paintId33}"
@@ -656,10 +656,10 @@ export function createNewCertificateType52({
           >
             <stop
               offset="0.614201"
-              stopColor="${mainColor}"
+              stop-color="${mainColor}"
             />
-            <stop offset="0.807016" stopColor="${subColor}" />
-            <stop offset="1" stopColor="${mainColor}" />
+            <stop offset="0.807016" stop-color="${subColor}" />
+            <stop offset="1" stop-color="${mainColor}" />
           </linearGradient>
           <clipPath id="clip0_3305_323">
             <rect width="1152" height="814" fill="white" />

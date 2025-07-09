@@ -114,6 +114,9 @@ function generateDesignHTML(data_1) {
                     element.text = bindingValue;
                 }
                 if (element.controlType === "image") {
+                    if (element.bindingKey === "badge") {
+                        continue;
+                    }
                     element.src = bindingValue;
                 }
             }

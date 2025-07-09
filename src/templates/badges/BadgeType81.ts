@@ -54,37 +54,37 @@ export function createBadgeType81({
               height="14"
               rx="1"
               stroke="${subColor}"
-              strokeWidth="2"
+              stroke-width="2"
             />
             <path
               d="M32 530.382H462.978C467.036 530.382 470.314 527.104 470.314 523.046V503.354H494.974V524.659C494.974 527.156 497.003 529.185 499.501 529.185H501.504V527.182C501.504 524.685 499.474 522.656 496.977 522.656H475.672V497.995H495.364C499.422 497.995 502.7 494.718 502.7 490.66V32"
               stroke="${subColor}"
-              strokeWidth="2.05506"
-              strokeLinejoin="round"
+              stroke-width="2.05506"
+              stroke-linejoin="round"
             />
             <path
               d="M483.164 530.382V489.801C483.164 485.639 486.545 482.283 490.681 482.283H494.453V492.376"
               stroke="${subColor}"
-              strokeWidth="2.05506"
-              strokeLinejoin="round"
+              stroke-width="2.05506"
+              stroke-linejoin="round"
             />
             <path
               d="M502.726 511.08H462.145C457.983 511.08 454.627 514.462 454.627 518.598V522.37H464.721"
               stroke="${subColor}"
-              strokeWidth="2.05506"
-              strokeLinejoin="round"
+              stroke-width="2.05506"
+              stroke-linejoin="round"
             />
             <path
               d="M34.6689 -227.569H429.396L455 -157.653L527.986 -132.048V454.033L448 471.154L430.41 548.565L32 548.565"
               stroke="${subColor}"
-              strokeWidth="2.05506"
-              strokeLinejoin="round"
+              stroke-width="2.05506"
+              stroke-linejoin="round"
             />
             <path
               d="M503 57L548 57L548 266L503 266"
               stroke="${extraColor1}"
-              strokeWidth="1.95255"
-              strokeLinejoin="round"
+              stroke-width="1.95255"
+              stroke-linejoin="round"
             />
           </g>
           <path

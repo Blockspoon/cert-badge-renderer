@@ -190,58 +190,58 @@ export function createNewCertificateType47({
           <path
             d="M1127.28 720.021V789.83H1053.17V768.311H1078.51V742.975H1105.76V720.021H1127.28Z"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1078.06 742.976H1063.21H1042.64V758.269H1060.34V750.622H1052.21"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1078.67 742.975V728.112V707.554H1093.96V725.243H1086.31V717.123"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1087.6 768.225H1109.12V778.382H1100.6V774.064H1103.25"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1105.53 752.329V772.801H1115.69V764.28H1111.37V766.919"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1111.69 709.132L1109.81 707.253L1106.75 710.309L1112.78 716.334L1119.97 709.161V671"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1122.48 709.835L1124.36 707.956L1127.41 711.012L1121.39 717.037L1114.2 709.864V671"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1040.32 784.665L1038.44 786.545L1041.49 789.601L1047.52 783.575L1040.35 776.388H715"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1040.51 774.382C1040.79 774.661 1041.25 774.661 1041.52 774.382C1041.8 774.103 1041.8 773.651 1041.52 773.372L1040.51 774.382ZM1039.14 771.998L1038.64 771.493C1038.36 771.772 1038.36 772.224 1038.64 772.503L1039.14 771.998ZM1042.2 768.942L1042.7 768.437C1042.57 768.303 1042.39 768.228 1042.2 768.228C1042.01 768.228 1041.83 768.303 1041.69 768.437L1042.2 768.942ZM1048.22 774.967L1048.73 775.472C1049.01 775.193 1049.01 774.741 1048.73 774.462L1048.22 774.967ZM1041.05 782.155V782.869C1041.24 782.869 1041.42 782.793 1041.55 782.659L1041.05 782.155ZM730.5 782.155H729.786C729.786 782.549 730.106 782.869 730.5 782.869V782.155ZM730.5 772.5H731.214C731.214 772.106 730.894 771.786 730.5 771.786V772.5ZM722.5 771.786H721.786V773.214H722.5V771.786ZM1041.02 773.877L1041.52 773.372L1039.65 771.493L1039.14 771.998L1038.64 772.503L1040.51 774.382L1041.02 773.877ZM1039.14 771.998L1039.65 772.503L1042.7 769.447L1042.2 768.942L1041.69 768.437L1038.64 771.493L1039.14 771.998ZM1042.2 768.942L1041.69 769.447L1047.72 775.472L1048.22 774.967L1048.73 774.462L1042.7 768.437L1042.2 768.942ZM1048.22 774.967L1047.72 774.463L1040.54 781.65L1041.05 782.155L1041.55 782.659L1048.73 775.472L1048.22 774.967ZM1041.05 782.155V781.441H730.5V782.155V782.869H1041.05V782.155ZM730.5 782.155H731.214V772.5H730.5H729.786V782.155H730.5ZM730.5 772.5V771.786H722.5V772.5V773.214H730.5V772.5Z"
@@ -250,86 +250,86 @@ export function createNewCertificateType47({
           <path
             d="M1093.96 762.558H1100.33V755.643"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1089.35 747.437H1082.98V754.351"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1123.77 731.441V725.071H1116.85"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1056.9 779.802V786.171H1063.82"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M24.1295 720.021V789.83H98.2422V768.311H72.9067V742.975H45.6488V720.021H24.1295Z"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M73.3506 742.976H88.199H108.771V758.269H91.0682V750.622H99.2025"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M72.7476 742.975V728.112V707.554H57.4545V725.243H65.101V717.123"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M63.811 768.225H42.2917V778.382H50.8133V774.064H48.1593"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M45.8782 752.329V772.801H35.721V764.28H40.0393V766.919"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M39.7243 709.132L41.6037 707.253L44.6594 710.309L38.634 716.334L31.4465 709.161V671"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M28.9351 709.835L27.0557 707.956L24 711.012L30.0254 717.037L37.2129 709.864V671"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M111.096 784.665L112.976 786.545L109.92 789.601L103.894 783.575L111.068 776.388H436.413"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M110.898 774.382C110.619 774.661 110.167 774.661 109.888 774.382C109.609 774.103 109.609 773.651 109.888 773.372L110.898 774.382ZM112.273 771.998L112.778 771.493C113.056 771.772 113.056 772.224 112.778 772.503L112.273 771.998ZM109.217 768.942L108.712 768.437C108.846 768.303 109.027 768.228 109.217 768.228C109.406 768.228 109.588 768.303 109.722 768.437L109.217 768.942ZM103.191 774.967L102.686 775.472C102.408 775.193 102.408 774.741 102.686 774.462L103.191 774.967ZM110.365 782.155V782.869C110.175 782.869 109.993 782.793 109.859 782.659L110.365 782.155ZM420.913 782.155H421.627C421.627 782.549 421.307 782.869 420.913 782.869V782.155ZM420.913 772.5H420.199C420.199 772.106 420.519 771.786 420.913 771.786V772.5ZM428.913 771.786H429.627V773.214H428.913V771.786ZM110.393 773.877L109.888 773.372L111.768 771.493L112.273 771.998L112.778 772.503L110.898 774.382L110.393 773.877ZM112.273 771.998L111.768 772.503L108.712 769.447L109.217 768.942L109.722 768.437L112.778 771.493L112.273 771.998ZM109.217 768.942L109.722 769.447L103.696 775.472L103.191 774.967L102.686 774.462L108.712 768.437L109.217 768.942ZM103.191 774.967L103.697 774.463L110.87 781.65L110.365 782.155L109.859 782.659L102.686 775.472L103.191 774.967ZM110.365 782.155V781.441H420.913V782.155V782.869H110.365V782.155ZM420.913 782.155H420.199V772.5H420.913H421.627V782.155H420.913ZM420.913 772.5V771.786H428.913V772.5V773.214H420.913V772.5Z"
@@ -338,30 +338,30 @@ export function createNewCertificateType47({
           <path
             d="M57.4556 762.558H51.0858V755.643"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M62.06 747.437H68.4297V754.351"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M27.6447 731.441V725.071H34.5596"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M94.5127 779.802V786.171H87.5978"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M592.982 770.874C591.985 769.291 590.734 767.961 589.288 767.473C588.135 767.082 586.943 767.258 585.79 767.59C583.444 768.294 581.255 769.818 579.359 771.929L580.766 768.118C581.626 764.697 579.047 756 575.548 756C572.049 756 569.47 764.717 570.33 768.118L571.698 771.812C569.821 769.76 567.652 768.274 565.346 767.59C564.192 767.238 563 767.082 561.847 767.473C560.401 767.961 559.15 769.271 558.153 770.874C557.156 772.457 556.414 774.333 555.671 776.17C556.629 775.037 557.86 774.548 559.091 774.235C563.958 773.043 569.04 774.626 573.261 778.281C573.105 778.613 573.007 778.965 573.007 779.356C573.007 780.763 574.141 781.897 575.548 781.897C576.955 781.897 578.089 780.763 578.089 779.356C578.089 778.965 577.991 778.613 577.835 778.301C582.056 774.626 587.158 773.024 592.024 774.235C593.236 774.529 594.487 775.017 595.445 776.17C594.702 774.314 593.94 772.457 592.962 770.874H592.982Z"
@@ -370,82 +370,82 @@ export function createNewCertificateType47({
           <path
             d="M429 772V780.177H444.675V771.655H464.689V782.62H562.902"
             stroke="${mainColor}"
-            strokeWidth="1.46586"
-            strokeMiterlimit="10"
+            stroke-width="1.46586"
+            stroke-miterlimit="10"
           />
           <path
             d="M436.68 777V767.023H452.414V777.87H469.907V772.202H538.92"
             stroke="${mainColor}"
-            strokeWidth="1.46586"
-            strokeMiterlimit="10"
+            stroke-width="1.46586"
+            stroke-miterlimit="10"
           />
           <path
             d="M722.251 772V780.521H706.576V772H686.543V782.964H588.35"
             stroke="${mainColor}"
-            strokeWidth="1.46586"
-            strokeMiterlimit="10"
+            stroke-width="1.46586"
+            stroke-miterlimit="10"
           />
           <path
             d="M714.55 777V767.023H698.817V777.87H681.324V772.202H612.311"
             stroke="${mainColor}"
-            strokeWidth="1.46586"
-            strokeMiterlimit="10"
+            stroke-width="1.46586"
+            stroke-miterlimit="10"
           />
           <path
             d="M24.1295 93.8091L24.1295 24.0003L98.2422 24.0003L98.2422 45.5196L72.9067 45.5196L72.9067 70.8551L45.6488 70.8551L45.6488 93.8091L24.1295 93.8091Z"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M73.3506 70.855L88.199 70.855L108.771 70.855L108.771 55.5619L91.0682 55.5619L91.0682 63.2084L99.2025 63.2084"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M72.7476 70.855L72.7476 85.7177L72.7476 106.276L57.4545 106.276L57.4545 88.587L65.101 88.587L65.101 96.7069"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M63.811 45.6055L42.2917 45.6055L42.2917 35.4483L50.8133 35.4483L50.8133 39.7665L48.1593 39.7665"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M45.8782 61.501L45.8782 41.0289L35.721 41.0289L35.721 49.5506L40.0393 49.5506L40.0393 46.9108"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M39.7244 104.698L41.6037 106.577L44.6595 103.522L38.634 97.4962L31.4466 104.669L31.4465 679.5"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M28.9351 103.995L27.0557 105.874L24 102.818L30.0254 96.793L37.2129 103.966L37.2129 142.83"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M111.096 29.1651L112.976 27.2857L109.92 24.23L103.894 30.2554L111.068 37.4428L436.413 37.4429"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M110.898 39.4481C110.619 39.1692 110.167 39.1692 109.888 39.4481C109.609 39.727 109.609 40.1791 109.888 40.458L110.898 39.4481ZM112.273 41.8324L112.778 42.3373C113.056 42.0585 113.056 41.6063 112.778 41.3275L112.273 41.8324ZM109.217 44.8882L108.712 45.3931C108.846 45.527 109.027 45.6023 109.217 45.6023C109.406 45.6023 109.588 45.527 109.722 45.3931L109.217 44.8882ZM103.191 38.8627L102.686 38.3583C102.408 38.6373 102.408 39.089 102.686 39.3677L103.191 38.8627ZM110.365 31.6753L110.365 30.9612C110.175 30.9612 109.993 31.0366 109.859 31.1708L110.365 31.6753ZM420.913 31.6753L421.627 31.6753C421.627 31.2809 421.307 30.9612 420.913 30.9612L420.913 31.6753ZM420.913 41.3301L420.199 41.3301C420.199 41.7245 420.519 42.0442 420.913 42.0442L420.913 41.3301ZM428.913 42.0442L429.627 42.0442L429.627 40.616L428.913 40.616L428.913 42.0442ZM110.393 39.9531L109.888 40.458L111.768 42.3373L112.273 41.8324L112.778 41.3275L110.898 39.4481L110.393 39.9531ZM112.273 41.8324L111.768 41.3275L108.712 44.3832L109.217 44.8882L109.722 45.3931L112.778 42.3373L112.273 41.8324ZM109.217 44.8882L109.722 44.3832L103.696 38.3578L103.191 38.8627L102.686 39.3677L108.712 45.3931L109.217 44.8882ZM103.191 38.8627L103.697 39.3672L110.87 32.1797L110.365 31.6753L109.859 31.1708L102.686 38.3583L103.191 38.8627ZM110.365 31.6753L110.365 32.3894L420.913 32.3894L420.913 31.6753L420.913 30.9612L110.365 30.9612L110.365 31.6753ZM420.913 31.6753L420.199 31.6753L420.199 41.3301L420.913 41.3301L421.627 41.3301L421.627 31.6753L420.913 31.6753ZM420.913 41.3301L420.913 42.0442L428.913 42.0442L428.913 41.3301L428.913 40.616L420.913 40.616L420.913 41.3301Z"
@@ -454,86 +454,86 @@ export function createNewCertificateType47({
           <path
             d="M57.4556 51.2726L51.0858 51.2726L51.0858 58.1875"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M62.06 66.3936L68.4297 66.3936L68.4297 59.4787"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M27.6447 82.3891L27.6447 88.7588L34.5596 88.7588"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M94.5129 34.0283L94.5129 27.6586L87.5981 27.6586"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1127.28 93.8091L1127.28 24.0003L1053.17 24.0003L1053.17 45.5196L1078.51 45.5196L1078.51 70.8551L1105.76 70.8551L1105.76 93.8091L1127.28 93.8091Z"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1078.06 70.855L1063.21 70.855L1042.64 70.855L1042.64 55.5619L1060.34 55.5619L1060.34 63.2084L1052.21 63.2084"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1078.67 70.8555L1078.67 85.7182L1078.67 106.276L1093.96 106.276L1093.96 88.5874L1086.31 88.5874L1086.31 96.7074"
             stroke="${mainColor}"
-            strokeWidth="1.70023"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.70023"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1087.6 45.606L1109.12 45.606L1109.12 35.4488L1100.6 35.4488L1100.6 39.767L1103.25 39.767"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1105.53 61.5015L1105.53 41.0294L1115.69 41.0294L1115.69 49.551L1111.37 49.551L1111.37 46.9113"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1111.69 104.698L1109.81 106.577L1106.75 103.522L1112.78 97.4962L1119.97 104.669L1119.97 675"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1122.48 103.995L1124.36 105.875L1127.41 102.819L1121.39 96.7935L1114.2 103.967L1114.2 142.831"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1040.32 29.1651L1038.44 27.2858L1041.49 24.23L1047.52 30.2554L1040.35 37.4429L715 37.4429"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1040.51 39.4487C1040.79 39.1698 1041.25 39.1698 1041.52 39.4487C1041.8 39.7275 1041.8 40.1797 1041.52 40.4585L1040.51 39.4487ZM1039.14 41.833L1038.64 42.3379C1038.36 42.059 1038.36 41.6069 1038.64 41.328L1039.14 41.833ZM1042.2 44.8887L1042.7 45.3936C1042.57 45.5276 1042.39 45.6028 1042.2 45.6028C1042.01 45.6028 1041.83 45.5276 1041.69 45.3936L1042.2 44.8887ZM1048.22 38.8633L1048.73 38.3588C1049.01 38.6378 1049.01 39.0896 1048.73 39.3682L1048.22 38.8633ZM1041.05 31.6758L1041.05 30.9617C1041.24 30.9617 1041.42 31.0371 1041.55 31.1714L1041.05 31.6758ZM730.5 31.6758L729.786 31.6758C729.786 31.2814 730.106 30.9617 730.5 30.9617L730.5 31.6758ZM730.5 41.3306L731.214 41.3306C731.214 41.725 730.894 42.0447 730.5 42.0447L730.5 41.3306ZM722.5 42.0447L721.786 42.0447L721.786 40.6165L722.5 40.6165L722.5 42.0447ZM1041.02 39.9536L1041.52 40.4585L1039.65 42.3379L1039.14 41.833L1038.64 41.328L1040.51 39.4487L1041.02 39.9536ZM1039.14 41.833L1039.65 41.328L1042.7 44.3838L1042.2 44.8887L1041.69 45.3936L1038.64 42.3379L1039.14 41.833ZM1042.2 44.8887L1041.69 44.3838L1047.72 38.3583L1048.22 38.8633L1048.73 39.3682L1042.7 45.3936L1042.2 44.8887ZM1048.22 38.8633L1047.72 39.3677L1040.54 32.1802L1041.05 31.6758L1041.55 31.1714L1048.73 38.3588L1048.22 38.8633ZM1041.05 31.6758L1041.05 32.3899L730.5 32.3899L730.5 31.6758L730.5 30.9617L1041.05 30.9617L1041.05 31.6758ZM730.5 31.6758L731.214 31.6758L731.214 41.3306L730.5 41.3306L729.786 41.3306L729.786 31.6758L730.5 31.6758ZM730.5 41.3306L730.5 42.0447L722.5 42.0447L722.5 41.3306L722.5 40.6165L730.5 40.6165L730.5 41.3306Z"
@@ -542,30 +542,30 @@ export function createNewCertificateType47({
           <path
             d="M1093.96 51.2726L1100.33 51.2726L1100.33 58.1875"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1089.35 66.3936L1082.98 66.3936L1082.98 59.4787"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1123.77 82.3891L1123.77 88.7588L1116.85 88.7588"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M1056.9 34.0283L1056.9 27.6586L1063.82 27.6586"
             stroke="${mainColor}"
-            strokeWidth="1.42819"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+            stroke-width="1.42819"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           />
           <path
             d="M558.431 42.9564C559.428 44.5396 560.679 45.8686 562.125 46.3572C563.278 46.7481 564.47 46.5722 565.624 46.24C567.969 45.5364 570.158 44.0119 572.054 41.901L570.647 45.7123C569.787 49.1326 572.367 57.8301 575.865 57.8301C579.364 57.8301 581.944 49.1131 581.084 45.7123L579.715 42.0183C581.592 44.0705 583.761 45.5559 586.067 46.24C587.221 46.5918 588.413 46.7481 589.566 46.3572C591.012 45.8686 592.263 44.5591 593.26 42.9564C594.257 41.3733 594.999 39.497 595.742 37.6598C594.784 38.7934 593.553 39.282 592.322 39.5947C587.455 40.787 582.374 39.2038 578.152 35.5489C578.308 35.2167 578.406 34.8649 578.406 34.474C578.406 33.0667 577.272 31.9331 575.865 31.9331C574.458 31.9331 573.324 33.0667 573.324 34.474C573.324 34.8649 573.422 35.2167 573.578 35.5294C569.357 39.2038 564.255 40.8065 559.389 39.5947C558.177 39.3015 556.926 38.8129 555.968 37.6598C556.711 39.5165 557.473 41.3733 558.451 42.9564L558.431 42.9564Z"
@@ -574,26 +574,26 @@ export function createNewCertificateType47({
           <path
             d="M722.413 41.8303L722.413 33.6532L706.738 33.6532L706.738 42.1748L686.724 42.1748L686.724 31.2101L588.511 31.2101"
             stroke="${mainColor}"
-            strokeWidth="1.46586"
-            strokeMiterlimit="10"
+            stroke-width="1.46586"
+            stroke-miterlimit="10"
           />
           <path
             d="M714.733 36.8303L714.733 46.8071L698.999 46.8071L698.999 35.9597L681.506 35.9597L681.506 41.6277L612.493 41.6277"
             stroke="${mainColor}"
-            strokeWidth="1.46586"
-            strokeMiterlimit="10"
+            stroke-width="1.46586"
+            stroke-miterlimit="10"
           />
           <path
             d="M429.162 41.8306L429.162 33.309L444.837 33.309L444.837 41.8306L464.87 41.8306L464.87 30.8659L563.063 30.8659"
             stroke="${mainColor}"
-            strokeWidth="1.46586"
-            strokeMiterlimit="10"
+            stroke-width="1.46586"
+            stroke-miterlimit="10"
           />
           <path
             d="M436.863 36.8303L436.863 46.8071L452.596 46.8071L452.596 35.9597L470.089 35.9597L470.089 41.6277L539.102 41.6277"
             stroke="${mainColor}"
-            strokeWidth="1.46586"
-            strokeMiterlimit="10"
+            stroke-width="1.46586"
+            stroke-miterlimit="10"
           />
           
           <path

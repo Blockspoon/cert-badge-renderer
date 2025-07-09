@@ -20,7 +20,7 @@ function createBadgeType110({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
         r="221"
         fill="url(#paint0_linear_3488_8547)"
       />
-      <circle cx="244" cy="244" r="215" stroke="white" strokeWidth="2" />
+      <circle cx="244" cy="244" r="215" stroke="white" stroke-width="2" />
       <circle cx="244" cy="244" r="210" fill="white" />
       <g opacity="0.4">
         <path
@@ -73,13 +73,13 @@ function createBadgeType110({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="178.962"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#9B6220" />
-          <stop offset="0.0484015" stopColor="#9B6220" />
-          <stop offset="0.296774" stopColor="#F8D08F" />
-          <stop offset="0.402404" stopColor="#F9D190" />
-          <stop offset="0.736337" stopColor="#E7BC60" />
-          <stop offset="0.91441" stopColor="#9B6220" />
-          <stop offset="1" stopColor="#9B6220" />
+          <stop stop-color="#9B6220" />
+          <stop offset="0.0484015" stop-color="#9B6220" />
+          <stop offset="0.296774" stop-color="#F8D08F" />
+          <stop offset="0.402404" stop-color="#F9D190" />
+          <stop offset="0.736337" stop-color="#E7BC60" />
+          <stop offset="0.91441" stop-color="#9B6220" />
+          <stop offset="1" stop-color="#9B6220" />
         </linearGradient>
       </defs>
     </svg>

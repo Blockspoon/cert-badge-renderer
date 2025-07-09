@@ -89,7 +89,7 @@ export function createRibbonType97({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopOpacity="0" />
+          <stop offset="1" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3488_6868"
@@ -100,7 +100,7 @@ export function createRibbonType97({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopOpacity="0" />
+          <stop offset="1" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_3488_6868"
@@ -111,7 +111,7 @@ export function createRibbonType97({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopOpacity="0" />
+          <stop offset="1" stop-opacity="0" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_3488_6868"
@@ -122,7 +122,7 @@ export function createRibbonType97({
           gradientUnits="userSpaceOnUse"
         >
           <stop />
-          <stop offset="1" stopOpacity="0" />
+          <stop offset="1" stop-opacity="0" />
         </linearGradient>
       </defs>
     </svg>

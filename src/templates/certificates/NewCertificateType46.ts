@@ -40,19 +40,19 @@ export function createNewCertificateType46({
           <path
             d="M780 70L31 70L31 1122L780 1122L780 70Z"
             stroke="${subColor}"
-            strokeMiterlimit="10"
+            stroke-miterlimit="10"
           />
 
           <path
             d="M767 84L45 84L45 1108L767 1108L767 84Z"
             stroke="${subColor}"
-            strokeMiterlimit="10"
+            stroke-miterlimit="10"
           />
           <path
             d="M761 92L51 92L51 1100L761 1100L761 92Z"
             stroke="white"
-            strokeWidth="4"
-            strokeMiterlimit="10"
+            stroke-width="4"
+            stroke-miterlimit="10"
           />
           <path
             d="M562 1152C562 1152 569.857 1053.49 679.248 1024.32C788.638 995.152 880 1037.08 880 1037.08L880 1152L562 1152Z"

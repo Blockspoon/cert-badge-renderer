@@ -26,14 +26,6 @@ export function createNewCertificateType1({
         stroke="url(#${paintId0})"
         stroke-width="12"
       />
-      <path
-        d="M88 123L387 123"
-        stroke="${mainColor}"
-        stroke-width="3"
-      />
-      <path d="M88 676.102H268" stroke="black" />
-      <path d="M300 676.102H460" stroke="black" />
-      <path d="M492 676H652" stroke="black" />
       <defs>
         <linearGradient
           id="${paintId0}"

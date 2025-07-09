@@ -16,37 +16,37 @@ export function createNewCertificateType38({
         xmlns="http://www.w3.org/2000/svg"
       >
         <rect width="810" height="1152" fill="white" />
-        <path d="M40 304V40H300.5" stroke="${mainColor}" strokeWidth="3" />
-        <path d="M46 295V46H300.5" stroke="${mainColor}" strokeWidth="2" />
+        <path d="M40 304V40H300.5" stroke="${mainColor}" stroke-width="3" />
+        <path d="M46 295V46H300.5" stroke="${mainColor}" stroke-width="2" />
         <path
           d="M770 848L770 1112L509.5 1112"
           stroke="${mainColor}"
-          strokeWidth="3"
+          stroke-width="3"
         />
         <path
           d="M764 857L764 1106L509.5 1106"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <path
           d="M510 40L770 40L770 302.5"
           stroke="${mainColor}"
-          strokeWidth="3"
+          stroke-width="3"
         />
         <path
           d="M510 46L764 46L764 293.5"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <path
           d="M300 1112L39.9995 1112L39.9995 849.5"
           stroke="${mainColor}"
-          strokeWidth="3"
+          stroke-width="3"
         />
         <path
           d="M300 1106L45.9995 1106L45.9996 858.5"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <path
           d="M48.3123 484.612C51.9738 484.612 54.9287 482.701 54.9287 482.701C54.9287 482.701 51.9577 480.79 48.3123 480.79C44.6669 480.79 41.6959 482.701 41.6959 482.701C41.6959 482.701 44.6508 484.612 48.3123 484.612Z"

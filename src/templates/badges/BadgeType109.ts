@@ -66,11 +66,11 @@ export function createBadgeType109({
           width="396"
           height="133"
           fill="white"
-          fillOpacity="0.3"
+          fill-opacity="0.3"
         />
       </g>
-      <path d="M40 208.5H402.5" stroke="white" strokeWidth="2" />
-      <path d="M42 326H400" stroke="white" strokeWidth="2" />
+      <path d="M40 208.5H402.5" stroke="white" stroke-width="2" />
+      <path d="M42 326H400" stroke="white" stroke-width="2" />
     </svg>
   `;
 }

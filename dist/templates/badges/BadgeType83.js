@@ -25,16 +25,16 @@ function createBadgeType83({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         <path
           d="M487 284.411C481.984 225.49 449.276 169.887 394.295 138.113C338.512 105.837 272.897 105.636 219.02 131.98"
           stroke="${mainColor}"
-          strokeWidth="8"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="8"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         <path
           d="M114 302.518C115.207 365.801 148.692 426.974 207.518 460.926C266.344 494.877 336.13 493.27 391.638 462.633"
           stroke="${mainColor}"
-          strokeWidth="8"
-          strokeMiterlimit="10"
-          strokeLinecap="round"
+          stroke-width="8"
+          stroke-miterlimit="10"
+          stroke-linecap="round"
         />
         
         <circle cx="114" cy="289" r="4" fill="${mainColor}" />

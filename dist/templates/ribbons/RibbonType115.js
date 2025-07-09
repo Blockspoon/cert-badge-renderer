@@ -33,12 +33,12 @@ function createRibbonType115({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
       <path
         d="M52.8537 75.2129L0 95.8641L48.0577 113.84L26.4268 163.853L126.457 131.164L97.6162 62L52.8537 75.2129Z"
         fill="black"
-        fillOpacity="0.2"
+        fill-opacity="0.2"
       />
       <path
         d="M471.028 75.2129L523.882 95.8641L475.824 113.84L497.455 163.853L397.457 131.164L426.266 62L471.028 75.2129Z"
         fill="black"
-        fillOpacity="0.2"
+        fill-opacity="0.2"
       />
       <path d="M395 132L473 120L439.151 103L395 132Z" fill="#1F1F1F" />
       <path d="M130 132L52 120L85.8491 103L130 132Z" fill="#1F1F1F" />

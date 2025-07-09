@@ -27,7 +27,7 @@ function createBadgeType104({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
       <path
         d="M62 155.962L174.865 155.962"
         stroke="url(#${paintId0})"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <path
         d="M199.91 157.111C198.627 158.195 197.044 158.679 195.49 158.622C195.69 157.082 196.431 155.6 197.715 154.516C198.998 153.432 200.581 152.947 202.135 153.004C201.935 154.544 201.194 156.027 199.91 157.111Z"
@@ -40,7 +40,7 @@ function createBadgeType104({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
       <path
         d="M327 155.962L214.135 155.962"
         stroke="url(#${paintId1})"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <defs>
         <linearGradient
@@ -51,8 +51,8 @@ function createBadgeType104({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="156.462"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id="${paintId1}"
@@ -62,8 +62,8 @@ function createBadgeType104({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="155.462"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
       </defs>
     </svg>

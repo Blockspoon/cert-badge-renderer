@@ -57,12 +57,12 @@ function createBadgeType92({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
         opacity="0.5"
         d="M411 142.586V363.413L218.148 474.535L26 363.417V142.582L218.148 31.4639L411 142.586Z"
         stroke="${mainColor}"
-        strokeWidth="6"
+        stroke-width="6"
       />
       <path
         d="M407.5 145.211V360.788L218.157 469.27L29.5 360.79V145.209L218.157 36.7295L407.5 145.211Z"
         stroke="white"
-        strokeWidth="3"
+        stroke-width="3"
       />
     </svg>
   `;

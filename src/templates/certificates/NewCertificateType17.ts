@@ -46,7 +46,7 @@ export function createNewCertificateType17({
             fill="${mainColor}"
             stroke="black"
             stroke-width="1.5"
-            strokeMiterlimit="10"
+            stroke-miterlimit="10"
           />
           <rect
             x="41.3477"
@@ -95,13 +95,13 @@ export function createNewCertificateType17({
               d="M174.848 216C246.645 216 304.848 193.39 304.848 165.5C304.848 137.61 246.645 115 174.848 115C103.051 115 44.8477 137.61 44.8477 165.5C44.8477 193.39 103.051 216 174.848 216Z"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M304.848 235.5C304.848 207.614 246.646 185 174.843 185C103.04 185 44.8477 207.605 44.8477 235.5C44.8477 263.395 103.049 286 174.852 286"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M177.24 280L172.848 287H183.848L177.24 280Z"
@@ -111,20 +111,20 @@ export function createNewCertificateType17({
               d="M44.8477 295.646C44.8477 294.39 44.9677 293.152 45.1892 291.915"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M47.7734 284.894C60.4104 262.042 112.481 244.907 174.808 244.907C246.577 244.907 304.768 267.619 304.768 295.645C304.768 323.672 250.546 344.8 182.22 346.299"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
               strokeDasharray="8.04 8.04"
             />
             <path
               d="M178.501 346.365C177.273 346.375 176.046 346.384 174.809 346.384"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M172.959 340L176.348 347.5H165.348L172.959 340Z"
@@ -139,7 +139,7 @@ export function createNewCertificateType17({
               d="M174.848 807C246.645 807 304.848 784.39 304.848 756.5C304.848 728.61 246.645 706 174.848 706C103.051 706 44.8477 728.61 44.8477 756.5C44.8477 784.39 103.051 807 174.848 807Z"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               opacity="0.8"
@@ -155,13 +155,13 @@ export function createNewCertificateType17({
               d="M174.848 467C246.645 467 304.848 444.39 304.848 416.5C304.848 388.61 246.645 366 174.848 366C103.051 366 44.8477 388.61 44.8477 416.5C44.8477 444.39 103.051 467 174.848 467Z"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M304.848 486.5C304.848 458.614 246.646 436 174.843 436C103.04 436 44.8477 458.605 44.8477 486.5C44.8477 514.395 103.049 537 174.852 537"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M177.24 531L172.848 538H183.848L177.24 531Z"
@@ -171,20 +171,20 @@ export function createNewCertificateType17({
               d="M44.8477 546.646C44.8477 545.39 44.9677 544.152 45.1892 542.915"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M47.7734 535.894C60.4104 513.042 112.481 495.907 174.808 495.907C246.577 495.907 304.768 518.619 304.768 546.645C304.768 574.672 250.546 595.8 182.22 597.299"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
               strokeDasharray="8.04 8.04"
             />
             <path
               d="M178.501 597.365C177.273 597.375 176.046 597.384 174.809 597.384"
               stroke="black"
               stroke-width="2"
-              strokeMiterlimit="10"
+              stroke-miterlimit="10"
             />
             <path
               d="M172.959 591L176.348 598.5H165.348L172.959 591Z"

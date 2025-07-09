@@ -21,7 +21,7 @@ export function createBadgeType82({
         <path
           d="M364 573V355H236.232L236 573"
           stroke="white"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <path
           d="M299.998 494C291.357 494 282.863 491.671 275.43 487.264L225.532 457.701C222.242 455.75 218.69 454.281 214.981 453.33L158.797 438.956C141.731 434.59 128.414 421.273 124.048 404.207L109.67 348.018C108.723 344.312 107.254 340.761 105.3 337.467L75.7371 287.572C66.7543 272.416 66.7543 253.583 75.7371 238.427L105.3 188.532C107.254 185.238 108.723 181.687 109.67 177.981L124.048 121.792C128.414 104.726 141.731 91.4095 158.797 87.0429L214.981 72.665C218.69 71.7175 222.242 70.2486 225.532 68.2985L275.43 38.7312C282.863 34.3279 291.357 31.9995 299.998 31.9995C308.643 31.9995 317.137 34.3279 324.574 38.7312L374.468 68.2985C377.766 70.2486 381.313 71.7212 385.015 72.665L441.203 87.0429C458.273 91.4095 471.589 104.726 475.956 121.792L490.33 177.981C491.281 181.687 492.75 185.234 494.7 188.532L524.263 238.427C533.246 253.583 533.246 272.416 524.263 287.572L494.7 337.467C492.75 340.765 491.281 344.312 490.33 348.014L475.956 404.207C471.589 421.273 458.273 434.59 441.203 438.956L385.015 453.33C381.313 454.278 377.766 455.747 374.468 457.701L324.574 487.264C317.137 491.671 308.643 494 299.998 494Z"
@@ -69,12 +69,12 @@ export function createBadgeType82({
             y2="510.298"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#B17A3E" />
-            <stop offset="0.192458" stopColor="#B17A3E" />
-            <stop offset="0.402404" stopColor="#FFE3B8" />
-            <stop offset="0.614201" stopColor="#F0CD86" />
-            <stop offset="0.807016" stopColor="#B17A3E" />
-            <stop offset="1" stopColor="#B17A3E" />
+            <stop stop-color="#B17A3E" />
+            <stop offset="0.192458" stop-color="#B17A3E" />
+            <stop offset="0.402404" stop-color="#FFE3B8" />
+            <stop offset="0.614201" stop-color="#F0CD86" />
+            <stop offset="0.807016" stop-color="#B17A3E" />
+            <stop offset="1" stop-color="#B17A3E" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_3305_2"
@@ -84,12 +84,12 @@ export function createBadgeType82({
             y2="506.012"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#9B6220" />
-            <stop offset="0.192458" stopColor="#9B6220" />
-            <stop offset="0.402404" stopColor="#F9D190" />
-            <stop offset="0.614201" stopColor="#E7BC60" />
-            <stop offset="0.807016" stopColor="#9B6220" />
-            <stop offset="1" stopColor="#9B6220" />
+            <stop stop-color="#9B6220" />
+            <stop offset="0.192458" stop-color="#9B6220" />
+            <stop offset="0.402404" stop-color="#F9D190" />
+            <stop offset="0.614201" stop-color="#E7BC60" />
+            <stop offset="0.807016" stop-color="#9B6220" />
+            <stop offset="1" stop-color="#9B6220" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_3305_2"
@@ -99,12 +99,12 @@ export function createBadgeType82({
             y2="590.799"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#B17A3E" />
-            <stop offset="0.192458" stopColor="#B17A3E" />
-            <stop offset="0.402404" stopColor="#FFE3B8" />
-            <stop offset="0.614201" stopColor="#F0CD86" />
-            <stop offset="0.807016" stopColor="#B17A3E" />
-            <stop offset="1" stopColor="#B17A3E" />
+            <stop stop-color="#B17A3E" />
+            <stop offset="0.192458" stop-color="#B17A3E" />
+            <stop offset="0.402404" stop-color="#FFE3B8" />
+            <stop offset="0.614201" stop-color="#F0CD86" />
+            <stop offset="0.807016" stop-color="#B17A3E" />
+            <stop offset="1" stop-color="#B17A3E" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_3305_2"
@@ -114,12 +114,12 @@ export function createBadgeType82({
             y2="579.784"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#9B6220" />
-            <stop offset="0.192458" stopColor="#9B6220" />
-            <stop offset="0.402404" stopColor="#F9D190" />
-            <stop offset="0.614201" stopColor="#E7BC60" />
-            <stop offset="0.807016" stopColor="#9B6220" />
-            <stop offset="1" stopColor="#9B6220" />
+            <stop stop-color="#9B6220" />
+            <stop offset="0.192458" stop-color="#9B6220" />
+            <stop offset="0.402404" stop-color="#F9D190" />
+            <stop offset="0.614201" stop-color="#E7BC60" />
+            <stop offset="0.807016" stop-color="#9B6220" />
+            <stop offset="1" stop-color="#9B6220" />
           </linearGradient>
           <linearGradient
             id="paint4_linear_3305_2"
@@ -129,12 +129,12 @@ export function createBadgeType82({
             y2="266"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#9B6220" />
-            <stop offset="0.192458" stopColor="#9B6220" />
-            <stop offset="0.402404" stopColor="#F9D190" />
-            <stop offset="0.614201" stopColor="#E7BC60" />
-            <stop offset="0.807016" stopColor="#9B6220" />
-            <stop offset="1" stopColor="#9B6220" />
+            <stop stop-color="#9B6220" />
+            <stop offset="0.192458" stop-color="#9B6220" />
+            <stop offset="0.402404" stop-color="#F9D190" />
+            <stop offset="0.614201" stop-color="#E7BC60" />
+            <stop offset="0.807016" stop-color="#9B6220" />
+            <stop offset="1" stop-color="#9B6220" />
           </linearGradient>
           <linearGradient
             id="paint5_linear_3305_2"
@@ -144,11 +144,11 @@ export function createBadgeType82({
             y2="65.5443"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" />
-            <stop offset="0.215808" stopColor="white" />
-            <stop offset="0.994647" stopColor="#F2DDBE" />
-            <stop offset="0.998808" stopColor="#F2DDBE" />
-            <stop offset="1" stopColor="#F2DDBE" />
+            <stop stop-color="white" />
+            <stop offset="0.215808" stop-color="white" />
+            <stop offset="0.994647" stop-color="#F2DDBE" />
+            <stop offset="0.998808" stop-color="#F2DDBE" />
+            <stop offset="1" stop-color="#F2DDBE" />
           </linearGradient>
           <linearGradient
             id="paint6_linear_3305_2"
@@ -158,11 +158,11 @@ export function createBadgeType82({
             y2="428.189"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="white" />
-            <stop offset="0.215808" stopColor="white" />
-            <stop offset="0.994647" stopColor="#F8EDDC" />
-            <stop offset="0.998808" stopColor="#F8EDDC" />
-            <stop offset="1" stopColor="#F8EDDC" />
+            <stop stop-color="white" />
+            <stop offset="0.215808" stop-color="white" />
+            <stop offset="0.994647" stop-color="#F8EDDC" />
+            <stop offset="0.998808" stop-color="#F8EDDC" />
+            <stop offset="1" stop-color="#F8EDDC" />
           </linearGradient>
           <image
             id="image0_3305_2"

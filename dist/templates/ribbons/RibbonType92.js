@@ -29,7 +29,7 @@ function createRibbonType92({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
       <path
         d="M519.821 132.192L519.773 132.5L519.821 132.808L538.636 253.815L276.15 234.006L276 233.994L275.85 234.006L13.3633 253.815L32.1787 132.808L32.2266 132.5L32.1787 132.192L13.3633 11.1836L275.85 30.9941L276 31.0059L276.15 30.9941L538.636 11.1836L519.821 132.192Z"
         stroke="white"
-        strokeWidth="4"
+        stroke-width="4"
       />
       <path
         d="M455 7L516.67 2.5L516 262L446 257L455 7Z"
@@ -48,8 +48,8 @@ function createRibbonType92({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           y2="132.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopOpacity="0" />
-          <stop offset="1" stopOpacity="0.5" />
+          <stop stop-opacity="0" />
+          <stop offset="1" stop-opacity="0.5" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3488_51"
@@ -59,8 +59,8 @@ function createRibbonType92({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
           y2="132.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopOpacity="0" />
-          <stop offset="1" stopOpacity="0.5" />
+          <stop stop-opacity="0" />
+          <stop offset="1" stop-opacity="0.5" />
         </linearGradient>
       </defs>
     </svg>

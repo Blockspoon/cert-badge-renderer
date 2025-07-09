@@ -42,20 +42,20 @@ export function createBadgeType114({
         <path
           d="M451.93 351.217L523.148 279.999L451.93 208.781V108.069H351.218L280 36.8506L208.782 108.069H108.07V208.781L36.8516 279.999L108.07 351.217V451.929H208.782L280 523.147L351.218 451.929H451.93V351.217Z"
           stroke="${extraColor1}"
-          strokeWidth="5.47705"
-          strokeLinejoin="round"
+          stroke-width="5.47705"
+          stroke-linejoin="round"
         />
         <path
           d="M140.475 202.078H419.526"
           stroke="${extraColor1}"
-          strokeWidth="5.47705"
-          strokeLinejoin="round"
+          stroke-width="5.47705"
+          stroke-linejoin="round"
         />
         <path
           d="M140.475 357.922H419.526"
           stroke="${extraColor1}"
-          strokeWidth="5.47705"
-          strokeLinejoin="round"
+          stroke-width="5.47705"
+          stroke-linejoin="round"
         />
       </g>
       <defs>

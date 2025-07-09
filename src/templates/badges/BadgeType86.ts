@@ -30,12 +30,12 @@ export function createBadgeType86({
         <path
           d="M471.623 463.915L299.564 561.032L297.044 553.472L332.066 426.708L471.623 463.915Z"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <path
           d="M288.216 560.135L326.667 417.347L355.555 425.087"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <path
           d="M148.462 152.919L233.898 103.593L215.525 170.421L148.462 152.919Z"
@@ -45,22 +45,22 @@ export function createBadgeType86({
         <path
           d="M106.628 152.41L250.315 71.3066L252.349 77.4108L223.053 183.451L106.628 152.41Z"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <path
           d="M259.917 71.8223L227.691 191.494L203.479 185.007"
           stroke="${mainColor}"
-          strokeWidth="2"
+          stroke-width="2"
         />
         <path
           d="M502 184.024V415.975L299.132 532.691L97 415.977V184.022L299.132 67.3076L502 184.024Z"
           stroke="${subColor}"
-          strokeWidth="4"
+          stroke-width="4"
         />
         <path
           d="M109 190.23V409.77L204.078 465M490 409.77V190.23L394.578 135"
           stroke="${subColor}"
-          strokeWidth="4"
+          stroke-width="4"
         />
         
         <defs>

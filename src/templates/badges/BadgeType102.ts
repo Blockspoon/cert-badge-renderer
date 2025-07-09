@@ -22,7 +22,7 @@ export function createBadgeType102({
           cy="268"
           r="256"
           stroke="white"
-          strokeWidth="8"
+          stroke-width="8"
         />
         <circle
           opacity="0.6"
@@ -30,9 +30,9 @@ export function createBadgeType102({
           cy="268"
           r="194"
           stroke="${mainColor}"
-          strokeWidth="6"
+          stroke-width="6"
         />
-        <circle cx="268" cy="268" r="190" stroke="${mainColor}" strokeWidth="4" />
+        <circle cx="268" cy="268" r="190" stroke="${mainColor}" stroke-width="4" />
         <path
           d="M143.276 60.2549L144.299 63.8008L144.46 64.3604L143.882 64.4355C142.151 64.6598 139.943 65.3936 137.664 66.8516C134.457 68.9169 132.495 71.6376 131.888 74.7041C131.28 77.7728 132.014 81.2615 134.34 84.8857L134.753 85.502C136.849 88.5069 139.407 90.3896 142.18 91.082C145.131 91.8191 148.399 91.226 151.722 89.0742L152.127 88.8047C154.13 87.4355 155.849 85.714 156.732 84.2275L157.048 83.6963L157.501 84.1152L160.1 86.5186L160.397 86.793L160.19 87.1406C159.235 88.75 156.922 91.2046 153.462 93.4307L153.461 93.4297C149.416 96.0507 145.009 97.0839 140.829 96.248C136.776 95.4373 133 92.8819 130.019 88.4414L129.732 88.0059C126.838 83.4984 125.91 78.698 126.85 74.2861C127.789 69.874 130.587 65.8985 135.051 63.0215V63.0205L135.709 62.6094C138.951 60.6424 141.459 60.0134 142.751 59.8955L143.162 59.8584L143.276 60.2549Z"
           fill="${mainColor}"
@@ -748,8 +748,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(-0.987644 0.156715 0.123525 0.992342 507.462 248)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -758,8 +758,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(-0.996898 0.078705 0.0618165 0.998088 507.462 258.516)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -768,8 +768,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(-1 0 0 1 508.001 268.027)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -778,8 +778,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(-0.996898 -0.078705 -0.0618165 0.998088 507.462 277.598)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -788,8 +788,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(-0.987644 -0.156715 -0.123525 0.992342 507.462 288.148)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
         </g>
         <g opacity="0.2">
@@ -800,8 +800,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(0.987644 0.156715 -0.123525 0.992342 28.5391 248)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -810,8 +810,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(0.996898 0.078705 -0.0618165 0.998088 28.5391 258.516)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="29.5"
@@ -819,8 +819,8 @@ export function createBadgeType102({
             x2="58.0388"
             y2="266.527"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -829,8 +829,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(0.996898 -0.078705 0.0618165 0.998088 28.5391 277.598)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -839,8 +839,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(0.987644 -0.156715 0.123525 0.992342 28.5391 288.148)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
         </g>
         <circle cx="268" cy="268" r="268" fill="${mainColor}" />
@@ -851,7 +851,7 @@ export function createBadgeType102({
           cy="268"
           r="256"
           stroke="white"
-          strokeWidth="8"
+          stroke-width="8"
         />
         <circle
           opacity="0.6"
@@ -859,9 +859,9 @@ export function createBadgeType102({
           cy="268"
           r="194"
           stroke="${mainColor}"
-          strokeWidth="6"
+          stroke-width="6"
         />
-        <circle cx="268" cy="268" r="190" stroke="${mainColor}" strokeWidth="4" />
+        <circle cx="268" cy="268" r="190" stroke="${mainColor}" stroke-width="4" />
         <path
           d="M320.85 461.016C319.453 461.153 319.134 462.461 319.027 462.507L319.043 462.477C318.42 462.751 318.405 462.994 319.043 463.207C319.832 464.637 321.473 465.093 323.964 464.607C324.495 464.272 326.5 464.485 326.546 464.82C326.728 466.128 322.764 473.765 321.184 475.074C321.123 477.219 319.848 479.212 317.326 481.022C314.774 482.559 312.982 483.806 314.653 486.575C315.002 486.94 315.488 486.94 316.111 486.575C316.627 487.807 317.843 488.735 319.772 489.359C320.865 491.139 322.065 492.402 323.402 493.147L323.751 494.745C326.683 496.357 329.326 497.94 329.402 501.576C335.432 507.235 335.933 508.574 327.397 507.235L326.318 508.498C324.617 506.718 322.901 505.79 322.004 508.68C319.453 508.665 317.007 507.92 314.653 507.037C313.802 505.288 313.529 504.999 313.195 507.037L312.526 508.68C316.278 512.301 316.931 515.009 310.916 513.853C310.187 515.694 309.23 516.607 308.03 516.576C303.367 514.036 300.36 514.036 298.993 516.576C296.562 514.948 290.441 511.662 292.78 516.531C289.986 518.265 294.466 518.752 296.426 518.721C299.205 519.406 309.109 519.862 311.812 519.132C313.21 518.752 313.058 517.535 314.091 517.048C317.949 515.253 320.804 517.763 319.756 511.419C322.187 513.168 323.964 511.115 326.045 510.917C327.078 510.81 328.278 511.571 329.493 511.373C331.331 511.084 337.558 509.852 337.892 508.026C338.363 506.585 338.436 503.084 334.961 500.602C334.065 496.068 331.285 492.341 326.637 489.405C324.951 488.34 325.331 486.179 327.776 482.954C328.379 481.544 329.365 478.693 328.49 478.573C326.561 478.527 325.574 477.569 325.574 475.652C326.546 473.659 328.672 471.118 329.052 470.007C329.326 469.201 330.86 462.188 330.617 461.853C328.384 460.362 326.455 461.64 324.495 461.64C323.341 461.655 322.172 460.879 320.85 461.016Z"
           fill="#353535"
@@ -1522,8 +1522,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(-0.987644 0.156715 0.123525 0.992342 507.462 248)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -1532,8 +1532,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(-0.996898 0.078705 0.0618165 0.998088 507.462 258.516)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -1542,8 +1542,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(-1 0 0 1 508.001 268.027)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -1552,8 +1552,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(-0.996898 -0.078705 -0.0618165 0.998088 507.462 277.598)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -1562,8 +1562,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(-0.987644 -0.156715 -0.123525 0.992342 507.462 288.148)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
         </g>
         <g opacity="0.2">
@@ -1574,8 +1574,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(0.987644 0.156715 -0.123525 0.992342 28.5391 248)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -1584,8 +1584,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(0.996898 0.078705 -0.0618165 0.998088 28.5391 258.516)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="29.5"
@@ -1593,8 +1593,8 @@ export function createBadgeType102({
             x2="58.0388"
             y2="266.527"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -1603,8 +1603,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(0.996898 -0.078705 0.0618165 0.998088 28.5391 277.598)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
           <line
             x1="1.5"
@@ -1613,8 +1613,8 @@ export function createBadgeType102({
             y2="-1.5"
             transform="matrix(0.987644 -0.156715 0.123525 0.992342 28.5391 288.148)"
             stroke="${mainColor}"
-            strokeWidth="3"
-            strokeLinecap="round"
+            stroke-width="3"
+            stroke-linecap="round"
           />
         </g>
         <defs>

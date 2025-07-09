@@ -151,10 +151,10 @@ export function createRibbonType93({
           y2="64.0132"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${mainColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
           id={paintId1}
@@ -164,10 +164,10 @@ export function createRibbonType93({
           y2="64.0132"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="${mainColor}" />
-          <stop offset="0.06" stopColor="${mainColor}" />
-          <stop offset="0.58" stopColor="${subColor}" />
-          <stop offset="1" stopColor="${mainColor}" />
+          <stop stop-color="${mainColor}" />
+          <stop offset="0.06" stop-color="${mainColor}" />
+          <stop offset="0.58" stop-color="${subColor}" />
+          <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <clipPath id="clip0_3488_6864">
           <rect

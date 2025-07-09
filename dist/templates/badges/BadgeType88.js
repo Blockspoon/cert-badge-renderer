@@ -74,12 +74,12 @@ function createBadgeType88({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
           <path
             d="M250.501 425.5L236.065 367.5L387.5 367.5L250.501 425.5Z"
             fill="black"
-            fillOpacity="0.1"
+            fill-opacity="0.1"
           />
           <path
             d="M250.5 425.5L177 368L305 368L250.5 425.5Z"
             fill="black"
-            fillOpacity="0.1"
+            fill-opacity="0.1"
           />
         </g>
         
@@ -91,7 +91,7 @@ function createBadgeType88({ mainColor = "#96A6B4", subColor = "#96A6B4", extraC
           rx="8"
           transform="rotate(45 300 42.3737)"
           stroke="black"
-          strokeWidth="8"
+          stroke-width="8"
         />
         <defs>
           <pattern

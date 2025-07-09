@@ -32,28 +32,28 @@ export function createNewCertificateType51({
           <path
             d="M441.5 114L413 -2.78241e-05L644 -7.62939e-06L441.5 114Z"
             fill="black"
-            fillOpacity="0.1"
+            fill-opacity="0.1"
           />
           <path
             d="M709 701L737.5 815L506.5 815L709 701Z"
             fill="black"
-            fillOpacity="0.1"
+            fill-opacity="0.1"
           />
           <path
             d="M427.5 58L296 -2.20743e-05L548.5 0L427.5 58Z"
             fill="black"
-            fillOpacity="0.1"
+            fill-opacity="0.1"
           />
           <path
             d="M723 757L854.5 815L602 815L723 757Z"
             fill="black"
-            fillOpacity="0.1"
+            fill-opacity="0.1"
           />
           <rect x="56" y="56" width="1040" height="702" fill="#F4F4F4" />
           <path
             d="M1096 224V56H757M372.5 758H56V610"
             stroke="${mainColor}"
-            strokeWidth="4"
+            stroke-width="4"
           />
           <path
             d="M61.2222 397.873L75.1238 345.157L127.698 359.493L154.152 344.22L59.7072 318.454L34.7681 413.146L61.2222 397.873Z"

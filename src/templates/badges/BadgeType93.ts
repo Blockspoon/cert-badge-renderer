@@ -23,7 +23,7 @@ export function createBadgeType93({
       <path
         d="M101.392 402.608L39 340.216V163.784L163.784 39H340.216L465 163.784V340.216L402.608 402.608"
         stroke="${mainColor}"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <path
         d="M354.934 500.52H149.069L3.48071 354.931V149.067L149.069 3.47852H354.934L500.522 149.067V354.931L354.934 500.52ZM159.083 476.363H344.957L476.365 344.955V159.119L344.919 27.6349H159.045L27.6371 159.081V344.917L159.045 476.325L159.083 476.363Z"
@@ -40,7 +40,7 @@ export function createBadgeType93({
       <path
         d="M101.392 402.608L39 340.216V163.784L163.784 39H340.216L465 163.784V340.216L402.608 402.608"
         stroke="${mainColor}"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <path
         d="M354.934 500.52H149.069L3.48071 354.931V149.067L149.069 3.47852H354.934L500.522 149.067V354.931L354.934 500.52ZM159.083 476.363H344.957L476.365 344.955V159.119L344.919 27.6349H159.045L27.6371 159.081V344.917L159.045 476.325L159.083 476.363Z"
@@ -59,11 +59,11 @@ export function createBadgeType93({
           y2="32.8149"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" />
-          <stop offset="0.215808" stopColor="white" />
-          <stop offset="0.994647" stopColor="${extraColor1}" />
-          <stop offset="0.998808" stopColor="${extraColor1}" />
-          <stop offset="1" stopColor="${extraColor1}" />
+          <stop stop-color="white" />
+          <stop offset="0.215808" stop-color="white" />
+          <stop offset="0.994647" stop-color="${extraColor1}" />
+          <stop offset="0.998808" stop-color="${extraColor1}" />
+          <stop offset="1" stop-color="${extraColor1}" />
         </linearGradient>
         <linearGradient
           id="${paintId1}"
@@ -73,11 +73,11 @@ export function createBadgeType93({
           y2="32.8149"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" />
-          <stop offset="0.215808" stopColor="white" />
-          <stop offset="0.994647" stopColor="${extraColor1}" />
-          <stop offset="0.998808" stopColor="${extraColor1}" />
-          <stop offset="1" stopColor="${extraColor1}" />
+          <stop stop-color="white" />
+          <stop offset="0.215808" stop-color="white" />
+          <stop offset="0.994647" stop-color="${extraColor1}" />
+          <stop offset="0.998808" stop-color="${extraColor1}" />
+          <stop offset="1" stop-color="${extraColor1}" />
         </linearGradient>
       </defs>
     </svg>

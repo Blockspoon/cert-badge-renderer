@@ -50,8 +50,8 @@ export function createRibbonType109({
           y2="42.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.218267" stopOpacity="0" />
-          <stop offset="1" stopOpacity="0.4" />
+          <stop offset="0.218267" stop-opacity="0" />
+          <stop offset="1" stop-opacity="0.4" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3488_8546"
@@ -61,8 +61,8 @@ export function createRibbonType109({
           y2="48"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.218267" stopOpacity="0" />
-          <stop offset="1" stopOpacity="0.4" />
+          <stop offset="0.218267" stop-opacity="0" />
+          <stop offset="1" stop-opacity="0.4" />
         </linearGradient>
       </defs>
     </svg>

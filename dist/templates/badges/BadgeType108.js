@@ -17,10 +17,10 @@ function createBadgeType108({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
       <path
         d="M312.338 39.0205L312.575 39.1465L312.841 39.1836L391.346 49.9648L425.847 121.209L425.965 121.453L426.16 121.64L483.38 176.351L469.299 254.233L469.25 254.5L469.299 254.767L483.38 332.62L426.16 387.36L425.965 387.547L425.847 387.79L391.346 459.005L312.87 469.788L312.604 469.824L312.367 469.951L242.5 507.298L172.633 469.951L172.396 469.824L172.13 469.788L93.6533 459.005L59.1533 387.79L59.0352 387.547L58.8398 387.36L1.61914 332.62L15.7012 254.767L15.75 254.5L15.7012 254.233L1.61914 176.351L58.8398 121.64L59.0352 121.453L59.1533 121.209L93.6533 49.9648L172.13 39.1836L172.396 39.1465L172.633 39.0205L242.499 1.7002L312.338 39.0205Z"
         stroke="${mainColor}"
-        strokeWidth="3"
+        stroke-width="3"
       />
       <circle cx="242" cy="254" r="227" fill="${mainColor}" />
-      <circle cx="242" cy="254" r="216" stroke="white" strokeWidth="8" />
+      <circle cx="242" cy="254" r="216" stroke="white" stroke-width="8" />
       <circle cx="242" cy="254" r="208" fill="white" />
       <mask
         id="mask0_3488_6915"
@@ -38,7 +38,7 @@ function createBadgeType108({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
         <path
           d="M231 481L462 345V481H231Z"
           fill="black"
-          fillOpacity="0.1"
+          fill-opacity="0.1"
         />
         <path d="M231 481L462 360V481H231Z" fill="${mainColor}" />
         <path d="M251 481L20 296V481H251Z" fill="${subColor}" />
@@ -46,7 +46,7 @@ function createBadgeType108({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
         <path
           d="M251 481L20 345V481H251Z"
           fill="black"
-          fillOpacity="0.1"
+          fill-opacity="0.1"
         />
         <path d="M251 481L20 360V481H251Z" fill="${mainColor}" />
       </g>
@@ -85,10 +85,10 @@ function createBadgeType108({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
       <path
         d="M312.338 39.0205L312.575 39.1465L312.841 39.1836L391.346 49.9648L425.847 121.209L425.965 121.453L426.16 121.64L483.38 176.351L469.299 254.233L469.25 254.5L469.299 254.767L483.38 332.62L426.16 387.36L425.965 387.547L425.847 387.79L391.346 459.005L312.87 469.788L312.604 469.824L312.367 469.951L242.5 507.298L172.633 469.951L172.396 469.824L172.13 469.788L93.6533 459.005L59.1533 387.79L59.0352 387.547L58.8398 387.36L1.61914 332.62L15.7012 254.767L15.75 254.5L15.7012 254.233L1.61914 176.351L58.8398 121.64L59.0352 121.453L59.1533 121.209L93.6533 49.9648L172.13 39.1836L172.396 39.1465L172.633 39.0205L242.499 1.7002L312.338 39.0205Z"
         stroke="${mainColor}"
-        strokeWidth="3"
+        stroke-width="3"
       />
       <circle cx="242" cy="254" r="227" fill="${mainColor}" />
-      <circle cx="242" cy="254" r="216" stroke="white" strokeWidth="8" />
+      <circle cx="242" cy="254" r="216" stroke="white" stroke-width="8" />
       <circle cx="242" cy="254" r="208" fill="white" />
       <mask
         id="mask1_3488_6915"
@@ -106,7 +106,7 @@ function createBadgeType108({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
         <path
           d="M231 481L462 345V481H231Z"
           fill="black"
-          fillOpacity="0.1"
+          fill-opacity="0.1"
         />
         <path d="M231 481L462 360V481H231Z" fill="${mainColor}" />
         <path d="M251 481L20 296V481H251Z" fill="${subColor}" />
@@ -114,7 +114,7 @@ function createBadgeType108({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
         <path
           d="M251 481L20 345V481H251Z"
           fill="black"
-          fillOpacity="0.1"
+          fill-opacity="0.1"
         />
         <path d="M251 481L20 360V481H251Z" fill="${mainColor}" />
       </g>
@@ -144,8 +144,8 @@ function createBadgeType108({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="194.001"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="#010101" />
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="#010101" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_3488_6915"
@@ -155,8 +155,8 @@ function createBadgeType108({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="193.001"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="#010101" />
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="#010101" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_3488_6915"
@@ -166,8 +166,8 @@ function createBadgeType108({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="194.001"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="#010101" />
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="#010101" />
         </linearGradient>
         <linearGradient
           id="paint3_linear_3488_6915"
@@ -177,8 +177,8 @@ function createBadgeType108({ mainColor = "#96A6B4", subColor = "#96A6B4", extra
           y2="193.001"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="white" />
-          <stop offset="1" stopColor="#010101" />
+          <stop stop-color="white" />
+          <stop offset="1" stop-color="#010101" />
         </linearGradient>
         <image
           id="image0_3488_6915"

@@ -33,7 +33,7 @@ export function createBadgeType117({
         r="210"
         stroke="${mainColor}"
         strokeOpacity="0.2"
-        strokeWidth="2"
+        stroke-width="2"
       />
       <mask
         id="mask0_3488_8556"
@@ -57,8 +57,8 @@ export function createBadgeType117({
         <path
           d="M560.712 222.729C560.712 222.729 512.119 254.94 459.435 193.674C406.75 132.408 367.16 101.24 259.889 98.6612C215.501 97.5914 168.842 88.8794 131.806 63.0114C102.352 42.4411 71.4881 3.01557 77.8541 -34.9982"
           stroke="${extraColor1}"
-          strokeWidth="3.18181"
-          strokeMiterlimit="10"
+          stroke-width="3.18181"
+          stroke-miterlimit="10"
         />
       </g>
     </svg>
