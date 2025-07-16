@@ -1,2 +1,2 @@
-import { ISvgProps } from "../../interface";
+import { ISvgProps } from "../../interface/index.js";
 export declare function createBadgeType92({ mainColor, subColor, extraColor1, extraColor2, }: ISvgProps): string;

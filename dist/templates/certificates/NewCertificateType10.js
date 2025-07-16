@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createNewCertificateType10 = createNewCertificateType10;
-function createNewCertificateType10({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+export function createNewCertificateType10({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     const pattern0Id = `pattern0_${Math.random().toString(36).substr(2, 9)}`;
     const pattern1Id = `pattern1_${Math.random().toString(36).substr(2, 9)}`;
     const filterId = `filter0_dd_${Math.random().toString(36).substr(2, 9)}`;

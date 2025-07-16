@@ -1,2 +1,2 @@
-export { generateAchievementHTML } from "../utils/generateAchievementHTML";
-export { generateDesignHTML } from "../utils/generateDesignHTML";
+export { generateAchievementHTML } from "../utils/generateAchievementHTML.js";
+export { generateDesignHTML } from "../utils/generateDesignHTML.js";

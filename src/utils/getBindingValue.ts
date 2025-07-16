@@ -1,6 +1,6 @@
 import { format } from "date-fns";
-import { IAchievementItem } from "../interface";
-import { groupByType } from "../util";
+import { IAchievementItem } from "../interface/index.js";
+import { groupByType } from "../util.js";
 
 // 데이터 타입별 헬퍼 함수
 const getAchievementValue = (

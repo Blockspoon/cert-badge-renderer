@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.getBindingValue = void 0;
-const date_fns_1 = require("date-fns");
-const util_1 = require("../util");
+import { format } from "date-fns";
+import { groupByType } from "../util.js";
 // 데이터 타입별 헬퍼 함수
 const getAchievementValue = (bindingKey, achievementInfo) => {
     var _a;
@@ -12,10 +9,10 @@ const getAchievementValue = (bindingKey, achievementInfo) => {
     switch (bindingKey) {
         case "period":
             return achievementInfo.course_begin_at && achievementInfo.course_end_at
-                ? `${(0, date_fns_1.format)(new Date(achievementInfo.course_begin_at), "yyyy.MM.dd")} ~ ${(0, date_fns_1.format)(new Date(achievementInfo.course_end_at), "yyyy.MM.dd")}`
+                ? `${format(new Date(achievementInfo.course_begin_at), "yyyy.MM.dd")} ~ ${format(new Date(achievementInfo.course_end_at), "yyyy.MM.dd")}`
                 : "-";
         case "created_at":
-            return (0, date_fns_1.format)(new Date(achievementInfo.created_at), "yyyy.MM.dd");
+            return format(new Date(achievementInfo.created_at), "yyyy.MM.dd");
         case "certificate_number":
             return achievementInfo.certificate_number || "";
         case "tags":
@@ -56,15 +53,15 @@ const getClubValue = (bindingKey, kollegeInfo, achievementInfo) => {
             ? "sign_image"
             : "club_symbol";
         return ((_d = (_c = achievementForm.clubInstitutions) === null || _c === void 0 ? void 0 : _c[index]) === null || _d === void 0 ? void 0 : _d.images)
-            ? (_f = (_e = (0, util_1.groupByType)(achievementForm.clubInstitutions[index].images)[imageKey]) === null || _e === void 0 ? void 0 : _e[0]) === null || _f === void 0 ? void 0 : _f.path
+            ? (_f = (_e = groupByType(achievementForm.clubInstitutions[index].images)[imageKey]) === null || _e === void 0 ? void 0 : _e[0]) === null || _f === void 0 ? void 0 : _f.path
             : null;
     }
     if (["club_logo", "sign_image", "club_symbol"].includes(bindingKey)) {
         if (achievementForm.representativeInstitution) {
-            const groupByTypeImages = (0, util_1.groupByType)(achievementForm.representativeInstitution.images);
+            const groupByTypeImages = groupByType(achievementForm.representativeInstitution.images);
             return (((_h = (_g = groupByTypeImages[bindingKey]) === null || _g === void 0 ? void 0 : _g[0]) === null || _h === void 0 ? void 0 : _h.path) || null);
         }
-        const groupByTypeImages = (0, util_1.groupByType)(kollegeInfo.images);
+        const groupByTypeImages = groupByType(kollegeInfo.images);
         return (((_k = (_j = groupByTypeImages[bindingKey]) === null || _j === void 0 ? void 0 : _j[0]) === null || _k === void 0 ? void 0 : _k.path) || null);
     }
     if (bindingKey === "name" && achievementForm.representativeInstitution) {
@@ -79,7 +76,7 @@ const getCustomValue = (bindingKey, achievementInfo) => {
     return (((_a = achievementInfo.customAttributes.find((attr) => [`custom_${attr.attribute_tag}`, `custom-${attr.attribute_tag}`].includes(bindingKey))) === null || _a === void 0 ? void 0 : _a.attribute_value) || null);
 };
 // 🔥 메인 함수: 데이터 타입별로 자동 호출하도록 변경!
-const getBindingValue = (type, bindingKey, data) => {
+export const getBindingValue = (type, bindingKey, data) => {
     var _a;
     switch (type) {
         case "achievement":
@@ -94,4 +91,3 @@ const getBindingValue = (type, bindingKey, data) => {
             return null;
     }
 };
-exports.getBindingValue = getBindingValue;

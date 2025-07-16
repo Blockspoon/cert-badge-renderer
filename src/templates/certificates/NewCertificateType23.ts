@@ -1,4 +1,4 @@
-import { ISvgProps } from "../../interface"; 
+import { ISvgProps } from "../../interface/index.js"; 
 
 
 export function createNewCertificateType23({

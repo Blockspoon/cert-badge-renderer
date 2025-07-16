@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createRibbonType26 = createRibbonType26;
-function createRibbonType26({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+export function createRibbonType26({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     const paintId4 = `paint4_linear_${Math.random().toString(36).substr(2, 9)}`;
     return `
     <svg

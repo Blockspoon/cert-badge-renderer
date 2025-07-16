@@ -1,2 +1,2 @@
-import { ISvgProps } from "../../interface";
+import { ISvgProps } from "../../interface/index.js";
 export declare function createIconBg3({ mainColor, subColor, }: ISvgProps): string;

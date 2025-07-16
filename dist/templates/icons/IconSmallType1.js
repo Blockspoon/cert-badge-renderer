@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createIconSmallType1 = createIconSmallType1;
-function createIconSmallType1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+export function createIconSmallType1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     return `
     <div style="width: 100%; height: 100%; isolation: isolate; display: flex; align-items: center; justify-content: center; will-change: transform, contents; transform: translateZ(0); backface-visibility: hidden;">
       <svg

@@ -3,6 +3,7 @@
   "version": "1.0.17",
   "description": "Render certificate and badge designs from Kolleges achievement data into HTML, PNG, or Base64.",
   "main": "dist/index.js",
+  "type": "module",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {

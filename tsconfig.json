@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "module": "CommonJS",
+    // "module": "CommonJS",
+    "module": "ESNext",
     "target": "ES6",
     "lib": ["esnext", "dom"],  
     "declaration": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
+    // "moduleResolution": "node"
+    "moduleResolution": "bundler"
     // "strict": true
   },
   "include": ["src"]

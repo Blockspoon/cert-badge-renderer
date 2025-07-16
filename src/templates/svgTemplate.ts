@@ -1,6 +1,6 @@
-import Badges from "./badges";
-import Ribbons from "./ribbons";
-import Icons from "./icons";
+import Badges from "./badges/index.js";
+import Ribbons from "./ribbons/index.js";
+import Icons from "./icons/index.js";
 
 export interface templateType {
   id: string;

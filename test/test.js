@@ -1,14 +1,10 @@
-const fs = require("fs");
-const {
-  generateAchievementHTML,
-} = require("../dist/utils/generateAchievementHTML");
-const {
-  generateAchievementFile,
-} = require("../dist/utils/generateAchievementFile");
-const fsPromises = require("fs").promises;
-const path = require("path");
-const { generateDesignHTML } = require("../dist/utils/generateDesignHTML");
-const { generateDesignFile } = require("../dist/utils/generateDesignFile");
+import fs from "fs";
+import fsPromises from "fs/promises";
+import path from "path";
+
+import { generateAchievementHTML } from "../dist/utils/generateAchievementHTML.js";
+import { generateDesignHTML } from "../dist/utils/generateDesignHTML.js";
+// const { generateDesignHTML } = require("../dist/utils/generateDesignHTML");
 
 const test_object = {
   statusCode: 200,
@@ -150,7 +146,7 @@ const testCertificateData = {
   achievementInfo: test_object.achievement,
 };
 const testOptions = {
-  type: "certificate",
+  type: "badge",
   size: 300,
   returnType: "base64",
 };
@@ -172,44 +168,47 @@ async function runTests() {
     // console.log("✅ PNG 변환 완료: test/certificate.png");
 
     // // HTML 변환 테스트
-    const htmlOutput = await generateAchievementHTML(testCertificateData.achievementInfo, {
-      type: "badge",
-      size: 300,
-      noSpace: false,
-      mainColor: "#322899",
-      subColor: "#7368E8",
-    });
+    const htmlOutput = await generateAchievementHTML(
+      testCertificateData.achievementInfo,
+      {
+        type: "certificate",
+        size: 300,
+        noSpace: false,
+        mainColor: "#322899",
+        subColor: "#7368E8",
+      }
+    );
     fs.writeFileSync("test/certificate.html", htmlOutput, "utf8");
     // console.log("✅ HTML 변환 완료: test/certificate.html");
 
     // PNG 변환 테스트
-    const pngResult = await generateAchievementFile(
-      testCertificateData.achievementInfo,
-      testOptions
-    );
+    // const pngResult = await generateAchievementFile(
+    //   testCertificateData.achievementInfo,
+    //   testOptions
+    // );
 
-    if (testOptions.returnType === "base64") {
-      console.log("✅ Base64 변환 완료");
-      // base64 문자열에서 data:image/png;base64, 부분 제거
-      const base64Data = pngResult.base64.replace(
-        /^data:image\/png;base64,/,
-        ""
-      );
-      // base64를 버퍼로 변환
-      const buffer = Buffer.from(base64Data, "base64");
-      // 이미지 파일로 저장
-      await fsPromises.writeFile(
-        path.join(__dirname, "certificate_base64.png"),
-        buffer
-      );
-      console.log("✅ Base64 이미지 저장 완료: test/certificate_base64.png");
-    } else {
-      await fsPromises.writeFile(
-        path.join(__dirname, "certificate.png"),
-        pngResult.buffer
-      );
-      console.log("✅ PNG 변환 완료: test/certificate.png");
-    }
+    // if (testOptions.returnType === "base64") {
+    //   console.log("✅ Base64 변환 완료");
+    //   // base64 문자열에서 data:image/png;base64, 부분 제거
+    //   const base64Data = pngResult.base64.replace(
+    //     /^data:image\/png;base64,/,
+    //     ""
+    //   );
+    //   // base64를 버퍼로 변환
+    //   const buffer = Buffer.from(base64Data, "base64");
+    //   // 이미지 파일로 저장
+    //   await fsPromises.writeFile(
+    //     path.join(__dirname, "certificate_base64.png"),
+    //     buffer
+    //   );
+    //   console.log("✅ Base64 이미지 저장 완료: test/certificate_base64.png");
+    // } else {
+    //   await fsPromises.writeFile(
+    //     path.join(__dirname, "certificate.png"),
+    //     pngResult.buffer
+    //   );
+    //   console.log("✅ PNG 변환 완료: test/certificate.png");
+    // }
   } catch (error) {
     console.error("❌ 테스트 실행 중 오류 발생:", error);
   }

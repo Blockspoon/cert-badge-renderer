@@ -3,16 +3,16 @@ import {
   CERTIFICATE_DESIGN_TYPE,
   CertificateData,
   CertificateOptions,
-} from "../interface";
-import { getBindingValue } from "./getBindingValue";
+} from "../interface/index.js";
+import { getBindingValue } from "./getBindingValue.js";
 import QRCode from "qrcode";
 import {
   badgeTemplates,
   iconTemplates,
   ribbonTemplates,
-} from "../templates/svgTemplate";
-import Certificates from "../templates/certificates";
-import { portraitComponents } from "../constants/componentsDirection";
+} from "../templates/svgTemplate.js";
+import Certificates from "../templates/certificates/index.js";
+import { portraitComponents } from "../constants/componentsDirection.js";
 
 export async function generateAchievementHTML(
   achievementInfo: CertificateData,
@@ -27,6 +27,8 @@ export async function generateAchievementHTML(
   } else {
     achievementForm = achievementInfo;
   }
+
+  console.log(achievementForm);
 
   // type에 따라 적절한 layout_json 선택
   const elements =

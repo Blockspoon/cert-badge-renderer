@@ -1,4 +1,4 @@
-import { ISvgProps } from "../../interface"; 
+import { ISvgProps } from "../../interface/index.js"; 
 
 export function createRibbonType24({
   mainColor = "#96A6B4",

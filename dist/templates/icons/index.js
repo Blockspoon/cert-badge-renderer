@@ -1,69 +1,67 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const IconMedal_1 = require("./IconMedal");
-const IconStar_1 = require("./IconStar");
-const IconBg1_1 = require("./IconBg1");
-const IconBg2_1 = require("./IconBg2");
-const IconBg3_1 = require("./IconBg3");
-const IconBg4_1 = require("./IconBg4");
-const IconBg5_1 = require("./IconBg5");
-const IconBg6_1 = require("./IconBg6");
-const IconBg7_1 = require("./IconBg7");
-const IconBg8_1 = require("./IconBg8");
-const IconBg9_1 = require("./IconBg9");
-const IconMortarboard1_1 = require("./IconMortarboard1");
-const IconMortarboard2_1 = require("./IconMortarboard2");
-const IconMortarboard3_1 = require("./IconMortarboard3");
-const IconMortarboard4_1 = require("./IconMortarboard4");
-const IconMortarboard5_1 = require("./IconMortarboard5");
-const IconTrophy1_1 = require("./IconTrophy1");
-const IconTrophy2_1 = require("./IconTrophy2");
-const IconTrophy3_1 = require("./IconTrophy3");
-const IconTrophy4_1 = require("./IconTrophy4");
-const IconEtc1_1 = require("./IconEtc1");
-const IconEtc2_1 = require("./IconEtc2");
-const IconEtc3_1 = require("./IconEtc3");
-const IconStar2_1 = require("./IconStar2");
-const IconStar3_1 = require("./IconStar3");
-const IconStar4_1 = require("./IconStar4");
-const IconStar5_1 = require("./IconStar5");
-const IconStar6_1 = require("./IconStar6");
-const IconSmallType1_1 = require("./IconSmallType1");
-const IconSmallType10_1 = require("./IconSmallType10");
-const IconStar7_1 = require("./IconStar7");
-const IconStar8_1 = require("./IconStar8");
+import { createIconMedal } from "./IconMedal.js";
+import { createIconStar1 } from "./IconStar.js";
+import { createIconBg1 } from "./IconBg1.js";
+import { createIconBg2 } from "./IconBg2.js";
+import { createIconBg3 } from "./IconBg3.js";
+import { createIconBg4 } from "./IconBg4.js";
+import { createIconBg5 } from "./IconBg5.js";
+import { createIconBg6 } from "./IconBg6.js";
+import { createIconBg7 } from "./IconBg7.js";
+import { createIconBg8 } from "./IconBg8.js";
+import { createIconBg9 } from "./IconBg9.js";
+import { createIconMortarboard1 } from "./IconMortarboard1.js";
+import { createIconMortarboard2 } from "./IconMortarboard2.js";
+import { createIconMortarboard3 } from "./IconMortarboard3.js";
+import { createIconMortarboard4 } from "./IconMortarboard4.js";
+import { createIconMortarboard5 } from "./IconMortarboard5.js";
+import { createIconTrophy1 } from "./IconTrophy1.js";
+import { createIconTrophy2 } from "./IconTrophy2.js";
+import { createIconTrophy3 } from "./IconTrophy3.js";
+import { createIconTrophy4 } from "./IconTrophy4.js";
+import { createIconEtc1 } from "./IconEtc1.js";
+import { createIconEtc2 } from "./IconEtc2.js";
+import { createIconEtc3 } from "./IconEtc3.js";
+import { createIconStar2 } from "./IconStar2.js";
+import { createIconStar3 } from "./IconStar3.js";
+import { createIconStar4 } from "./IconStar4.js";
+import { createIconStar5 } from "./IconStar5.js";
+import { createIconStar6 } from "./IconStar6.js";
+import { createIconSmallType1 } from "./IconSmallType1.js";
+import { createIconSmallType10 } from "./IconSmallType10.js";
+import { createIconStar7 } from "./IconStar7.js";
+import { createIconStar8 } from "./IconStar8.js";
 const Icons = {
-    IconBg1: IconBg1_1.createIconBg1,
-    IconBg2: IconBg2_1.createIconBg2,
-    IconBg3: IconBg3_1.createIconBg3,
-    IconBg4: IconBg4_1.createIconBg4,
-    IconBg5: IconBg5_1.createIconBg5,
-    IconBg6: IconBg6_1.createIconBg6,
-    IconBg7: IconBg7_1.createIconBg7,
-    IconBg8: IconBg8_1.createIconBg8,
-    IconBg9: IconBg9_1.createIconBg9,
-    IconEtc1: IconEtc1_1.createIconEtc1,
-    IconEtc2: IconEtc2_1.createIconEtc2,
-    IconEtc3: IconEtc3_1.createIconEtc3,
-    IconMedal: IconMedal_1.createIconMedal,
-    IconMortarboard1: IconMortarboard1_1.createIconMortarboard1,
-    IconMortarboard2: IconMortarboard2_1.createIconMortarboard2,
-    IconMortarboard3: IconMortarboard3_1.createIconMortarboard3,
-    IconMortarboard4: IconMortarboard4_1.createIconMortarboard4,
-    IconMortarboard5: IconMortarboard5_1.createIconMortarboard5,
-    IconSmallType1: IconSmallType1_1.createIconSmallType1,
-    IconSmallType10: IconSmallType10_1.createIconSmallType10,
-    IconStar: IconStar_1.createIconStar1,
-    IconStar2: IconStar2_1.createIconStar2,
-    IconStar3: IconStar3_1.createIconStar3,
-    IconStar4: IconStar4_1.createIconStar4,
-    IconStar5: IconStar5_1.createIconStar5,
-    IconStar6: IconStar6_1.createIconStar6,
-    IconStar7: IconStar7_1.createIconStar7,
-    IconStar8: IconStar8_1.createIconStar8,
-    IconTrophy1: IconTrophy1_1.createIconTrophy1,
-    IconTrophy2: IconTrophy2_1.createIconTrophy2,
-    IconTrophy3: IconTrophy3_1.createIconTrophy3,
-    IconTrophy4: IconTrophy4_1.createIconTrophy4,
+    IconBg1: createIconBg1,
+    IconBg2: createIconBg2,
+    IconBg3: createIconBg3,
+    IconBg4: createIconBg4,
+    IconBg5: createIconBg5,
+    IconBg6: createIconBg6,
+    IconBg7: createIconBg7,
+    IconBg8: createIconBg8,
+    IconBg9: createIconBg9,
+    IconEtc1: createIconEtc1,
+    IconEtc2: createIconEtc2,
+    IconEtc3: createIconEtc3,
+    IconMedal: createIconMedal,
+    IconMortarboard1: createIconMortarboard1,
+    IconMortarboard2: createIconMortarboard2,
+    IconMortarboard3: createIconMortarboard3,
+    IconMortarboard4: createIconMortarboard4,
+    IconMortarboard5: createIconMortarboard5,
+    IconSmallType1: createIconSmallType1,
+    IconSmallType10: createIconSmallType10,
+    IconStar: createIconStar1,
+    IconStar2: createIconStar2,
+    IconStar3: createIconStar3,
+    IconStar4: createIconStar4,
+    IconStar5: createIconStar5,
+    IconStar6: createIconStar6,
+    IconStar7: createIconStar7,
+    IconStar8: createIconStar8,
+    IconTrophy1: createIconTrophy1,
+    IconTrophy2: createIconTrophy2,
+    IconTrophy3: createIconTrophy3,
+    IconTrophy4: createIconTrophy4,
 };
-exports.default = Icons;
+export default Icons;

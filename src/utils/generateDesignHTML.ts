@@ -3,16 +3,16 @@ import {
   CERTIFICATE_DESIGN_TYPE,
   IAchievementDesignItem,
   DesignOptions,
-} from "../interface";
-import { getBindingValue } from "./getBindingValue";
+} from "../interface/index.js";
+import { getBindingValue } from "./getBindingValue.js";
 import QRCode from "qrcode";
 import {
   badgeTemplates,
   iconTemplates,
   ribbonTemplates,
-} from "../templates/svgTemplate";
-import Certificates from "../templates/certificates";
-import { portraitComponents } from "../constants/componentsDirection";
+} from "../templates/svgTemplate.js";
+import Certificates from "../templates/certificates/index.js";
+import { portraitComponents } from "../constants/componentsDirection.js";
 
 export async function generateDesignHTML(
   data: IAchievementDesignItem,

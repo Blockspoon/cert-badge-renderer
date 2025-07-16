@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createIconTrophy4 = createIconTrophy4;
-function createIconTrophy4({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+export function createIconTrophy4({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     return `
     <svg
       width="100%"

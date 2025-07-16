@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createIconStar2 = createIconStar2;
-function createIconStar2({ mainColor = "#96A6B4", }) {
+export function createIconStar2({ mainColor = "#96A6B4", }) {
     return `
     <svg
       width="100%"

@@ -1,4 +1,3 @@
-"use strict";
 var __rest = (this && this.__rest) || function (s, e) {
     var t = {};
     for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
@@ -10,10 +9,8 @@ var __rest = (this && this.__rest) || function (s, e) {
         }
     return t;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.groupByType = groupByType;
 // 이미지 배열 객체화
-function groupByType(arrays) {
+export function groupByType(arrays) {
     // 타입 정의
     if (!arrays || !Array.isArray(arrays) || arrays.length === 0)
         return {};
