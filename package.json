@@ -16,7 +16,9 @@
     "./server": {
       "import": "./dist/server/index.js",
       "types": "./dist/server/index.d.ts"
-    }
+    },
+    "./dist/browser": "./dist/browser/index.js",
+    "./dist/server": "./dist/server/index.js"
   },
   "scripts": {
     "build": "tsc",
