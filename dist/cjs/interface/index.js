@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CERTIFICATE_DESIGN_TYPE = exports.ACHIEVEMENT_IMAGES = void 0;
+var ACHIEVEMENT_IMAGES;
+(function (ACHIEVEMENT_IMAGES) {
+    ACHIEVEMENT_IMAGES["ACHIEVEMENT_FORM"] = "achievement_form";
+    ACHIEVEMENT_IMAGES["BADGE_IMAGE"] = "badge_image";
+    // AVATAR_IMAGE = "avatar_image",
+})(ACHIEVEMENT_IMAGES || (exports.ACHIEVEMENT_IMAGES = ACHIEVEMENT_IMAGES = {}));
+// 증명서 디자인
+var CERTIFICATE_DESIGN_TYPE;
+(function (CERTIFICATE_DESIGN_TYPE) {
+    CERTIFICATE_DESIGN_TYPE["TEMPLATE"] = "template";
+    CERTIFICATE_DESIGN_TYPE["BACKGROUND"] = "background";
+    CERTIFICATE_DESIGN_TYPE["ICON"] = "icon";
+    CERTIFICATE_DESIGN_TYPE["TEXT"] = "text";
+    CERTIFICATE_DESIGN_TYPE["IMAGE"] = "image";
+    CERTIFICATE_DESIGN_TYPE["PROPS"] = "props";
+    CERTIFICATE_DESIGN_TYPE["RIBBON"] = "ribbon";
+    CERTIFICATE_DESIGN_TYPE["BADGE"] = "badge";
+})(CERTIFICATE_DESIGN_TYPE || (exports.CERTIFICATE_DESIGN_TYPE = CERTIFICATE_DESIGN_TYPE = {}));
