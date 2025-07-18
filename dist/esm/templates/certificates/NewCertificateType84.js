@@ -1,4 +1,7 @@
-export function createNewCertificateType84({ mainColor = "#96A6B4", subColor = "#96A6B4", extraColor1 = "#96A6B4", extraColor2 = "#96A6B4", }) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createNewCertificateType84 = createNewCertificateType84;
+function createNewCertificateType84({ mainColor = "#96A6B4", subColor = "#96A6B4", extraColor1 = "#96A6B4", extraColor2 = "#96A6B4", }) {
     return `
     <svg
       width="100%"

@@ -1,4 +1,7 @@
-export function createRibbonType8({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createRibbonType8 = createRibbonType8;
+function createRibbonType8({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
     const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
     return `

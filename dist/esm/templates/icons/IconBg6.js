@@ -1,4 +1,7 @@
-export function createIconBg6({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createIconBg6 = createIconBg6;
+function createIconBg6({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     return `
     <svg
       width="100%"

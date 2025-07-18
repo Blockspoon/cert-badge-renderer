@@ -1,4 +1,7 @@
-export function createRibbonType21({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createRibbonType21 = createRibbonType21;
+function createRibbonType21({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     const paintId3 = `paint3_linear_${Math.random().toString(36).substr(2, 9)}`;
     return `
     <svg

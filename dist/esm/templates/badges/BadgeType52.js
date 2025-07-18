@@ -1,4 +1,7 @@
-export function createBadgeType52({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createBadgeType52 = createBadgeType52;
+function createBadgeType52({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     return `
     <svg
       width="100%"

@@ -1,4 +1,7 @@
-export function createIconEtc1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createIconEtc1 = createIconEtc1;
+function createIconEtc1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     return `
     <svg
       width="100%"

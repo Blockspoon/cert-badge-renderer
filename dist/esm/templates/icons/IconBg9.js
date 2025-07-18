@@ -1,4 +1,7 @@
-export function createIconBg9({ mainColor = "#96A6B4", subColor = "#96A6B4", extraColor1 = "#96A6B4", }) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.createIconBg9 = createIconBg9;
+function createIconBg9({ mainColor = "#96A6B4", subColor = "#96A6B4", extraColor1 = "#96A6B4", }) {
     const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
     return `
     <svg

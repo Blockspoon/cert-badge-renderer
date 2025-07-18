@@ -1,137 +1,139 @@
-import { createRibbonType1 } from "./RibbonType1.js";
-import { createRibbonType2 } from "./RibbonType2.js";
-import { createRibbonType4 } from "./RibbonType4.js";
-import { createRibbonType5 } from "./RibbonType5.js";
-import { createRibbonType6 } from "./RibbonType6.js";
-import { createRibbonType7_1 } from "./RibbonType7_1.js";
-import { createRibbonType7 } from "./RibbonType7.js";
-import { createRibbonType8 } from "./RibbonType8.js";
-import { createRibbonType12 } from "./RibbonType12.js";
-import { createRibbonType13_1 } from "./RibbonType13_1.js";
-import { createRibbonType13 } from "./RibbonType13.js";
-import { createRibbonType18_1 } from "./RibbonType18_1.js";
-import { createRibbonType18 } from "./RibbonType18.js";
-import { createRibbonType19_1 } from "./RibbonType19_1.js";
-import { createRibbonType19 } from "./RibbonType19.js";
-import { createRibbonType21 } from "./RibbonType21.js";
-import { createRibbonType22 } from "./RibbonType22.js";
-import { createRibbonType23 } from "./RibbonType23.js";
-import { createRibbonType23_1 } from "./RibbonType23_1.js";
-import { createRibbonType24 } from "./RibbonType24.js";
-import { createRibbonType24_1 } from "./RibbonType24_1.js";
-import { createRibbonType26 } from "./RibbonType26.js";
-import { createRibbonType27 } from "./RibbonType27.js";
-import { createRibbonType27_1 } from "./RibbonType27_1.js";
-import { createRibbonType34 } from "./RibbonType34.js";
-import { createRibbonType35_1 } from "./RibbonType35_1.js";
-import { createRibbonType35 } from "./RibbonType35.js";
-import { createRibbonType45 } from "./RibbonType45.js";
-import { createRibbonType46 } from "./RibbonType46.js";
-import { createRibbonType53 } from "./RibbonType53.js";
-import { createRibbonType57 } from "./RibbonType57.js";
-import { createRibbonType61 } from "./RibbonType61.js";
-import { createRibbonType92 } from "./RibbonType92.js";
-import { createRibbonType93 } from "./RibbonType93.js";
-import { createRibbonType93_1 } from "./RibbonType93_1.js";
-import { createRibbonType96 } from "./RibbonType96.js";
-import { createRibbonType96_1 } from "./RibbonType96_1.js";
-import { createRibbonType97 } from "./RibbonType97.js";
-import { createRibbonType99 } from "./RibbonType99.js";
-import { createRibbonType101 } from "./RibbonType101.js";
-import { createRibbonType101_1 } from "./RibbonType101_1.js";
-import { createRibbonType103 } from "./RibbonType103.js";
-import { createRibbonType107 } from "./RibbonType107.js";
-import { createRibbonType109 } from "./RibbonType109.js";
-import { createRibbonType110 } from "./RibbonType110.js";
-import { createRibbonType113 } from "./RibbonType113.js";
-import { createRibbonType115 } from "./RibbonType115.js";
-import { createRibbonType116_1 } from "./RibbonType116_1.js";
-import { createRibbonType116 } from "./RibbonType116.js";
-import { createRibbonType118 } from "./RibbonType118.js";
-import { createRibbonWing1 } from "./RibbonWing1.js";
-import { createRibbonWing2 } from "./RibbonWing2.js";
-import { createRibbonWing3 } from "./RibbonWing3.js";
-import { createRibbonWing4 } from "./RibbonWing4.js";
-import { createRibbonWing5 } from "./RibbonWing5.js";
-import { createRibbonWing6 } from "./RibbonWing6.js";
-import { createRibbonWing7 } from "./RibbonWing7.js";
-import { createRibbonWing8 } from "./RibbonWing8.js";
-import { createRibbonWing9 } from "./RibbonWing9.js";
-import { createRibbonWing10 } from "./RibbonWing10.js";
-import { createRibbonWing11 } from "./RibbonWing11.js";
-import { createRibbonWing12 } from "./RibbonWing12.js";
-import { createRibbonWing14 } from "./RibbonWing14.js";
-import { createRibbonWing104 } from "./RibbonWing104.js";
-import { createRibbonWing105 } from "./RibbonWing105.js";
-import { createRibbonWing106 } from "./RibbonWing106.js";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const RibbonType1_js_1 = require("./RibbonType1.js");
+const RibbonType2_js_1 = require("./RibbonType2.js");
+const RibbonType4_js_1 = require("./RibbonType4.js");
+const RibbonType5_js_1 = require("./RibbonType5.js");
+const RibbonType6_js_1 = require("./RibbonType6.js");
+const RibbonType7_1_js_1 = require("./RibbonType7_1.js");
+const RibbonType7_js_1 = require("./RibbonType7.js");
+const RibbonType8_js_1 = require("./RibbonType8.js");
+const RibbonType12_js_1 = require("./RibbonType12.js");
+const RibbonType13_1_js_1 = require("./RibbonType13_1.js");
+const RibbonType13_js_1 = require("./RibbonType13.js");
+const RibbonType18_1_js_1 = require("./RibbonType18_1.js");
+const RibbonType18_js_1 = require("./RibbonType18.js");
+const RibbonType19_1_js_1 = require("./RibbonType19_1.js");
+const RibbonType19_js_1 = require("./RibbonType19.js");
+const RibbonType21_js_1 = require("./RibbonType21.js");
+const RibbonType22_js_1 = require("./RibbonType22.js");
+const RibbonType23_js_1 = require("./RibbonType23.js");
+const RibbonType23_1_js_1 = require("./RibbonType23_1.js");
+const RibbonType24_js_1 = require("./RibbonType24.js");
+const RibbonType24_1_js_1 = require("./RibbonType24_1.js");
+const RibbonType26_js_1 = require("./RibbonType26.js");
+const RibbonType27_js_1 = require("./RibbonType27.js");
+const RibbonType27_1_js_1 = require("./RibbonType27_1.js");
+const RibbonType34_js_1 = require("./RibbonType34.js");
+const RibbonType35_1_js_1 = require("./RibbonType35_1.js");
+const RibbonType35_js_1 = require("./RibbonType35.js");
+const RibbonType45_js_1 = require("./RibbonType45.js");
+const RibbonType46_js_1 = require("./RibbonType46.js");
+const RibbonType53_js_1 = require("./RibbonType53.js");
+const RibbonType57_js_1 = require("./RibbonType57.js");
+const RibbonType61_js_1 = require("./RibbonType61.js");
+const RibbonType92_js_1 = require("./RibbonType92.js");
+const RibbonType93_js_1 = require("./RibbonType93.js");
+const RibbonType93_1_js_1 = require("./RibbonType93_1.js");
+const RibbonType96_js_1 = require("./RibbonType96.js");
+const RibbonType96_1_js_1 = require("./RibbonType96_1.js");
+const RibbonType97_js_1 = require("./RibbonType97.js");
+const RibbonType99_js_1 = require("./RibbonType99.js");
+const RibbonType101_js_1 = require("./RibbonType101.js");
+const RibbonType101_1_js_1 = require("./RibbonType101_1.js");
+const RibbonType103_js_1 = require("./RibbonType103.js");
+const RibbonType107_js_1 = require("./RibbonType107.js");
+const RibbonType109_js_1 = require("./RibbonType109.js");
+const RibbonType110_js_1 = require("./RibbonType110.js");
+const RibbonType113_js_1 = require("./RibbonType113.js");
+const RibbonType115_js_1 = require("./RibbonType115.js");
+const RibbonType116_1_js_1 = require("./RibbonType116_1.js");
+const RibbonType116_js_1 = require("./RibbonType116.js");
+const RibbonType118_js_1 = require("./RibbonType118.js");
+const RibbonWing1_js_1 = require("./RibbonWing1.js");
+const RibbonWing2_js_1 = require("./RibbonWing2.js");
+const RibbonWing3_js_1 = require("./RibbonWing3.js");
+const RibbonWing4_js_1 = require("./RibbonWing4.js");
+const RibbonWing5_js_1 = require("./RibbonWing5.js");
+const RibbonWing6_js_1 = require("./RibbonWing6.js");
+const RibbonWing7_js_1 = require("./RibbonWing7.js");
+const RibbonWing8_js_1 = require("./RibbonWing8.js");
+const RibbonWing9_js_1 = require("./RibbonWing9.js");
+const RibbonWing10_js_1 = require("./RibbonWing10.js");
+const RibbonWing11_js_1 = require("./RibbonWing11.js");
+const RibbonWing12_js_1 = require("./RibbonWing12.js");
+const RibbonWing14_js_1 = require("./RibbonWing14.js");
+const RibbonWing104_js_1 = require("./RibbonWing104.js");
+const RibbonWing105_js_1 = require("./RibbonWing105.js");
+const RibbonWing106_js_1 = require("./RibbonWing106.js");
 const Ribbons = {
     // RibbonType Type
-    RibbonType1: createRibbonType1,
-    RibbonType2: createRibbonType2,
-    RibbonType4: createRibbonType4,
-    RibbonType5: createRibbonType5,
-    RibbonType6: createRibbonType6,
-    RibbonType7_1: createRibbonType7_1,
-    RibbonType7: createRibbonType7,
-    RibbonType8: createRibbonType8,
-    RibbonType12: createRibbonType12,
-    RibbonType13_1: createRibbonType13_1,
-    RibbonType13: createRibbonType13,
-    RibbonType18_1: createRibbonType18_1,
-    RibbonType18: createRibbonType18,
-    RibbonType19_1: createRibbonType19_1,
-    RibbonType19: createRibbonType19,
-    RibbonType21: createRibbonType21,
-    RibbonType22: createRibbonType22,
-    RibbonType23: createRibbonType23,
-    RibbonType23_1: createRibbonType23_1,
-    RibbonType24_1: createRibbonType24_1,
-    RibbonType24: createRibbonType24,
-    RibbonType26: createRibbonType26,
-    RibbonType27_1: createRibbonType27_1,
-    RibbonType27: createRibbonType27,
-    RibbonType34: createRibbonType34,
-    RibbonType35_1: createRibbonType35_1,
-    RibbonType35: createRibbonType35,
-    RibbonType45: createRibbonType45,
-    RibbonType46: createRibbonType46,
-    RibbonType53: createRibbonType53,
-    RibbonType57: createRibbonType57,
-    RibbonType61: createRibbonType61,
-    RibbonType92: createRibbonType92,
-    RibbonType93: createRibbonType93,
-    RibbonType93_1: createRibbonType93_1,
-    RibbonType96: createRibbonType96,
-    RibbonType96_1: createRibbonType96_1,
-    RibbonType97: createRibbonType97,
-    RibbonType99: createRibbonType99,
-    RibbonType101: createRibbonType101,
-    RibbonType101_1: createRibbonType101_1,
-    RibbonType103: createRibbonType103,
-    RibbonType107: createRibbonType107,
-    RibbonType109: createRibbonType109,
-    RibbonType110: createRibbonType110,
-    RibbonType113: createRibbonType113,
-    RibbonType115: createRibbonType115,
-    RibbonType116_1: createRibbonType116_1,
-    RibbonType116: createRibbonType116,
-    RibbonType118: createRibbonType118,
+    RibbonType1: RibbonType1_js_1.createRibbonType1,
+    RibbonType2: RibbonType2_js_1.createRibbonType2,
+    RibbonType4: RibbonType4_js_1.createRibbonType4,
+    RibbonType5: RibbonType5_js_1.createRibbonType5,
+    RibbonType6: RibbonType6_js_1.createRibbonType6,
+    RibbonType7_1: RibbonType7_1_js_1.createRibbonType7_1,
+    RibbonType7: RibbonType7_js_1.createRibbonType7,
+    RibbonType8: RibbonType8_js_1.createRibbonType8,
+    RibbonType12: RibbonType12_js_1.createRibbonType12,
+    RibbonType13_1: RibbonType13_1_js_1.createRibbonType13_1,
+    RibbonType13: RibbonType13_js_1.createRibbonType13,
+    RibbonType18_1: RibbonType18_1_js_1.createRibbonType18_1,
+    RibbonType18: RibbonType18_js_1.createRibbonType18,
+    RibbonType19_1: RibbonType19_1_js_1.createRibbonType19_1,
+    RibbonType19: RibbonType19_js_1.createRibbonType19,
+    RibbonType21: RibbonType21_js_1.createRibbonType21,
+    RibbonType22: RibbonType22_js_1.createRibbonType22,
+    RibbonType23: RibbonType23_js_1.createRibbonType23,
+    RibbonType23_1: RibbonType23_1_js_1.createRibbonType23_1,
+    RibbonType24_1: RibbonType24_1_js_1.createRibbonType24_1,
+    RibbonType24: RibbonType24_js_1.createRibbonType24,
+    RibbonType26: RibbonType26_js_1.createRibbonType26,
+    RibbonType27_1: RibbonType27_1_js_1.createRibbonType27_1,
+    RibbonType27: RibbonType27_js_1.createRibbonType27,
+    RibbonType34: RibbonType34_js_1.createRibbonType34,
+    RibbonType35_1: RibbonType35_1_js_1.createRibbonType35_1,
+    RibbonType35: RibbonType35_js_1.createRibbonType35,
+    RibbonType45: RibbonType45_js_1.createRibbonType45,
+    RibbonType46: RibbonType46_js_1.createRibbonType46,
+    RibbonType53: RibbonType53_js_1.createRibbonType53,
+    RibbonType57: RibbonType57_js_1.createRibbonType57,
+    RibbonType61: RibbonType61_js_1.createRibbonType61,
+    RibbonType92: RibbonType92_js_1.createRibbonType92,
+    RibbonType93: RibbonType93_js_1.createRibbonType93,
+    RibbonType93_1: RibbonType93_1_js_1.createRibbonType93_1,
+    RibbonType96: RibbonType96_js_1.createRibbonType96,
+    RibbonType96_1: RibbonType96_1_js_1.createRibbonType96_1,
+    RibbonType97: RibbonType97_js_1.createRibbonType97,
+    RibbonType99: RibbonType99_js_1.createRibbonType99,
+    RibbonType101: RibbonType101_js_1.createRibbonType101,
+    RibbonType101_1: RibbonType101_1_js_1.createRibbonType101_1,
+    RibbonType103: RibbonType103_js_1.createRibbonType103,
+    RibbonType107: RibbonType107_js_1.createRibbonType107,
+    RibbonType109: RibbonType109_js_1.createRibbonType109,
+    RibbonType110: RibbonType110_js_1.createRibbonType110,
+    RibbonType113: RibbonType113_js_1.createRibbonType113,
+    RibbonType115: RibbonType115_js_1.createRibbonType115,
+    RibbonType116_1: RibbonType116_1_js_1.createRibbonType116_1,
+    RibbonType116: RibbonType116_js_1.createRibbonType116,
+    RibbonType118: RibbonType118_js_1.createRibbonType118,
     // RibbonWing Type
-    RibbonWing1: createRibbonWing1,
-    RibbonWing2: createRibbonWing2,
-    RibbonWing3: createRibbonWing3,
-    RibbonWing4: createRibbonWing4,
-    RibbonWing5: createRibbonWing5,
-    RibbonWing6: createRibbonWing6,
-    RibbonWing7: createRibbonWing7,
-    RibbonWing8: createRibbonWing8,
-    RibbonWing9: createRibbonWing9,
-    RibbonWing10: createRibbonWing10,
-    RibbonWing11: createRibbonWing11,
-    RibbonWing12: createRibbonWing12,
-    RibbonWing14: createRibbonWing14,
-    RibbonWing104: createRibbonWing104,
-    RibbonWing105: createRibbonWing105,
-    RibbonWing106: createRibbonWing106,
+    RibbonWing1: RibbonWing1_js_1.createRibbonWing1,
+    RibbonWing2: RibbonWing2_js_1.createRibbonWing2,
+    RibbonWing3: RibbonWing3_js_1.createRibbonWing3,
+    RibbonWing4: RibbonWing4_js_1.createRibbonWing4,
+    RibbonWing5: RibbonWing5_js_1.createRibbonWing5,
+    RibbonWing6: RibbonWing6_js_1.createRibbonWing6,
+    RibbonWing7: RibbonWing7_js_1.createRibbonWing7,
+    RibbonWing8: RibbonWing8_js_1.createRibbonWing8,
+    RibbonWing9: RibbonWing9_js_1.createRibbonWing9,
+    RibbonWing10: RibbonWing10_js_1.createRibbonWing10,
+    RibbonWing11: RibbonWing11_js_1.createRibbonWing11,
+    RibbonWing12: RibbonWing12_js_1.createRibbonWing12,
+    RibbonWing14: RibbonWing14_js_1.createRibbonWing14,
+    RibbonWing104: RibbonWing104_js_1.createRibbonWing104,
+    RibbonWing105: RibbonWing105_js_1.createRibbonWing105,
+    RibbonWing106: RibbonWing106_js_1.createRibbonWing106,
 };
-export default Ribbons;
+exports.default = Ribbons;
