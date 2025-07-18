@@ -5,6 +5,22 @@
   "main": "dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/browser/index.js",
+      "require": "./dist/server/index.js",
+      "types": "./dist/browser/index.d.ts"
+    },
+    "./server": {
+      "import": "./dist/server/index.js",
+      "require": "./dist/server/index.js",
+      "types": "./dist/server/index.d.ts"
+    },
+    "./browser": {
+      "import": "./dist/browser/index.js",
+      "types": "./dist/browser/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json && tsc -p tsconfig.server.json",
     "test": "node test/test.js"
