@@ -8,6 +8,7 @@
   "exports": {
     ".": {
       "import": "./dist/browser/index.js",
+      "require": "./dist/server/index.js",
       "types": "./dist/browser/index.d.ts"
     },
     "./browser": {
@@ -17,12 +18,10 @@
     "./server": {
       "import": "./dist/server/index.js",
       "types": "./dist/server/index.d.ts"
-    },
-    "./dist/browser": "./dist/browser/index.js",
-    "./dist/server": "./dist/server/index.js"
+    }
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.server.json",
     "test": "node test/test.js"
   },
   "keywords": [],
