@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createRibbonType53 = createRibbonType53;
-function createRibbonType53({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+export function createRibbonType53({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     return `
     <svg
       width="100%"

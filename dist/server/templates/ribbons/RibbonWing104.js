@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createRibbonWing104 = createRibbonWing104;
-function createRibbonWing104({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+export function createRibbonWing104({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     return `
     <svg
       width="100%"

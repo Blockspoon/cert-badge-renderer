@@ -1,8 +1,8 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "module": "CommonJS",
-    "moduleResolution": "node", // ✅ bundler 무력화
+    "moduleResolution": "nodenext", // ← 기존 node → nodenext 로 변경
+    "module": "nodenext",
     "target": "ES2020",
     "outDir": "dist/server",
     "declaration": true,

@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createIconBg2 = createIconBg2;
-function createIconBg2({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
+export function createIconBg2({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
     const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
     return `
     <svg

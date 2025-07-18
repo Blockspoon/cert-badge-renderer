@@ -1,16 +1,10 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.generateDesignHTML = generateDesignHTML;
-const index_js_1 = require("../interface/index.js");
-const getBindingValue_js_1 = require("./getBindingValue.js");
-const qrcode_1 = __importDefault(require("qrcode"));
-const svgTemplate_js_1 = require("../templates/svgTemplate.js");
-const index_js_2 = __importDefault(require("../templates/certificates/index.js"));
-const componentsDirection_js_1 = require("../constants/componentsDirection.js");
-async function generateDesignHTML(data, options = {}) {
+import { CERTIFICATE_DESIGN_TYPE, } from "../interface/index.js";
+import { getBindingValue } from "./getBindingValue.js";
+import QRCode from "qrcode";
+import { badgeTemplates, iconTemplates, ribbonTemplates, } from "../templates/svgTemplate.js";
+import Certificates from "../templates/certificates/index.js";
+import { portraitComponents } from "../constants/componentsDirection.js";
+export async function generateDesignHTML(data, options = {}) {
     const { size = 600, noSpace = false } = options;
     // type에 따라 적절한 layout_json 선택
     const elements = data.layout_json;
@@ -22,7 +16,7 @@ async function generateDesignHTML(data, options = {}) {
     function isHorizontal(name) {
         if (!name)
             return false;
-        return !componentsDirection_js_1.portraitComponents.includes(name);
+        return !portraitComponents.includes(name);
     }
     const templateComponentName = data?.template_type;
     const isBadge = data?.template_type.includes("Badge");
@@ -87,7 +81,7 @@ async function generateDesignHTML(data, options = {}) {
           ">
           `;
     if (!isBadge) {
-        html += index_js_2.default[data?.template_type]({
+        html += Certificates[data?.template_type]({
             mainColor: data?.main_color || "#000000",
             subColor: data?.sub_color || "#000000",
             extraColor1: data?.extra_color_1 || "#000000",
@@ -98,8 +92,8 @@ async function generateDesignHTML(data, options = {}) {
         if (element.bindingKey === "requirements")
             continue;
         let bindingValue = null;
-        if (element.designType === index_js_1.CERTIFICATE_DESIGN_TYPE.PROPS) {
-            bindingValue = (0, getBindingValue_js_1.getBindingValue)(element.type, element.bindingKey, data);
+        if (element.designType === CERTIFICATE_DESIGN_TYPE.PROPS) {
+            bindingValue = getBindingValue(element.type, element.bindingKey, data);
             if (element.controlType === "text") {
                 element.text = bindingValue;
             }
@@ -111,7 +105,7 @@ async function generateDesignHTML(data, options = {}) {
             }
         }
         if (bindingValue === null &&
-            element.designType === index_js_1.CERTIFICATE_DESIGN_TYPE.PROPS)
+            element.designType === CERTIFICATE_DESIGN_TYPE.PROPS)
             continue;
         const commonStyles = `
         position: absolute;
@@ -143,10 +137,10 @@ async function generateDesignHTML(data, options = {}) {
       `;
         if (element.controlType === "svg") {
             const templates = element.designType === "badge"
-                ? svgTemplate_js_1.badgeTemplates
+                ? badgeTemplates
                 : element.designType === "icon"
-                    ? svgTemplate_js_1.iconTemplates
-                    : svgTemplate_js_1.ribbonTemplates;
+                    ? iconTemplates
+                    : ribbonTemplates;
             const template = templates.find((t) => t.id === element.componentName);
             if (template) {
                 const optimizedStyles = `
@@ -192,7 +186,7 @@ async function generateDesignHTML(data, options = {}) {
             if (element.bindingKey === "qr_code" && element.src) {
                 // QR 코드
                 try {
-                    const qrCodeSvg = await qrcode_1.default.toString(element.src, {
+                    const qrCodeSvg = await QRCode.toString(element.src, {
                         type: "svg",
                         width: element.width,
                         height: element.height,

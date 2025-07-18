@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.groupByType = groupByType;
 // 이미지 배열 객체화
-function groupByType(arrays) {
+export function groupByType(arrays) {
     // 타입 정의
     if (!arrays || !Array.isArray(arrays) || arrays.length === 0)
         return {};

@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.landscapeComponents = exports.portraitComponents = void 0;
 // 세로
-exports.portraitComponents = [
+export const portraitComponents = [
     "NewCertificateType5",
     "NewCertificateType6",
     "NewCertificateType6Single",
@@ -48,7 +45,7 @@ exports.portraitComponents = [
     "NewEmptyPortraitCertificate",
 ];
 // 가로
-exports.landscapeComponents = [
+export const landscapeComponents = [
     "NewCertificateType1",
     "NewCertificateType2",
     "NewCertificateType3",

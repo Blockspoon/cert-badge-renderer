@@ -1,16 +1,10 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.generateAchievementHTML = generateAchievementHTML;
-const index_js_1 = require("../interface/index.js");
-const getBindingValue_js_1 = require("./getBindingValue.js");
-const qrcode_1 = __importDefault(require("qrcode"));
-const svgTemplate_js_1 = require("../templates/svgTemplate.js");
-const index_js_2 = __importDefault(require("../templates/certificates/index.js"));
-const componentsDirection_js_1 = require("../constants/componentsDirection.js");
-async function generateAchievementHTML(achievementInfo, options = {}) {
+import { CERTIFICATE_DESIGN_TYPE, } from "../interface/index.js";
+import { getBindingValue } from "./getBindingValue.js";
+import QRCode from "qrcode";
+import { badgeTemplates, iconTemplates, ribbonTemplates, } from "../templates/svgTemplate.js";
+import Certificates from "../templates/certificates/index.js";
+import { portraitComponents } from "../constants/componentsDirection.js";
+export async function generateAchievementHTML(achievementInfo, options = {}) {
     const { type = "certificate", size = 600, noSpace = false } = options;
     let achievementForm;
     if (achievementInfo.achievementForm) {
@@ -33,7 +27,7 @@ async function generateAchievementHTML(achievementInfo, options = {}) {
     function isHorizontal(name) {
         if (!name)
             return false;
-        return !componentsDirection_js_1.portraitComponents.includes(name);
+        return !portraitComponents.includes(name);
     }
     const templateComponentName = achievementForm?.achievementCertificateDesign?.template_type;
     const height = type == "badge" ? 600 : isHorizontal(templateComponentName) ? 810 : 1152;
@@ -89,7 +83,7 @@ async function generateAchievementHTML(achievementInfo, options = {}) {
         ">
         `;
     if (type == "certificate") {
-        html += index_js_2.default[achievementForm?.achievementCertificateDesign?.template_type]({
+        html += Certificates[achievementForm?.achievementCertificateDesign?.template_type]({
             mainColor: achievementForm?.achievementCertificateDesign?.main_color || "#000000",
             subColor: achievementForm?.achievementCertificateDesign?.sub_color || "#000000",
             extraColor1: achievementForm?.achievementCertificateDesign?.extra_color_1 ||
@@ -102,8 +96,8 @@ async function generateAchievementHTML(achievementInfo, options = {}) {
         if (element.bindingKey === "requirements")
             continue;
         let bindingValue = null;
-        if (element.designType === index_js_1.CERTIFICATE_DESIGN_TYPE.PROPS) {
-            bindingValue = (0, getBindingValue_js_1.getBindingValue)(element.type, element.bindingKey, achievementInfo);
+        if (element.designType === CERTIFICATE_DESIGN_TYPE.PROPS) {
+            bindingValue = getBindingValue(element.type, element.bindingKey, achievementInfo);
             if (element.controlType === "text") {
                 element.text = bindingValue;
             }
@@ -112,7 +106,7 @@ async function generateAchievementHTML(achievementInfo, options = {}) {
             }
         }
         if (bindingValue === null &&
-            element.designType === index_js_1.CERTIFICATE_DESIGN_TYPE.PROPS)
+            element.designType === CERTIFICATE_DESIGN_TYPE.PROPS)
             continue;
         const commonStyles = `
       position: absolute;
@@ -144,10 +138,10 @@ async function generateAchievementHTML(achievementInfo, options = {}) {
     `;
         if (element.controlType === "svg") {
             const templates = element.designType === "badge"
-                ? svgTemplate_js_1.badgeTemplates
+                ? badgeTemplates
                 : element.designType === "icon"
-                    ? svgTemplate_js_1.iconTemplates
-                    : svgTemplate_js_1.ribbonTemplates;
+                    ? iconTemplates
+                    : ribbonTemplates;
             const template = templates.find((t) => t.id === element.componentName);
             if (template) {
                 const optimizedStyles = `
@@ -212,7 +206,7 @@ async function generateAchievementHTML(achievementInfo, options = {}) {
             else if (element.bindingKey === "qr_code" && element.src) {
                 // QR 코드
                 try {
-                    const qrCodeSvg = await qrcode_1.default.toString(element.src, {
+                    const qrCodeSvg = await QRCode.toString(element.src, {
                         type: "svg",
                         width: element.width,
                         height: element.height,

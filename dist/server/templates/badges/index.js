@@ -1,247 +1,245 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const BadgeType1_js_1 = require("./BadgeType1.js");
-const BadgeType2_js_1 = require("./BadgeType2.js");
-const BadgeType3_js_1 = require("./BadgeType3.js");
-const BadgeType4_js_1 = require("./BadgeType4.js");
-const BadgeType5_js_1 = require("./BadgeType5.js");
-const BadgeType6_js_1 = require("./BadgeType6.js");
-const BadgeType7_js_1 = require("./BadgeType7.js");
-const BadgeType8_js_1 = require("./BadgeType8.js");
-const BadgeType9_js_1 = require("./BadgeType9.js");
-const BadgeType10_js_1 = require("./BadgeType10.js");
-const BadgeType11_js_1 = require("./BadgeType11.js");
-const BadgeType12_js_1 = require("./BadgeType12.js");
-const BadgeType13_js_1 = require("./BadgeType13.js");
-const BadgeType14_js_1 = require("./BadgeType14.js");
-const BadgeType15_js_1 = require("./BadgeType15.js");
-const BadgeType16_js_1 = require("./BadgeType16.js");
-const BadgeType17_js_1 = require("./BadgeType17.js");
-const BadgeType18_js_1 = require("./BadgeType18.js");
-const BadgeType19_js_1 = require("./BadgeType19.js");
-const BadgeType20_js_1 = require("./BadgeType20.js");
-const BadgeType21_js_1 = require("./BadgeType21.js");
-const BadgeType22_js_1 = require("./BadgeType22.js");
-const BadgeType23_js_1 = require("./BadgeType23.js");
-const BadgeType24_js_1 = require("./BadgeType24.js");
-const BadgeType25_js_1 = require("./BadgeType25.js");
-const BadgeType26_js_1 = require("./BadgeType26.js");
-const BadgeType27_js_1 = require("./BadgeType27.js");
-const BadgeType28_js_1 = require("./BadgeType28.js");
-const BadgeType29_js_1 = require("./BadgeType29.js");
-const BadgeType30_js_1 = require("./BadgeType30.js");
-const BadgeType31_js_1 = require("./BadgeType31.js");
-const BadgeType32_js_1 = require("./BadgeType32.js");
-const BadgeType33_js_1 = require("./BadgeType33.js");
-const BadgeType34_js_1 = require("./BadgeType34.js");
-const BadgeType35_js_1 = require("./BadgeType35.js");
-const BadgeType36_js_1 = require("./BadgeType36.js");
-const BadgeType37_js_1 = require("./BadgeType37.js");
-const BadgeType38_js_1 = require("./BadgeType38.js");
-const BadgeType39_js_1 = require("./BadgeType39.js");
-const BadgeType40_js_1 = require("./BadgeType40.js");
-const BadgeType41_js_1 = require("./BadgeType41.js");
-const BadgeType42_js_1 = require("./BadgeType42.js");
-const BadgeType43_js_1 = require("./BadgeType43.js");
-const BadgeType44_js_1 = require("./BadgeType44.js");
-const BadgeType45_js_1 = require("./BadgeType45.js");
-const BadgeType46_js_1 = require("./BadgeType46.js");
-const BadgeType47_js_1 = require("./BadgeType47.js");
-const BadgeType48_js_1 = require("./BadgeType48.js");
-const BadgeType49_js_1 = require("./BadgeType49.js");
-const BadgeType50_js_1 = require("./BadgeType50.js");
-const BadgeType51_js_1 = require("./BadgeType51.js");
-const BadgeType52_js_1 = require("./BadgeType52.js");
-const BadgeType53_js_1 = require("./BadgeType53.js");
-const BadgeType54_js_1 = require("./BadgeType54.js");
-const BadgeType55_js_1 = require("./BadgeType55.js");
-const BadgeType56_js_1 = require("./BadgeType56.js");
-const BadgeType57_js_1 = require("./BadgeType57.js");
-const BadgeType58_js_1 = require("./BadgeType58.js");
-const BadgeType59_js_1 = require("./BadgeType59.js");
-const BadgeType60_js_1 = require("./BadgeType60.js");
-const BadgeType61_js_1 = require("./BadgeType61.js");
-const BadgeType62_js_1 = require("./BadgeType62.js");
-const BadgeType63_js_1 = require("./BadgeType63.js");
-const BadgeType64_js_1 = require("./BadgeType64.js");
-const BadgeType65_js_1 = require("./BadgeType65.js");
-const BadgeType66_js_1 = require("./BadgeType66.js");
-const BadgeType67_js_1 = require("./BadgeType67.js");
-const BadgeType68_js_1 = require("./BadgeType68.js");
-const BadgeType69_js_1 = require("./BadgeType69.js");
-const BadgeType70_js_1 = require("./BadgeType70.js");
-const BadgeType71_js_1 = require("./BadgeType71.js");
-const BadgeType72_js_1 = require("./BadgeType72.js");
-const BadgeType73_js_1 = require("./BadgeType73.js");
-const BadgeType74_js_1 = require("./BadgeType74.js");
-const BadgeType75_js_1 = require("./BadgeType75.js");
-const BadgeType76_js_1 = require("./BadgeType76.js");
-const BadgeType77_js_1 = require("./BadgeType77.js");
-const BadgeType78_js_1 = require("./BadgeType78.js");
-const BadgeType79_js_1 = require("./BadgeType79.js");
-const BadgeType80_js_1 = require("./BadgeType80.js");
-const BadgeType81_js_1 = require("./BadgeType81.js");
-const BadgeType82_js_1 = require("./BadgeType82.js");
-const BadgeType83_js_1 = require("./BadgeType83.js");
-const BadgeType84_js_1 = require("./BadgeType84.js");
-const BadgeType85_js_1 = require("./BadgeType85.js");
-const BadgeType86_js_1 = require("./BadgeType86.js");
-const BadgeType87_js_1 = require("./BadgeType87.js");
-const BadgeType88_js_1 = require("./BadgeType88.js");
-const BadgeType89_js_1 = require("./BadgeType89.js");
-const BadgeType90_js_1 = require("./BadgeType90.js");
-const BadgeType91_js_1 = require("./BadgeType91.js");
-const BadgeType92_js_1 = require("./BadgeType92.js");
-const BadgeType93_js_1 = require("./BadgeType93.js");
-const BadgeType94_js_1 = require("./BadgeType94.js");
-const BadgeType95_js_1 = require("./BadgeType95.js");
-const BadgeType96_js_1 = require("./BadgeType96.js");
-const BadgeType97_js_1 = require("./BadgeType97.js");
-const BadgeType98_js_1 = require("./BadgeType98.js");
-const BadgeType99_js_1 = require("./BadgeType99.js");
-const BadgeType100_js_1 = require("./BadgeType100.js");
-const BadgeType101_js_1 = require("./BadgeType101.js");
-const BadgeType102_js_1 = require("./BadgeType102.js");
-const BadgeType103_js_1 = require("./BadgeType103.js");
-const BadgeType104_js_1 = require("./BadgeType104.js");
-const BadgeType105_js_1 = require("./BadgeType105.js");
-const BadgeType106_js_1 = require("./BadgeType106.js");
-const BadgeType107_js_1 = require("./BadgeType107.js");
-const BadgeType108_js_1 = require("./BadgeType108.js");
-const BadgeType109_js_1 = require("./BadgeType109.js");
-const BadgeType110_js_1 = require("./BadgeType110.js");
-const BadgeType111_js_1 = require("./BadgeType111.js");
-const BadgeType112_js_1 = require("./BadgeType112.js");
-const BadgeType113_js_1 = require("./BadgeType113.js");
-const BadgeType114_js_1 = require("./BadgeType114.js");
-const BadgeType115_js_1 = require("./BadgeType115.js");
-const BadgeType116_js_1 = require("./BadgeType116.js");
-const BadgeType117_js_1 = require("./BadgeType117.js");
-const BadgeType118_js_1 = require("./BadgeType118.js");
-const BadgeType119_js_1 = require("./BadgeType119.js");
-const BadgeType120_js_1 = require("./BadgeType120.js");
-const BadgeType121_js_1 = require("./BadgeType121.js");
+import { createBadgeType1 } from "./BadgeType1.js";
+import { createBadgeType2 } from "./BadgeType2.js";
+import { createBadgeType3 } from "./BadgeType3.js";
+import { createBadgeType4 } from "./BadgeType4.js";
+import { createBadgeType5 } from "./BadgeType5.js";
+import { createBadgeType6 } from "./BadgeType6.js";
+import { createBadgeType7 } from "./BadgeType7.js";
+import { createBadgeType8 } from "./BadgeType8.js";
+import { createBadgeType9 } from "./BadgeType9.js";
+import { createBadgeType10 } from "./BadgeType10.js";
+import { createBadgeType11 } from "./BadgeType11.js";
+import { createBadgeType12 } from "./BadgeType12.js";
+import { createBadgeType13 } from "./BadgeType13.js";
+import { createBadgeType14 } from "./BadgeType14.js";
+import { createBadgeType15 } from "./BadgeType15.js";
+import { createBadgeType16 } from "./BadgeType16.js";
+import { createBadgeType17 } from "./BadgeType17.js";
+import { createBadgeType18 } from "./BadgeType18.js";
+import { createBadgeType19 } from "./BadgeType19.js";
+import { createBadgeType20 } from "./BadgeType20.js";
+import { createBadgeType21 } from "./BadgeType21.js";
+import { createBadgeType22 } from "./BadgeType22.js";
+import { createBadgeType23 } from "./BadgeType23.js";
+import { createBadgeType24 } from "./BadgeType24.js";
+import { createBadgeType25 } from "./BadgeType25.js";
+import { createBadgeType26 } from "./BadgeType26.js";
+import { createBadgeType27 } from "./BadgeType27.js";
+import { createBadgeType28 } from "./BadgeType28.js";
+import { createBadgeType29 } from "./BadgeType29.js";
+import { createBadgeType30 } from "./BadgeType30.js";
+import { createBadgeType31 } from "./BadgeType31.js";
+import { createBadgeType32 } from "./BadgeType32.js";
+import { createBadgeType33 } from "./BadgeType33.js";
+import { createBadgeType34 } from "./BadgeType34.js";
+import { createBadgeType35 } from "./BadgeType35.js";
+import { createBadgeType36 } from "./BadgeType36.js";
+import { createBadgeType37 } from "./BadgeType37.js";
+import { createBadgeType38 } from "./BadgeType38.js";
+import { createBadgeType39 } from "./BadgeType39.js";
+import { createBadgeType40 } from "./BadgeType40.js";
+import { createBadgeType41 } from "./BadgeType41.js";
+import { createBadgeType42 } from "./BadgeType42.js";
+import { createBadgeType43 } from "./BadgeType43.js";
+import { createBadgeType44 } from "./BadgeType44.js";
+import { createBadgeType45 } from "./BadgeType45.js";
+import { createBadgeType46 } from "./BadgeType46.js";
+import { createBadgeType47 } from "./BadgeType47.js";
+import { createBadgeType48 } from "./BadgeType48.js";
+import { createBadgeType49 } from "./BadgeType49.js";
+import { createBadgeType50 } from "./BadgeType50.js";
+import { createBadgeType51 } from "./BadgeType51.js";
+import { createBadgeType52 } from "./BadgeType52.js";
+import { createBadgeType53 } from "./BadgeType53.js";
+import { createBadgeType54 } from "./BadgeType54.js";
+import { createBadgeType55 } from "./BadgeType55.js";
+import { createBadgeType56 } from "./BadgeType56.js";
+import { createBadgeType57 } from "./BadgeType57.js";
+import { createBadgeType58 } from "./BadgeType58.js";
+import { createBadgeType59 } from "./BadgeType59.js";
+import { createBadgeType60 } from "./BadgeType60.js";
+import { createBadgeType61 } from "./BadgeType61.js";
+import { createBadgeType62 } from "./BadgeType62.js";
+import { createBadgeType63 } from "./BadgeType63.js";
+import { createBadgeType64 } from "./BadgeType64.js";
+import { createBadgeType65 } from "./BadgeType65.js";
+import { createBadgeType66 } from "./BadgeType66.js";
+import { createBadgeType67 } from "./BadgeType67.js";
+import { createBadgeType68 } from "./BadgeType68.js";
+import { createBadgeType69 } from "./BadgeType69.js";
+import { createBadgeType70 } from "./BadgeType70.js";
+import { createBadgeType71 } from "./BadgeType71.js";
+import { createBadgeType72 } from "./BadgeType72.js";
+import { createBadgeType73 } from "./BadgeType73.js";
+import { createBadgeType74 } from "./BadgeType74.js";
+import { createBadgeType75 } from "./BadgeType75.js";
+import { createBadgeType76 } from "./BadgeType76.js";
+import { createBadgeType77 } from "./BadgeType77.js";
+import { createBadgeType78 } from "./BadgeType78.js";
+import { createBadgeType79 } from "./BadgeType79.js";
+import { createBadgeType80 } from "./BadgeType80.js";
+import { createBadgeType81 } from "./BadgeType81.js";
+import { createBadgeType82 } from "./BadgeType82.js";
+import { createBadgeType83 } from "./BadgeType83.js";
+import { createBadgeType84 } from "./BadgeType84.js";
+import { createBadgeType85 } from "./BadgeType85.js";
+import { createBadgeType86 } from "./BadgeType86.js";
+import { createBadgeType87 } from "./BadgeType87.js";
+import { createBadgeType88 } from "./BadgeType88.js";
+import { createBadgeType89 } from "./BadgeType89.js";
+import { createBadgeType90 } from "./BadgeType90.js";
+import { createBadgeType91 } from "./BadgeType91.js";
+import { createBadgeType92 } from "./BadgeType92.js";
+import { createBadgeType93 } from "./BadgeType93.js";
+import { createBadgeType94 } from "./BadgeType94.js";
+import { createBadgeType95 } from "./BadgeType95.js";
+import { createBadgeType96 } from "./BadgeType96.js";
+import { createBadgeType97 } from "./BadgeType97.js";
+import { createBadgeType98 } from "./BadgeType98.js";
+import { createBadgeType99 } from "./BadgeType99.js";
+import { createBadgeType100 } from "./BadgeType100.js";
+import { createBadgeType101 } from "./BadgeType101.js";
+import { createBadgeType102 } from "./BadgeType102.js";
+import { createBadgeType103 } from "./BadgeType103.js";
+import { createBadgeType104 } from "./BadgeType104.js";
+import { createBadgeType105 } from "./BadgeType105.js";
+import { createBadgeType106 } from "./BadgeType106.js";
+import { createBadgeType107 } from "./BadgeType107.js";
+import { createBadgeType108 } from "./BadgeType108.js";
+import { createBadgeType109 } from "./BadgeType109.js";
+import { createBadgeType110 } from "./BadgeType110.js";
+import { createBadgeType111 } from "./BadgeType111.js";
+import { createBadgeType112 } from "./BadgeType112.js";
+import { createBadgeType113 } from "./BadgeType113.js";
+import { createBadgeType114 } from "./BadgeType114.js";
+import { createBadgeType115 } from "./BadgeType115.js";
+import { createBadgeType116 } from "./BadgeType116.js";
+import { createBadgeType117 } from "./BadgeType117.js";
+import { createBadgeType118 } from "./BadgeType118.js";
+import { createBadgeType119 } from "./BadgeType119.js";
+import { createBadgeType120 } from "./BadgeType120.js";
+import { createBadgeType121 } from "./BadgeType121.js";
 const Badges = {
-    BadgeType1: BadgeType1_js_1.createBadgeType1,
-    BadgeType2: BadgeType2_js_1.createBadgeType2,
-    BadgeType3: BadgeType3_js_1.createBadgeType3,
-    BadgeType4: BadgeType4_js_1.createBadgeType4,
-    BadgeType5: BadgeType5_js_1.createBadgeType5,
-    BadgeType6: BadgeType6_js_1.createBadgeType6,
-    BadgeType7: BadgeType7_js_1.createBadgeType7,
-    BadgeType8: BadgeType8_js_1.createBadgeType8,
-    BadgeType9: BadgeType9_js_1.createBadgeType9,
-    BadgeType10: BadgeType10_js_1.createBadgeType10,
-    BadgeType11: BadgeType11_js_1.createBadgeType11,
-    BadgeType12: BadgeType12_js_1.createBadgeType12,
-    BadgeType13: BadgeType13_js_1.createBadgeType13,
-    BadgeType14: BadgeType14_js_1.createBadgeType14,
-    BadgeType15: BadgeType15_js_1.createBadgeType15,
-    BadgeType16: BadgeType16_js_1.createBadgeType16,
-    BadgeType17: BadgeType17_js_1.createBadgeType17,
-    BadgeType18: BadgeType18_js_1.createBadgeType18,
-    BadgeType19: BadgeType19_js_1.createBadgeType19,
-    BadgeType20: BadgeType20_js_1.createBadgeType20,
-    BadgeType21: BadgeType21_js_1.createBadgeType21,
-    BadgeType22: BadgeType22_js_1.createBadgeType22,
-    BadgeType23: BadgeType23_js_1.createBadgeType23,
-    BadgeType24: BadgeType24_js_1.createBadgeType24,
-    BadgeType25: BadgeType25_js_1.createBadgeType25,
-    BadgeType26: BadgeType26_js_1.createBadgeType26,
-    BadgeType27: BadgeType27_js_1.createBadgeType27,
-    BadgeType28: BadgeType28_js_1.createBadgeType28,
-    BadgeType29: BadgeType29_js_1.createBadgeType29,
-    BadgeType30: BadgeType30_js_1.createBadgeType30,
-    BadgeType31: BadgeType31_js_1.createBadgeType31,
-    BadgeType32: BadgeType32_js_1.createBadgeType32,
-    BadgeType33: BadgeType33_js_1.createBadgeType33,
-    BadgeType34: BadgeType34_js_1.createBadgeType34,
-    BadgeType35: BadgeType35_js_1.createBadgeType35,
-    BadgeType36: BadgeType36_js_1.createBadgeType36,
-    BadgeType37: BadgeType37_js_1.createBadgeType37,
-    BadgeType38: BadgeType38_js_1.createBadgeType38,
-    BadgeType39: BadgeType39_js_1.createBadgeType39,
-    BadgeType40: BadgeType40_js_1.createBadgeType40,
-    BadgeType41: BadgeType41_js_1.createBadgeType41,
-    BadgeType42: BadgeType42_js_1.createBadgeType42,
-    BadgeType43: BadgeType43_js_1.createBadgeType43,
-    BadgeType44: BadgeType44_js_1.createBadgeType44,
-    BadgeType45: BadgeType45_js_1.createBadgeType45,
-    BadgeType46: BadgeType46_js_1.createBadgeType46,
-    BadgeType47: BadgeType47_js_1.createBadgeType47,
-    BadgeType48: BadgeType48_js_1.createBadgeType48,
-    BadgeType49: BadgeType49_js_1.createBadgeType49,
-    BadgeType50: BadgeType50_js_1.createBadgeType50,
-    BadgeType51: BadgeType51_js_1.createBadgeType51,
-    BadgeType52: BadgeType52_js_1.createBadgeType52,
-    BadgeType53: BadgeType53_js_1.createBadgeType53,
-    BadgeType54: BadgeType54_js_1.createBadgeType54,
-    BadgeType55: BadgeType55_js_1.createBadgeType55,
-    BadgeType56: BadgeType56_js_1.createBadgeType56,
-    BadgeType57: BadgeType57_js_1.createBadgeType57,
-    BadgeType58: BadgeType58_js_1.createBadgeType58,
-    BadgeType59: BadgeType59_js_1.createBadgeType59,
-    BadgeType60: BadgeType60_js_1.createBadgeType60,
-    BadgeType61: BadgeType61_js_1.createBadgeType61,
-    BadgeType62: BadgeType62_js_1.createBadgeType62,
-    BadgeType63: BadgeType63_js_1.createBadgeType63,
-    BadgeType64: BadgeType64_js_1.createBadgeType64,
-    BadgeType65: BadgeType65_js_1.createBadgeType65,
-    BadgeType66: BadgeType66_js_1.createBadgeType66,
-    BadgeType67: BadgeType67_js_1.createBadgeType67,
-    BadgeType68: BadgeType68_js_1.createBadgeType68,
-    BadgeType69: BadgeType69_js_1.createBadgeType69,
-    BadgeType70: BadgeType70_js_1.createBadgeType70,
-    BadgeType71: BadgeType71_js_1.createBadgeType71,
-    BadgeType72: BadgeType72_js_1.createBadgeType72,
-    BadgeType73: BadgeType73_js_1.createBadgeType73,
-    BadgeType74: BadgeType74_js_1.createBadgeType74,
-    BadgeType75: BadgeType75_js_1.createBadgeType75,
-    BadgeType76: BadgeType76_js_1.createBadgeType76,
-    BadgeType77: BadgeType77_js_1.createBadgeType77,
-    BadgeType78: BadgeType78_js_1.createBadgeType78,
-    BadgeType79: BadgeType79_js_1.createBadgeType79,
-    BadgeType80: BadgeType80_js_1.createBadgeType80,
-    BadgeType81: BadgeType81_js_1.createBadgeType81,
-    BadgeType82: BadgeType82_js_1.createBadgeType82,
-    BadgeType83: BadgeType83_js_1.createBadgeType83,
-    BadgeType84: BadgeType84_js_1.createBadgeType84,
-    BadgeType85: BadgeType85_js_1.createBadgeType85,
-    BadgeType86: BadgeType86_js_1.createBadgeType86,
-    BadgeType87: BadgeType87_js_1.createBadgeType87,
-    BadgeType88: BadgeType88_js_1.createBadgeType88,
-    BadgeType89: BadgeType89_js_1.createBadgeType89,
-    BadgeType90: BadgeType90_js_1.createBadgeType90,
-    BadgeType91: BadgeType91_js_1.createBadgeType91,
-    BadgeType92: BadgeType92_js_1.createBadgeType92,
-    BadgeType93: BadgeType93_js_1.createBadgeType93,
-    BadgeType94: BadgeType94_js_1.createBadgeType94,
-    BadgeType95: BadgeType95_js_1.createBadgeType95,
-    BadgeType96: BadgeType96_js_1.createBadgeType96,
-    BadgeType97: BadgeType97_js_1.createBadgeType97,
-    BadgeType98: BadgeType98_js_1.createBadgeType98,
-    BadgeType99: BadgeType99_js_1.createBadgeType99,
-    BadgeType100: BadgeType100_js_1.createBadgeType100,
-    BadgeType101: BadgeType101_js_1.createBadgeType101,
-    BadgeType102: BadgeType102_js_1.createBadgeType102,
-    BadgeType103: BadgeType103_js_1.createBadgeType103,
-    BadgeType104: BadgeType104_js_1.createBadgeType104,
-    BadgeType105: BadgeType105_js_1.createBadgeType105,
-    BadgeType106: BadgeType106_js_1.createBadgeType106,
-    BadgeType107: BadgeType107_js_1.createBadgeType107,
-    BadgeType108: BadgeType108_js_1.createBadgeType108,
-    BadgeType109: BadgeType109_js_1.createBadgeType109,
-    BadgeType110: BadgeType110_js_1.createBadgeType110,
-    BadgeType111: BadgeType111_js_1.createBadgeType111,
-    BadgeType112: BadgeType112_js_1.createBadgeType112,
-    BadgeType113: BadgeType113_js_1.createBadgeType113,
-    BadgeType114: BadgeType114_js_1.createBadgeType114,
-    BadgeType115: BadgeType115_js_1.createBadgeType115,
-    BadgeType116: BadgeType116_js_1.createBadgeType116,
-    BadgeType117: BadgeType117_js_1.createBadgeType117,
-    BadgeType118: BadgeType118_js_1.createBadgeType118,
-    BadgeType119: BadgeType119_js_1.createBadgeType119,
-    BadgeType120: BadgeType120_js_1.createBadgeType120,
-    BadgeType121: BadgeType121_js_1.createBadgeType121,
+    BadgeType1: createBadgeType1,
+    BadgeType2: createBadgeType2,
+    BadgeType3: createBadgeType3,
+    BadgeType4: createBadgeType4,
+    BadgeType5: createBadgeType5,
+    BadgeType6: createBadgeType6,
+    BadgeType7: createBadgeType7,
+    BadgeType8: createBadgeType8,
+    BadgeType9: createBadgeType9,
+    BadgeType10: createBadgeType10,
+    BadgeType11: createBadgeType11,
+    BadgeType12: createBadgeType12,
+    BadgeType13: createBadgeType13,
+    BadgeType14: createBadgeType14,
+    BadgeType15: createBadgeType15,
+    BadgeType16: createBadgeType16,
+    BadgeType17: createBadgeType17,
+    BadgeType18: createBadgeType18,
+    BadgeType19: createBadgeType19,
+    BadgeType20: createBadgeType20,
+    BadgeType21: createBadgeType21,
+    BadgeType22: createBadgeType22,
+    BadgeType23: createBadgeType23,
+    BadgeType24: createBadgeType24,
+    BadgeType25: createBadgeType25,
+    BadgeType26: createBadgeType26,
+    BadgeType27: createBadgeType27,
+    BadgeType28: createBadgeType28,
+    BadgeType29: createBadgeType29,
+    BadgeType30: createBadgeType30,
+    BadgeType31: createBadgeType31,
+    BadgeType32: createBadgeType32,
+    BadgeType33: createBadgeType33,
+    BadgeType34: createBadgeType34,
+    BadgeType35: createBadgeType35,
+    BadgeType36: createBadgeType36,
+    BadgeType37: createBadgeType37,
+    BadgeType38: createBadgeType38,
+    BadgeType39: createBadgeType39,
+    BadgeType40: createBadgeType40,
+    BadgeType41: createBadgeType41,
+    BadgeType42: createBadgeType42,
+    BadgeType43: createBadgeType43,
+    BadgeType44: createBadgeType44,
+    BadgeType45: createBadgeType45,
+    BadgeType46: createBadgeType46,
+    BadgeType47: createBadgeType47,
+    BadgeType48: createBadgeType48,
+    BadgeType49: createBadgeType49,
+    BadgeType50: createBadgeType50,
+    BadgeType51: createBadgeType51,
+    BadgeType52: createBadgeType52,
+    BadgeType53: createBadgeType53,
+    BadgeType54: createBadgeType54,
+    BadgeType55: createBadgeType55,
+    BadgeType56: createBadgeType56,
+    BadgeType57: createBadgeType57,
+    BadgeType58: createBadgeType58,
+    BadgeType59: createBadgeType59,
+    BadgeType60: createBadgeType60,
+    BadgeType61: createBadgeType61,
+    BadgeType62: createBadgeType62,
+    BadgeType63: createBadgeType63,
+    BadgeType64: createBadgeType64,
+    BadgeType65: createBadgeType65,
+    BadgeType66: createBadgeType66,
+    BadgeType67: createBadgeType67,
+    BadgeType68: createBadgeType68,
+    BadgeType69: createBadgeType69,
+    BadgeType70: createBadgeType70,
+    BadgeType71: createBadgeType71,
+    BadgeType72: createBadgeType72,
+    BadgeType73: createBadgeType73,
+    BadgeType74: createBadgeType74,
+    BadgeType75: createBadgeType75,
+    BadgeType76: createBadgeType76,
+    BadgeType77: createBadgeType77,
+    BadgeType78: createBadgeType78,
+    BadgeType79: createBadgeType79,
+    BadgeType80: createBadgeType80,
+    BadgeType81: createBadgeType81,
+    BadgeType82: createBadgeType82,
+    BadgeType83: createBadgeType83,
+    BadgeType84: createBadgeType84,
+    BadgeType85: createBadgeType85,
+    BadgeType86: createBadgeType86,
+    BadgeType87: createBadgeType87,
+    BadgeType88: createBadgeType88,
+    BadgeType89: createBadgeType89,
+    BadgeType90: createBadgeType90,
+    BadgeType91: createBadgeType91,
+    BadgeType92: createBadgeType92,
+    BadgeType93: createBadgeType93,
+    BadgeType94: createBadgeType94,
+    BadgeType95: createBadgeType95,
+    BadgeType96: createBadgeType96,
+    BadgeType97: createBadgeType97,
+    BadgeType98: createBadgeType98,
+    BadgeType99: createBadgeType99,
+    BadgeType100: createBadgeType100,
+    BadgeType101: createBadgeType101,
+    BadgeType102: createBadgeType102,
+    BadgeType103: createBadgeType103,
+    BadgeType104: createBadgeType104,
+    BadgeType105: createBadgeType105,
+    BadgeType106: createBadgeType106,
+    BadgeType107: createBadgeType107,
+    BadgeType108: createBadgeType108,
+    BadgeType109: createBadgeType109,
+    BadgeType110: createBadgeType110,
+    BadgeType111: createBadgeType111,
+    BadgeType112: createBadgeType112,
+    BadgeType113: createBadgeType113,
+    BadgeType114: createBadgeType114,
+    BadgeType115: createBadgeType115,
+    BadgeType116: createBadgeType116,
+    BadgeType117: createBadgeType117,
+    BadgeType118: createBadgeType118,
+    BadgeType119: createBadgeType119,
+    BadgeType120: createBadgeType120,
+    BadgeType121: createBadgeType121,
 };
-exports.default = Badges;
+export default Badges;
