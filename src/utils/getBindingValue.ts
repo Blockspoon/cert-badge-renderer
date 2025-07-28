@@ -41,7 +41,11 @@ const getAchievementValue = (
       return achievementInfo.expiration_date || "";
 
     default:
-      return (achievementInfo.achievementForm as any)?.[bindingKey] || null;
+      return (
+        (achievementInfo.achievementForm as any)?.[bindingKey] ||
+        achievementInfo?.[bindingKey] ||
+        null
+      );
   }
 };
 

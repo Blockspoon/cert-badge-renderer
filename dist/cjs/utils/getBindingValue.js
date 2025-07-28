@@ -26,7 +26,9 @@ const getAchievementValue = (bindingKey, achievementInfo) => {
         case "expiration_date":
             return achievementInfo.expiration_date || "";
         default:
-            return achievementInfo.achievementForm?.[bindingKey] || null;
+            return (achievementInfo.achievementForm?.[bindingKey] ||
+                achievementInfo?.[bindingKey] ||
+                null);
     }
 };
 const getUserValue = (bindingKey, user) => {
