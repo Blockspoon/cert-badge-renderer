@@ -28,7 +28,6 @@ export async function generateAchievementHTML(
     achievementForm = achievementInfo;
   }
 
-  console.log(achievementForm);
 
   // type에 따라 적절한 layout_json 선택
   const elements =

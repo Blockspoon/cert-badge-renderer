@@ -19,7 +19,6 @@ async function generateAchievementHTML(achievementInfo, options = {}) {
     else {
         achievementForm = achievementInfo;
     }
-    console.log(achievementForm);
     // type에 따라 적절한 layout_json 선택
     const elements = type === "badge"
         ? achievementForm?.achievementBadgeDesign?.layout_json
