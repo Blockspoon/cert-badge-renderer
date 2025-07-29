@@ -19,7 +19,7 @@ export async function generateAchievementHTML(
   options: CertificateOptions = {}
 ): Promise<string> {
   const { type = "certificate", size = 600, noSpace = false } = options;
-  
+
   let achievementForm;
 
   if (achievementInfo.achievementForm) {
@@ -27,7 +27,6 @@ export async function generateAchievementHTML(
   } else {
     achievementForm = achievementInfo;
   }
-
 
   // type에 따라 적절한 layout_json 선택
   const elements =
@@ -140,7 +139,11 @@ export async function generateAchievementHTML(
 
     let bindingValue: any = null;
     if (element.designType === CERTIFICATE_DESIGN_TYPE.PROPS) {
-      bindingValue = getBindingValue(element.type, element.bindingKey, achievementInfo);
+      bindingValue = getBindingValue(
+        element.type,
+        element.bindingKey,
+        achievementInfo
+      );
 
       if (element.controlType === "text") {
         element.text = bindingValue;
@@ -187,6 +190,7 @@ export async function generateAchievementHTML(
       padding-right: "0";
       word-break: break-word;
       white-space: pre-wrap;
+      opacity: ${element.opacity || 1};
     `;
 
     if (element.controlType === "svg") {

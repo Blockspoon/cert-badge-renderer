@@ -87,6 +87,7 @@ export interface ElementStyle {
     extraColor2?: string;
     isVertical?: boolean;
     lineWidth?: number;
+    opacity?: number;
 }
 export interface IAchievementDesignItem {
     id: number;

@@ -140,6 +140,7 @@ async function generateDesignHTML(data, options = {}) {
         padding-right: "0";
         word-break: break-word;
         white-space: pre-wrap;
+        opacity: ${element.opacity || 1};
       `;
         if (element.controlType === "svg") {
             const templates = element.designType === "badge"
