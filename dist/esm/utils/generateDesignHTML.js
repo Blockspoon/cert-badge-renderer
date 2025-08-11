@@ -128,7 +128,7 @@ async function generateDesignHTML(data, options = {}) {
         font-family: ${element.fontFamily || "inherit"};
         color: ${element.color || "black"};
         border: none;
-        padding: "0";
+        padding: 0;
         display: flex;
         align-items: start;
         justify-content: ${element.textAlign === "center"
@@ -136,8 +136,6 @@ async function generateDesignHTML(data, options = {}) {
             : element.textAlign === "left"
                 ? "flex-start"
                 : "flex-end"};
-        padding-left: "0";
-        padding-right: "0";
         word-break: break-word;
         white-space: pre-wrap;
         opacity: ${element.opacity || 1};

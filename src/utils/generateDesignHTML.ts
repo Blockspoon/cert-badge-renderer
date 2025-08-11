@@ -162,7 +162,7 @@ export async function generateDesignHTML(
         font-family: ${element.fontFamily || "inherit"};
         color: ${element.color || "black"};
         border: none;
-        padding: "0";
+        padding: 0;
         display: flex;
         align-items: start;
         justify-content: ${
@@ -172,8 +172,6 @@ export async function generateDesignHTML(
             ? "flex-start"
             : "flex-end"
         };
-        padding-left: "0";
-        padding-right: "0";
         word-break: break-word;
         white-space: pre-wrap;
         opacity: ${element.opacity || 1};

@@ -186,8 +186,6 @@ export async function generateAchievementHTML(
           ? "flex-start"
           : "flex-end"
       };
-      padding-left: "0";
-      padding-right: "0";
       word-break: break-word;
       white-space: pre-wrap;
       opacity: ${element.opacity || 1};
