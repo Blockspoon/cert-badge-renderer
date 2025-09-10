@@ -172,8 +172,8 @@ export async function generateDesignHTML(
             ? "flex-start"
             : "flex-end"
         };
-        word-break: break-word;
-        white-space: pre-wrap;
+        word-break: ${isBadge ? "break-word" : "normal"};
+        white-space: ${isBadge ? "pre-wrap" : "normal"};
         opacity: ${element.opacity || 1};
       `;
 
