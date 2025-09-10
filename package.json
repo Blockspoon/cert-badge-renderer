@@ -1,6 +1,6 @@
 {
   "name": "@blockspoon/cert-badge-renderer",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "description": "Render certificate and badge designs from Kolleges achievement data into HTML, PNG, or Base64.",
   "main": "./dist/esm/index.js",
   "exports": {
