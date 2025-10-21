@@ -186,8 +186,8 @@ export async function generateAchievementHTML(
           ? "flex-start"
           : "flex-end"
       };
-      word-break: ${element.bindingKey === "badge" ? "break-word" : "normal"};
-      white-space: ${element.bindingKey === "badge" ? "pre-wrap" : "normal"};
+      word-break: ${type === "badge" ? "break-word" : "normal"};
+      white-space: ${type === "badge" ? "pre-wrap" : "normal"};
       opacity: ${element.opacity || 1};
     `;
 
