@@ -1,5 +1,4 @@
-import { ISvgProps } from "../../interface/index.js"; 
-
+import { ISvgProps } from "../../interface/index.js";
 
 export function createNewCertificateType31({
   mainColor = "#96A6B4",
@@ -7,12 +6,10 @@ export function createNewCertificateType31({
   extraColor1 = "#96A6B4",
   extraColor2 = "#96A6B4",
 }: ISvgProps): string {
-
   const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId3 = `paint3_linear_${Math.random().toString(36).substr(2, 9)}`;
-
 
   return `
       <svg
@@ -40,7 +37,7 @@ export function createNewCertificateType31({
             y="41.4995"
             width="1071"
             height="732"
-            stroke="black"
+            stroke="${subColor}"
             stroke-width="2"
           />
 
@@ -63,7 +60,7 @@ export function createNewCertificateType31({
             width="16"
             height="109"
             transform="rotate(90 225 42.4995)"
-            fill="#31384B"
+            fill="${subColor}"
           />
           <rect
             x="967"
@@ -94,7 +91,7 @@ export function createNewCertificateType31({
             width="8.00001"
             height="192"
             transform="rotate(90 959 764.5)"
-            fill="#31384B"
+            fill="${subColor}"
           />
           <rect
             x="1078"
@@ -102,7 +99,7 @@ export function createNewCertificateType31({
             width="8.00001"
             height="131"
             transform="rotate(90 1078 745.5)"
-            fill="#31384B"
+            fill="${subColor}"
           />
           <rect
             x="1110"
@@ -112,14 +109,14 @@ export function createNewCertificateType31({
             transform="rotate(90 1110 753.5)"
             fill="${mainColor}"
           />
-          <rect x="56" y="74.4995" width="32" height="88" fill="#D0D0D2" />
-          <rect x="1078" y="665.5" width="32" height="88" fill="#D0D0D2" />
-          <rect x="41" y="541.5" width="20" height="231" fill="#31384B" />
-          <rect x="41" y="42.4995" width="15" height="82" fill="#31384B" />
-          <rect x="1078" y="100.5" width="12" height="159" fill="#D0D0D2" />
-          <rect x="1090" y="242.5" width="12" height="159" fill="#31384B" />
-          <rect x="943" y="58.4995" width="12" height="54" fill="#31384B" />
-          <rect x="955" y="85.4995" width="12" height="78" fill="#D0D0D2" />
+          <rect x="56" y="74.4995" width="32" height="88" fill="${extraColor1}" />
+          <rect x="1078" y="665.5" width="32" height="88" fill="${extraColor1}" />
+          <rect x="41" y="541.5" width="20" height="231" fill="${subColor}" />
+          <rect x="41" y="42.4995" width="15" height="82" fill="${subColor}" />
+          <rect x="1078" y="100.5" width="12" height="159" fill="${extraColor1}" />
+          <rect x="1090" y="242.5" width="12" height="159" fill="${subColor}" />
+          <rect x="943" y="58.4995" width="12" height="54" fill="${subColor}" />
+          <rect x="955" y="85.4995" width="12" height="78" fill="${extraColor1}" />
           <rect
             x="156"
             y="66.4995"
@@ -217,4 +214,4 @@ export function createNewCertificateType31({
         </defs>
       </svg>
   `;
-} 
+}
