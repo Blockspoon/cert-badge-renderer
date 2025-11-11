@@ -116,7 +116,7 @@ export function createNewCertificateType31({
             y="541"
             width="20"
             height="231"
-                fill="${subColor}"
+            fill="${subColor}"
           />
           <rect
             x="41"
