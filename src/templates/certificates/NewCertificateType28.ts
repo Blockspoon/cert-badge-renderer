@@ -1,5 +1,4 @@
-import { ISvgProps } from "../../interface/index.js"; 
-
+import { ISvgProps } from "../../interface/index.js";
 
 export function createNewCertificateType28({
   mainColor = "#96A6B4",
@@ -7,12 +6,10 @@ export function createNewCertificateType28({
   extraColor1 = "#96A6B4",
   extraColor2 = "#96A6B4",
 }: ISvgProps): string {
-
   const paintId0 = `paint0_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId1 = `paint1_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId2 = `paint2_linear_${Math.random().toString(36).substr(2, 9)}`;
   const paintId3 = `paint3_linear_${Math.random().toString(36).substr(2, 9)}`;
-
 
   return `
       <svg
@@ -64,11 +61,11 @@ export function createNewCertificateType28({
         />
         <path
           d="M184.107 331.929V481.129H333.367C333.367 398.728 266.541 331.929 184.107 331.929Z"
-          fill="#002333"
+          fill="${extraColor1}"
         />
         <path
           d="M184.107 331.929H34.8477V481.129L184.107 331.929Z"
-          fill="#002333"
+          fill="${extraColor1}"
         />
         <path
           d="M34.8477 481.129H184.107V331.929C101.674 331.929 34.8477 398.728 34.8477 481.129Z"
@@ -80,11 +77,11 @@ export function createNewCertificateType28({
         />
         <path
           d="M184.107 780L184.107 779.78C101.674 779.78 34.8476 713.079 34.8476 630.8L34.8476 780L184.107 780Z"
-          fill="#002333"
+          fill="${extraColor1}"
         />
         <path
           d="M332.366 630.569C332.366 712.417 265.989 778.768 184.107 778.768C102.226 778.768 35.849 712.417 35.849 630.569C35.849 548.722 102.226 482.37 184.107 482.37C265.989 482.37 332.366 548.722 332.366 630.569Z"
-          stroke="#002333"
+          stroke="${extraColor1}"
           stroke-width="2.00268"
           stroke-miterlimit="10"
         />
@@ -100,7 +97,7 @@ export function createNewCertificateType28({
         />
         <path
           d="M332.366 183.42C332.366 265.267 265.989 331.618 184.107 331.618C102.226 331.618 35.849 265.267 35.849 183.42C35.849 101.572 102.226 35.2211 184.107 35.2211C265.989 35.2211 332.366 101.572 332.366 183.42Z"
-          stroke="#002333"
+          stroke="${extraColor1}"
           stroke-width="2.00268"
           stroke-miterlimit="10"
         />
@@ -142,4 +139,4 @@ export function createNewCertificateType28({
         </defs>
       </svg>
   `;
-} 
+}

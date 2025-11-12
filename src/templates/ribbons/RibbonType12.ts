@@ -1,4 +1,4 @@
-import { ISvgProps } from "../../interface/index.js"; 
+import { ISvgProps } from "../../interface/index.js";
 
 export function createRibbonType12({
   mainColor = "#96A6B4",
@@ -49,7 +49,6 @@ export function createRibbonType12({
         fill="black"
         fill-opacity="0.2"
       />
-      <rect x="23" y="0.594849" width="482" height="38" fill="white" />
       <rect y="6.59485" width="528" height="154" rx="14" fill="${mainColor}" />
       <mask
         id="mask0_2384_1367"

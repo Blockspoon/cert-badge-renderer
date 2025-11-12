@@ -1,4 +1,4 @@
-import { ISvgProps } from "../../interface/index.js"; 
+import { ISvgProps } from "../../interface/index.js";
 
 export function createRibbonType7({
   mainColor = "#96A6B4",
@@ -26,7 +26,6 @@ export function createRibbonType7({
         display: block;
       "
     >
-      <path d="M26.1447 0H495V170L11 35.5L26.1447 0Z" fill="white" />
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"

@@ -1,4 +1,4 @@
-import { ISvgProps } from "../../interface/index.js"; 
+import { ISvgProps } from "../../interface/index.js";
 
 export function createRibbonType21({
   mainColor = "#96A6B4",
@@ -60,10 +60,6 @@ export function createRibbonType21({
         height="21.4648"
         fill="url(#paint2_linear_2399_1177)"
         fill-opacity="0.4"
-      />
-      <path
-        d="M509.703 0H54.2897C47.7763 0 42.4961 5.52858 42.4961 12.3484V128.652C42.4961 135.471 47.7763 141 54.2897 141H509.703C516.216 141 521.496 135.471 521.496 128.652V12.3484C521.496 5.52858 516.216 0 509.703 0Z"
-        fill="white"
       />
       <path
         d="M510.678 6H54.3143C47.7873 6 42.4961 11.6462 42.4961 18.6112V137.389C42.4961 144.354 47.7873 150 54.3143 150H510.678C517.205 150 522.496 144.354 522.496 137.389V18.6112C522.496 11.6462 517.205 6 510.678 6Z"

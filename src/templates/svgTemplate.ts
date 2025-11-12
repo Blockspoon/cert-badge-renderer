@@ -677,6 +677,10 @@ export const ribbonTemplates: templateType[] = [
     Component: Ribbons.RibbonType110,
   },
   {
+    id: "RibbonType110_1",
+    Component: Ribbons.RibbonType110_1,
+  },
+  {
     id: "RibbonType113",
     Component: Ribbons.RibbonType113,
   },

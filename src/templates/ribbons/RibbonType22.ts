@@ -1,4 +1,4 @@
-import { ISvgProps } from "../../interface/index.js"; 
+import { ISvgProps } from "../../interface/index.js";
 
 export function createRibbonType22({
   mainColor = "#96A6B4",
@@ -23,7 +23,6 @@ export function createRibbonType22({
         display: block;
       "
     >
-      <rect x="16.4961" width="455" height="150" fill="white" />
       <path
         d="M36.6309 154H490.496V184H38.0612C36.3356 179.296 36.3646 170.675 36.6309 154Z"
         fill="url(#paint0_linear_2399_1178)"

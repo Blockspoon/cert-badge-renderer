@@ -1,4 +1,4 @@
-import { ISvgProps } from "../../interface/index.js"; 
+import { ISvgProps } from "../../interface/index.js";
 
 export function createRibbonType4({
   mainColor = "#96A6B4",
@@ -33,7 +33,6 @@ export function createRibbonType4({
         display: block;
       "
     >
-      <path d="M67.3261 0H496.657L504 22L60 21.5L67.3261 0Z" fill="white" />
       <path
         opacity="0.5"
         d="M60 127H504L493.5 154H69.5L60 127Z"
@@ -139,4 +138,4 @@ export function createRibbonType4({
       </defs>
     </svg>
   `;
-} 
+}
