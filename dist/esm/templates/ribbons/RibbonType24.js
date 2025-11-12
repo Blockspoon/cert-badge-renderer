@@ -27,10 +27,6 @@ function createRibbonType24({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
         fill="black"
         fill-opacity="0.3"
       />
-      <path
-        d="M484.844 30.0006L13.4967 30L25.5963 9.53674e-06H475.445L484.844 30.0006Z"
-        fill="white"
-      />
       <rect
         x="0.496094"
         y="6"

@@ -43,6 +43,7 @@ import { createRibbonType103 } from "./RibbonType103.js";
 import { createRibbonType107 } from "./RibbonType107.js";
 import { createRibbonType109 } from "./RibbonType109.js";
 import { createRibbonType110 } from "./RibbonType110.js";
+import { createRibbonType110_1 } from "./RibbonType110_1.js";
 import { createRibbonType113 } from "./RibbonType113.js";
 import { createRibbonType115 } from "./RibbonType115.js";
 import { createRibbonType116_1 } from "./RibbonType116_1.js";
@@ -113,6 +114,7 @@ declare const Ribbons: {
     RibbonType107: typeof createRibbonType107;
     RibbonType109: typeof createRibbonType109;
     RibbonType110: typeof createRibbonType110;
+    RibbonType110_1: typeof createRibbonType110_1;
     RibbonType113: typeof createRibbonType113;
     RibbonType115: typeof createRibbonType115;
     RibbonType116_1: typeof createRibbonType116_1;

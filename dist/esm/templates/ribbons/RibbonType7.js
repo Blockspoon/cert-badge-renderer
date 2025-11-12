@@ -23,7 +23,6 @@ function createRibbonType7({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
         display: block;
       "
     >
-      <path d="M26.1447 0H495V170L11 35.5L26.1447 0Z" fill="white" />
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"

@@ -675,6 +675,10 @@ exports.ribbonTemplates = [
         Component: index_js_2.default.RibbonType110,
     },
     {
+        id: "RibbonType110_1",
+        Component: index_js_2.default.RibbonType110_1,
+    },
+    {
         id: "RibbonType113",
         Component: index_js_2.default.RibbonType113,
     },

@@ -45,6 +45,7 @@ const RibbonType103_js_1 = require("./RibbonType103.js");
 const RibbonType107_js_1 = require("./RibbonType107.js");
 const RibbonType109_js_1 = require("./RibbonType109.js");
 const RibbonType110_js_1 = require("./RibbonType110.js");
+const RibbonType110_1_js_1 = require("./RibbonType110_1.js");
 const RibbonType113_js_1 = require("./RibbonType113.js");
 const RibbonType115_js_1 = require("./RibbonType115.js");
 const RibbonType116_1_js_1 = require("./RibbonType116_1.js");
@@ -116,6 +117,7 @@ const Ribbons = {
     RibbonType107: RibbonType107_js_1.createRibbonType107,
     RibbonType109: RibbonType109_js_1.createRibbonType109,
     RibbonType110: RibbonType110_js_1.createRibbonType110,
+    RibbonType110_1: RibbonType110_1_js_1.createRibbonType110_1,
     RibbonType113: RibbonType113_js_1.createRibbonType113,
     RibbonType115: RibbonType115_js_1.createRibbonType115,
     RibbonType116_1: RibbonType116_1_js_1.createRibbonType116_1,
