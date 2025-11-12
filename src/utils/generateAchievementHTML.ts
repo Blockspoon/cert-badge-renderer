@@ -178,7 +178,13 @@ export async function generateAchievementHTML(
       border: none;
       padding: 0;
       display: flex;
-      align-items: start;
+      align-items: ${
+        element.textAlign === "center"
+          ? "center"
+          : element.textAlign === "left"
+          ? "flex-start"
+          : "flex-end"
+      };
       justify-content: ${
         element.textAlign === "center"
           ? "center"
