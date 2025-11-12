@@ -137,7 +137,7 @@ async function generateAchievementHTML(achievementInfo, options = {}) {
                 ? "flex-start"
                 : "flex-end"};
       word-break: ${type === "badge" ? "break-word" : "normal"};
-      white-space: ${type === "badge" ? "pre-wrap" : "normal"};
+      white-space: ${type === "badge" ? "pre" : "normal"};
       opacity: ${element.opacity || 1};
     `;
         if (element.controlType === "svg") {
