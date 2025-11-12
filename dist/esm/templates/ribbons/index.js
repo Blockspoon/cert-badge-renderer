@@ -63,6 +63,9 @@ const RibbonWing10_js_1 = require("./RibbonWing10.js");
 const RibbonWing11_js_1 = require("./RibbonWing11.js");
 const RibbonWing12_js_1 = require("./RibbonWing12.js");
 const RibbonWing14_js_1 = require("./RibbonWing14.js");
+const RibbonWing15_js_1 = require("./RibbonWing15.js");
+const RibbonWing16_js_1 = require("./RibbonWing16.js");
+const RibbonWing17_js_1 = require("./RibbonWing17.js");
 const RibbonWing104_js_1 = require("./RibbonWing104.js");
 const RibbonWing105_js_1 = require("./RibbonWing105.js");
 const RibbonWing106_js_1 = require("./RibbonWing106.js");
@@ -132,6 +135,9 @@ const Ribbons = {
     RibbonWing11: RibbonWing11_js_1.createRibbonWing11,
     RibbonWing12: RibbonWing12_js_1.createRibbonWing12,
     RibbonWing14: RibbonWing14_js_1.createRibbonWing14,
+    RibbonWing15: RibbonWing15_js_1.createRibbonWing15,
+    RibbonWing16: RibbonWing16_js_1.createRibbonWing16,
+    RibbonWing17: RibbonWing17_js_1.createRibbonWing17,
     RibbonWing104: RibbonWing104_js_1.createRibbonWing104,
     RibbonWing105: RibbonWing105_js_1.createRibbonWing105,
     RibbonWing106: RibbonWing106_js_1.createRibbonWing106,

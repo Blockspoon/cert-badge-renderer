@@ -752,6 +752,18 @@ exports.ribbonTemplates = [
         Component: index_js_2.default.RibbonWing104,
     },
     {
+        id: "RibbonWing15",
+        Component: index_js_2.default.RibbonWing15,
+    },
+    {
+        id: "RibbonWing16",
+        Component: index_js_2.default.RibbonWing16,
+    },
+    {
+        id: "RibbonWing17",
+        Component: index_js_2.default.RibbonWing17,
+    },
+    {
         id: "RibbonWing105",
         Component: index_js_2.default.RibbonWing105,
     },

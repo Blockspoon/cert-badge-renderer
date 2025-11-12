@@ -136,8 +136,8 @@ async function generateDesignHTML(data, options = {}) {
             : element.textAlign === "left"
                 ? "flex-start"
                 : "flex-end"};
-        word-break: break-word;
-        white-space: pre-wrap;
+        word-break: ${isBadge ? "break-word" : "normal"};
+        white-space: ${isBadge ? "pre-wrap" : "normal"};
         opacity: ${element.opacity || 1};
       `;
         if (element.controlType === "svg") {
