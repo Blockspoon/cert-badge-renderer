@@ -755,6 +755,18 @@ export const ribbonTemplates: templateType[] = [
     Component: Ribbons.RibbonWing104,
   },
   {
+    id: "RibbonWing15",
+    Component: Ribbons.RibbonWing15,
+  },
+  {
+    id: "RibbonWing16",
+    Component: Ribbons.RibbonWing16,
+  },
+  {
+    id: "RibbonWing17",
+    Component: Ribbons.RibbonWing17,
+  },
+  {
     id: "RibbonWing105",
     Component: Ribbons.RibbonWing105,
   },

@@ -62,6 +62,9 @@ import { createRibbonWing10 } from "./RibbonWing10.js";
 import { createRibbonWing11 } from "./RibbonWing11.js";
 import { createRibbonWing12 } from "./RibbonWing12.js";
 import { createRibbonWing14 } from "./RibbonWing14.js";
+import { createRibbonWing15 } from "./RibbonWing15.js";
+import { createRibbonWing16 } from "./RibbonWing16.js";
+import { createRibbonWing17 } from "./RibbonWing17.js";
 import { createRibbonWing104 } from "./RibbonWing104.js";
 import { createRibbonWing105 } from "./RibbonWing105.js";
 import { createRibbonWing106 } from "./RibbonWing106.js";
@@ -133,6 +136,9 @@ const Ribbons = {
   RibbonWing11: createRibbonWing11,
   RibbonWing12: createRibbonWing12,
   RibbonWing14: createRibbonWing14,
+  RibbonWing15: createRibbonWing15,
+  RibbonWing16: createRibbonWing16,
+  RibbonWing17: createRibbonWing17,
   RibbonWing104: createRibbonWing104,
   RibbonWing105: createRibbonWing105,
   RibbonWing106: createRibbonWing106,

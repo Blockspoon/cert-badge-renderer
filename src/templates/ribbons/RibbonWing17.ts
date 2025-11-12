@@ -1,6 +1,6 @@
-import { ISvgProps } from "../../interface/index.js"; 
+import { ISvgProps } from "../../interface/index.js";
 
-export function createRibbonWing14({
+export function createRibbonWing17({
   mainColor = "#96A6B4",
   subColor = "#96A6B4",
 }: ISvgProps): string {
