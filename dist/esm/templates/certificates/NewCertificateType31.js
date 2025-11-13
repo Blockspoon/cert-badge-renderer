@@ -14,7 +14,7 @@ function createNewCertificateType31({ mainColor = "#96A6B4", subColor = "#96A6B4
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clipPath="url(#clip0_2086_1137)">
+        <g clip-path="url(#clip0_2086_1137)">
           <rect
             width="1152"
             height="814"

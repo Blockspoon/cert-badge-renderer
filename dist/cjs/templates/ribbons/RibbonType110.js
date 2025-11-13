@@ -30,7 +30,7 @@ function createRibbonType110({ mainColor = "#96A6B4", subColor = "#96A6B4", extr
           />
           <defs>
             <linearGradient
-              id={paintId0}
+              id="${paintId0}"
               x1="-70"
               y1="45.5"
               x2="157.388"
