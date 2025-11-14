@@ -33,7 +33,7 @@ function createRibbonType93_1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) 
       />
       <defs>
         <linearGradient
-          id={paintId0}
+          id="${paintId0}"
           x1="0.0353567"
           y1="53.8844"
           x2="230.95"
@@ -46,7 +46,7 @@ function createRibbonType93_1({ mainColor = "#96A6B4", subColor = "#96A6B4", }) 
           <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
-          id={paintId1}
+          id="${paintId1}"
           x1="342.889"
           y1="51.2318"
           x2="573.804"

@@ -83,7 +83,7 @@ function createRibbonType93({ mainColor = "#96A6B4", subColor = "#96A6B4", }) {
       </g>
       <defs>
         <linearGradient
-          id={paintId0}
+          id="${paintId0}"
           x1="0.0302734"
           y1="51.0132"
           x2="462.03"
