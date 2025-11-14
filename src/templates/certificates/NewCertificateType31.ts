@@ -109,14 +109,14 @@ export function createNewCertificateType31({
             transform="rotate(90 1110 753.5)"
             fill="${mainColor}"
           />
-          <rect x="56" y="74.4995" width="32" height="88" fill="#D0D0D2" />
-          <rect x="1078" y="665.5" width="32" height="88" fill="#D0D0D2" />
-          <rect x="41" y="541.5" width="20" height="231" fill="#31384B" />
-          <rect x="41" y="42.4995" width="15" height="82" fill="#31384B" />
-          <rect x="1078" y="100.5" width="12" height="159" fill="#D0D0D2" />
-          <rect x="1090" y="242.5" width="12" height="159" fill="#31384B" />
-          <rect x="943" y="58.4995" width="12" height="54" fill="#31384B" />
-          <rect x="955" y="85.4995" width="12" height="78" fill="#D0D0D2" />
+          <rect x="56" y="74.4995" width="32" height="88" fill="${extraColor1}" />
+          <rect x="1078" y="665.5" width="32" height="88" fill="${extraColor1}" />
+          <rect x="41" y="541.5" width="20" height="231" fill="${subColor}" />
+          <rect x="41" y="42.4995" width="15" height="82" fill="${subColor}" />
+          <rect x="1078" y="100.5" width="12" height="159" fill="${extraColor1}" />
+          <rect x="1090" y="242.5" width="12" height="159" fill="${subColor}" />
+          <rect x="943" y="58.4995" width="12" height="54" fill="${subColor}" />
+          <rect x="955" y="85.4995" width="12" height="78" fill="${extraColor1}" />
           <rect
             x="156"
             y="66.4995"
