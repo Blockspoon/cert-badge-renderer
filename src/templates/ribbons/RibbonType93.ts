@@ -86,7 +86,7 @@ export function createRibbonType93({
       </g>
       <defs>
         <linearGradient
-          id={paintId0}
+          id="${paintId0}"
           x1="0.0302734"
           y1="51.0132"
           x2="462.03"

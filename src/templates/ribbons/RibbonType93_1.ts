@@ -1,4 +1,4 @@
-import { ISvgProps } from "../../interface/index.js"; 
+import { ISvgProps } from "../../interface/index.js";
 
 export function createRibbonType93_1({
   mainColor = "#96A6B4",
@@ -36,7 +36,7 @@ export function createRibbonType93_1({
       />
       <defs>
         <linearGradient
-          id={paintId0}
+          id="${paintId0}"
           x1="0.0353567"
           y1="53.8844"
           x2="230.95"
@@ -49,7 +49,7 @@ export function createRibbonType93_1({
           <stop offset="1" stop-color="${mainColor}" />
         </linearGradient>
         <linearGradient
-          id={paintId1}
+          id="${paintId1}"
           x1="342.889"
           y1="51.2318"
           x2="573.804"
