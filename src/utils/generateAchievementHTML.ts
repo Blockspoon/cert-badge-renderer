@@ -192,8 +192,26 @@ export async function generateAchievementHTML(
           ? "flex-start"
           : "flex-end"
       };
-      word-break: ${type === "badge" ? "break-word" : "normal"};
-      white-space: ${type === "badge" ? "pre" : "normal"};
+      word-break: ${
+        type === "badge" ||
+        (element.controlType === "text" &&
+          element.designType === CERTIFICATE_DESIGN_TYPE.TEXT) ||
+        (element.controlType === "text" &&
+          element.designType === CERTIFICATE_DESIGN_TYPE.PROPS &&
+          element.bindingKey === "description")
+          ? "break-word"
+          : "normal"
+      };
+      white-space: ${
+        type === "badge" ||
+        (element.controlType === "text" &&
+          element.designType === CERTIFICATE_DESIGN_TYPE.TEXT) ||
+        (element.controlType === "text" &&
+          element.designType === CERTIFICATE_DESIGN_TYPE.PROPS &&
+          element.bindingKey === "description")
+          ? "pre-wrap"
+          : "normal"
+      };
       opacity: ${element.opacity || 1};
     `;
 
