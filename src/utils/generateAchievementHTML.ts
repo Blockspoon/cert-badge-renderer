@@ -69,6 +69,18 @@ export async function generateAchievementHTML(
         <title>Certificate</title>
         <style>
           @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+          @font-face {
+            font-family: 'BookkMyungjo';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+          }
+          @font-face {
+            font-family: 'BookkMyungjo';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+          }
           * {
             margin: 0;
             padding: 0;
