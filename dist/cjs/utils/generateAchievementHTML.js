@@ -45,19 +45,31 @@ async function generateAchievementHTML(achievementInfo, options = {}) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Certificate</title>
         <style>
-          @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-          @font-face {
-            font-family: 'BookkMyungjo';
-            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
-            font-weight: 400;
-            font-style: normal;
-          }
-          @font-face {
-            font-family: 'BookkMyungjo';
-            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
-            font-weight: 700;
-            font-style: normal;
-          }
+          /* Pretendard - Regular(400), Medium(500), SemiBold(600), Bold(700) */
+          @font-face { font-family: 'Pretendard'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/Pretendard-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; }
+          @font-face { font-family: 'Pretendard'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/Pretendard-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; }
+          @font-face { font-family: 'Pretendard'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/Pretendard-SemiBold.woff2') format('woff2'); font-weight: 600; font-style: normal; }
+          @font-face { font-family: 'Pretendard'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/Pretendard-Bold.woff2') format('woff2'); font-weight: 700; font-style: normal; }
+          /* BR Firma - Regular(400), Medium(500), SemiBold(600), Bold(700) */
+          @font-face { font-family: 'BR Firma'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/BR-Firma-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; }
+          @font-face { font-family: 'BR Firma'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/BR-Firma-Medium.woff2') format('woff2'); font-weight: 500; font-style: normal; }
+          @font-face { font-family: 'BR Firma'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/BR-Firma-SemiBold.woff2') format('woff2'); font-weight: 600; font-style: normal; }
+          @font-face { font-family: 'BR Firma'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/BR-Firma-Bold.woff2') format('woff2'); font-weight: 700; font-style: normal; }
+          /* MaruBuri - Regular(400), SemiBold(600), Bold(700) */
+          @font-face { font-family: 'MaruBuri'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/MaruBuri-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; }
+          @font-face { font-family: 'MaruBuri'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/MaruBuri-SemiBold.woff2') format('woff2'); font-weight: 600; font-style: normal; }
+          @font-face { font-family: 'MaruBuri'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/MaruBuri-Bold.woff2') format('woff2'); font-weight: 700; font-style: normal; }
+          /* NanumSquareRound - Regular(400), Bold(700) */
+          @font-face { font-family: 'NanumSquareRound'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/NanumSquareRoundR.woff2') format('woff2'); font-weight: 400; font-style: normal; }
+          @font-face { font-family: 'NanumSquareRound'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/NanumSquareRoundB.woff2') format('woff2'); font-weight: 700; font-style: normal; }
+          /* BookkMyungjo - Regular(400), Bold(700) */
+          @font-face { font-family: 'BookkMyungjo'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/BookkMyungjo-Lt.woff2') format('woff2'); font-weight: 400; font-style: normal; }
+          @font-face { font-family: 'BookkMyungjo'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/BookkMyungjo-Bd.woff2') format('woff2'); font-weight: 700; font-style: normal; }
+          /* BookkGothic - Regular(400), Bold(700) */
+          @font-face { font-family: 'BookkGothic'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/BookkGothic-Lt.woff2') format('woff2'); font-weight: 400; font-style: normal; }
+          @font-face { font-family: 'BookkGothic'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/BookkGothic-Bd.woff2') format('woff2'); font-weight: 700; font-style: normal; }
+          /* Righteous - Regular(400) */
+          @font-face { font-family: 'Righteous'; src: url('https://ifwuxxjjypxzrvxilwqy.supabase.co/storage/v1/object/public/blockspoon_images/fonts/Righteous-Regular.woff2') format('woff2'); font-weight: 400; font-style: normal; }
           * {
             margin: 0;
             padding: 0;
